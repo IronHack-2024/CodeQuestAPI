@@ -31,4 +31,4 @@ const questionSchema = new Schema({
 
 const Questions = model('question', questionSchema);
 
-module.exports = Questions
+module.exports = Questions;

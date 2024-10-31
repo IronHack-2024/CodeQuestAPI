@@ -1,23 +1,22 @@
-/* const fetch = require('node_fetch'); */
-/* const app = require('../routes/index'); */
-const mongoose = require('mongoose');
 
-const { getRandomQuestions } = require('../controllers/index.controllers');
+jest.mock('../models/question.model.js');
 
 
-describe('/api/v1/question/random', () => {
+const { getRandomQuestion } = require('../services/question.services.js');
+
+describe('getRandomQuestions service', () => {
 
 	it('Devuelve una pregunta aleatoria', async () => {
-		const response = await fetch('http://localhost:3000/api/v1/question/random')
 
-		const data = await response.json();
+		const result = await getRandomQuestion(1);
 
-		expect(response.status).toBe(200)
+		expect(result).toHaveLength(1);
+		const answerOptions = result[0].answerOptions;
 
-		/* expect(data.results.answerOptions[0].answers).toBe(String) */
+		// Verifica si al menos una opción de respuesta tiene `isCorrect` en `true`
+		const hasCorrectAnswer = answerOptions.some(option => option.isCorrect === true);
 
-	})
-})
+		expect(hasCorrectAnswer).toBe(true);
 
-
-
+	});
+});
