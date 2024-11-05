@@ -14,11 +14,13 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public')); 
 
+const MAILCHIMPKEY = process.env.MAILCHIMPKEY;
+
 mailchimp.setConfig({
-	apiKey: 'd0389b472785394c8740e10a2158b513-us22', // Reemplaza con tu API key de Mailchimp
-	server: 'us22', // Prefijo del servidor, por ejemplo "us1"
+	apiKey: MAILCHIMPKEY, // API key in dotenv
+	server: 'us22', // Prefijo del servidor del API key, final
   });
-  const listId = '58371aa183'; // Reemplaza con el ID de tu lista de Mailchimp
+  const listId = '58371aa183'; // ID de tu lista de contactos de Mailchimp
 
   app.post('/subscribe', async (req, res) => {
     const email = req.body.email;
@@ -28,13 +30,16 @@ mailchimp.setConfig({
         email_address: email,
         status: 'subscribed',
       });
-      console.log(`Successfully added contact as an audience member. ID: ${response.id}`);
-      res.send('Suscripción exitosa. ¡Gracias por unirte a nuestra lista de newsletter!');
+      console.log(`Successfully added contact for the weekly question. ID: ${response.id}`);
+      res.send('Successfully added to our contact list. Thank you for subscribing for a weekly dev question');
     } catch (error) {
       console.error(error);
-      res.send('Hubo un error en la suscripción. Por favor, intenta nuevamente.');
+      res.send('There was an error at subsciption. Please, try again later.');
     }
-  });
+  });// añade contacto al audience list y mailchimp comprueba si contacto ya existe. 
+
+ 
+
 
 app.use('/', indexRouter);
 
@@ -48,6 +53,7 @@ app.get('/daily-question', async (req, res) => {
 })
 
 const PORT = process.env.PORT || 3000;
+
 
 app.listen(PORT, async () => {
 	await connectDB();
