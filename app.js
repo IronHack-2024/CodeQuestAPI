@@ -5,6 +5,7 @@ const indexRouter = require('./routes/index');
 const { getRandomQuestion } = require('./services/question.services');
 const bodyParser = require('body-parser');
 const mailchimp = require('@mailchimp/mailchimp_marketing');
+const nodemailer = require("nodemailer");
 
 
 dotenv.config();
@@ -40,49 +41,20 @@ mailchimp.setConfig({
   });// añade contacto al audience list y mailchimp comprueba si contacto ya existe. 
 
 
- /* async function listTemplates() {
-    try {
-      const response = await mailchimp.templates.list();
-      console.log(response);
-    } catch (error) {
-      console.error(error);
-    }
-  }
-  listTemplates();*/
-  
-  // listTemplates nos busca y da la lista de templates de mailchimp. nuestro newsletter tiene id:2
-  /*
-async function updateTemplate() {
-  const templateId = '4';
-  
-  try {
-    const response = await mailchimp.templates.updateTemplate(templateId, {
-      name: 'NEW TEST EVA 2',
-      html: '<html><body>EVA2</body></html>'
-    });
-    console.log('Template updated successfully:', response);
-  } catch (error) {
-    console.error('Error updating template:', error);
-  }
-}
-
-updateTemplate(); NO FUNCIONA HTML con la cuena FREE de Mailchimp'pero el titulo se cambia )codigo correcto= */
-
-
-
-
-
-// Function to Fetch Audience Contacts
+// Function to Fetch Audience Contacts from Mailchimp
 async function fetchContacts(listId) {
   try {
     const response = await mailchimp.lists.getListMembersInfo(listId, {
-      count: 20, // Fetch up to 100 contacts at a time
+      count: 100, // Fetch up to 100 contacts
     });
-    console.log("Contacts:", response.members);
+    console.log("Contacts:", response.members.map(member => member.email_address));
+    return response.members.map(member => member.email_address); // Return email addresses
   } catch (error) {
-    console.error("Error:", error.response ? error.response.body : error.message);
+    console.error("Error fetching contacts:", error.response ? error.response.body : error.message);
+    return []; // Return an empty array if there's an error
   }
 }
+
 
 // Fetch Audiences
 async function fetchAudiences() {
@@ -95,15 +67,82 @@ async function fetchAudiences() {
   }
 }
 
-// Example Execution
+// Ejecucion
 (async () => {
   const audiences = await fetchAudiences(); // Fetch all audiences
   if (audiences.length > 0) {
-    await fetchContacts(audiences[0].id); // Fetch contacts from the first audience
+    await fetchContacts(audiences[0].id); // Fetch contacts from the first audience, so no id needs to be entered
   } else {
     console.log("No audiences found.");
   }
 })();
+
+
+const EMAIL_PASSWORD = process.env.EMAIL_PASSWORD;
+//para enviar de nuestro email proveedor
+const transporter = nodemailer.createTransport({
+  service: "Gmail", 
+  host: 'smtp.gmail.com', // Replace with your SMTP server
+  port: 587,               // Typically 587 for TLS
+  secure: false,    
+  auth: {
+    user: 'codequestapi@gmail.com',
+    pass: 'EMAIL_PASSWORD',
+  },
+});
+
+function getEmailTemplate(name) {
+  return `
+    <html>
+      <body>
+        <h1>Hello, ${name}!</h1>
+        <p>Welcome to our newsletter TEST. We're excited to have you here!</p>
+      </body>
+    </html>
+  `;
+}
+
+async function sendEmails() {
+  try {
+    // Fetch all audiences to get the first list ID
+    const audiences = await fetchAudiences();
+    if (!audiences.length) {
+      console.log("No audiences found.");
+      return;
+    }
+
+    const listId = audiences[0].id; // Use the first audience's ID
+    const contacts = await fetchContacts(listId); // Pass the listId to fetchContacts
+
+    if (!contacts.length) {
+      console.log("No contacts found in the audience.");
+      return;
+    }
+
+    // Loop through contacts and send personalized emails
+    for (const email of contacts) {
+      const name = email.split("@")[0]; // Use the part before '@' as a name
+      const htmlTemplate = getEmailTemplate(name);
+
+      const mailOptions = {
+        from: '"CodeQuestAPI"<codequestapi@gmail.com>',
+        to: email,
+        subject: "Welcome to Our Newsletter TEST!",
+        html: htmlTemplate,
+      };
+
+      const info = await transporter.sendMail(mailOptions);
+      console.log(`Email sent to ${email}: ${info.response}`);
+    }
+  } catch (error) {
+    console.error("Error sending emails:", error);
+  }
+}
+(async () => {
+  await sendEmails(); // Call sendEmails directly
+})();
+
+
 
   
 app.use('/', indexRouter);
@@ -117,65 +156,6 @@ app.get('/daily-question', async (req, res) => {
 	res.render('home', { question });
 
 })
-
-
-
-
-
-this.updateTemplateWithHttpInfo = function(templateId, body) {
- var postBody = body;
-
- // verify the required parameter 'templateId' is set
- if (templateId === undefined || templateId === null) {
-   throw new Error("Missing the required parameter 'templateId' when calling ");
- }
-
- // verify the required parameter 'body' is set
- if (body === undefined || body === null) {
-   throw new Error("Missing the required parameter 'body' when calling ");
- }
-
- var pathParams = {
-   'template_id': 4
- };
- 
- /*
-  The following block building queryParams is going to look a little odd, we're going look for values in $opts with both
-  camelCase and snake_case format (which will be the same if singular word). This is because the API docs use snake_case
-  but early versions of these SDKs used camelCase. So to be backward compatible we'll use both. 
- */
- var queryParams = {html: 'EVA'
- };
- var headerParams = {html:'NEW UPDATED BY CODE DOCS'
- };
-
-
-
- var authNames = ['basicAuth'];
- var contentTypes = ['application/json'];
- var accepts = ['application/json', 'application/problem+json'];
- var returnType = 'application/json';
-
- return this.apiClient.callApi(
-   '/templates/{4}', 'PATCH',
-   pathParams, queryParams, headerParams, postBody,
-   authNames, contentTypes, accepts, returnType
- );
-}
-/**
-* Update template
-* Update the name, HTML, or `folder_id` of an existing template.
-* @param {String} templateId The unique id for the template.
-* @param {module:model/TemplateInstance2} body 
-* @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/TemplateInstance}
-*/
-this.updateTemplate = function(templateId, body) {
- return this.updateTemplateWithHttpInfo(templateId, body)
-   .then(function(response_and_data) {
-     return response_and_data.data;
-   });
-}
-
 
 const PORT = process.env.PORT || 3000;
 
