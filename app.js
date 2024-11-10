@@ -39,6 +39,7 @@ mailchimp.setConfig({
     }
   });// añade contacto al audience list y mailchimp comprueba si contacto ya existe. 
 
+
  /* async function listTemplates() {
     try {
       const response = await mailchimp.templates.list();
@@ -48,22 +49,9 @@ mailchimp.setConfig({
     }
   }
   listTemplates();*/
+  
   // listTemplates nos busca y da la lista de templates de mailchimp. nuestro newsletter tiene id:2
-  
-  
-app.use('/', indexRouter);
-
-app.get('/daily-question', async (req, res) => {
-
-	// Obtener la pregunta correspondiente al día
-	const question = await getRandomQuestion();
-
-	// Renderizar la página con la pregunta y las opciones
-	res.render('home', { question });
-
-})
-
-/*
+  /*
 async function updateTemplate() {
   const templateId = '4';
   
@@ -78,7 +66,59 @@ async function updateTemplate() {
   }
 }
 
-updateTemplate(); */
+updateTemplate(); NO FUNCIONA HTML con la cuena FREE de Mailchimp'pero el titulo se cambia )codigo correcto= */
+
+
+
+
+
+// Function to Fetch Audience Contacts
+async function fetchContacts(listId) {
+  try {
+    const response = await mailchimp.lists.getListMembersInfo(listId, {
+      count: 20, // Fetch up to 100 contacts at a time
+    });
+    console.log("Contacts:", response.members);
+  } catch (error) {
+    console.error("Error:", error.response ? error.response.body : error.message);
+  }
+}
+
+// Fetch Audiences
+async function fetchAudiences() {
+  try {
+    const response = await mailchimp.lists.getAllLists();
+    console.log("Audiences:", response.lists);
+    return response.lists;
+  } catch (error) {
+    console.error("Error fetching audiences:", error.response ? error.response.body : error.message);
+  }
+}
+
+// Example Execution
+(async () => {
+  const audiences = await fetchAudiences(); // Fetch all audiences
+  if (audiences.length > 0) {
+    await fetchContacts(audiences[0].id); // Fetch contacts from the first audience
+  } else {
+    console.log("No audiences found.");
+  }
+})();
+
+  
+app.use('/', indexRouter);
+
+app.get('/daily-question', async (req, res) => {
+
+	// Obtener la pregunta correspondiente al día
+	const question = await getRandomQuestion();
+
+	// Renderizar la página con la pregunta y las opciones
+	res.render('home', { question });
+
+})
+
+
 
 
 
