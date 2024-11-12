@@ -1,5 +1,5 @@
 
-const getEmailTemplate = (name) =>{
+const getEmailTemplate = (name, question, A, B,C, D, correctAnswer) =>{
     return `
 
     <html>

@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const mailchimp = require('@mailchimp/mailchimp_marketing');
 const nodemailer = require('nodemailer');
 const { getEmailTemplate } = require('./emailtemplate.js');
+const cron = require('node-cron');
 
 dotenv.config();
 
@@ -27,11 +28,13 @@ app.get('/daily-question', async (req, res) => {
 	res.render('home', { question });
 
 })
+
+//subscribe route to add contact to audience/ 58371aa183 is the listId from Chimp 
 app.post('/subscribe', async (req, res) => {
   const email = req.body.email;
 
   try {
-    const response = await mailchimp.lists.addListMember(listId, {
+    const response = await mailchimp.lists.addListMember('58371aa183', {
       email_address: email,
       status: 'subscribed',
     });
@@ -49,10 +52,7 @@ mailchimp.setConfig({
 	apiKey: MAILCHIMPKEY, // API key in dotenv
 	server: 'us22', // Prefijo del servidor del API key, final
   });
-  //const listId = '58371aa183'; // ID de tu lista de contactos de Mailchimp
-
-
-
+  //const listId = '58371aa183'; // ID de la lista de contactos de Mailchimp-Pero con el codigo no necesitamos. Solo hay una lista.
 
 
 // Function to Fetch Audience Contacts from Mailchimp
@@ -81,7 +81,6 @@ async function fetchAudiences() {
   }
 }
 
-// Ejecucion
 (async () => {
   const audiences = await fetchAudiences(); // Fetch all audiences
   if (audiences.length > 0) {
@@ -90,7 +89,6 @@ async function fetchAudiences() {
     console.log("No audiences found.");
   }
 })();
-
 
 const APP_PASSWORD = process.env.APP_PASSWORD;
 //para enviar de nuestro email proveedor
@@ -137,7 +135,7 @@ async function sendEmails() {
       console.log(`Sending email to ${email}`);
       const name = email.split("@")[0]; // Use the part before '@' as a name
       const htmlTemplate = (getEmailTemplate(name));
-
+      
       const mailOptions = {
         from: '"CodeQuestAPI"<codequestapi@gmail.com>',
         to: email,
@@ -152,7 +150,19 @@ async function sendEmails() {
     console.error("Error sending emails:", error);
   }
 }
+ 
+/*/ Schedule the task to run every Monday at 8 AM
+cron.schedule('0  8* * 2', async () => {
+  console.log('Runn0ing weekly email job...');
+  try {
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Email sent: ', info.response);
+  } catch (error) {
+    console.error('Error sending email: ', error);
+  }
+});*/
 
+console.log('Cron job started. Waiting for next execution...');
 
 const PORT = process.env.PORT || 3000;
 
