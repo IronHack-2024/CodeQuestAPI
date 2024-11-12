@@ -5,8 +5,8 @@ const indexRouter = require('./routes/index');
 const { getRandomQuestion } = require('./services/question.services');
 const bodyParser = require('body-parser');
 const mailchimp = require('@mailchimp/mailchimp_marketing');
-const nodemailer = require("nodemailer");
-
+const nodemailer = require('nodemailer');
+const { getEmailTemplate } = require('./emailtemplate.js');
 
 dotenv.config();
 
@@ -16,29 +16,43 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public')); 
 
+app.use('/', indexRouter);
+
+app.get('/daily-question', async (req, res) => {
+
+	// Obtener la pregunta correspondiente al día
+	const question = await getRandomQuestion();
+
+	// Renderizar la página con la pregunta y las opciones
+	res.render('home', { question });
+
+})
+app.post('/subscribe', async (req, res) => {
+  const email = req.body.email;
+
+  try {
+    const response = await mailchimp.lists.addListMember(listId, {
+      email_address: email,
+      status: 'subscribed',
+    });
+    console.log(`Successfully added contact for the weekly question. ID: ${response.id}`);
+    res.send('Successfully added to our contact list. Thank you for subscribing for a weekly dev question');
+  } catch (error) {
+    console.error(error);
+    res.send('There was an error at subsciption. Please, try again later.');
+  }
+});// añade contacto al audience list y mailchimp comprueba si contacto ya existe. 
+
 const MAILCHIMPKEY = process.env.MAILCHIMPKEY;
 
 mailchimp.setConfig({
 	apiKey: MAILCHIMPKEY, // API key in dotenv
 	server: 'us22', // Prefijo del servidor del API key, final
   });
-  const listId = '58371aa183'; // ID de tu lista de contactos de Mailchimp
+  //const listId = '58371aa183'; // ID de tu lista de contactos de Mailchimp
 
-  app.post('/subscribe', async (req, res) => {
-    const email = req.body.email;
-  
-    try {
-      const response = await mailchimp.lists.addListMember(listId, {
-        email_address: email,
-        status: 'subscribed',
-      });
-      console.log(`Successfully added contact for the weekly question. ID: ${response.id}`);
-      res.send('Successfully added to our contact list. Thank you for subscribing for a weekly dev question');
-    } catch (error) {
-      console.error(error);
-      res.send('There was an error at subsciption. Please, try again later.');
-    }
-  });// añade contacto al audience list y mailchimp comprueba si contacto ya existe. 
+
+
 
 
 // Function to Fetch Audience Contacts from Mailchimp
@@ -78,29 +92,28 @@ async function fetchAudiences() {
 })();
 
 
-const EMAIL_PASSWORD = process.env.EMAIL_PASSWORD;
+const APP_PASSWORD = process.env.APP_PASSWORD;
 //para enviar de nuestro email proveedor
 const transporter = nodemailer.createTransport({
-  service: "Gmail", 
+  service: 'gmail', 
   host: 'smtp.gmail.com', // Replace with your SMTP server
-  port: 587,               // Typically 587 for TLS
-  secure: false,    
+  port: 587,               // 587 for TLS
+  secure: true,    
   auth: {
     user: 'codequestapi@gmail.com',
-    pass: 'EMAIL_PASSWORD',
+    pass: APP_PASSWORD,
   },
 });
 
-function getEmailTemplate(name) {
-  return `
-    <html>
-      <body>
-        <h1>Hello, ${name}!</h1>
-        <p>Welcome to our newsletter TEST. We're excited to have you here!</p>
-      </body>
-    </html>
-  `;
-}
+app.get('/sendEmails', async (req, res) => {
+  try {
+    await sendEmails();
+    res.send("Emails have been successfully sent!");
+  } catch (error) {
+    console.error("Error in /sendEmails route:", error);
+    res.status(500).send("Failed to send emails.");
+  }
+});
 
 async function sendEmails() {
   try {
@@ -121,8 +134,9 @@ async function sendEmails() {
 
     // Loop through contacts and send personalized emails
     for (const email of contacts) {
+      console.log(`Sending email to ${email}`);
       const name = email.split("@")[0]; // Use the part before '@' as a name
-      const htmlTemplate = getEmailTemplate(name);
+      const htmlTemplate = (getEmailTemplate(name));
 
       const mailOptions = {
         from: '"CodeQuestAPI"<codequestapi@gmail.com>',
@@ -138,24 +152,7 @@ async function sendEmails() {
     console.error("Error sending emails:", error);
   }
 }
-(async () => {
-  await sendEmails(); // Call sendEmails directly
-})();
 
-
-
-  
-app.use('/', indexRouter);
-
-app.get('/daily-question', async (req, res) => {
-
-	// Obtener la pregunta correspondiente al día
-	const question = await getRandomQuestion();
-
-	// Renderizar la página con la pregunta y las opciones
-	res.render('home', { question });
-
-})
 
 const PORT = process.env.PORT || 3000;
 
