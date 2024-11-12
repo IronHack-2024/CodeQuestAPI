@@ -135,7 +135,8 @@ async function sendEmails() {
       console.log(`Sending email to ${email}`);
       const name = email.split("@")[0]; // Use the part before '@' as a name
       const htmlTemplate = (getEmailTemplate(name));
-      
+      console.log(htmlTemplate)
+
       const mailOptions = {
         from: '"CodeQuestAPI"<codequestapi@gmail.com>',
         to: email,
@@ -151,18 +152,15 @@ async function sendEmails() {
   }
 }
  
-/*/ Schedule the task to run every Monday at 8 AM
-cron.schedule('0  8* * 2', async () => {
-  console.log('Runn0ing weekly email job...');
-  try {
-    const info = await transporter.sendMail(mailOptions);
-    console.log('Email sent: ', info.response);
-  } catch (error) {
-    console.error('Error sending email: ', error);
-  }
-});*/
 
-console.log('Cron job started. Waiting for next execution...');
+// try {
+//     cron.schedule('* * * * *', () => {
+//         console.log('This runs every minute.');
+//     });
+// } catch (error) {
+//     console.error('Error in cron job:', error.message);
+// }
+// console.log('Cron job started. Waiting for next execution...');
 
 const PORT = process.env.PORT || 3000;
 
