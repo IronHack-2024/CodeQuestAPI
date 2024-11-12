@@ -139,7 +139,7 @@ async function sendEmails() {
       const mailOptions = {
         from: '"CodeQuestAPI"<codequestapi@gmail.com>',
         to: email,
-        subject: "Welcome to Our Newsletter TEST!",
+        subject: "Welcome to Our Weekly Code Quest!",
         html: htmlTemplate,
       };
 
