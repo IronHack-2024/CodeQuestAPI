@@ -45,7 +45,7 @@ const getEmailTemplate = (name) =>{
                         </tr>
                         <tr>
                             <td width="50%" style="background-color: #003407; padding: 20px;">
-                                <img src="./space-invader.png" alt="Space Invader Logo" style="display: block; margin: 0 auto 8px; width: 80px; max-width: 100%; height: auto;">
+                                <img src="https://mcusercontent.com/950aade7ef40ce13abf1178e1/images/910f2a3f-a945-ad20-7944-b850eb069a21.png" alt="Space Invader Logo" style="display: block; margin: 0 auto 8px; width: 80px; max-width: 100%; height: auto;">
                             </td>
                         </tr>                    
                         

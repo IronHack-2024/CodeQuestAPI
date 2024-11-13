@@ -106,7 +106,7 @@ const transporter = nodemailer.createTransport({
 let mailOptions = {
   from: '"CodeQuestAPI"<codequestapi@gmail.com>',
   to: '', // Placeholder, will be updated dynamically
-  subject: "CRON JOB CHECK Welcome to Our Weekly Code Quest!",
+  subject: "Welcome to Our Weekly Code Quest!",
   html: '', // Placeholder, will be updated dynamically
 };
 
@@ -150,7 +150,7 @@ async function sendEmails() {
 app.get('/sendEmails', async (req, res) => {
   try {
 
-   cron.schedule('* 8 * * 3', async () => {
+   cron.schedule('* * * * 3', async () => {
     console.log("Running scheduled weekly email job...");
     await sendEmails();
     res.send("Emails have been successfully sent!");
