@@ -103,8 +103,6 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-
-
 let mailOptions = {
   from: '"CodeQuestAPI"<codequestapi@gmail.com>',
   to: '', // Placeholder, will be updated dynamically
@@ -114,7 +112,6 @@ let mailOptions = {
 
 async function sendEmails() {
   try {
-    console.log('Running weekly email job...');
     // Fetch all audiences to get the first list ID
     const audiences = await fetchAudiences();
     if (!audiences.length) {
@@ -153,8 +150,8 @@ async function sendEmails() {
 app.get('/sendEmails', async (req, res) => {
   try {
 
-   cron.schedule('0 18 * * 3', async () => {
-    console.log("Running scheduled email job...");
+   cron.schedule('* 8 * * 3', async () => {
+    console.log("Running scheduled weekly email job...");
     await sendEmails();
     res.send("Emails have been successfully sent!");
   });
@@ -164,7 +161,7 @@ app.get('/sendEmails', async (req, res) => {
   }
 });
 
-console.log('Cron job started. It will run every Wednesday at 7.23 PM.');
+console.log('Cron job started. It will run every Wednesday at 8 AM.');
 
 
 
