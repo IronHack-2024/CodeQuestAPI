@@ -103,18 +103,18 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-app.get('/sendEmails', async (req, res) => {
-  try {
-    await sendEmails();
-    res.send("Emails have been successfully sent!");
-  } catch (error) {
-    console.error("Error in /sendEmails route:", error);
-    res.status(500).send("Failed to send emails.");
-  }
-});
+
+
+let mailOptions = {
+  from: '"CodeQuestAPI"<codequestapi@gmail.com>',
+  to: '', // Placeholder, will be updated dynamically
+  subject: "CRON JOB CHECK Welcome to Our Weekly Code Quest!",
+  html: '', // Placeholder, will be updated dynamically
+};
 
 async function sendEmails() {
   try {
+    console.log('Running weekly email job...');
     // Fetch all audiences to get the first list ID
     const audiences = await fetchAudiences();
     if (!audiences.length) {
@@ -129,21 +129,18 @@ async function sendEmails() {
       console.log("No contacts found in the audience.");
       return;
     }
-
     // Loop through contacts and send personalized emails
     for (const email of contacts) {
       console.log(`Sending email to ${email}`);
       const name = email.split("@")[0]; // Use the part before '@' as a name
       const htmlTemplate = (getEmailTemplate(name));
-      console.log(htmlTemplate)
+      console.log(htmlTemplate);
 
-      const mailOptions = {
-        from: '"CodeQuestAPI"<codequestapi@gmail.com>',
-        to: email,
-        subject: "Welcome to Our Weekly Code Quest!",
-        html: htmlTemplate,
-      };
+      mailOptions.to = email;
+      mailOptions.html = htmlTemplate;
+      console.log(`MailOptions: ${JSON.stringify(mailOptions)}`);
 
+      
       const info = await transporter.sendMail(mailOptions);
       console.log(`Email sent to ${email}: ${info.response}`);
     }
@@ -151,16 +148,25 @@ async function sendEmails() {
     console.error("Error sending emails:", error);
   }
 }
- 
+ //sending Emails with cron on scheduled time when opening endpoint
 
-// try {
-//     cron.schedule('* * * * *', () => {
-//         console.log('This runs every minute.');
-//     });
-// } catch (error) {
-//     console.error('Error in cron job:', error.message);
-// }
-// console.log('Cron job started. Waiting for next execution...');
+app.get('/sendEmails', async (req, res) => {
+  try {
+
+   cron.schedule('0 18 * * 3', async () => {
+    console.log("Running scheduled email job...");
+    await sendEmails();
+    res.send("Emails have been successfully sent!");
+  });
+  } catch (error) {
+    console.error("Error in /sendEmails route:", error);
+    res.status(500).send("Failed to send emails.");
+  }
+});
+
+console.log('Cron job started. It will run every Wednesday at 7.23 PM.');
+
+
 
 const PORT = process.env.PORT || 3000;
 
