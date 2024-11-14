@@ -145,7 +145,7 @@ const getEmailTemplate = (name, questionRandom) =>{
                                 <p style="margin: 0;">
                                     <a href="#" style="color: #666666; text-decoration: none;">View email in browser</a> | 
                                     <a href="#" style="color: #666666; text-decoration: none;">Update your preferences</a> | 
-                                    <a href="#" style="color: #666666; text-decoration: none;">Unsubscribe</a>
+                                    <a href="https://gmail.us22.list-manage.com/unsubscribe?u=950aade7ef40ce13abf1178e1&id=58371aa183&t=1" style="color: #666666; text-decoration: none;">Unsubscribe</a>
                                 </p>
                             </td>
                         </tr>
