@@ -32,515 +32,624 @@
       </div>
     </nav>
 
-    <!-- Header -->
-    <header
-      class="text-center py-20 bg-gradient-to-r from-blue-400 to-blue-600 text-white"
-    >
-      <h1 class="text-5xl font-bold">CodeQuestAPI</h1>
-      <p class="mt-4 text-xl">
-        The ultimate API for programming questions. Access random and
-        AI-generated questions to enhance your coding skills.
-      </p>
-      <button
-        id="get-started-btn"
-        class="bg-white text-blue-700 px-8 py-3 mt-6 rounded-full interactive-button"
-      >
-        Get Started <i class="fas fa-arrow-right"></i>
-      </button>
-    </header>
-
-    <!-- Subscription Form -->
-    <section class="subscription-section text-center mt-8">
-      <p class="text-lg">Subscribe for new CodeQuestAPI updates</p>
-      <form id="subscription-form" class="mt-4">
-        <input
-          type="email"
-          name="email"
-          id="email-input"
-          placeholder="Enter your email"
-          class="border p-3 rounded"
-          required
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <title>CodeQuestAPI - Full Documentation</title>
+        <link
+          href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+          rel="stylesheet"
         />
-        <button
-          type="submit"
-          class="bg-blue-600 text-white px-6 py-3 rounded interactive-button"
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha384-dyZ88mC6Up2uqS4h/KRgHuouGwBcD4Ng9SiP4dIRy0EXtlnu9v+A8WvYGbJQ7c63"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="landing-page.css" />
+      </head>
+      <body>
+        <!-- Fixed Navigation Bar -->
+        <nav class="fixed-navbar">
+          <div class="navbar-links">
+            <a href="#usage">Usage</a>
+            <a href="#ai-questions">AI Questions</a>
+            <a href="#submit-question">Submit a Question</a>
+            <a href="#daily-question">Daily Question</a>
+            <a href="#template-form">Template Form</a>
+            <a href="#export-questions">Export Questions</a>
+            <a href="#authentication">Authentication</a>
+            <a href="#error-handling">Error Handling</a>
+            <a href="#rate-limits">Rate Limits</a>
+            <a href="#faqs">FAQs</a>
+          </div>
+        </nav>
+
+        <!-- Header -->
+        <header
+          class="text-center py-20 bg-gradient-to-r from-blue-400 to-blue-600 text-white"
         >
-          Subscribe
-        </button>
-      </form>
-    </section>
-
-    <!-- Getting Started Section -->
-    <section
-      id="getting-started"
-      class="container mx-auto mt-20 max-w-4xl px-4"
-    >
-      <h2 class="section-title text-3xl">Getting Started</h2>
-      <p class="text-lg mt-4">
-        Follow these steps to get started with CodeQuestAPI:
-      </p>
-      <ol class="list-decimal pl-5 mt-4 text-lg">
-        <li>
-          If you need access to AI-generated questions, obtain your Gemini API
-          key from the Gemini website.
-        </li>
-        <li>
-          Use the API endpoints described in this documentation to retrieve or
-          submit questions.
-        </li>
-      </ol>
-    </section>
-
-    <!-- Usage Section -->
-    <section id="usage" class="container mx-auto mt-20 max-w-4xl px-4">
-      <h2 class="section-title text-3xl">Usage</h2>
-      <p class="text-lg mt-4">
-        Retrieve a random programming question in JSON format.
-      </p>
-
-      <!-- Endpoint -->
-      <div class="api-box">
-        <strong>GET</strong>
-        <a
-          href="http://localhost:3000/api/v1/questions/random"
-          class="endpoint-link"
-          target="_blank"
-          >http://localhost:3000/api/v1/questions/random</a
-        >
-      </div>
-
-      <p class="text-lg mt-4">Example response:</p>
-      <div class="example-box">
-        <pre>
-{
-  "question": "What is the output of the following code snippet?",
-  "codeExamples": ["console.log(2 + '2');"],
-  "answerOptions": [
-      { "answer": "22", "isCorrect": true },
-      { "answer": "4", "isCorrect": false },
-      { "answer": "2", "isCorrect": false },
-      { "answer": "undefined", "isCorrect": false }
-  ],
-  "explanation": "The '+' operator between a number and a string results in concatenation.",
-  "status": "approved",
-  "urlSource": "https://example.com/reference-to-question"
-}</pre
-        >
-      </div>
-    </section>
-
-    <!-- AI Generated Questions Endpoint Section -->
-    <section id="ai-questions" class="container mx-auto mt-20 max-w-4xl px-4">
-      <h2 class="section-title text-3xl">AI Generated Questions</h2>
-      <p class="text-lg mt-4">
-        Retrieve an AI-generated question based on a specific topic. This
-        endpoint requires a Gemini API key for authentication.
-      </p>
-
-      <!-- Endpoint -->
-      <div class="api-box">
-        <strong>GET</strong>
-        <a
-          href="http://localhost:3000/api/v1/questions/ai"
-          class="endpoint-link"
-          target="_blank"
-          >http://localhost:3000/api/v1/questions/ai</a
-        >
-      </div>
-
-      <p class="text-lg mt-4">Example response:</p>
-      <div class="example-box">
-        <pre>
-{
-  "question": "Explain the concept of closures in JavaScript.",
-  "codeExamples": ["function outer() { let x = 10; function inner() { return x; } return inner; }"],
-  "answerOptions": [
-      { "answer": "A closure gives access to an outer function's scope from an inner function.", "isCorrect": true },
-      { "answer": "Closures are a feature of CSS.", "isCorrect": false },
-      { "answer": "Closures are an error handling technique.", "isCorrect": false },
-      { "answer": "Closures are a type of loop in JavaScript.", "isCorrect": false }
-  ],
-  "explanation": "A closure is created when an inner function accesses the variables of its outer function.",
-  "status": "approved",
-  "urlSource": "https://example.com/js-closures"
-}</pre
-        >
-      </div>
-    </section>
-
-    <!-- Submit New Question Endpoint -->
-    <section
-      id="submit-question"
-      class="container mx-auto mt-20 max-w-4xl px-4"
-    >
-      <h2 class="section-title text-3xl">Submit a New Question</h2>
-      <p class="text-lg mt-4">
-        Submit a new question for review and potential inclusion in the
-        database.
-      </p>
-
-      <!-- Endpoint -->
-      <div class="api-box">
-        <strong>POST</strong>
-        <a
-          href="http://localhost:3000/submit-new-question"
-          class="endpoint-link"
-          target="_blank"
-          >http://localhost:3000/submit-new-question</a
-        >
-      </div>
-
-      <p class="text-lg mt-4">Request body example:</p>
-      <div class="example-box">
-        <pre>
-{
-  "question": "What does 'use strict' do in JavaScript?",
-  "codeExamples": ["'use strict'; function example() { return this; }"],
-  "answerOptions": [
-      { "answer": "Enables strict mode", "isCorrect": true },
-      { "answer": "Disables strict mode", "isCorrect": false },
-      { "answer": "Creates a new scope", "isCorrect": false },
-      { "answer": "Removes this binding", "isCorrect": false }
-  ],
-  "explanation": "Strict mode helps to identify errors and unsafe actions in JavaScript.",
-  "status": "pending",
-  "urlSource": "https://example.com/strict-mode"
-}</pre
-        >
-      </div>
-    </section>
-
-    <!-- Daily Question Endpoint -->
-    <section id="daily-question" class="container mx-auto mt-20 max-w-4xl px-4">
-      <h2 class="section-title text-3xl">Daily Question</h2>
-      <p class="text-lg mt-4">Retrieve the daily featured question.</p>
-
-      <!-- Endpoint -->
-      <div class="api-box">
-        <strong>GET</strong>
-        <a
-          href="http://localhost:3000/daily-question"
-          class="endpoint-link"
-          target="_blank"
-          >http://localhost:3000/daily-question</a
-        >
-      </div>
-    </section>
-
-    <!-- Template Form Endpoint -->
-    <section id="template-form" class="container mx-auto mt-20 max-w-4xl px-4">
-      <h2 class="section-title text-3xl">Template Form</h2>
-      <p class="text-lg mt-4">
-        Access the form to submit a new question template.
-      </p>
-
-      <!-- Endpoint -->
-      <div class="api-box">
-        <strong>GET</strong>
-        <a
-          href="http://localhost:3000/template-form"
-          class="endpoint-link"
-          target="_blank"
-          >http://localhost:3000/template-form</a
-        >
-      </div>
-    </section>
-
-    <!-- Export Questions Endpoint -->
-    <section
-      id="export-questions"
-      class="container mx-auto mt-20 max-w-4xl px-4"
-    >
-      <h2 class="section-title text-3xl">Export Questions</h2>
-      <p class="text-lg mt-4">
-        Export a set of questions for use in educational platforms like Kahoot
-        or Blooket.
-      </p>
-
-      <!-- Endpoint -->
-      <div class="api-box">
-        <strong>GET</strong>
-        <a
-          href="http://localhost:3000/export-questions"
-          class="endpoint-link"
-          target="_blank"
-          >http://localhost:3000/export-questions</a
-        >
-      </div>
-    </section>
-
-    <!-- Authentication Section -->
-    <section id="authentication" class="container mx-auto mt-20 max-w-4xl px-4">
-      <h2 class="section-title text-3xl">Authentication</h2>
-      <p class="text-lg mt-4">
-        To access the AI-generated questions endpoint, include your Gemini API
-        key in the Authorization header. This is only required for AI-related
-        endpoints.
-      </p>
-      <div class="example-box">
-        <pre>Authorization: Bearer YOUR_GEMINI_API_KEY</pre>
-      </div>
-      <p class="text-lg mt-4">Example using cURL:</p>
-      <div class="example-box">
-        <pre>
-curl -H "Authorization: Bearer YOUR_GEMINI_API_KEY" http://localhost:3000/v1/questions/ai</pre
-        >
-      </div>
-      <p class="text-lg mt-4">
-        To obtain an API key for Gemini, follow the instructions provided on the
-        Gemini website.
-      </p>
-    </section>
-
-    <!-- Error Handling Section -->
-    <section id="error-handling" class="container mx-auto mt-20 max-w-4xl px-4">
-      <h2 class="section-title text-3xl">Error Handling</h2>
-      <p class="text-lg mt-4">
-        The CodeQuestAPI returns the following error codes:
-      </p>
-      <ul class="list-disc pl-5 text-lg">
-        <li><strong>400 Bad Request</strong>: Invalid request parameters.</li>
-        <li>
-          <strong>401 Unauthorized</strong>: Missing or invalid Gemini API key.
-          This applies only to the AI-generated questions endpoint.
-        </li>
-        <li>
-          <strong>404 Not Found</strong>: The requested resource does not exist.
-        </li>
-        <li>
-          <strong>429 Too Many Requests</strong>: Rate limit exceeded. Each
-          endpoint has specific rate limits as defined in the documentation.
-        </li>
-        <li>
-          <strong>500 Internal Server Error</strong>: An error occurred on the
-          server.
-        </li>
-      </ul>
-      <p class="text-lg mt-4">
-        For more detailed information on errors and how to troubleshoot, refer
-        to our
-        <a
-          href="https://github.com/codequestapi/error-handling"
-          class="endpoint-link"
-          target="_blank"
-          >Error Handling Guide</a
-        >.
-      </p>
-    </section>
-
-    <!-- Rate Limiting Section -->
-    <section id="rate-limits" class="container mx-auto mt-20 max-w-4xl px-4">
-      <h2 class="section-title text-3xl">Rate Limits</h2>
-      <p class="text-lg mt-4">
-        To ensure fair usage, the API has the following rate limits:
-      </p>
-      <ul class="list-disc pl-5 text-lg">
-        <li>
-          <strong>GET /v1/questions/random</strong>: 20 requests per minute.
-        </li>
-        <li>
-          <strong>GET /v1/questions/ai</strong>: 15 requests per minute.
-          Requires a Gemini API key.
-        </li>
-        <li>
-          <strong>POST /submit-new-question</strong>: 10 requests per minute.
-        </li>
-      </ul>
-      <div class="example-box">
-        <pre>
-{
-  "error": "Rate limit exceeded. Try again in 60 seconds."
-}</pre
-        >
-      </div>
-      <p class="text-lg mt-4">
-        If you require a higher rate limit, please contact us via our
-        <a
-          href="https://github.com/codequestapi/contact"
-          class="endpoint-link"
-          target="_blank"
-          >Contact Page</a
-        >.
-      </p>
-    </section>
-
-    <!-- FAQs Section -->
-    <section id="faqs" class="container mx-auto mt-20 max-w-4xl px-4">
-      <h2 class="section-title text-3xl">FAQs</h2>
-      <p class="text-lg mt-4">
-        Here are some frequently asked questions to help you get started:
-      </p>
-      <ul class="list-disc pl-5 text-lg">
-        <li>
-          <strong>How do I get an API key for AI questions?</strong> Follow the
-          instructions on the Gemini website to obtain your Gemini API key.
-        </li>
-        <li>
-          <strong>What should I do if I exceed the rate limit?</strong> Wait for
-          a minute before making more requests, or contact us to discuss higher
-          rate limits.
-        </li>
-        <li>
-          <strong>Can I contribute new questions?</strong> Yes, you can use the
-          <a
-            href="http://localhost:3000/submit-new-question"
-            class="endpoint-link"
-            target="_blank"
-            >Submit a New Question</a
+          <h1 class="text-5xl font-bold">CodeQuestAPI</h1>
+          <p class="mt-4 text-xl">
+            The ultimate API for programming questions. Access random and
+            AI-generated questions to enhance your coding skills.
+          </p>
+          <button
+            id="get-started-btn"
+            class="bg-white text-blue-700 px-8 py-3 mt-6 rounded-full interactive-button"
           >
-          endpoint to propose new questions.
-        </li>
-        <li>
-          <strong>Where can I find the source code?</strong> You can find the
-          source code and contribute to the project on our
-          <a
-            href="https://github.com/IronHack-2024/CodeQuestAPI"
-            class="endpoint-link"
-            target="_blank"
-            >GitHub repository</a
-          >.
-        </li>
-        <li>
-          <strong>What data formats are supported?</strong> Currently, the API
-          supports JSON responses for all endpoints.
-        </li>
-        <li>
-          <strong>How secure is my API key?</strong> Your Gemini API key should
-          be kept secret. Do not share it publicly or expose it in client-side
-          code. If your key is compromised, revoke it immediately from your
-          Gemini profile settings and generate a new one.
-        </li>
-        <li>
-          <strong>How do I troubleshoot API errors?</strong> Refer to the
-          <a
-            href="https://github.com/codequestapi/error-handling"
-            class="endpoint-link"
-            target="_blank"
-            >Error Handling Guide</a
-          >
-          for detailed steps to diagnose common issues.
-        </li>
-      </ul>
-    </section>
+            Get Started <i class="fas fa-arrow-right"></i>
+          </button>
+        </header>
 
-    <!-- Footer -->
-    <footer class="text-center py-20 mt-20 bg-gray-900 text-white">
-      <p>&copy; 2024 CodeQuestAPI. All rights reserved.</p>
-      <p>
-        For more information, visit our
-        <a
-          href="https://github.com/IronHack-2024/CodeQuestAPI"
-          class="endpoint-link"
-          target="_blank"
-          >GitHub repository</a
-        >.
-      </p>
-      <div class="mt-4">
-        <a
-          href="https://twitter.com/codequestapi"
-          class="endpoint-link text-blue-400 mr-4"
-          ><i class="fab fa-twitter"></i> Twitter</a
+        <!-- Subscription Form -->
+        <section class="subscription-section text-center mt-8">
+          <p class="text-lg">Subscribe for new CodeQuestAPI updates</p>
+          <form id="subscription-form" class="mt-4">
+            <input
+              type="email"
+              name="email"
+              id="email-input"
+              placeholder="Enter your email"
+              class="border p-3 rounded"
+              required
+            />
+            <button
+              type="submit"
+              class="bg-blue-600 text-white px-6 py-3 rounded interactive-button"
+            >
+              Subscribe
+            </button>
+          </form>
+        </section>
+
+        <!-- Getting Started Section -->
+        <section
+          id="getting-started"
+          class="container mx-auto mt-20 max-w-4xl px-4"
         >
-        <a
-          href="https://facebook.com/codequestapi"
-          class="endpoint-link text-blue-700 mr-4"
-          ><i class="fab fa-facebook"></i> Facebook</a
+          <h2 class="section-title text-3xl">Getting Started</h2>
+          <p class="text-lg mt-4">
+            Follow these steps to get started with CodeQuestAPI:
+          </p>
+          <ol class="list-decimal pl-5 mt-4 text-lg">
+            <li>
+              If you need access to AI-generated questions, obtain your Gemini
+              API key from the Gemini website.
+            </li>
+            <li>
+              Use the API endpoints described in this documentation to retrieve
+              or submit questions.
+            </li>
+          </ol>
+        </section>
+
+        <!-- Usage Section -->
+        <section id="usage" class="container mx-auto mt-20 max-w-4xl px-4">
+          <h2 class="section-title text-3xl">Usage</h2>
+          <p class="text-lg mt-4">
+            Retrieve a random programming question in JSON format.
+          </p>
+
+          <!-- Endpoint -->
+          <div class="api-box">
+            <strong>GET</strong>
+            <a
+              href="http://localhost:3000/api/v1/questions/random"
+              class="endpoint-link"
+              target="_blank"
+              >http://localhost:3000/api/v1/questions/random</a
+            >
+          </div>
+
+          <p class="text-lg mt-4">Example response:</p>
+          <div class="example-box">
+            <pre>
+	{
+	  "question": "What is the output of the following code snippet?",
+	  "codeExamples": ["console.log(2 + '2');"],
+	  "answerOptions": [
+		  { "answer": "22", "isCorrect": true },
+		  { "answer": "4", "isCorrect": false },
+		  { "answer": "2", "isCorrect": false },
+		  { "answer": "undefined", "isCorrect": false }
+	  ],
+	  "explanation": "The '+' operator between a number and a string results in concatenation.",
+	  "status": "approved",
+	  "urlSource": "https://example.com/reference-to-question"
+	}</pre
+            >
+          </div>
+
+          <p class="text-lg mt-4">Optional Parameters:</p>
+          <ul class="list-disc pl-5 text-lg">
+            <li>
+              <strong>amount</strong> (optional): The number of questions to
+              retrieve.
+              <br />
+              Example usage: <code>?amount=5</code> to retrieve 5 questions at
+              once.
+            </li>
+          </ul>
+        </section>
+
+        <!-- AI Generated Questions Endpoint Section -->
+        <section
+          id="ai-questions"
+          class="container mx-auto mt-20 max-w-4xl px-4"
         >
-        <a
-          href="https://linkedin.com/company/codequestapi"
-          class="endpoint-link text-blue-600"
-          ><i class="fab fa-linkedin"></i> LinkedIn</a
+          <h2 class="section-title text-3xl">AI Generated Questions</h2>
+          <p class="text-lg mt-4">
+            Retrieve an AI-generated question based on a specific topic. This
+            endpoint requires a Gemini API key for authentication.
+          </p>
+
+          <!-- Endpoint -->
+          <div class="api-box">
+            <strong>GET</strong>
+            <a
+              href="http://localhost:3000/api/v1/questions/ai"
+              class="endpoint-link"
+              target="_blank"
+              >http://localhost:3000/api/v1/questions/ai</a
+            >
+          </div>
+
+          <p class="text-lg mt-4">Example response:</p>
+          <div class="example-box">
+            <pre>
+	{
+	  "question": "Explain the concept of closures in JavaScript.",
+	  "codeExamples": ["function outer() { let x = 10; function inner() { return x; } return inner; }"],
+	  "answerOptions": [
+		  { "answer": "A closure gives access to an outer function's scope from an inner function.", "isCorrect": true },
+		  { "answer": "Closures are a feature of CSS.", "isCorrect": false },
+		  { "answer": "Closures are an error handling technique.", "isCorrect": false },
+		  { "answer": "Closures are a type of loop in JavaScript.", "isCorrect": false }
+	  ],
+	  "explanation": "A closure is created when an inner function accesses the variables of its outer function.",
+	  "status": "approved",
+	  "urlSource": "https://example.com/js-closures"
+	}</pre
+            >
+          </div>
+
+          <p class="text-lg mt-4">Optional Parameters:</p>
+          <ul class="list-disc pl-5 text-lg">
+            <li>
+              <strong>topic</strong> (optional): Specify a topic to generate
+              questions about a specific subject.
+              <br />
+              Example usage: <code>?topic=javascript</code> to get questions
+              about JavaScript.
+            </li>
+            <li>
+              <strong>amount</strong> (optional): The number of AI-generated
+              questions to retrieve.
+              <br />
+              Example usage: <code>?amount=3</code> to retrieve 3 AI-generated
+              questions.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Submit New Question Endpoint -->
+        <section
+          id="submit-question"
+          class="container mx-auto mt-20 max-w-4xl px-4"
         >
-      </div>
-    </footer>
+          <h2 class="section-title text-3xl">Submit a New Question</h2>
+          <p class="text-lg mt-4">
+            Submit a new question for review and potential inclusion in the
+            database.
+          </p>
 
-    <!-- JavaScript for Interactive Elements -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document
-          .getElementById("get-started-btn")
-          .addEventListener("click", function () {
-            scrollToSection("getting-started");
-          });
-      });
+          <!-- Endpoint -->
+          <div class="api-box">
+            <strong>POST</strong>
+            <a
+              href="http://localhost:3000/submit-new-question"
+              class="endpoint-link"
+              target="_blank"
+              >http://localhost:3000/submit-new-question</a
+            >
+          </div>
 
-      // Scroll to section function
-      function scrollToSection(id) {
-        const element = document.getElementById(id);
-        if (element) {
-          const yOffset = -80; // Adjust this value according to your navbar height
-          const y =
-            element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-          window.scrollTo({ top: y, behavior: "smooth" });
-        }
-      }
+          <p class="text-lg mt-4">Request body example:</p>
+          <div class="example-box">
+            <pre>
+	{
+	  "question": "What does 'use strict' do in JavaScript?",
+	  "codeExamples": ["'use strict'; function example() { return this; }"],
+	  "answerOptions": [
+		  { "answer": "Enables strict mode", "isCorrect": true },
+		  { "answer": "Disables strict mode", "isCorrect": false },
+		  { "answer": "Creates a new scope", "isCorrect": false },
+		  { "answer": "Removes this binding", "isCorrect": false }
+	  ],
+	  "explanation": "Strict mode helps to identify errors and unsafe actions in JavaScript.",
+	  "status": "pending",
+	  "urlSource": "https://example.com/strict-mode"
+	}</pre
+            >
+          </div>
+        </section>
 
-      // Navbar active link update on scroll
-      document.addEventListener("scroll", () => {
-        const sections = document.querySelectorAll("section");
-        const links = document.querySelectorAll(".navbar-links a");
-        let currentSection = "";
+        <!-- Daily Question Endpoint -->
+        <section
+          id="daily-question"
+          class="container mx-auto mt-20 max-w-4xl px-4"
+        >
+          <h2 class="section-title text-3xl">Daily Question</h2>
+          <p class="text-lg mt-4">Retrieve the daily featured question.</p>
 
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop - 100;
-          if (window.scrollY >= sectionTop) {
-            currentSection = section.getAttribute("id");
-          }
-        });
+          <!-- Endpoint -->
+          <div class="api-box">
+            <strong>GET</strong>
+            <a
+              href="http://localhost:3000/daily-question"
+              class="endpoint-link"
+              target="_blank"
+              >http://localhost:3000/daily-question</a
+            >
+          </div>
+        </section>
 
-        links.forEach((link) => {
-          link.classList.remove("active-link");
-          if (link.getAttribute("href").substring(1) === currentSection) {
-            link.classList.add("active-link");
-          }
-        });
-      });
+        <!-- Template Form Endpoint -->
+        <section
+          id="template-form"
+          class="container mx-auto mt-20 max-w-4xl px-4"
+        >
+          <h2 class="section-title text-3xl">Template Form</h2>
+          <p class="text-lg mt-4">
+            Access the form to submit a new question template.
+          </p>
 
-      // Subscription form submission
-      document
-        .getElementById("subscription-form")
-        .addEventListener("submit", function (e) {
-          e.preventDefault(); // Prevent default form submission
-          const email = e.target.elements.email.value;
-          if (email) {
-            // Send POST request to subscription endpoint
-            fetch("/subscribe", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({ email: email }),
-            })
-              .then((response) => response.json())
-              .then((data) => {
-                if (data.success) {
-                  showToast("Thank you for subscribing!");
-                  e.target.reset();
-                } else {
-                  showToast("Subscription failed. Please try again.");
-                }
-              })
-              .catch((error) => {
-                showToast("An error occurred. Please try again.");
+          <!-- Endpoint -->
+          <div class="api-box">
+            <strong>GET</strong>
+            <a
+              href="http://localhost:3000/template-form"
+              class="endpoint-link"
+              target="_blank"
+              >http://localhost:3000/template-form</a
+            >
+          </div>
+        </section>
+
+        <!-- Export Questions Endpoint -->
+        <section
+          id="export-questions"
+          class="container mx-auto mt-20 max-w-4xl px-4"
+        >
+          <h2 class="section-title text-3xl">Export Questions</h2>
+          <p class="text-lg mt-4">
+            Export a set of questions for use in educational platforms like
+            Kahoot or Blooket.
+          </p>
+
+          <!-- Endpoint -->
+          <div class="api-box">
+            <strong>GET</strong>
+            <a
+              href="http://localhost:3000/export-questions"
+              class="endpoint-link"
+              target="_blank"
+              >http://localhost:3000/export-questions</a
+            >
+          </div>
+
+          <p class="text-lg mt-4">Optional Parameters:</p>
+          <ul class="list-disc pl-5 text-lg">
+            <li>
+              <strong>format</strong> (optional): Specify the format for
+              exporting questions (e.g., JSON, CSV).
+              <br />
+              Example usage: <code>?format=csv</code> to export questions in CSV
+              format.
+            </li>
+            <li>
+              <strong>amount</strong> (optional): The number of questions to
+              export.
+              <br />
+              Example usage: <code>?amount=10</code> to export 10 questions.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Authentication Section -->
+        <section
+          id="authentication"
+          class="container mx-auto mt-20 max-w-4xl px-4"
+        >
+          <h2 class="section-title text-3xl">Authentication</h2>
+          <p class="text-lg mt-4">
+            To access the AI-generated questions endpoint, include your Gemini
+            API key in the Authorization header. This is only required for
+            AI-related endpoints.
+          </p>
+          <div class="example-box">
+            <pre>Authorization: Bearer YOUR_GEMINI_API_KEY</pre>
+          </div>
+          <p class="text-lg mt-4">Example using cURL:</p>
+          <div class="example-box">
+            <pre>
+	curl -H "Authorization: Bearer YOUR_GEMINI_API_KEY" http://localhost:3000/v1/questions/ai</pre
+            >
+          </div>
+          <p class="text-lg mt-4">
+            To obtain an API key for Gemini, follow the instructions provided on
+            the Gemini website.
+          </p>
+        </section>
+
+        <!-- Error Handling Section -->
+        <section
+          id="error-handling"
+          class="container mx-auto mt-20 max-w-4xl px-4"
+        >
+          <h2 class="section-title text-3xl">Error Handling</h2>
+          <p class="text-lg mt-4">
+            The CodeQuestAPI returns the following error codes:
+          </p>
+          <ul class="list-disc pl-5 text-lg">
+            <li>
+              <strong>400 Bad Request</strong>: Invalid request parameters.
+            </li>
+            <li>
+              <strong>401 Unauthorized</strong>: Missing or invalid Gemini API
+              key. This applies only to the AI-generated questions endpoint.
+            </li>
+            <li>
+              <strong>404 Not Found</strong>: The requested resource does not
+              exist.
+            </li>
+            <li>
+              <strong>429 Too Many Requests</strong>: Rate limit exceeded. Each
+              endpoint has specific rate limits as defined in the documentation.
+            </li>
+            <li>
+              <strong>500 Internal Server Error</strong>: An error occurred on
+              the server.
+            </li>
+          </ul>
+          <p class="text-lg mt-4">
+            For more detailed information on errors and how to troubleshoot,
+            refer to our
+            <a
+              href="https://github.com/codequestapi/error-handling"
+              class="endpoint-link"
+              target="_blank"
+              >Error Handling Guide</a
+            >.
+          </p>
+        </section>
+
+        <!-- Rate Limiting Section -->
+        <section
+          id="rate-limits"
+          class="container mx-auto mt-20 max-w-4xl px-4"
+        >
+          <h2 class="section-title text-3xl">Rate Limits</h2>
+          <p class="text-lg mt-4">
+            To ensure fair usage, the API has the following rate limits:
+          </p>
+          <ul class="list-disc pl-5 text-lg">
+            <li>
+              <strong>GET /v1/questions/random</strong>: 20 requests per minute.
+            </li>
+            <li>
+              <strong>GET /v1/questions/ai</strong>: 15 requests per minute.
+              Requires a Gemini API key.
+            </li>
+            <li>
+              <strong>POST /submit-new-question</strong>: 10 requests per
+              minute.
+            </li>
+          </ul>
+          <div class="example-box">
+            <pre>
+	{
+	  "error": "Rate limit exceeded. Try again in 60 seconds."
+	}</pre
+            >
+          </div>
+          <p class="text-lg mt-4">
+            If you require a higher rate limit, please contact us via our
+            <a
+              href="https://github.com/codequestapi/contact"
+              class="endpoint-link"
+              target="_blank"
+              >Contact Page</a
+            >.
+          </p>
+        </section>
+
+        <!-- FAQs Section -->
+        <section id="faqs" class="container mx-auto mt-20 max-w-4xl px-4">
+          <h2 class="section-title text-3xl">FAQs</h2>
+          <p class="text-lg mt-4">
+            Here are some frequently asked questions to help you get started:
+          </p>
+          <ul class="list-disc pl-5 text-lg">
+            <li>
+              <strong>How do I get an API key for AI questions?</strong> Follow
+              the instructions on the Gemini website to obtain your Gemini API
+              key.
+            </li>
+            <li>
+              <strong>What should I do if I exceed the rate limit?</strong> Wait
+              for a minute before making more requests, or contact us to discuss
+              higher rate limits.
+            </li>
+            <li>
+              <strong>Can I contribute new questions?</strong> Yes, you can use
+              the
+              <a
+                href="http://localhost:3000/submit-new-question"
+                class="endpoint-link"
+                target="_blank"
+                >Submit a New Question</a
+              >
+              endpoint to propose new questions.
+            </li>
+            <li>
+              <strong>Where can I find the source code?</strong> You can find
+              the source code and contribute to the project on our
+              <a
+                href="https://github.com/IronHack-2024/CodeQuestAPI"
+                class="endpoint-link"
+                target="_blank"
+                >GitHub repository</a
+              >.
+            </li>
+            <li>
+              <strong>What data formats are supported?</strong> Currently, the
+              API supports JSON responses for all endpoints.
+            </li>
+            <li>
+              <strong>How secure is my API key?</strong> Your Gemini API key
+              should be kept secret. Do not share it publicly or expose it in
+              client-side code. If your key is compromised, revoke it
+              immediately from your Gemini profile settings and generate a new
+              one.
+            </li>
+            <li>
+              <strong>How do I troubleshoot API errors?</strong> Refer to the
+              <a
+                href="https://github.com/codequestapi/error-handling"
+                class="endpoint-link"
+                target="_blank"
+                >Error Handling Guide</a
+              >
+              for detailed steps to diagnose common issues.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-20 mt-20 bg-gray-900 text-white">
+          <p>&copy; 2024 CodeQuestAPI. All rights reserved.</p>
+          <p>
+            For more information, visit our
+            <a
+              href="https://github.com/IronHack-2024/CodeQuestAPI"
+              class="endpoint-link"
+              target="_blank"
+              >GitHub repository</a
+            >.
+          </p>
+          <div class="mt-4">
+            <a
+              href="https://twitter.com/codequestapi"
+              class="endpoint-link text-blue-400 mr-4"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+            <a
+              href="https://facebook.com/codequestapi"
+              class="endpoint-link text-blue-700 mr-4"
+              ><i class="fab fa-facebook"></i> Facebook</a
+            >
+            <a
+              href="https://linkedin.com/company/codequestapi"
+              class="endpoint-link text-blue-600"
+              ><i class="fab fa-linkedin"></i> LinkedIn</a
+            >
+          </div>
+        </footer>
+
+        <!-- JavaScript for Interactive Elements -->
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            document
+              .getElementById("get-started-btn")
+              .addEventListener("click", function () {
+                scrollToSection("getting-started");
               });
-          } else {
-            showToast("Please enter a valid email address.");
-          }
-        });
+          });
 
-      // Toast notification function
-      function showToast(message) {
-        const toast = document.createElement("div");
-        toast.className = "toast show";
-        toast.innerText = message;
-        document.body.appendChild(toast);
-        setTimeout(function () {
-          toast.classList.remove("show");
-          setTimeout(function () {
-            document.body.removeChild(toast);
-          }, 500);
-        }, 3000);
-      }
-    </script>
+          // Scroll to section function
+          function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+              const yOffset = -80; // Adjust this value according to your navbar height
+              const y =
+                element.getBoundingClientRect().top +
+                window.pageYOffset +
+                yOffset;
+              window.scrollTo({ top: y, behavior: "smooth" });
+            }
+          }
+
+          // Navbar active link update on scroll
+          document.addEventListener("scroll", () => {
+            const sections = document.querySelectorAll("section");
+            const links = document.querySelectorAll(".navbar-links a");
+            let currentSection = "";
+
+            sections.forEach((section) => {
+              const sectionTop = section.offsetTop - 100;
+              if (window.scrollY >= sectionTop) {
+                currentSection = section.getAttribute("id");
+              }
+            });
+
+            links.forEach((link) => {
+              link.classList.remove("active-link");
+              if (link.getAttribute("href").substring(1) === currentSection) {
+                link.classList.add("active-link");
+              }
+            });
+          });
+
+          // Subscription form submission
+          document
+            .getElementById("subscription-form")
+            .addEventListener("submit", function (e) {
+              e.preventDefault(); // Prevent default form submission
+              const email = e.target.elements.email.value;
+              if (email) {
+                // Send POST request to subscription endpoint
+                fetch("/subscribe", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify({ email: email }),
+                })
+                  .then((response) => response.json())
+                  .then((data) => {
+                    if (data.success) {
+                      showToast("Thank you for subscribing!");
+                      e.target.reset();
+                    } else {
+                      showToast("Subscription failed. Please try again.");
+                    }
+                  })
+                  .catch((error) => {
+                    showToast("An error occurred. Please try again.");
+                  });
+              } else {
+                showToast("Please enter a valid email address.");
+              }
+            });
+
+          // Toast notification function
+          function showToast(message) {
+            const toast = document.createElement("div");
+            toast.className = "toast show";
+            toast.innerText = message;
+            document.body.appendChild(toast);
+            setTimeout(function () {
+              toast.classList.remove("show");
+              setTimeout(function () {
+                document.body.removeChild(toast);
+              }, 500);
+            }, 3000);
+          }
+        </script>
+      </body>
+    </html>
   </body>
 </html>
