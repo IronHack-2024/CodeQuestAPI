@@ -10,127 +10,15 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha384-DyZ88mC6Up2uqSg1HZ6U4Ps1L1ecvD3u9z7Ma7uH4uVnK6HEbF6zjTKhz5enJH0e"
+      integrity="sha384-dyZ88mC6Up2uqS4h/KRgHuouGwBcD4Ng9SiP4dIRy0EXtlnu9v+A8WvYGbJQ7c63"
       crossorigin="anonymous"
     />
-    <style>
-      body {
-        font-family: "Roboto", sans-serif;
-        scroll-behavior: smooth;
-        background: linear-gradient(to bottom, #ffffff, #f0f4f8);
-        color: #333;
-      }
-      .section-title {
-        color: #ff5733;
-        font-weight: bold;
-      }
-      .api-box {
-        border: 1px solid #ccc;
-        padding: 20px;
-        margin: 20px 0;
-        border-radius: 10px;
-        background-color: #ffffff;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s;
-      }
-      .api-box:hover {
-        transform: scale(1.03);
-      }
-      .example-box {
-        background-color: #444;
-        color: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        font-family: monospace;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        overflow-x: auto;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-      }
-      .endpoint-link {
-        color: #ff5733;
-        text-decoration: underline;
-        cursor: pointer;
-        transition: color 0.3s;
-      }
-      .endpoint-link:hover {
-        color: #d84315;
-      }
-      .interactive-button {
-        transition: background-color 0.3s, transform 0.3s;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      .interactive-button:hover {
-        background-color: #0056b3;
-        transform: scale(1.05);
-      }
-      .fixed-navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.95);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        padding: 15px 30px;
-      }
-      .navbar-links {
-        display: flex;
-        justify-content: center;
-        gap: 25px;
-      }
-      .navbar-links a {
-        color: #333;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s;
-      }
-      .navbar-links a:hover {
-        color: #ff5733;
-      }
-      .active-link {
-        color: #ff5733;
-      }
-      .subscription-section input[type="email"] {
-        transition: box-shadow 0.3s;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-      }
-      .subscription-section input[type="email"]:focus {
-        box-shadow: 0 0 10px rgba(66, 153, 225, 0.5);
-        outline: none;
-      }
-      .toast {
-        position: fixed;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #333;
-        color: #fff;
-        padding: 15px 25px;
-        border-radius: 5px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        opacity: 0;
-        transition: opacity 0.5s, bottom 0.5s;
-        z-index: 1002;
-      }
-      .toast.show {
-        opacity: 1;
-        bottom: 40px;
-      }
-    </style>
+    <link rel="stylesheet" href="landing-page.css" />
   </head>
   <body>
     <!-- Fixed Navigation Bar -->
     <nav class="fixed-navbar">
       <div class="navbar-links">
-        <a href="#getting-started">Getting Started</a>
         <a href="#usage">Usage</a>
         <a href="#ai-questions">AI Questions</a>
         <a href="#submit-question">Submit a Question</a>
@@ -154,28 +42,32 @@
         AI-generated questions to enhance your coding skills.
       </p>
       <button
-        onclick="document.getElementById('getting-started').scrollIntoView({behavior: 'smooth'});"
+        id="get-started-btn"
         class="bg-white text-blue-700 px-8 py-3 mt-6 rounded-full interactive-button"
       >
         Get Started <i class="fas fa-arrow-right"></i>
       </button>
     </header>
 
-    <!-- Subscription Form (optional) -->
+    <!-- Subscription Form -->
     <section class="subscription-section text-center mt-8">
       <p class="text-lg">Subscribe for new CodeQuestAPI updates</p>
-      <div class="mt-4">
+      <form id="subscription-form" class="mt-4">
         <input
           type="email"
+          name="email"
+          id="email-input"
           placeholder="Enter your email"
           class="border p-3 rounded"
+          required
         />
         <button
+          type="submit"
           class="bg-blue-600 text-white px-6 py-3 rounded interactive-button"
         >
           Subscribe
         </button>
-      </div>
+      </form>
     </section>
 
     <!-- Getting Started Section -->
@@ -210,10 +102,10 @@
       <div class="api-box">
         <strong>GET</strong>
         <a
-          href="http://localhost:3000/v1/questions/random"
+          href="http://localhost:3000/api/v1/questions/random"
           class="endpoint-link"
           target="_blank"
-          >http://localhost:3000/v1/questions/random</a
+          >http://localhost:3000/api/v1/questions/random</a
         >
       </div>
 
@@ -249,10 +141,10 @@
       <div class="api-box">
         <strong>GET</strong>
         <a
-          href="http://localhost:3000/v1/questions/ai"
+          href="http://localhost:3000/api/v1/questions/ai"
           class="endpoint-link"
           target="_blank"
-          >http://localhost:3000/v1/questions/ai</a
+          >http://localhost:3000/api/v1/questions/ai</a
         >
       </div>
 
@@ -564,6 +456,26 @@ curl -H "Authorization: Bearer YOUR_GEMINI_API_KEY" http://localhost:3000/v1/que
 
     <!-- JavaScript for Interactive Elements -->
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("get-started-btn")
+          .addEventListener("click", function () {
+            scrollToSection("getting-started");
+          });
+      });
+
+      // Scroll to section function
+      function scrollToSection(id) {
+        const element = document.getElementById(id);
+        if (element) {
+          const yOffset = -80; // Adjust this value according to your navbar height
+          const y =
+            element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }
+
+      // Navbar active link update on scroll
       document.addEventListener("scroll", () => {
         const sections = document.querySelectorAll("section");
         const links = document.querySelectorAll(".navbar-links a");
@@ -583,6 +495,52 @@ curl -H "Authorization: Bearer YOUR_GEMINI_API_KEY" http://localhost:3000/v1/que
           }
         });
       });
+
+      // Subscription form submission
+      document
+        .getElementById("subscription-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Prevent default form submission
+          const email = e.target.elements.email.value;
+          if (email) {
+            // Send POST request to subscription endpoint
+            fetch("/subscribe", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ email: email }),
+            })
+              .then((response) => response.json())
+              .then((data) => {
+                if (data.success) {
+                  showToast("Thank you for subscribing!");
+                  e.target.reset();
+                } else {
+                  showToast("Subscription failed. Please try again.");
+                }
+              })
+              .catch((error) => {
+                showToast("An error occurred. Please try again.");
+              });
+          } else {
+            showToast("Please enter a valid email address.");
+          }
+        });
+
+      // Toast notification function
+      function showToast(message) {
+        const toast = document.createElement("div");
+        toast.className = "toast show";
+        toast.innerText = message;
+        document.body.appendChild(toast);
+        setTimeout(function () {
+          toast.classList.remove("show");
+          setTimeout(function () {
+            document.body.removeChild(toast);
+          }, 500);
+        }, 3000);
+      }
     </script>
   </body>
 </html>

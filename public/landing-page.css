@@ -1,0 +1,114 @@
+body {
+	font-family: "Roboto", sans-serif;
+	scroll-behavior: smooth;
+	background: linear-gradient(to bottom, #ffffff, #f0f4f8);
+	color: #333;
+}
+.section-title {
+	color: #ff5733;
+	font-weight: bold;
+}
+.api-box {
+	border: 1px solid #ccc;
+	padding: 20px;
+	margin: 20px 0;
+	border-radius: 10px;
+	background-color: #ffffff;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s;
+}
+.api-box:hover {
+	transform: scale(1.03);
+}
+.example-box {
+	background-color: #444;
+	color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	font-family: monospace;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	overflow-x: auto;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+.endpoint-link {
+	color: #ff5733;
+	text-decoration: underline;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+.endpoint-link:hover {
+	color: #d84315;
+}
+.interactive-button {
+	transition:
+		background-color 0.3s,
+		transform 0.3s;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.interactive-button:hover {
+	background-color: #0056b3;
+	transform: scale(1.05);
+}
+.fixed-navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.95);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+	padding: 15px 30px;
+}
+.navbar-links {
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+}
+.navbar-links a {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s;
+}
+.navbar-links a:hover {
+	color: #ff5733;
+}
+.active-link {
+	color: #ff5733;
+}
+.subscription-section input[type="email"] {
+	transition: box-shadow 0.3s;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+.subscription-section input[type="email"]:focus {
+	box-shadow: 0 0 10px rgba(66, 153, 225, 0.5);
+	outline: none;
+}
+.toast {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #333;
+	color: #fff;
+	padding: 15px 25px;
+	border-radius: 5px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	opacity: 0;
+	transition:
+		opacity 0.5s,
+		bottom 0.5s;
+	z-index: 1002;
+}
+.toast.show {
+	opacity: 1;
+	bottom: 40px;
+}
