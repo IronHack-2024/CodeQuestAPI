@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodeQuestAPI - Full Documentation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .section-title {
+        color: #ff5733;
+        font-weight: bold;
+      }
+      .api-box {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        background-color: #f7f7f7;
+      }
+      .example-box {
+        background-color: #333;
+        color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        font-family: monospace;
+      }
+      .endpoint-link {
+        color: #ff5733;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="text-center py-10">
+      <h1 class="text-4xl font-bold text-blue-600">CodeQuestAPI</h1>
+      <p class="mt-4 text-lg">
+        The ultimate API for programming questions. Access random and
+        AI-generated questions to enhance your coding skills.
+      </p>
+    </header>
+
+    <!-- Subscribe Section -->
+    <section class="text-center mt-8">
+      <p>Subscribe for new CodeQuestAPI updates</p>
+      <input
+        type="email"
+        placeholder="Enter your email"
+        class="border p-2 rounded"
+      />
+      <button class="bg-blue-600 text-white px-4 py-2 rounded">
+        Subscribe
+      </button>
+    </section>
+
+    <!-- Usage Section -->
+    <section class="container mx-auto mt-10 max-w-4xl px-4">
+      <h2 class="section-title text-2xl">Usage</h2>
+      <p>Retrieve a random programming question in JSON format.</p>
+
+      <!-- Endpoint -->
+      <div class="api-box">
+        <strong>GET</strong>
+        <a
+          href="http://localhost:3000/api/v1/questions/random"
+          class="endpoint-link"
+          target="_blank"
+          >http://localhost:3000/api/v1/questions/random</a
+        >
+      </div>
+
+      <p>Example response:</p>
+      <div class="example-box">
+        <pre>
+{
+  "question": "What is the output of the following code snippet?",
+  "codeExamples": ["console.log(2 + '2');"],
+  "answerOptions": [
+      { "answer": "22", "isCorrect": true },
+      { "answer": "4", "isCorrect": false },
+      { "answer": "2", "isCorrect": false },
+      { "answer": "undefined", "isCorrect": false }
+  ],
+  "explanation": "The '+' operator between a number and a string results in concatenation.",
+  "status": "approved",
+  "urlSource": "https://example.com/reference-to-question"
+}</pre
+        >
+      </div>
+    </section>
+
+    <!-- AI Generated Questions Endpoint Section -->
+    <section class="container mx-auto mt-10 max-w-4xl px-4">
+      <h2 class="section-title text-2xl">AI Generated Questions</h2>
+      <p>Retrieve an AI-generated question based on a specific topic.</p>
+
+      <!-- Endpoint -->
+      <div class="api-box">
+        <strong>GET</strong>
+        <a
+          href="http://localhost:3000/api/v1/questions/ai"
+          class="endpoint-link"
+          target="_blank"
+          >http://localhost:3000/api/v1/questions/ai</a
+        >
+      </div>
+
+      <p>Example response:</p>
+      <div class="example-box">
+        <pre>
+{
+  "question": "Explain the concept of closures in JavaScript.",
+  "codeExamples": ["function outer() { let x = 10; function inner() { return x; } return inner; }"],
+  "answerOptions": [
+      { "answer": "A closure gives access to an outer function's scope from an inner function.", "isCorrect": true },
+      { "answer": "Closures are a feature of CSS.", "isCorrect": false },
+      { "answer": "Closures are an error handling technique.", "isCorrect": false },
+      { "answer": "Closures are a type of loop in JavaScript.", "isCorrect": false }
+  ],
+  "explanation": "A closure is created when an inner function accesses the variables of its outer function.",
+  "status": "approved",
+  "urlSource": "https://example.com/js-closures"
+}</pre
+        >
+      </div>
+    </section>
+
+    <!-- Submit New Question Endpoint -->
+    <section class="container mx-auto mt-10 max-w-4xl px-4">
+      <h2 class="section-title text-2xl">Submit a New Question</h2>
+      <p>
+        Submit a new question for review and potential inclusion in the
+        database.
+      </p>
+
+      <!-- Endpoint -->
+      <div class="api-box">
+        <strong>POST</strong>
+        <a
+          href="http://localhost:3000/submit-new-question"
+          class="endpoint-link"
+          target="_blank"
+          >http://localhost:3000/submit-new-question</a
+        >
+      </div>
+
+      <p>Request body example:</p>
+      <div class="example-box">
+        <pre>
+{
+  "question": "What does 'use strict' do in JavaScript?",
+  "codeExamples": ["'use strict'; function example() { return this; }"],
+  "answerOptions": [
+      { "answer": "Enables strict mode", "isCorrect": true },
+      { "answer": "Disables strict mode", "isCorrect": false },
+      { "answer": "Creates a new scope", "isCorrect": false },
+      { "answer": "Removes this binding", "isCorrect": false }
+  ],
+  "explanation": "Strict mode helps to identify errors and unsafe actions in JavaScript.",
+  "status": "pending",
+  "urlSource": "https://example.com/strict-mode"
+}</pre
+        >
+      </div>
+    </section>
+
+    <!-- Daily Question Endpoint -->
+    <section class="container mx-auto mt-10 max-w-4xl px-4">
+      <h2 class="section-title text-2xl">Daily Question</h2>
+      <p>Retrieve the daily featured question.</p>
+
+      <!-- Endpoint -->
+      <div class="api-box">
+        <strong>GET</strong>
+        <a
+          href="http://localhost:3000/daily-question"
+          class="endpoint-link"
+          target="_blank"
+          >http://localhost:3000/daily-question</a
+        >
+      </div>
+    </section>
+
+    <!-- Template Form Endpoint -->
+    <section class="container mx-auto mt-10 max-w-4xl px-4">
+      <h2 class="section-title text-2xl">Template Form</h2>
+      <p>Access the form to submit a new question template.</p>
+
+      <!-- Endpoint -->
+      <div class="api-box">
+        <strong>GET</strong>
+        <a
+          href="http://localhost:3000/template-form"
+          class="endpoint-link"
+          target="_blank"
+          >http://localhost:3000/template-form</a
+        >
+      </div>
+    </section>
+
+    <!-- Export Questions Endpoint -->
+    <section class="container mx-auto mt-10 max-w-4xl px-4">
+      <h2 class="section-title text-2xl">Export Questions</h2>
+      <p>
+        Export a set of questions for use in educational platforms like Kahoot
+        or Blooket.
+      </p>
+
+      <!-- Endpoint -->
+      <div class="api-box">
+        <strong>GET</strong>
+        <a
+          href="http://localhost:3000/export-questions"
+          class="endpoint-link"
+          target="_blank"
+          >http://localhost:3000/export-questions</a
+        >
+      </div>
+    </section>
+
+    <!-- Authentication Section -->
+    <section class="container mx-auto mt-10 max-w-4xl px-4">
+      <h2 class="section-title text-2xl">Authentication</h2>
+      <p>
+        To access the API, include your API key in the Authorization header:
+      </p>
+      <div class="example-box">
+        <pre>Authorization: Bearer YOUR_API_KEY</pre>
+      </div>
+
+      <h3 class="text-xl mt-4 font-semibold">Example Usage:</h3>
+
+      <h4 class="text-lg font-bold mt-4">Postman</h4>
+      <p class="mt-2">
+        1. Open Postman and select the request method (e.g.,
+        <strong>GET</strong>).
+      </p>
+      <p>
+        2. Enter the request URL (e.g.,
+        <code>http://localhost:3000/v1/questions/random</code>).
+      </p>
+      <p>3. Go to the <strong>Headers</strong> tab.</p>
+      <p>
+        4. Add a new header with the name <code>Authorization</code> and value
+        <code>Bearer YOUR_API_KEY</code>.
+      </p>
+
+      <h4 class="text-lg font-bold mt-4">JavaScript (Fetch API)</h4>
+      <div class="example-box">
+        <pre>
+fetch("http://localhost:3000/v1/questions/random", {
+    method: "GET",
+    headers: {
+        "Authorization": "Bearer YOUR_API_KEY"
+    }
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error("Error:", error));</pre
+        >
+      </div>
+
+      <h4 class="text-lg font-bold mt-4">cURL</h4>
+      <div class="example-box">
+        <pre>
+curl -X GET "http://localhost:3000/v1/questions/random" -H "Authorization: Bearer YOUR_API_KEY"</pre
+        >
+      </div>
+    </section>
+
+    <!-- Error Handling Section -->
+    <section class="container mx-auto mt-10 max-w-4xl px-4">
+      <h2 class="section-title text-2xl">Error Handling</h2>
+      <p>The CodeQuestAPI returns the following error codes:</p>
+      <ul class="list-disc pl-5">
+        <li><strong>400 Bad Request</strong>: Invalid request parameters.</li>
+        <li><strong>401 Unauthorized</strong>: Missing or invalid API key.</li>
+        <li>
+          <strong>404 Not Found</strong>: The requested resource does not exist.
+        </li>
+        <li>
+          <strong>429 Too Many Requests</strong>: Rate limit exceeded. Each
+          endpoint has specific rate limits as defined in the documentation.
+        </li>
+        <li>
+          <strong>500 Internal Server Error</strong>: An error occurred on the
+          server.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Rate Limiting Section -->
+    <section class="container mx-auto mt-10 max-w-4xl px-4">
+      <h2 class="section-title text-2xl">Rate Limits</h2>
+      <p>To ensure fair usage, the API has the following rate limits:</p>
+      <ul class="list-disc pl-5">
+        <li>
+          <strong>GET /v1/questions/random</strong>: 20 requests per minute.
+        </li>
+        <li><strong>GET /v1/questions/ai</strong>: 15 requests per minute.</li>
+        <li>
+          <strong>POST /submit-new-question</strong>: 10 requests per minute.
+        </li>
+      </ul>
+      <div class="example-box">
+        <pre>
+{
+  "error": "Rate limit exceeded. Try again in 60 seconds."
+}</pre
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-10 mt-10 bg-gray-800 text-white">
+      <p>&copy; 2024 CodeQuestAPI. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
