@@ -10,7 +10,6 @@ const getRandomQuestion = async (amount) => {
 };
 
 
-
 module.exports = {
 	getRandomQuestion
 }

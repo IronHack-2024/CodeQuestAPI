@@ -8,6 +8,7 @@ const mailchimp = require('@mailchimp/mailchimp_marketing');
 const nodemailer = require('nodemailer');
 const { getEmailTemplate } = require('./emailtemplate.js');
 const cron = require('node-cron');
+const Questions = require('./models/question.model.js');
 
 dotenv.config();
 
@@ -45,6 +46,8 @@ app.post('/subscribe', async (req, res) => {
     res.send('There was an error at subsciption. Please, try again later.');
   }
 });// añade contacto al audience list y mailchimp comprueba si contacto ya existe. 
+
+
 
 const MAILCHIMPKEY = process.env.MAILCHIMPKEY;
 
@@ -110,7 +113,23 @@ let mailOptions = {
   html: '', // Placeholder, will be updated dynamically
 };
 
+(async () => {
+  try {
+      const result = await getRandomQuestion(1); // Fetch one random question
+      console.log(result); // Log the result
+  } catch (error) {
+      console.error('Error fetching random questions:', error);
+  }
+})();
+
+//sendEmails();
+
 async function sendEmails() {
+
+const questionRandom = await getRandomQuestion(1);
+ console.log("QUESTION of SENDEMAILS",questionRandom);
+ console.log('Contenido completo de answerOptions:', questionRandom.answerOptions[0].answer);
+
   try {
     // Fetch all audiences to get the first list ID
     const audiences = await fetchAudiences();
@@ -130,7 +149,7 @@ async function sendEmails() {
     for (const email of contacts) {
       console.log(`Sending email to ${email}`);
       const name = email.split("@")[0]; // Use the part before '@' as a name
-      const htmlTemplate = (getEmailTemplate(name));
+      const htmlTemplate = (getEmailTemplate(name, questionRandom));
       console.log(htmlTemplate);
 
       mailOptions.to = email;
