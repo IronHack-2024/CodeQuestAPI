@@ -17,52 +17,56 @@
       body {
         font-family: "Roboto", sans-serif;
         scroll-behavior: smooth;
+        background: linear-gradient(to bottom, #ffffff, #f0f4f8);
+        color: #333;
       }
       .section-title {
         color: #ff5733;
         font-weight: bold;
       }
       .api-box {
-        border: 1px solid #ddd;
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 5px;
-        background-color: rgba(255, 255, 255, 0.8);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s;
       }
       .api-box:hover {
-        transform: scale(1.02);
+        transform: scale(1.03);
       }
       .example-box {
-        background-color: #333;
+        background-color: #444;
         color: #fff;
-        padding: 15px;
-        border-radius: 5px;
+        padding: 20px;
+        border-radius: 10px;
         font-family: monospace;
-        position: relative;
-      }
-      .example-box button {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background-color: #ff5733;
-        color: #fff;
-        border: none;
-        padding: 5px 10px;
-        border-radius: 3px;
-        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        overflow-x: auto;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
       }
       .endpoint-link {
         color: #ff5733;
         text-decoration: underline;
         cursor: pointer;
+        transition: color 0.3s;
+      }
+      .endpoint-link:hover {
+        color: #d84315;
       }
       .interactive-button {
         transition: background-color 0.3s, transform 0.3s;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
       }
       .interactive-button:hover {
-        background-color: #ff5733;
+        background-color: #0056b3;
         transform: scale(1.05);
       }
       .fixed-navbar {
@@ -70,15 +74,15 @@
         top: 0;
         left: 0;
         width: 100%;
-        background: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         z-index: 1000;
-        padding: 10px 20px;
+        padding: 15px 30px;
       }
       .navbar-links {
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 25px;
       }
       .navbar-links a {
         color: #333;
@@ -89,9 +93,40 @@
       .navbar-links a:hover {
         color: #ff5733;
       }
+      .active-link {
+        color: #ff5733;
+      }
+      .subscription-section input[type="email"] {
+        transition: box-shadow 0.3s;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      .subscription-section input[type="email"]:focus {
+        box-shadow: 0 0 10px rgba(66, 153, 225, 0.5);
+        outline: none;
+      }
+      .toast {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 15px 25px;
+        border-radius: 5px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transition: opacity 0.5s, bottom 0.5s;
+        z-index: 1002;
+      }
+      .toast.show {
+        opacity: 1;
+        bottom: 40px;
+      }
     </style>
   </head>
-  <body class="bg-gray-100 text-gray-900">
+  <body>
     <!-- Fixed Navigation Bar -->
     <nav class="fixed-navbar">
       <div class="navbar-links">
@@ -103,36 +138,41 @@
         <a href="#template-form">Template Form</a>
         <a href="#export-questions">Export Questions</a>
         <a href="#authentication">Authentication</a>
+        <a href="#error-handling">Error Handling</a>
+        <a href="#rate-limits">Rate Limits</a>
         <a href="#faqs">FAQs</a>
       </div>
     </nav>
 
     <!-- Header -->
     <header
-      class="text-center py-20 bg-gradient-to-r from-blue-500 to-green-400 text-white"
+      class="text-center py-20 bg-gradient-to-r from-blue-400 to-blue-600 text-white"
     >
-      <h1 class="text-4xl font-bold">CodeQuestAPI</h1>
-      <p class="mt-4 text-lg">
+      <h1 class="text-5xl font-bold">CodeQuestAPI</h1>
+      <p class="mt-4 text-xl">
         The ultimate API for programming questions. Access random and
         AI-generated questions to enhance your coding skills.
       </p>
       <button
-        class="bg-white text-blue-600 px-6 py-2 mt-4 rounded-full interactive-button"
+        onclick="document.getElementById('getting-started').scrollIntoView({behavior: 'smooth'});"
+        class="bg-white text-blue-700 px-8 py-3 mt-6 rounded-full interactive-button"
       >
         Get Started <i class="fas fa-arrow-right"></i>
       </button>
     </header>
 
     <!-- Subscription Form (optional) -->
-    <section class="text-center mt-8">
-      <p>Subscribe for new CodeQuestAPI updates</p>
+    <section class="subscription-section text-center mt-8">
+      <p class="text-lg">Subscribe for new CodeQuestAPI updates</p>
       <div class="mt-4">
         <input
           type="email"
           placeholder="Enter your email"
-          class="border p-2 rounded"
+          class="border p-3 rounded"
         />
-        <button class="bg-blue-600 text-white px-4 py-2 rounded">
+        <button
+          class="bg-blue-600 text-white px-6 py-3 rounded interactive-button"
+        >
           Subscribe
         </button>
       </div>
@@ -143,9 +183,11 @@
       id="getting-started"
       class="container mx-auto mt-20 max-w-4xl px-4"
     >
-      <h2 class="section-title text-2xl">Getting Started</h2>
-      <p>Follow these steps to get started with CodeQuestAPI:</p>
-      <ol class="list-decimal pl-5">
+      <h2 class="section-title text-3xl">Getting Started</h2>
+      <p class="text-lg mt-4">
+        Follow these steps to get started with CodeQuestAPI:
+      </p>
+      <ol class="list-decimal pl-5 mt-4 text-lg">
         <li>
           If you need access to AI-generated questions, obtain your Gemini API
           key from the Gemini website.
@@ -159,23 +201,24 @@
 
     <!-- Usage Section -->
     <section id="usage" class="container mx-auto mt-20 max-w-4xl px-4">
-      <h2 class="section-title text-2xl">Usage</h2>
-      <p>Retrieve a random programming question in JSON format.</p>
+      <h2 class="section-title text-3xl">Usage</h2>
+      <p class="text-lg mt-4">
+        Retrieve a random programming question in JSON format.
+      </p>
 
       <!-- Endpoint -->
       <div class="api-box">
         <strong>GET</strong>
         <a
-          href="http://localhost:3000/api/v1/questions/random"
+          href="http://localhost:3000/v1/questions/random"
           class="endpoint-link"
           target="_blank"
-          >http://localhost:3000/api/v1/questions/random</a
+          >http://localhost:3000/v1/questions/random</a
         >
       </div>
 
-      <p>Example response:</p>
+      <p class="text-lg mt-4">Example response:</p>
       <div class="example-box">
-        <button onclick="copyToClipboard(this)">Copy</button>
         <pre>
 {
   "question": "What is the output of the following code snippet?",
@@ -196,8 +239,8 @@
 
     <!-- AI Generated Questions Endpoint Section -->
     <section id="ai-questions" class="container mx-auto mt-20 max-w-4xl px-4">
-      <h2 class="section-title text-2xl">AI Generated Questions</h2>
-      <p>
+      <h2 class="section-title text-3xl">AI Generated Questions</h2>
+      <p class="text-lg mt-4">
         Retrieve an AI-generated question based on a specific topic. This
         endpoint requires a Gemini API key for authentication.
       </p>
@@ -206,16 +249,15 @@
       <div class="api-box">
         <strong>GET</strong>
         <a
-          href="http://localhost:3000/api/v1/questions/ai"
+          href="http://localhost:3000/v1/questions/ai"
           class="endpoint-link"
           target="_blank"
-          >http://localhost:3000/api/v1/questions/ai</a
+          >http://localhost:3000/v1/questions/ai</a
         >
       </div>
 
-      <p>Example response:</p>
+      <p class="text-lg mt-4">Example response:</p>
       <div class="example-box">
-        <button onclick="copyToClipboard(this)">Copy</button>
         <pre>
 {
   "question": "Explain the concept of closures in JavaScript.",
@@ -239,8 +281,8 @@
       id="submit-question"
       class="container mx-auto mt-20 max-w-4xl px-4"
     >
-      <h2 class="section-title text-2xl">Submit a New Question</h2>
-      <p>
+      <h2 class="section-title text-3xl">Submit a New Question</h2>
+      <p class="text-lg mt-4">
         Submit a new question for review and potential inclusion in the
         database.
       </p>
@@ -256,9 +298,8 @@
         >
       </div>
 
-      <p>Request body example:</p>
+      <p class="text-lg mt-4">Request body example:</p>
       <div class="example-box">
-        <button onclick="copyToClipboard(this)">Copy</button>
         <pre>
 {
   "question": "What does 'use strict' do in JavaScript?",
@@ -279,8 +320,8 @@
 
     <!-- Daily Question Endpoint -->
     <section id="daily-question" class="container mx-auto mt-20 max-w-4xl px-4">
-      <h2 class="section-title text-2xl">Daily Question</h2>
-      <p>Retrieve the daily featured question.</p>
+      <h2 class="section-title text-3xl">Daily Question</h2>
+      <p class="text-lg mt-4">Retrieve the daily featured question.</p>
 
       <!-- Endpoint -->
       <div class="api-box">
@@ -296,8 +337,10 @@
 
     <!-- Template Form Endpoint -->
     <section id="template-form" class="container mx-auto mt-20 max-w-4xl px-4">
-      <h2 class="section-title text-2xl">Template Form</h2>
-      <p>Access the form to submit a new question template.</p>
+      <h2 class="section-title text-3xl">Template Form</h2>
+      <p class="text-lg mt-4">
+        Access the form to submit a new question template.
+      </p>
 
       <!-- Endpoint -->
       <div class="api-box">
@@ -316,8 +359,8 @@
       id="export-questions"
       class="container mx-auto mt-20 max-w-4xl px-4"
     >
-      <h2 class="section-title text-2xl">Export Questions</h2>
-      <p>
+      <h2 class="section-title text-3xl">Export Questions</h2>
+      <p class="text-lg mt-4">
         Export a set of questions for use in educational platforms like Kahoot
         or Blooket.
       </p>
@@ -336,34 +379,34 @@
 
     <!-- Authentication Section -->
     <section id="authentication" class="container mx-auto mt-20 max-w-4xl px-4">
-      <h2 class="section-title text-2xl">Authentication</h2>
-      <p>
+      <h2 class="section-title text-3xl">Authentication</h2>
+      <p class="text-lg mt-4">
         To access the AI-generated questions endpoint, include your Gemini API
         key in the Authorization header. This is only required for AI-related
         endpoints.
       </p>
       <div class="example-box">
-        <button onclick="copyToClipboard(this)">Copy</button>
         <pre>Authorization: Bearer YOUR_GEMINI_API_KEY</pre>
       </div>
-      <p>Example using cURL:</p>
+      <p class="text-lg mt-4">Example using cURL:</p>
       <div class="example-box">
-        <button onclick="copyToClipboard(this)">Copy</button>
         <pre>
 curl -H "Authorization: Bearer YOUR_GEMINI_API_KEY" http://localhost:3000/v1/questions/ai</pre
         >
       </div>
-      <p>
+      <p class="text-lg mt-4">
         To obtain an API key for Gemini, follow the instructions provided on the
         Gemini website.
       </p>
     </section>
 
     <!-- Error Handling Section -->
-    <section class="container mx-auto mt-20 max-w-4xl px-4">
-      <h2 class="section-title text-2xl">Error Handling</h2>
-      <p>The CodeQuestAPI returns the following error codes:</p>
-      <ul class="list-disc pl-5">
+    <section id="error-handling" class="container mx-auto mt-20 max-w-4xl px-4">
+      <h2 class="section-title text-3xl">Error Handling</h2>
+      <p class="text-lg mt-4">
+        The CodeQuestAPI returns the following error codes:
+      </p>
+      <ul class="list-disc pl-5 text-lg">
         <li><strong>400 Bad Request</strong>: Invalid request parameters.</li>
         <li>
           <strong>401 Unauthorized</strong>: Missing or invalid Gemini API key.
@@ -381,7 +424,7 @@ curl -H "Authorization: Bearer YOUR_GEMINI_API_KEY" http://localhost:3000/v1/que
           server.
         </li>
       </ul>
-      <p>
+      <p class="text-lg mt-4">
         For more detailed information on errors and how to troubleshoot, refer
         to our
         <a
@@ -394,10 +437,12 @@ curl -H "Authorization: Bearer YOUR_GEMINI_API_KEY" http://localhost:3000/v1/que
     </section>
 
     <!-- Rate Limiting Section -->
-    <section class="container mx-auto mt-20 max-w-4xl px-4">
-      <h2 class="section-title text-2xl">Rate Limits</h2>
-      <p>To ensure fair usage, the API has the following rate limits:</p>
-      <ul class="list-disc pl-5">
+    <section id="rate-limits" class="container mx-auto mt-20 max-w-4xl px-4">
+      <h2 class="section-title text-3xl">Rate Limits</h2>
+      <p class="text-lg mt-4">
+        To ensure fair usage, the API has the following rate limits:
+      </p>
+      <ul class="list-disc pl-5 text-lg">
         <li>
           <strong>GET /v1/questions/random</strong>: 20 requests per minute.
         </li>
@@ -410,14 +455,13 @@ curl -H "Authorization: Bearer YOUR_GEMINI_API_KEY" http://localhost:3000/v1/que
         </li>
       </ul>
       <div class="example-box">
-        <button onclick="copyToClipboard(this)">Copy</button>
         <pre>
 {
   "error": "Rate limit exceeded. Try again in 60 seconds."
 }</pre
         >
       </div>
-      <p>
+      <p class="text-lg mt-4">
         If you require a higher rate limit, please contact us via our
         <a
           href="https://github.com/codequestapi/contact"
@@ -430,9 +474,11 @@ curl -H "Authorization: Bearer YOUR_GEMINI_API_KEY" http://localhost:3000/v1/que
 
     <!-- FAQs Section -->
     <section id="faqs" class="container mx-auto mt-20 max-w-4xl px-4">
-      <h2 class="section-title text-2xl">FAQs</h2>
-      <p>Here are some frequently asked questions to help you get started:</p>
-      <ul class="list-disc pl-5">
+      <h2 class="section-title text-3xl">FAQs</h2>
+      <p class="text-lg mt-4">
+        Here are some frequently asked questions to help you get started:
+      </p>
+      <ul class="list-disc pl-5 text-lg">
         <li>
           <strong>How do I get an API key for AI questions?</strong> Follow the
           instructions on the Gemini website to obtain your Gemini API key.
@@ -486,7 +532,7 @@ curl -H "Authorization: Bearer YOUR_GEMINI_API_KEY" http://localhost:3000/v1/que
     </section>
 
     <!-- Footer -->
-    <footer class="text-center py-20 mt-20 bg-gray-800 text-white">
+    <footer class="text-center py-20 mt-20 bg-gray-900 text-white">
       <p>&copy; 2024 CodeQuestAPI. All rights reserved.</p>
       <p>
         For more information, visit our
@@ -518,12 +564,25 @@ curl -H "Authorization: Bearer YOUR_GEMINI_API_KEY" http://localhost:3000/v1/que
 
     <!-- JavaScript for Interactive Elements -->
     <script>
-      function copyToClipboard(button) {
-        const text = button.nextElementSibling.textContent;
-        navigator.clipboard.writeText(text).then(() => {
-          alert("Code copied to clipboard!");
+      document.addEventListener("scroll", () => {
+        const sections = document.querySelectorAll("section");
+        const links = document.querySelectorAll(".navbar-links a");
+        let currentSection = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 100;
+          if (window.scrollY >= sectionTop) {
+            currentSection = section.getAttribute("id");
+          }
         });
-      }
+
+        links.forEach((link) => {
+          link.classList.remove("active-link");
+          if (link.getAttribute("href").substring(1) === currentSection) {
+            link.classList.add("active-link");
+          }
+        });
+      });
     </script>
   </body>
 </html>
