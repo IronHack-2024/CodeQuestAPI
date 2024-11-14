@@ -10,6 +10,8 @@ const args = process.argv.slice(2);
 const MARKDOWN_URL = args[0];
 let titulo = args[1];
 let categories = args[2];
+// Default to null if not provided
+const amount = parseInt(args[3], 10) || null;
 
 // Función asíncrona para descargar el Markdown y llamar a la función que lo convierte a json y lo guarda en un archivo
 async function descargarMarkdown() {
@@ -27,9 +29,12 @@ async function descargarMarkdown() {
 }
 
 // Función para convertir el Markdown a JSON y guardarlo en un archivo
+
 function convertiraJson(markdown) {
   const questions = [];
   let match;
+  //add question count for keep track haw many question have been processed
+  let questionCount = 0;
 
   // Expresiones regulares para extraer acada parte del documento desde formato markdown que se utiliza en las preguntas de LinkedIn
 
@@ -41,6 +46,11 @@ function convertiraJson(markdown) {
 
   // Procesar cada bloque de preguntas
   while ((match = questionRegex.exec(markdown)) !== null) {
+    // Stop if we've reached the desired amount
+    if (amount && questionCount >= amount) {
+      break;
+    }
+
     const questionBlock = match[0]; // Bloque de preguntas
     let questionText = questionBlock
       .replace(/#### Q\d+\s*./, "")
@@ -74,6 +84,7 @@ function convertiraJson(markdown) {
     };
 
     questions.push(question); // Añadimos al array
+    questionCount++;
   }
 
   //Crea la carpeta ListaJson si no existe
@@ -90,15 +101,20 @@ function convertiraJson(markdown) {
 
 //funcion que crea el array de opciones, poniendo las tres incorreectas primero y la correcta (True) al final
 function getAnswersOptions(correctAnswers, incorrectAnswers) {
-  const answersOptions = incorrectAnswers
-    .map((a) => {
-      return { answer: a, isCorrect: false };
-    })
-    .concat(
-      correctAnswers.map((a) => {
-        return { answer: a, isCorrect: true };
-      })
-    );
+  // Map incorrect answers
+  const incorrectOptions = incorrectAnswers.map((answer) => ({
+    answer,
+    isCorrect: false,
+  }));
+
+  // Map correct answers
+  const correctOptions = correctAnswers.map((answer) => ({
+    answer,
+    isCorrect: true,
+  }));
+
+  // Combine incorrect options first, then correct options
+  const answersOptions = incorrectOptions.concat(correctOptions);
 
   return answersOptions;
 }
