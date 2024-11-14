@@ -4,8 +4,9 @@
 	"description": "This is a REST API to get programming questions",
 	"main": "app.js",
 	"scripts": {
-		"test": "jest",
-		"dev": "nodemon app.js"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon api/index.js",
+		"start": "node api/index.js"
 	},
 	"keywords": [],
 	"author": "",
@@ -18,7 +19,7 @@
 		"express": "^4.21.1",
 		"express-rate-limit": "^7.4.1",
 		"helmet": "^8.0.0",
-		"mongoose": "^8.8.1",
+		"mongoose": "^8.6.0",
 		"path": "^0.12.7",
 		"xlsx": "^0.18.5"
 	},
