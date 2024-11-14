@@ -1,0 +1,2210 @@
+[
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "When a javaScript function is invoked (called) in Node, where is a new frame placed?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "the event loop",
+        "isCorrect": false
+      },
+      {
+        "answer": "the poll phase",
+        "isCorrect": false
+      },
+      {
+        "answer": "the events queue",
+        "isCorrect": false
+      },
+      {
+        "answer": "the call stack",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which of the following is a core module in Node?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "webpack",
+        "isCorrect": false
+      },
+      {
+        "answer": "request",
+        "isCorrect": false
+      },
+      {
+        "answer": "chalk",
+        "isCorrect": false
+      },
+      {
+        "answer": "crypto",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which of the following Buffer class methods returns an uninitialized buffer?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "concat",
+        "isCorrect": false
+      },
+      {
+        "answer": "from",
+        "isCorrect": false
+      },
+      {
+        "answer": "alloc",
+        "isCorrect": false
+      },
+      {
+        "answer": "allocUnsafe",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which of the following modules is NOT a built-in module in Node?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "events",
+        "isCorrect": false
+      },
+      {
+        "answer": "dgram",
+        "isCorrect": false
+      },
+      {
+        "answer": "http2",
+        "isCorrect": false
+      },
+      {
+        "answer": "ftp",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which fs module method can be used to read the content of a file without buffering it in memory?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "read",
+        "isCorrect": false
+      },
+      {
+        "answer": "readFile",
+        "isCorrect": false
+      },
+      {
+        "answer": "readFileSync",
+        "isCorrect": false
+      },
+      {
+        "answer": "createReadStream",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which of the following DNS module methods uses the underlying OS facilities and does not necessarily perform any network communication?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "resolve",
+        "isCorrect": false
+      },
+      {
+        "answer": "resolve4",
+        "isCorrect": false
+      },
+      {
+        "answer": "reverse",
+        "isCorrect": false
+      },
+      {
+        "answer": "lookup",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "How do you check that a value is a date object in Node?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "assert.isDate(value)",
+        "isCorrect": false
+      },
+      {
+        "answer": "console.isDate(value)",
+        "isCorrect": false
+      },
+      {
+        "answer": "util.date(value)",
+        "isCorrect": false
+      },
+      {
+        "answer": "util.types.isDate(value)",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Can you create an https web server with Node.js?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "no, there are no modules supporting it yet",
+        "isCorrect": false
+      },
+      {
+        "answer": "yes, through the path module",
+        "isCorrect": false
+      },
+      {
+        "answer": "yes, with the http module",
+        "isCorrect": false
+      },
+      {
+        "answer": "yes, with the https or http2 modules",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What is the Api that is designed to insulate Addons from changes in the underlying JavaScript engine?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "A-API",
+        "isCorrect": false
+      },
+      {
+        "answer": "Z-API",
+        "isCorrect": false
+      },
+      {
+        "answer": "X-API",
+        "isCorrect": false
+      },
+      {
+        "answer": "N-API",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which CLI option can you use to debug a node script in Chrome DevTools?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "--dev-tools",
+        "isCorrect": false
+      },
+      {
+        "answer": "--chrome",
+        "isCorrect": false
+      },
+      {
+        "answer": "--debug",
+        "isCorrect": false
+      },
+      {
+        "answer": "--inspect",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What command would you use to count the number of logical CPUs on the machine that is running Node?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "node -p \"process.cpus\"",
+        "isCorrect": false
+      },
+      {
+        "answer": "node -p \"util.cpus().size\"",
+        "isCorrect": false
+      },
+      {
+        "answer": "node -p \"process.os.cpus\"",
+        "isCorrect": false
+      },
+      {
+        "answer": "node -p \"os.cpus().length\"",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which of the following is a method on the console object?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "exit",
+        "isCorrect": false
+      },
+      {
+        "answer": "test",
+        "isCorrect": false
+      },
+      {
+        "answer": "print",
+        "isCorrect": false
+      },
+      {
+        "answer": "time",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which object is used to manage the cache of required modules?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "global.cache",
+        "isCorrect": false
+      },
+      {
+        "answer": "module.cache",
+        "isCorrect": false
+      },
+      {
+        "answer": "process.cache",
+        "isCorrect": false
+      },
+      {
+        "answer": "require.cache",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What is the command to silence all process warnings?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "node index.js --trace-warnings",
+        "isCorrect": false
+      },
+      {
+        "answer": "node -trace-warnings",
+        "isCorrect": false
+      },
+      {
+        "answer": "node index.js --no-warnings",
+        "isCorrect": false
+      },
+      {
+        "answer": "node --no-warnings",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "How can you use the promise API with a callback-based function such as child_process.exec?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "new Promise(child_process.exec())",
+        "isCorrect": false
+      },
+      {
+        "answer": "util.promisify(child_process.exec())",
+        "isCorrect": false
+      },
+      {
+        "answer": "new Promise(child_process.exec)",
+        "isCorrect": false
+      },
+      {
+        "answer": "util.promisify(child_process.exec)",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which of the following is NOT a Node repl command?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": ".break",
+        "isCorrect": false
+      },
+      {
+        "answer": ".editor",
+        "isCorrect": false
+      },
+      {
+        "answer": ".save",
+        "isCorrect": false
+      },
+      {
+        "answer": ".history",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which statement is true when you run the code shown below?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "The forked process shares the event loop with the parent process",
+        "isCorrect": false
+      },
+      {
+        "answer": "A new VM instance is created and the two VM instances will be shared between the forked process and the parent process.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The forked process shares the same VM thread with the parent process.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The forked process will have its own VM instance.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "If EventEmitter is in scope, which of the following lines of code will have an event emitter emitting a change event?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "EventEmitter.new().emit('change');",
+        "isCorrect": false
+      },
+      {
+        "answer": "(new EventEmitter()).emit('change');",
+        "isCorrect": false
+      },
+      {
+        "answer": "new EventEmitter('change');",
+        "isCorrect": false
+      },
+      {
+        "answer": "EventEmitter.emit('change');",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which of the following objects is a stream",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "process.uptime",
+        "isCorrect": false
+      },
+      {
+        "answer": "process",
+        "isCorrect": false
+      },
+      {
+        "answer": "Buffer",
+        "isCorrect": false
+      },
+      {
+        "answer": "process.stdout",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which module variable holds the resolved absolute path of the current module file?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`__pathname`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`__location`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`__flder`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`__filename`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "If the child_process module methods are in scope, what is a current way to execute the command ps -ef using a child process?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "spawn(\"ps -ef\")",
+        "isCorrect": false
+      },
+      {
+        "answer": "exec(\"ps\", \"-ef\")",
+        "isCorrect": false
+      },
+      {
+        "answer": "fork(\"ps -ef\")",
+        "isCorrect": false
+      },
+      {
+        "answer": "exec(\"ps -ef\")",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which console method can be used to print the stack trace to the point of its execution?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "stack",
+        "isCorrect": false
+      },
+      {
+        "answer": "debug",
+        "isCorrect": false
+      },
+      {
+        "answer": "print",
+        "isCorrect": false
+      },
+      {
+        "answer": "trace",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "When you run JavaScript in a Node.js application, which of the following elements in a Node.js stack actually executes that JavaScript?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "the libuv library",
+        "isCorrect": false
+      },
+      {
+        "answer": "the c-ares library",
+        "isCorrect": false
+      },
+      {
+        "answer": "the repl module",
+        "isCorrect": false
+      },
+      {
+        "answer": "the VM (like V8 or Chakra)",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Looking at the code below, what does the console show?",
+    "codeExamples": [
+      "\nconst http = require('http');\n const hostname = '127.0.0.1'; const port = 3000;\n const server = http.createServer((req, res) => {\n  res.statusCode = 200;  res.setHeader(\"Content-Type\", \"text/plain\");  res.end(\"Hello World\\n\");\n});\nserver.listen(port, hostname, () => { console.log(`server running at http://${hostname}:${port}/`); });\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "server running at http://localhost:3000/",
+        "isCorrect": false
+      },
+      {
+        "answer": "server running at port 3000",
+        "isCorrect": false
+      },
+      {
+        "answer": "server running at http://localhost:4000/",
+        "isCorrect": false
+      },
+      {
+        "answer": "server running at http://127.0.0.1:3000/",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What is the purpose of the path module?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "to provide utilities to add and remove files",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is a retiring module.",
+        "isCorrect": false
+      },
+      {
+        "answer": "to provide utilities to test files",
+        "isCorrect": false
+      },
+      {
+        "answer": "to provide utilities to play with file and directory paths",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "How do you make an HTTP server object active and listen to requests on certain ports?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "server. start",
+        "isCorrect": false
+      },
+      {
+        "answer": "server.activate",
+        "isCorrect": false
+      },
+      {
+        "answer": "server. run",
+        "isCorrect": false
+      },
+      {
+        "answer": "server.listen",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What does the code shown below do?",
+    "codeExamples": [
+      "\nconst fs = require('fs'); const os = require('os');\nconst system = os.platform(); const user = os.userInfo().username;\nfs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) throw err; console.log('The data was appended to file!');}\n);\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "creates an image file",
+        "isCorrect": false
+      },
+      {
+        "answer": "console logs system information",
+        "isCorrect": false
+      },
+      {
+        "answer": "creates a file named data and append numbers",
+        "isCorrect": false
+      },
+      {
+        "answer": "creates a text file hello.txt and appends customized text",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "How do you start a Node application, if the entry file is indexjs?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "nodemon start",
+        "isCorrect": false
+      },
+      {
+        "answer": "start index.js",
+        "isCorrect": false
+      },
+      {
+        "answer": "node start",
+        "isCorrect": false
+      },
+      {
+        "answer": "node index.js",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What is the purpose of the file system (fs) module?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "to provide methods to work with requests and responses",
+        "isCorrect": false
+      },
+      {
+        "answer": "to provide methods to work with databases",
+        "isCorrect": false
+      },
+      {
+        "answer": "to find new file systems",
+        "isCorrect": false
+      },
+      {
+        "answer": "to provide methods to work with files",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What is the Node LTS version?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "It is the current unstable version and is to be avoided.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is the version that will be retired soon.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is the version with the latest features.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is the safest version for long-term support.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which of the following is NOT a valid stream in Node?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "process. stdin",
+        "isCorrect": false
+      },
+      {
+        "answer": "process. stdout",
+        "isCorrect": false
+      },
+      {
+        "answer": "process. stderr",
+        "isCorrect": false
+      },
+      {
+        "answer": "process. stdinfo",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "You have a script.js file with the single line of code shown here. What will be the output of executing script.js with the node command?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "an empty string",
+        "isCorrect": false
+      },
+      {
+        "answer": "undefined",
+        "isCorrect": false
+      },
+      {
+        "answer": "an object representing an array that has five elements",
+        "isCorrect": false
+      },
+      {
+        "answer": "ReferenceError: arguments is not defined",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which choice is not a valid method on event emitters?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "on",
+        "isCorrect": false
+      },
+      {
+        "answer": "once",
+        "isCorrect": false
+      },
+      {
+        "answer": "off",
+        "isCorrect": false
+      },
+      {
+        "answer": "start",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which special object is an instance of EventEmitter?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Buffer",
+        "isCorrect": false
+      },
+      {
+        "answer": "root",
+        "isCorrect": false
+      },
+      {
+        "answer": "require",
+        "isCorrect": false
+      },
+      {
+        "answer": "process",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What is the command to get a list of available commands for Node.js?What is the command to get a list of available commands for Node.js?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "node index.js -x",
+        "isCorrect": false
+      },
+      {
+        "answer": "node -v",
+        "isCorrect": false
+      },
+      {
+        "answer": "node index.js -h",
+        "isCorrect": false
+      },
+      {
+        "answer": "node -h",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "When a request event is received in the HTTP module, what is the type of the first argument passed to that event, usually named req?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "http.ServerRequest",
+        "isCorrect": false
+      },
+      {
+        "answer": "http.ClientRequest",
+        "isCorrect": false
+      },
+      {
+        "answer": "http.ServerResponse",
+        "isCorrect": false
+      },
+      {
+        "answer": "http.IncomingMessage",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What are the arguments passed to the module wrapper function?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`exports, __filename, __dirname`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`exports, process, require, module, __filename, __dirname`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`exports, module, __filename, __dirname`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`exports, require, module, __filename, __dirname`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which library provides Node.js with the event loop?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "V8",
+        "isCorrect": false
+      },
+      {
+        "answer": "c-ares",
+        "isCorrect": false
+      },
+      {
+        "answer": "events",
+        "isCorrect": false
+      },
+      {
+        "answer": "libuv",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What does the .node file extension represent?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "a C++ file that can have a .node extension and that Node will be able to execute directly.",
+        "isCorrect": false
+      },
+      {
+        "answer": "a JSON file that can have a .node extension as well as the .json extension",
+        "isCorrect": false
+      },
+      {
+        "answer": "a JavaScript file that can have a .node extension as well as the .js extension",
+        "isCorrect": false
+      },
+      {
+        "answer": "a C++ Addon file that is built with node-gyp",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What can you export with module.exports?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "only objects.",
+        "isCorrect": false
+      },
+      {
+        "answer": "only functions",
+        "isCorrect": false
+      },
+      {
+        "answer": "only variables and arrays",
+        "isCorrect": false
+      },
+      {
+        "answer": "functions, objects, arrays, or anything you assign to the module",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which core module in Node can you use to take advantage of multicore systems?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "os",
+        "isCorrect": false
+      },
+      {
+        "answer": "util",
+        "isCorrect": false
+      },
+      {
+        "answer": "net",
+        "isCorrect": false
+      },
+      {
+        "answer": "cluster",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which core Node module has wrappers for OpenSSL methods?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "SSL",
+        "isCorrect": false
+      },
+      {
+        "answer": "hash",
+        "isCorrect": false
+      },
+      {
+        "answer": "TLS",
+        "isCorrect": false
+      },
+      {
+        "answer": "crypto",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which line imports a promise-based version of the readFile method?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "const { readFile } = require(fs)",
+        "isCorrect": false
+      },
+      {
+        "answer": "const { readFilePromises: readFile } = require(fs)",
+        "isCorrect": false
+      },
+      {
+        "answer": "const { readFile } = require(promises)",
+        "isCorrect": false
+      },
+      {
+        "answer": "const { readFile } = require(fs).promises",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "According to the rules of semantic versioning, what does a release incrementing the third number in an npm version string communicate to users about the release changes?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Changes are not backwards compatible.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Changes might not be backward compatible and might break existing code.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Changes will add new functionality but will not break any existing code.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Changes are just bug fixes and no new features were added.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What does REPL stand for?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "run, examine, put, loop",
+        "isCorrect": false
+      },
+      {
+        "answer": "run, edit, print, loop",
+        "isCorrect": false
+      },
+      {
+        "answer": "read, extend, print, loop",
+        "isCorrect": false
+      },
+      {
+        "answer": "read, eval, print, loop",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which file does node-gyp use to read the build configuration of a module?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": ".gyprc",
+        "isCorrect": false
+      },
+      {
+        "answer": "gyp.json",
+        "isCorrect": false
+      },
+      {
+        "answer": "package.gyp",
+        "isCorrect": false
+      },
+      {
+        "answer": "binding.gyp",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which core module in Node can you use for testing?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "chai",
+        "isCorrect": false
+      },
+      {
+        "answer": "jest",
+        "isCorrect": false
+      },
+      {
+        "answer": "mocha",
+        "isCorrect": false
+      },
+      {
+        "answer": "assert",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which core module in Node provides an API to register callbacks to track asynchronous resources created inside a Node.js application?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "cluster",
+        "isCorrect": false
+      },
+      {
+        "answer": "dgram",
+        "isCorrect": false
+      },
+      {
+        "answer": "inspector",
+        "isCorrect": false
+      },
+      {
+        "answer": "async_hooks",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which Node.js module should you use when you need to decode raw data into strings?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "buffer",
+        "isCorrect": false
+      },
+      {
+        "answer": "util",
+        "isCorrect": false
+      },
+      {
+        "answer": "string_buffer",
+        "isCorrect": false
+      },
+      {
+        "answer": "string_decoder",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which global object acts like a bridge between a Node script and the host operating system?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "v8",
+        "isCorrect": false
+      },
+      {
+        "answer": "env",
+        "isCorrect": false
+      },
+      {
+        "answer": "child_process",
+        "isCorrect": false
+      },
+      {
+        "answer": "process",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which statement is true about Node.js and threads?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Every Node process runs in a single thread, and all the I/O work is run in that same thread.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Every Node process gets four threads that it can share between its JavaScript VM and the event loop.",
+        "isCorrect": false
+      },
+      {
+        "answer": "JavaScript execution in Node.js is single-threaded, but I/O operations are executed using multiple threads.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The event loop is single-threaded, but a JavaScript VM can use multiple threads.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which statement about event emitters is false?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "The emit method allows a arbitrary set of arguments to be passed to the listener functions.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Any values returned by the listeners for an emitted events are ignored.",
+        "isCorrect": false
+      },
+      {
+        "answer": "When an event emitter object emits an event, all of the functions attached to that specific event are called synchronously.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Event names must be camelCase strings.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which core module in Node can you use to compile and run JavaScript code in a sandbox environment?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "sandbox",
+        "isCorrect": false
+      },
+      {
+        "answer": "buffer",
+        "isCorrect": false
+      },
+      {
+        "answer": "v8",
+        "isCorrect": false
+      },
+      {
+        "answer": "vm",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "How would you determine the number of cluster instances to start when using the cluster module?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "const numInstances = cluster.instances().length;",
+        "isCorrect": false
+      },
+      {
+        "answer": "const numInstances = cluster.instances();",
+        "isCorrect": false
+      },
+      {
+        "answer": "const numInstances = process.cpus().length;",
+        "isCorrect": false
+      },
+      {
+        "answer": "const numInstances = require('os').cpus().length;",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "You have to read a large text file, replace some words in it, and write it back to a new file. You know that the memory on your target system is limited. What should you do?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Use regular expressions directly on the file.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use Promises and async/await to offload the task to libuv.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Copy the file into a database and perform the operations there.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use readline together with streams to read and transform and write the file contents line by line.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which choice is `not` a Node global object?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "process",
+        "isCorrect": false
+      },
+      {
+        "answer": "setTimeout",
+        "isCorrect": false
+      },
+      {
+        "answer": "Buffer",
+        "isCorrect": false
+      },
+      {
+        "answer": "exports",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What is the correct way to pipe a readable stream and a writable stream?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "readableStream.on(pipe, writableStream)",
+        "isCorrect": false
+      },
+      {
+        "answer": "writableStream.pipe(readableStream)",
+        "isCorrect": false
+      },
+      {
+        "answer": "writableStream.on(pipe, readableStream)",
+        "isCorrect": false
+      },
+      {
+        "answer": "readableStream.pipe(writableStream)",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "How can you convert path segments into a string using the platform-specific separator as a delimiter?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "path.concat",
+        "isCorrect": false
+      },
+      {
+        "answer": "path.format",
+        "isCorrect": false
+      },
+      {
+        "answer": "path.parse",
+        "isCorrect": false
+      },
+      {
+        "answer": "path.join",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What is the purpose of N-API?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "to allow users to make requests to the server",
+        "isCorrect": false
+      },
+      {
+        "answer": "to execute multi-threaded code in the Node environment",
+        "isCorrect": false
+      },
+      {
+        "answer": "to provide a quick way for users to create REST APIs",
+        "isCorrect": false
+      },
+      {
+        "answer": "to insulate Addons from changes in the underlying JavaScript engine",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What is a process object and its role?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "a locally scoped object that provides information about the current node process",
+        "isCorrect": false
+      },
+      {
+        "answer": "a global object that provides information about files",
+        "isCorrect": false
+      },
+      {
+        "answer": "a global object that provides information about the database",
+        "isCorrect": false
+      },
+      {
+        "answer": "a global object that provides information about the current node process",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What will this code log to the console?",
+    "codeExamples": [
+      "\n// File: person.js\nexports.name = \"Jane\";\n\n// File: index.js\nconst person = require('./person.js');\nconsole.log(person);\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`{'Jane'}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`{}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Jane`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`{ name: 'Jane' }`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What will this code log to the console?",
+    "codeExamples": [
+      "\n// File: person.js\nexports = \"John\";\n\n// File: index.js\nconst person = require('./person.js');\nconsole.log(person);\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`John`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Undefined`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`{'John'}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`{}`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Is it possible to write tests in Node.js without an external library?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "yes, through the debugger module",
+        "isCorrect": false
+      },
+      {
+        "answer": "yes, through the console module",
+        "isCorrect": false
+      },
+      {
+        "answer": "no",
+        "isCorrect": false
+      },
+      {
+        "answer": "yes, through the assert module",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which assert module method is usually used to test the error-first argument in callbacks?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "fail",
+        "isCorrect": false
+      },
+      {
+        "answer": "doesNotThrow",
+        "isCorrect": false
+      },
+      {
+        "answer": "deepStrictEqual",
+        "isCorrect": false
+      },
+      {
+        "answer": "ifError",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which choice is not a method on the util module?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "promisify",
+        "isCorrect": false
+      },
+      {
+        "answer": "types",
+        "isCorrect": false
+      },
+      {
+        "answer": "callbackify",
+        "isCorrect": false
+      },
+      {
+        "answer": "asyncify",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which choice is not a subclass of the Error class?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "TypeError",
+        "isCorrect": false
+      },
+      {
+        "answer": "RangeError",
+        "isCorrect": false
+      },
+      {
+        "answer": "AssertionError",
+        "isCorrect": false
+      },
+      {
+        "answer": "GlobalError",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What is Node built on?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Python",
+        "isCorrect": false
+      },
+      {
+        "answer": "PHP",
+        "isCorrect": false
+      },
+      {
+        "answer": "c",
+        "isCorrect": false
+      },
+      {
+        "answer": "V8 JavaScript engine",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "How does it affect the performance of a web application when an execution path contains a CPU-heavy operation, such as calculating a long Fibonacci sequence?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "As Node.js is asynchronous, this is handled by a libuv and a threadpool. The performance will not notably degrade.",
+        "isCorrect": false
+      },
+      {
+        "answer": "As the application code runs asynchronously within a single thread, the execution will block, accepting no more requests until the operation is completed.",
+        "isCorrect": false
+      },
+      {
+        "answer": "As Node.js is asynchronous, this is handled by a threadpool and the performance will not notably degrade.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The current thread will block until the execution is completed and the operating system will spawn new threads to handle incoming requests. This can exhaust the number of allowed threads (255) and degrade performance over time.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What is used for parsing and running Javascript in Node.js?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "EventLoop",
+        "isCorrect": false
+      },
+      {
+        "answer": "Libuv",
+        "isCorrect": false
+      },
+      {
+        "answer": "Express.js",
+        "isCorrect": false
+      },
+      {
+        "answer": "Google V8",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What is the importance of having good practices around status code in your response?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "It is not important to have good practices regarding status codes",
+        "isCorrect": false
+      },
+      {
+        "answer": "Response codes are the only way you can tell what is happening on the server.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It contains information about the current performance of the server.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It indicates success or failure to the client and helps with testing.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "How can ECMAScript modules be used natively in Node?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "ECMAScript modules cannot be used natively in Node.",
+        "isCorrect": false
+      },
+      {
+        "answer": "ECMAScript modules can be used natively in Node only by using a compiler like Babel.",
+        "isCorrect": false
+      },
+      {
+        "answer": "ECMAScript modules can be used natively in Node only by using a bundle like webpack.",
+        "isCorrect": false
+      },
+      {
+        "answer": "ECMAScript modules can be used natively in Node with the .mjs file extension",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "When exploring the Node documentation's features, what are the stability ratings?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "They tell if a feature is ES6 compliant.",
+        "isCorrect": false
+      },
+      {
+        "answer": "They are a Node command to validate stability of your code.",
+        "isCorrect": false
+      },
+      {
+        "answer": "They tell if a feature is LTS (Long Term Supported).",
+        "isCorrect": false
+      },
+      {
+        "answer": "They are an indication of the stability of Nodejs modules and usage recommendations.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "Which DNS module method uses the underlying OS facilities and does not necessarily perform any network communication?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "resolve",
+        "isCorrect": false
+      },
+      {
+        "answer": "reverse",
+        "isCorrect": false
+      },
+      {
+        "answer": "resolve4",
+        "isCorrect": false
+      },
+      {
+        "answer": "lookup",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "When you `require(something)`, where will Node.js attempt to `resolve(something)`?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "the local .modules folder, then the parents' node_modules folder",
+        "isCorrect": false
+      },
+      {
+        "answer": "the .modules folder under the home directory",
+        "isCorrect": false
+      },
+      {
+        "answer": "a \"something.js\" file or a \"something\" folder, which exist on the same level as the requiring file",
+        "isCorrect": false
+      },
+      {
+        "answer": "the local node_modules folder, then the parents' node_modules folder",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "An external library has its own codebase and license. It is not managed by the Node.js core team. Which choice is an external library that Node.js uses?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "net",
+        "isCorrect": false
+      },
+      {
+        "answer": "cluster",
+        "isCorrect": false
+      },
+      {
+        "answer": "events",
+        "isCorrect": false
+      },
+      {
+        "answer": "openssl",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What is the main purpose of the package-lock.json file?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "to be a system file",
+        "isCorrect": false
+      },
+      {
+        "answer": "to serve as a module to export dependencies",
+        "isCorrect": false
+      },
+      {
+        "answer": "to be a log for the application",
+        "isCorrect": false
+      },
+      {
+        "answer": "to provide an exact, single representation of the dependency tree",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  },
+  {
+    "categories": [
+      "node-js"
+    ],
+    "question": "What response will you get when you send a get requests to the server with this code?",
+    "codeExamples": [
+      "\nconst http = require('http');\nconst hostname = '127.0.0.1';\nconst port = 3000;\n\nconst server = http.createServer((req, res) => {\n  res.statusCode = 200;\n  res.setHeader('Content-Type', 'text/plain');\n  res.end('Hello World\\n');\n});\n\nserver.listen(port, hostname, () => {\n  console.log(`Server running at http://${hostname}:${port}/`);\n});\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`server running at http://127.0.0.1:3000`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`server running at port 3000`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`server running at http://localhost:3000/`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`server running at http://localhost:4000/`",
+        "isCorrect": false
+      },
+      {
+        "answer": "To install and manage Node.js versions.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To run JavaScript code in the browser.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To create and manage databases for Node.js applications.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use global variables to share data between asynchronous functions.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Avoid using asynchronous functions altogether.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use synchronous functions to ensure order of execution.",
+        "isCorrect": false
+      },
+      {
+        "answer": "fs (File System)",
+        "isCorrect": false
+      },
+      {
+        "answer": "http (HTTP Client)",
+        "isCorrect": false
+      },
+      {
+        "answer": "url (URL Parsing)",
+        "isCorrect": false
+      },
+      {
+        "answer": "To work with the file system and perform I/O operations.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To create and manage child processes.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To parse and manipulate URLs.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the url module to serve static files.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Embed the static files directly into JavaScript code.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Write custom JavaScript functions to serve each static file individually.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Using the process.terminate() method",
+        "isCorrect": false
+      },
+      {
+        "answer": "Sending a SIGSTOP signal",
+        "isCorrect": false
+      },
+      {
+        "answer": "Using the exit() method",
+        "isCorrect": false
+      },
+      {
+        "answer": "To create and manage child processes in a separate thread for parallel execution.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To provide access to child elements of JSON data.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To handle file I/O operations in a separate thread.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To manage user authentication and authorization.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To create clusters of data storage for efficient data handling.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To provide clustering for network communication.",
+        "isCorrect": false
+      },
+      {
+        "answer": "fs.existsSync",
+        "isCorrect": false
+      },
+      {
+        "answer": "fs.existsSync",
+        "isCorrect": false
+      },
+      {
+        "answer": "fs.stat",
+        "isCorrect": false
+      },
+      {
+        "answer": "http",
+        "isCorrect": false
+      },
+      {
+        "answer": "os",
+        "isCorrect": false
+      },
+      {
+        "answer": "fs",
+        "isCorrect": false
+      },
+      {
+        "answer": "To create a new Promise object.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To convert a function that returns a Promise into a callback-style function.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To handle synchronous operations.",
+        "isCorrect": false
+      },
+      {
+        "answer": "http",
+        "isCorrect": false
+      },
+      {
+        "answer": "net",
+        "isCorrect": false
+      },
+      {
+        "answer": "os",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Hello World`",
+        "isCorrect": true
+      },
+      {
+        "answer": "To manage packages and dependencies for Node.js projects.",
+        "isCorrect": true
+      },
+      {
+        "answer": "Use Promises, async/await, or libraries like async.js to manage asynchronous operations in a more structured way.",
+        "isCorrect": true
+      },
+      {
+        "answer": "http (HTTP Server)",
+        "isCorrect": true
+      },
+      {
+        "answer": "To provide information about the host operating system, such as CPU, memory, and network interfaces.",
+        "isCorrect": true
+      },
+      {
+        "answer": "Use middleware like express.static in combination with the Express.js framework to serve static files.",
+        "isCorrect": true
+      },
+      {
+        "answer": "Sending a SIGINT signal (e.g., with process.kill(process.pid, 'SIGINT')) or calling process.exit()",
+        "isCorrect": true
+      },
+      {
+        "answer": "To create and manage child processes for running external commands or scripts in a separate process.",
+        "isCorrect": true
+      },
+      {
+        "answer": "To take advantage of multicore systems by forking multiple Node.js processes and distributing the workload among them.",
+        "isCorrect": true
+      },
+      {
+        "answer": "fs.access",
+        "isCorrect": true
+      },
+      {
+        "answer": "net",
+        "isCorrect": true
+      },
+      {
+        "answer": "To convert a callback-style function into a function that returns a Promise.",
+        "isCorrect": true
+      },
+      {
+        "answer": "fs",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/node.js/node.js-quiz.md"
+  }
+]

@@ -1,0 +1,2992 @@
+[
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which command adds members to the replica set from MongoDB shell?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`replicaSetAdd(\"<hostname>\")`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`rs.insert(\"<hostname>\")`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`replica.add(\"<hostname>\")`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`rs.add(\"<hostname>\")`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which MongoDB shell command should you use to back up a database?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "restore",
+        "isCorrect": false
+      },
+      {
+        "answer": "backup",
+        "isCorrect": false
+      },
+      {
+        "answer": "mongobackup",
+        "isCorrect": false
+      },
+      {
+        "answer": "mongodump",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which shell query displays all citizens with an age greater than or equal to 21?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.citizens.select('WHERE age >= 21')`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.citizens.where('age >= 21')`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.citizens.find('WHERE age >= 21')`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.citizens.find({age: {$gte: 21}})`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What does a MongoDB collection consist of?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "data",
+        "isCorrect": false
+      },
+      {
+        "answer": "fields",
+        "isCorrect": false
+      },
+      {
+        "answer": "rows",
+        "isCorrect": false
+      },
+      {
+        "answer": "documents",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Given an ObjectId in `_id`, how do you get the time it was created?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`getDateTime(_id)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`_id.createDate()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`_id.getDateTime()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`_id.getTimestamp()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Given a cursor named myCursor, which command returns a boolean value?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`myCursor.sort()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`myCursor.next()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`myCursor.find()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`myCursor.hasNext()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which command returns a specific document in the user's collection?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.users.seek({_id: 1})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.users.query({_id: 1})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.query.users({_id: 1})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.users.find({_id: 1})`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "To import a JSON array into Mongo, what flags are needed with MongoDBimport?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`--type jsonArray`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`--json`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`--type json`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`--jsonArray`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Choose the shell command that connects to a MongoDB database.",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "mongod",
+        "isCorrect": false
+      },
+      {
+        "answer": "mongoconnect",
+        "isCorrect": false
+      },
+      {
+        "answer": "dbconnect",
+        "isCorrect": false
+      },
+      {
+        "answer": "mongo",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "In the MongoDB shell, how can you tell if an index was used with a query?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.customers.find({lastName: 'smith'}).perf()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find({lastName: 'smith'}).plan()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find({lastName: 'smith'}).usedIndex()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find({lastName: 'smith'}).explain()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Suppose your aggregation pipeline terminated with an exception referring to exceeded memory limit. What is the best way to resolve the issue?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Set useMemory to twice amount indicated in exception.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Switch a 64 bit instance of MongoDB.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Increase the memory of the MongoDB server.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Set allowDiskUse to true.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is the recommended way to delete a user?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.deleteUser(\"user\")`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.removeUser(\"user\") DEPRECATED`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.remove(\"user\")`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.dropUser(\"user\")`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What the primary database in a replica set fails, when does failover begin?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "once the primary has been down for 10 minutes",
+        "isCorrect": false
+      },
+      {
+        "answer": "once the primary reboots",
+        "isCorrect": false
+      },
+      {
+        "answer": "after the administrator reboots the primary",
+        "isCorrect": false
+      },
+      {
+        "answer": "immediately",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is the correct option to set up Kerberos when starting MongoDBd?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`--setAuthentication=GSSAPI`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`--setParam auth=K`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`--setAuth method=Kerberos`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`--setParameter authenticationMechanisms=GSSAPI`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is the purpose of an arbiter in a replica set?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "It monitors replica set and sends email in case of failure",
+        "isCorrect": false
+      },
+      {
+        "answer": "It holds a backup copy of the database.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It reboots the failed server.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It casts the tie-breaking vote in an election.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You want to know how many types of items you have in each category. Which query does this?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.product.group({_id: \"$category\", count: {$sum:1}})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.product.aggregate($sum: {_id: \"$category\", count: {$group:1}})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.product.aggregate($count: {_id: \"$category\", count: {$group:1}})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.product.aggregate($group: {_id: \"$category\", count: {$sum:1}})`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "To restrict the number of records coming back from a query, which command should you use?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "take",
+        "isCorrect": false
+      },
+      {
+        "answer": "max",
+        "isCorrect": false
+      },
+      {
+        "answer": "skip",
+        "isCorrect": false
+      },
+      {
+        "answer": "limit",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You have a collection named restaurants with the geographical information stored in the location property, how do you create a geospatial index on it?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.restaurants.geospatial({location: \"2dsphere\"})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.restaurants.createIndex(\"2dsphere\":\"location\")`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.restaurants.createIndex({geospatial: \"location\"})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.restaurants.createIndex({location: \"2dsphere\"})`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "How do you find documents with a matching item in an embedded array?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.customers.findmatch ({\"jobs\":\"secretary\"})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find ({\"jobs:secretary\"})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find ({\"jobs\":[\"secretary\"]})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find ({\"jobs\":\"secretary\"})`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which query bypasses the first 5 customers and returns the next 10?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.customers.find({}, {skip: 5, limit: 10})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find({}.page(5).take(10))`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find({}).skip(5).take(10)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find({}).skip(5).limit(10)`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "How do you create a text index?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.customers.createIndex({firstName, lastName})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.createTextIndex({firstName, lastName})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.createText({firstName: 1, lastName: 1})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.createIndex({firstName: \"text\", lastName: \"text\"})`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Assuming you have customers collection with a firstName and lastName field, which is the correct MongoDB shell command to create an index on lastName, then firstName both ascending?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.customers.createIndex(\"lastName, firstName, ASC\")`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.addIndex({lastName:\"ASC\", firstName: \"ASC\"})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.newIndex({lastName:1, firstName:1})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.createIndex({lastName:1, firstName: 1})`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "One of the documents in your collection has an \\_id based upon an older database design and you want to change it. You write an update command to find the document and replace the \\_id but the \\_id isn't changed. How should you fix the issue?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Set the replace option to true.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the replaceOne() command instead.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the updateOne() command instead.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You can't. Once set, the \\_id field cannot be changed.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "A compound index allows you to \\_ ?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Calculate interest quickly.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Accomplish nothing, since compound indexes aren't allowed in Mongo.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Combine fields in different collations.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use more than one field per index.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Why are ad-hoc queries useful?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "They do not have to use the same operators.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You do not need to structure the database to support them.",
+        "isCorrect": false
+      },
+      {
+        "answer": "They autogenerate reports.",
+        "isCorrect": false
+      },
+      {
+        "answer": "They run faster than indexed queries.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "How often do the members of a replica set send heartbeats to each other?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "every 2 minutes",
+        "isCorrect": false
+      },
+      {
+        "answer": "every 5 seconds",
+        "isCorrect": false
+      },
+      {
+        "answer": "every 10 seconds",
+        "isCorrect": false
+      },
+      {
+        "answer": "every 2 seconds",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which command returns all of the documents in the customers collection?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.customers.all();`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.find().customers();`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.show();`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find();`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Given a cursor named myCursor, pointing to the customers collection, how to you get basic info about it?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`myCursor.stats()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`myCursor.dump()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`myCursor.info()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`myCursor.explain()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is true about indexes?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "They secure the database from intruders.",
+        "isCorrect": false
+      },
+      {
+        "answer": "They speed up reads and writes.",
+        "isCorrect": false
+      },
+      {
+        "answer": "They speed up write access while slowing down reads.",
+        "isCorrect": false
+      },
+      {
+        "answer": "They speed up read access while slowing down writes.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is the preferred format to store geospatial data in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Latitude, longitude",
+        "isCorrect": false
+      },
+      {
+        "answer": "XML",
+        "isCorrect": false
+      },
+      {
+        "answer": "BSON",
+        "isCorrect": false
+      },
+      {
+        "answer": "GeoJSON",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which programming language is used to write MongoDB queries? (_Alternative_: In the MongoDB shell, what programming language is used to make queries?)",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Python",
+        "isCorrect": false
+      },
+      {
+        "answer": "SQL",
+        "isCorrect": false
+      },
+      {
+        "answer": "TypeScript",
+        "isCorrect": false
+      },
+      {
+        "answer": "JavaScript",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You have two text fields in your document and you'd like both to be quickly searchable. What should you do?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "MongoDB is not able to do this.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create a compound text index using both fields.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create a text index on one field and a single field index on the other.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create a text index on each field.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "To import a CSV file into MongoDB, which command should you issue?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "mongorestore",
+        "isCorrect": false
+      },
+      {
+        "answer": "mongoi",
+        "isCorrect": false
+      },
+      {
+        "answer": "upload",
+        "isCorrect": false
+      },
+      {
+        "answer": "mongoimport",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "In an MongoDB mapReduce command, the reduce function should \\_.",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "access the database",
+        "isCorrect": false
+      },
+      {
+        "answer": "be called only when the key has a single value",
+        "isCorrect": false
+      },
+      {
+        "answer": "access the database only to perform read operations",
+        "isCorrect": false
+      },
+      {
+        "answer": "not access the data",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "On a newly created collection, which field will have an index?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "the name field",
+        "isCorrect": false
+      },
+      {
+        "answer": "the ObjectId field",
+        "isCorrect": false
+      },
+      {
+        "answer": "no field will have an index",
+        "isCorrect": false
+      },
+      {
+        "answer": "the `_id` field",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You have a collection of thousands of students. You'd like to return the second set of 20 documents from the sorted collection. What is the proper order in which to apply the operations?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "limit, skip, sort",
+        "isCorrect": false
+      },
+      {
+        "answer": "sort, limit, skip",
+        "isCorrect": false
+      },
+      {
+        "answer": "limit, sort, skip",
+        "isCorrect": false
+      },
+      {
+        "answer": "sort, skip, limit",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You would like the stats() command to return kilobytes instead of bytes. Which command should you run?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.vehicle.stats(\"kilobytes\")`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.vehicle.stats(true)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.vehicle.stats(\"kb\")`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.vehicle.stats(1024)`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You want to modify an existing index. What is the best way to do this?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Use the `reIndex()` command to modify the index.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Call the `createIndex()` command with the update option.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the `updateIndex()` command.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Delete the original index and create a new index.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You need to delete the index you created on the description field. Which command will accomplish this?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.vehicle.dropIndex({\"description\":\"text\"})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.vehicle.removeIndex({\"description\":\"text\"})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.vehicle.removeIndex(\"description_text\")`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.vehicle.dropIndex(\"description_text\")`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You would like to know how many different categories you have. Which query will best get the job done?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.vehicle.distinct(\"category\")`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.vehicle.unique(\"category\")`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.vehicle.distinct(\"category\").count()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.vehicle.distinct(\"category\").length`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "From the MongoDB shell, how do you create a new document in the customers collection?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.customers.add({name: \"Bob\"})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.create({name: \"Bob\"})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.new({name: \"Bob\"})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.save({name: \"Bob\"})`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which field is required of all MongoDB documents?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`_name`",
+        "isCorrect": false
+      },
+      {
+        "answer": "ObjectId",
+        "isCorrect": false
+      },
+      {
+        "answer": "mongoDB is schema-less so no field is required",
+        "isCorrect": false
+      },
+      {
+        "answer": "`_id`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "A MongoDB instance has at least what three files?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "namespace, journal, and log",
+        "isCorrect": false
+      },
+      {
+        "answer": "journal, data, and database",
+        "isCorrect": false
+      },
+      {
+        "answer": "data, log, and journal",
+        "isCorrect": false
+      },
+      {
+        "answer": "data, namespace, and journal",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You'd like a set of documents to be returned in last name, ascending order. Which query will accomplish this?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.persons.find().sort({lastName: -1}}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.persons.find().sort({lastName: ascending}}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.persons.find().sort({lastName: $asc}}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.persons.find().sort({lastName: 1}}`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is NOT a standard role in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "restore",
+        "isCorrect": false
+      },
+      {
+        "answer": "read/write",
+        "isCorrect": false
+      },
+      {
+        "answer": "dbadmin",
+        "isCorrect": false
+      },
+      {
+        "answer": "delete collections",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which MongoDB shell command deletes a single document?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.customers.delete({_id: 1});`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.drop({_id: 1});`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.drop.customers({_id: 1});`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.remove({_id: 1});`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Using the MongoDB shell, how do you remove the customer collection and its indexes?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.customers.remove({}).indexes();`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.remove({});`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.delete();`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.drop();`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "By default, applications direct their read operations to which member of the replica set?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "arbiter",
+        "isCorrect": false
+      },
+      {
+        "answer": "secondary",
+        "isCorrect": false
+      },
+      {
+        "answer": "backup",
+        "isCorrect": false
+      },
+      {
+        "answer": "primary",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You need to get the names of all the indexes on your current collection. What is the best way to accomplish this?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.people.getName();`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.people.reIndex({names: 1});`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.people.getIndexKeys();`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.people.getIndexes();`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You are going to do a series of updates to multiple records. You find setting the multi option of the update() command too tiresome. What should you do instead?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Use the replaceMany() command instead",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the updateMulti() command instead",
+        "isCorrect": false
+      },
+      {
+        "answer": "Set the global multi option to True",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the updateMany() command instead",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "To cleanly shut down MongoDB, what command should you use from the MongoDB shell?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "quit()",
+        "isCorrect": false
+      },
+      {
+        "answer": "exit()",
+        "isCorrect": false
+      },
+      {
+        "answer": "db.shutdown()",
+        "isCorrect": false
+      },
+      {
+        "answer": "db.shutdownServer()",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Given a customer collection which includes fields for gender and city, which aggregate pipeline shows the number of female customers in each city? (_Alternative_: How can you view the execution performance statistics for a query?)",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.members.find({$match: {gender: \"Female\"}}, {$group: {_id: {city: \"$city\"}, number: {$sum: 1}}}.$sort ({number: -1})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.members.find([ {$match: {gender: \"Female\"}}, {$group: {_id: {city: \"$city\"}, number: {$sum: 1}}}, {$sort :{number: -1}}])`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.members.aggregate([ {$match: {gender: \"Female\"}}, {$sort :{number: -1}}])`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.members.aggregate([ {$match: {gender: \"Female\"}}, {$group: {_id: {city: \"$city\"}, number: {$sum: 1}}}, {$sort :{number: -1}}])`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "When no parameters are passed to `explain()`, what mode does it run in?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "wireTiger mode",
+        "isCorrect": false
+      },
+      {
+        "answer": "executionStats mode",
+        "isCorrect": false
+      },
+      {
+        "answer": "allPlansExecution mode",
+        "isCorrect": false
+      },
+      {
+        "answer": "queryPlanner mode",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is the correct query to find all of the people who have a home phone number defined?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.person.find({exists: 'homePhone'});`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.person.exists({homePhone: true});`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.person.has('homePhone');`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.person.find({homePhone: {$exists: true}});`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which file in the MongoDB directly holds the MongoDB daemon?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "mongodb",
+        "isCorrect": false
+      },
+      {
+        "answer": "mongo-daemon",
+        "isCorrect": false
+      },
+      {
+        "answer": "daemon",
+        "isCorrect": false
+      },
+      {
+        "answer": "mongod",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You have just secured your previously unsecured MongoDB server, but the server is still not requiring authentication. What is the best option?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Issue the `secure()` command.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Issue the `mongoimport` command.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Issue the `authenticate()` command.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Restart the `mongod` process.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is the most accurate statement regarding MongoDB and ad hoc queries?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "MongoDB does not allow ad hoc queries; all queries require an index.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Ad hoc queries are allowed only in the paid version.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Ad hoc queries are allowed only through the ad hoc command.",
+        "isCorrect": false
+      },
+      {
+        "answer": "MongoDB allows ad hoc queries.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "In MongoDB, what does a projection do?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "allows you to do a calculation on the results",
+        "isCorrect": false
+      },
+      {
+        "answer": "allows you to run queries on the server",
+        "isCorrect": false
+      },
+      {
+        "answer": "allows you to format the results for a display",
+        "isCorrect": false
+      },
+      {
+        "answer": "allows you to select which fields should be in the return data",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "To remove a database and all of its records from MongoDB, what operator should you use?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`removeAll()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`clear()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`deleteDatabase()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`dropDatabase()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What option can be passed to start the MongoDB shell without connecting to a database?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`-db=null`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`--shell-only`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`--free`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`-nodb`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "How can you improve the appearance of the output JSON that contains the `_id`?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`Use db.collection.set({$_id:pretty})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Use db.collection.format(numeric)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Use $_id = value`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Use db.collection.find().pretty()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What happens to a Replica set oplog if it runs out of memory?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`The oplog will be saved on one of the secondary servers.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`The MongoDB instance will fail`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`The oplog will stop recording logging information`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`The oplog is capped collection and can't run out of memory`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "MongoDB ships with a variety of files. Which file runs the MongoDB shell?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "mongo-s",
+        "isCorrect": false
+      },
+      {
+        "answer": "shell",
+        "isCorrect": false
+      },
+      {
+        "answer": "mongo-shell",
+        "isCorrect": false
+      },
+      {
+        "answer": "mongo",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "How can you view the execution performance statistics for a query?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.performance.members.aggregate([ {$match: {gender: \"Female\"}}, {$group: {_id:{city:\"$city\"}, number: {$sum: 1}}}, {$sort : {number: -1}}])`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.members.aggregate([ {$match: {gender: \"Female\"}}, {$group:{_id: {city: \"$city\"}, number: {$sum: 1}}}, {$sort: {number: -1}}]).explain()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.members.aggregate([ {$match: {gender: \"\"\"Female\"\"\"}}, {$group: {_id: {city: \"\"\"$city\"\"\"}, number: {$sum:1}}}, {$sort: {number: -1}}]).number()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.members.aggregate([ {$match: {gender: \"Female\"}}, {$group: {_id: {city: \"$city\"}, number:{$sum:1}}}, {$sort: {number:-1}}]).explain(\"executionStats\")`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "From the MongoDB shell, how do you execute a JavaScript file named list.js?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`node 'list.js'`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`exec('list.js)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`run('list.js)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`load('list.js)`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which MongoDB shell query will sort the customer's collection by name descending?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.customers.sort({name: -1}.find({})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.sort({name: -1})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find({}).sort({name: 1})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find({}).sort({name: -1})`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Suppose you are using the `mongoimport` command to import personnel data and there is a unique index on the email field. What happens when there are duplicate emails in the import?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "The import command aborts without importing any records.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The import command imports records upto but not including the record, and then aborts.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The import command prompts you to correct the bad record.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The import command doesn't import the bad document but does import the rest.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You have a collection with millions of documents. Each time you attempt to sort. MongoDB runs out of memory. What might help?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Use the purge operator before the sort.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Return the entire collection and sort on the client.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Pass the --more-memory option.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create an index on the field you are sorting.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You need to be able to quickly find a word in a text field. What should you do?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Create a single field index in descending order, and do a query for the word.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Do a $text query.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create a $regex on the fields, and do a $regex query.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create a text index on the field and do a $text Query.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which field is always included in a projection unless specifically excluded?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "index",
+        "isCorrect": false
+      },
+      {
+        "answer": "Name",
+        "isCorrect": false
+      },
+      {
+        "answer": "row number",
+        "isCorrect": false
+      },
+      {
+        "answer": "`_id`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "After installing MongoDB on your machine, what must you do before launching Mongo?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Create a user account.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Register online.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Establish security credentials.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create a data directory.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "How does a --jsonArray file need to be structured?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "as YAML",
+        "isCorrect": false
+      },
+      {
+        "answer": "as plain text",
+        "isCorrect": false
+      },
+      {
+        "answer": "as a BSON object",
+        "isCorrect": false
+      },
+      {
+        "answer": "as a properly formatted JSON array",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "From the MongoDB shell, how do you display all of a database's memory usage?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.size()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.info()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.memory()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.stats()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "How do you create a new MongoDB user?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.insert({user: 1})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.newUser({})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.newUser({})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.createUser({})`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is the internal data structure of a MongoDB document?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "JSON (JavaScript Object Notation)",
+        "isCorrect": false
+      },
+      {
+        "answer": "ORM (object relational mode)",
+        "isCorrect": false
+      },
+      {
+        "answer": "MBF (MongoDB binary format)",
+        "isCorrect": false
+      },
+      {
+        "answer": "BSON (Binary JSON)",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which projection shows only the FirstName and lastName fields of a document in the customers collection?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.customers.find({}, {firstName: 1, lastName: 1})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find({_id: 0, year: 1, maek: 1, model: 1})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find({}).project({firstName: 1, lastName: 1})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find({}, {_id:0, firstName: 1, lastName: 1})`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Documents in mongodb are atomic at the \\_\\_\\_ level",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "database",
+        "isCorrect": false
+      },
+      {
+        "answer": "field",
+        "isCorrect": false
+      },
+      {
+        "answer": "no",
+        "isCorrect": false
+      },
+      {
+        "answer": "document",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What should the priority of a member be in order to prevent it from becoming the primary in replica set?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "1",
+        "isCorrect": false
+      },
+      {
+        "answer": "null",
+        "isCorrect": false
+      },
+      {
+        "answer": "-1",
+        "isCorrect": false
+      },
+      {
+        "answer": "0",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You need to add an index to the large name collection in your production database. You do not want to have disruption of service for your users and you can't afford to have a team to do the work during after hours. What should you do?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Use the reIndex() command to add the index quickly.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the createIndex() command.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the createIndex() command with the option parallel = true.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the createIndex() command with the option background = true.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "When using aggregation $convert. which is not a parameter?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "input",
+        "isCorrect": false
+      },
+      {
+        "answer": "to",
+        "isCorrect": false
+      },
+      {
+        "answer": "onError",
+        "isCorrect": false
+      },
+      {
+        "answer": "output",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "All tag values in tag sets must be \\_.",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "JSON",
+        "isCorrect": false
+      },
+      {
+        "answer": "integers",
+        "isCorrect": false
+      },
+      {
+        "answer": "XML",
+        "isCorrect": false
+      },
+      {
+        "answer": "strings",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "When using the mongoimport command, how can you drop the database before importing?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Use the -d option.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the mongooverwrite command instead of mongoimport.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the -drop option.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Drop the database manually before importing.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "To import a CSV file into MongoDB, which command should you issue?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "upload",
+        "isCorrect": false
+      },
+      {
+        "answer": "mongorestore",
+        "isCorrect": false
+      },
+      {
+        "answer": "mongoi",
+        "isCorrect": false
+      },
+      {
+        "answer": "mongoimport",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "A critical record must be replicated to the two other servers in the set. Which query guarantees that it is inserted as desired?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.inventory.insert({ prodid: \"tab1122\", qty : 10}, { writeConcern: { w: 2, wtimeout: 5000} })`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.inventory.insert({ prodid: \"tab1122\", qty : 10}, { writeConcern: { j: true} })`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.inventory.insert({ prodid: \"tab1122\", qty : 10}, { writeConcern: { w: 2, j:false, wtimeout: 5000} })`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.inventory.insert({ prodid: \"tab1122\", qty : 10}, { writeConcern: { w: 2, j:true, wtimeout: 5000} })`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is the name of the default file used to configure MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "mongo.config",
+        "isCorrect": false
+      },
+      {
+        "answer": "config.sys",
+        "isCorrect": false
+      },
+      {
+        "answer": ".mdbconfig",
+        "isCorrect": false
+      },
+      {
+        "answer": "mongod.conf",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "After using the dropIndexes() command on your collection, one index remains.What can you do to drop the the remaining index?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Use dropIndexes({all:1}) with the all parameter.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Call dropIndex({\"<em>id</em>\":1}) to force its removal.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Call dropIndex({\"<em>id</em>\"}) to force its removal.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The required_id index cannot be deleted.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "To scale horizontally, what does MongoDB use?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "replication",
+        "isCorrect": false
+      },
+      {
+        "answer": "partition",
+        "isCorrect": false
+      },
+      {
+        "answer": "backup",
+        "isCorrect": false
+      },
+      {
+        "answer": "sharding",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Your database collection holds web session information. One field, lastActivity, holds the timestamp of when the user was last active. You want to delete the user session after 30 minutes of inactivity. What is your best option?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Create Javascript function called via an interval timeout to delete all records older than 30 minutes.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You have to create a stored procedure.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Every time you create a new record for expired older records and delete them.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create a TTL index on the lastActivity field and set expireAfterSeconds to 1800.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "In the MongoDB shell, how can you tell if an index was used with a query?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.customers.find({lastName: 'smith'}).perf()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find({lastName: 'smith'}).plan()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find({lastName: 'smith'}).usedIndex()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.find({lastName: 'smith'}).explain()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You need to be able to quickly find a word in a text field. What should you do?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Create a single field index in descending order, and do a query for the word.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Do a $text query.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create a $regex on the fields, and do a $regex query.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create a text index on the field and do a $text Query.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is the name of the default file used to configure MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "mongo.config",
+        "isCorrect": false
+      },
+      {
+        "answer": "config.sys",
+        "isCorrect": false
+      },
+      {
+        "answer": ".mdbconfig",
+        "isCorrect": false
+      },
+      {
+        "answer": "mongod.conf",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "You have a collection named restaurants with the geographical information stored in the location property, how do you create a geospatial index on it?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.restaurants.geospatial({location: \"2dsphere\"})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.restaurants.createIndex(\"2dsphere\":\"location\")`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.restaurants.createIndex({geospatial: \"location\"})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.restaurants.createIndex({location: \"2dsphere\"})`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What happens to a Replica set oplog if it runs out of memory?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`The oplog will be saved on one of the secondary servers.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`The MongoDB instance will fail`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`The oplog will stop recording logging information`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`The oplog is capped collection and can't run out of memory`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Using the MongoDB shell, how do you remove the customer collection and its indexes?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`db.customers.remove({}).indexes();`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.remove({});`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.delete();`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.customers.drop();`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is the primary advantage of using MongoDB as a NoSQL database over traditional relational databases?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Better support for complex joins",
+        "isCorrect": false
+      },
+      {
+        "answer": "ACID compliance",
+        "isCorrect": false
+      },
+      {
+        "answer": "Fixed data structure",
+        "isCorrect": false
+      },
+      {
+        "answer": "Schema flexibility",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is a Replica Set in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "A set of related database collections",
+        "isCorrect": false
+      },
+      {
+        "answer": "A type of database index in MongoDB",
+        "isCorrect": false
+      },
+      {
+        "answer": "A query language for MongoDB",
+        "isCorrect": false
+      },
+      {
+        "answer": "A group of MongoDB servers that maintain the same data set",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which command is used to create a new database in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`createDatabase()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`useDatabase()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`db.createDatabase()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`use`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is the default port number for MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "3306",
+        "isCorrect": false
+      },
+      {
+        "answer": "5432",
+        "isCorrect": false
+      },
+      {
+        "answer": "8080",
+        "isCorrect": false
+      },
+      {
+        "answer": "27017",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which of the following is a BSON data type in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Integer",
+        "isCorrect": false
+      },
+      {
+        "answer": "Float",
+        "isCorrect": false
+      },
+      {
+        "answer": "String",
+        "isCorrect": false
+      },
+      {
+        "answer": "Date",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is the purpose of an index in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "To define the structure of a document",
+        "isCorrect": false
+      },
+      {
+        "answer": "To group related documents together",
+        "isCorrect": false
+      },
+      {
+        "answer": "To store binary data",
+        "isCorrect": false
+      },
+      {
+        "answer": "To improve query performance",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which operator is used for equality in MongoDB queries?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`$ne`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`$gt`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`$lt`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`$eq`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is the role of the `mongod` process in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "It is the MongoDB shell",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is responsible for data replication",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is a tool for importing and exporting data",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is the primary daemon process for the MongoDB server",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which method is used to remove a document from a collection in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`removeOne()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`drop()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`remove()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`deleteOne()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is a GridFS in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "A distributed file system",
+        "isCorrect": false
+      },
+      {
+        "answer": "A system for managing database transactions",
+        "isCorrect": false
+      },
+      {
+        "answer": "A type of database index",
+        "isCorrect": false
+      },
+      {
+        "answer": "A way to store large files in MongoDB",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which aggregation stage in MongoDB is used to group documents by a specified expression and apply an accumulator expression to each group?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`$match`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`$project`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`$sort`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`$group`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is sharding in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "The process of dividing a database into multiple collections",
+        "isCorrect": false
+      },
+      {
+        "answer": "The process of dividing a collection into multiple documents",
+        "isCorrect": false
+      },
+      {
+        "answer": "The process of dividing a database into multiple smaller databases",
+        "isCorrect": false
+      },
+      {
+        "answer": "The process of distributing data across multiple servers",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which operation is used to update a document in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`modify()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`change()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`set()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`update()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is a TTL index in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "An index used for full-text search",
+        "isCorrect": false
+      },
+      {
+        "answer": "An index used for sorting documents in descending order",
+        "isCorrect": false
+      },
+      {
+        "answer": "An index used for geospatial queries",
+        "isCorrect": false
+      },
+      {
+        "answer": "An index that automatically expires documents after a specified amount of time",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which command is used to limit the number of documents returned in a MongoDB query?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`count()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`max()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`skip()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`limit()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is a compound index in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "An index that spans multiple collections",
+        "isCorrect": false
+      },
+      {
+        "answer": "An index used for complex mathematical operations",
+        "isCorrect": false
+      },
+      {
+        "answer": "An index used for querying nested documents",
+        "isCorrect": false
+      },
+      {
+        "answer": "An index that combines multiple fields",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which operator is used to perform a logical OR operation in MongoDB queries?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`$and`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`$not`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`$nor`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`$or`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is a covered query in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "A query that returns covered documents",
+        "isCorrect": false
+      },
+      {
+        "answer": "A query that covers multiple collections",
+        "isCorrect": false
+      },
+      {
+        "answer": "A query that uses a covered cursor",
+        "isCorrect": false
+      },
+      {
+        "answer": "A query that uses a covered index",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "Which method is used to create an index in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`addIndex()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`index()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`makeIndex()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`createIndex()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is a compound shard key in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "A key used for encrypting data",
+        "isCorrect": false
+      },
+      {
+        "answer": "A key used for sorting documents in ascending order",
+        "isCorrect": false
+      },
+      {
+        "answer": "A key used for grouping documents",
+        "isCorrect": false
+      },
+      {
+        "answer": "A key made up of multiple fields used for sharding",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  },
+  {
+    "categories": [
+      "mongodb"
+    ],
+    "question": "What is the purpose of the `mongos` process in MongoDB?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "It is a tool for monitoring server performance",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is a tool for managing database backups",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is a tool for importing and exporting data",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is a routing service for sharded clusters",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/mongodb/mongodb-quiz.md"
+  }
+]

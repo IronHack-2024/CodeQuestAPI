@@ -1,0 +1,4387 @@
+[
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How can you check your current git version?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git --v",
+        "isCorrect": false
+      },
+      {
+        "answer": "git --option",
+        "isCorrect": false
+      },
+      {
+        "answer": "git --current",
+        "isCorrect": false
+      },
+      {
+        "answer": "git --version",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What command lets you create a connection between a local and remote repository?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git remote add new",
+        "isCorrect": false
+      },
+      {
+        "answer": "git remote new origin",
+        "isCorrect": false
+      },
+      {
+        "answer": "git remote origin",
+        "isCorrect": false
+      },
+      {
+        "answer": "git remote add origin",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Describe what these Git commands do to the commit history:",
+    "codeExamples": [
+      "bash\ngit reset --hard HEAD~5\ngit merge --squash HEAD@{1}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "They reset the HEAD to the fifth commit in the repo, then merge to the master branch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "They delete the last five commits.",
+        "isCorrect": false
+      },
+      {
+        "answer": "They merge the last five commits into a new branch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The current branch's HEAD is reset back five commits, then prior commits are squashed into a single commit.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Your current project has several branches; master, beta, and push-notifications. You've just finished the notification feature in the push-notification branch, and you want to commit it to beta branch. How can you accomplish this?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Checkout the push-notifications branch and run git merge beta",
+        "isCorrect": false
+      },
+      {
+        "answer": "Checkout the master branch and run git merge beta -> push-notifications",
+        "isCorrect": false
+      },
+      {
+        "answer": "Delete the push-notifications branch and it will be committed to the master branch automatically",
+        "isCorrect": false
+      },
+      {
+        "answer": "Checkout the beta branch and run git merge push-notifications",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which of the following is true when you use the following command?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Files are staged in alphabetical order.",
+        "isCorrect": false
+      },
+      {
+        "answer": "All new files are staged",
+        "isCorrect": false
+      },
+      {
+        "answer": "Only updated files are staged",
+        "isCorrect": false
+      },
+      {
+        "answer": "All new and updated files are staged",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What will the following command print to the Terminal?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "The current git version you're running",
+        "isCorrect": false
+      },
+      {
+        "answer": "An inline editor for modifying remote repositories",
+        "isCorrect": false
+      },
+      {
+        "answer": "The last 5 git versions you've installed",
+        "isCorrect": false
+      },
+      {
+        "answer": "A list of remote repositories and their URLs",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Looking at the following commands, describe what is happening.",
+    "codeExamples": [
+      "bash\ngit checkout feature-user-location\ngit cherry-pick kj2342134sdf090093f0sdgasdf99sdfo992mmmf9921231\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "The commit is being tagged for release on the feature-user-location branch",
+        "isCorrect": false
+      },
+      {
+        "answer": "A commit is being copied from its original branch over to the feature-user-location branch",
+        "isCorrect": false
+      },
+      {
+        "answer": "The commit is being cherry picked as the new HEAD of the commit history",
+        "isCorrect": false
+      },
+      {
+        "answer": "A commit is being copied from the feature-user-location branch to the master branch",
+        "isCorrect": false
+      },
+      {
+        "answer": "The branch is switched to the feature-user-location branch, and the specified commit is applied to the branch.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What does the following command do to the git repository?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "It deletes all previous commits and resets the repository history back to its initial state.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It resets the working branch to the first commit.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It keeps the HEAD at the current commit but clears all previous commits.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It sets HEAD to the previous commit and leaves changes from the undone commit in the stage/index.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "You find a bug in your project, but can't locate where it was introduced in the commit history. How would you diagnose this problem?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Manually backtrack through your commit history.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use git search -diff to compare all commits in your repository history.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Run a git rebase to find the buggy commit.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use git bisect to compare the buggy commit to an early commit that works as expected.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Why would the following command be used?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "To run a comparative search of the last 10 commits for differences",
+        "isCorrect": false
+      },
+      {
+        "answer": "To delete the last 10 commits and reset the HEAD",
+        "isCorrect": false
+      },
+      {
+        "answer": "In order to locally cache the last 10 commits",
+        "isCorrect": false
+      },
+      {
+        "answer": "To list the last 10 commits and modify them with either the squash or fixup command",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Why would you use a pre-receive hook in your remote repository?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "You wouldn't, you would use it in the local repository",
+        "isCorrect": false
+      },
+      {
+        "answer": "To fire a script after updates are made to the remote repository",
+        "isCorrect": false
+      },
+      {
+        "answer": "To debug all commit tags and release versions",
+        "isCorrect": false
+      },
+      {
+        "answer": "To execute a script when a remote receives a push that is triggered before any refs are updated",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What option can you use to apply git configurations across your entire git environment?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`--all`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`--master`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`--update`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`--global`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How could you squash multiple commits together without using git merge --squash?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Caching",
+        "isCorrect": false
+      },
+      {
+        "answer": "You can't. git merge --squash is the only git command for that operation.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Reflogging",
+        "isCorrect": false
+      },
+      {
+        "answer": "Rebasing",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "If you cloned an existing git repository, what would happen?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "A new copy would overwrite the central repository",
+        "isCorrect": false
+      },
+      {
+        "answer": "Nothing, cloning is not a supported git function",
+        "isCorrect": false
+      },
+      {
+        "answer": "A copy of the repository would be created on the hosting platform",
+        "isCorrect": false
+      },
+      {
+        "answer": "A copy of the repository would be created on your local machine",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How can you display a list of files added or modified in a specific commit?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Find the commit in the remote repository, as that's the only place that kind of information is stored.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Run `git commit --info` with the commit hash.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Access the commit stash data with `git stash`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the `diff-tree` command with the commit hash.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What files is this .gitignore programmed to leave out?",
+    "codeExamples": [
+      "shell\n#.swift\nbuild/\n\n*.txt\n*.metadata\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "All files with a .swift, .txt, or metadata file extension, as well as the entire build directory",
+        "isCorrect": false
+      },
+      {
+        "answer": "Only the build directory",
+        "isCorrect": false
+      },
+      {
+        "answer": "Only files with .swift and .txt extensions.",
+        "isCorrect": false
+      },
+      {
+        "answer": "All files in the build directory, as well as files ending with .txt or .metadata",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "After you make changes to a local repository, you run the following command. What will this do?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Nothing, you can't use multiple options in the same command",
+        "isCorrect": false
+      },
+      {
+        "answer": "Adds all new files to the staging area",
+        "isCorrect": false
+      },
+      {
+        "answer": "Commits all new files with a message",
+        "isCorrect": false
+      },
+      {
+        "answer": "Adds all modified files to the staging area, then commits them with a message",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "After checking your git status you get the following output, which shows the file beta-notes.js in the commit but also unstaged. How can this situation occur?",
+    "codeExamples": [
+      "shell\nChange to be committed:\n\n(use \"git reset HEAD <file>...\" to unstage)\nmodified: beta-notes.js\nChanges not staged for commit:\n(use \"git add <file>...\" to update what will be committed)\n(use \"git checkout --<file>...\" to discard changes in working directory)\n\nmodified: beta-notes.js\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "There were two copies of beta-notes.js but one was deleted",
+        "isCorrect": false
+      },
+      {
+        "answer": "Two copies of beta-notes.js were created, but only one is being tracked",
+        "isCorrect": false
+      },
+      {
+        "answer": "There are two tracked copies of beta-notes.js, but one was removed from the commit",
+        "isCorrect": false
+      },
+      {
+        "answer": "beta-notes.js was staged, then modified afterwards, creating two different versions of the file",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Where are files stored before they are committed to the local repository?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Saved files",
+        "isCorrect": false
+      },
+      {
+        "answer": "git documents",
+        "isCorrect": false
+      },
+      {
+        "answer": "git cache",
+        "isCorrect": false
+      },
+      {
+        "answer": "Staging area",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What commands would you use to force an overwrite of your local files with the master branch?",
+    "codeExamples": [
+      "bash\n  git pull --all\n  git reset --hard origin/master\n",
+      "bash\n  git pull -u origin master\n  git reset --hard master\n",
+      "bash\n  git pull origin master\n  git reset --hard origin/myCurrentBranch\n",
+      "bash\n  git fetch --all\n  git reset --hard origin/master\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "⠀",
+        "isCorrect": false
+      },
+      {
+        "answer": "⠀",
+        "isCorrect": false
+      },
+      {
+        "answer": "⠀",
+        "isCorrect": false
+      },
+      {
+        "answer": "⠀",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "You find that your project has a tag and branch both named push-notifications, which causes confusion when trying to print out given reference. How can you specify which branch you want to look at?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "use git show refs/push-notifications",
+        "isCorrect": false
+      },
+      {
+        "answer": "use git show push-notifications",
+        "isCorrect": false
+      },
+      {
+        "answer": "use git show heads/refs/push-notifications",
+        "isCorrect": false
+      },
+      {
+        "answer": "use git show refs/heads/push-notifications",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Your team lead needs a list of all commits that will be moved before you perform a rebase. Which command can you use to access that information?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git rebase -log",
+        "isCorrect": false
+      },
+      {
+        "answer": "git rebase -verbose",
+        "isCorrect": false
+      },
+      {
+        "answer": "git rebase -all",
+        "isCorrect": false
+      },
+      {
+        "answer": "git rebase -i",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the operation doing given the Git commands below?",
+    "codeExamples": [
+      "\ngit bisect start\ngit bisect bad 5d41402abc4b2a76b9719d911017c592\ngit bisect good 69faab6268350295550de7d587bc323d\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "It runs a merge of a good commit that is discovered using a known bad commit and known good commit",
+        "isCorrect": false
+      },
+      {
+        "answer": "It marks a commit for deletion using a known bad commit and known good commit to determine which commit introduced a bug",
+        "isCorrect": false
+      },
+      {
+        "answer": "It defines a bad commit and resets the HEAD using a known bad commit and known good commit",
+        "isCorrect": false
+      },
+      {
+        "answer": "It performs a binary search using a known bad commit and known good commit to determine which commit introduced a bug",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "In a situation where you have several commits for a single task, what is the most efficient way to restructure your commit history?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Cherry pick the related commits to another branch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Delete the task commits and recommit with a new message.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Stash the related commits under a new hash.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Squash the related commits together into a single coherent commit.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which of the following is true of the git push command?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Commits can only be tagged when they are created.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Tags are pushed to the remote repository with their respective commits.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Only annotated tags are automatically pushed to the remote repository with a commit.",
+        "isCorrect": false
+      },
+      {
+        "answer": "By default a push doesn't send tags to the remote repository.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "After pushing commits to the remote repository for the first time using the command below, what shorthand command can you use in future?",
+    "codeExamples": [
+      "bash\ngit push -u origin master\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "git push master",
+        "isCorrect": false
+      },
+      {
+        "answer": "git push origin",
+        "isCorrect": false
+      },
+      {
+        "answer": "Same as before, git push -u origin master",
+        "isCorrect": false
+      },
+      {
+        "answer": "git push",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How would you create a custom shortcut or command across your Git environment?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Run `git hotfix` with the shortcut name.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Assign a shortcut or command using git options file.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the `git custom-key` command.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create an alias using the `git config` command.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the status of the beta-notes.js file in the following output?",
+    "codeExamples": [
+      "shell\nChanges not staged for commit:\n(use \"git add <file>...\" to update what will be committed)\n(use \"git checkout -- <file>...\" to discard changes in working directory)\n\nmodified: beta-notes.js\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "beta-notes.js is untracked and has been modified.",
+        "isCorrect": false
+      },
+      {
+        "answer": "beta-notes.js is untracked but has been added to the current commit.",
+        "isCorrect": false
+      },
+      {
+        "answer": "beta-notes.js is tracked, and the modified file has been added to the current commit.",
+        "isCorrect": false
+      },
+      {
+        "answer": "beta-notes.js is a tracked file and has been modified, but has not been added to the current commit.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What command would let you modify your previous commit?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "--fix",
+        "isCorrect": false
+      },
+      {
+        "answer": "--quickfix",
+        "isCorrect": false
+      },
+      {
+        "answer": "--modify",
+        "isCorrect": false
+      },
+      {
+        "answer": "--amend",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the best way to characterize the git commit structure?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Data array",
+        "isCorrect": false
+      },
+      {
+        "answer": "Data log",
+        "isCorrect": false
+      },
+      {
+        "answer": "Data dictionary",
+        "isCorrect": false
+      },
+      {
+        "answer": "Data snapshot",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What change will the following command make to the staging area files?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "testfile.js will be removed from the staging area but its changes will still be tracked.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A copy of testfile.js will be cached on your desktop.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The current copy of testfile.js will be saved in the staging area.",
+        "isCorrect": false
+      },
+      {
+        "answer": "testfile.js will be removed from the staging area and its changes no longer tracked.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "After you've successfully merged two branches and committed the changes, what is the next step in keeping your git structure organized?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Use the git reset --soft HEAD to roll back one commit.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use git clear-all to clean up any hanging files.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Run git rebase to move the current commit to its original location.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Run git branch -d `<branch name>` to delete the merged branch.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "While modifying a file, you're unexpectedly assigned an urgent bug fix on another branch. How can you temporarily save your local work without committing?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "This is not possible, as you cannot save locally without committing.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Run git hold to save a local copy of what you're doing to return to later.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Save your work with git local-cache.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use git stash to save your work and come back later and reapply the stashed commit.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What command would you use to create a new git repository?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git add",
+        "isCorrect": false
+      },
+      {
+        "answer": "git start",
+        "isCorrect": false
+      },
+      {
+        "answer": "git new",
+        "isCorrect": false
+      },
+      {
+        "answer": "git init",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "While working on a feature branch you try to use \"git rerere\" to solve a recurring merge conflict but nothing is happening. What could be causing this issue?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "The \"-all\" option isn't added to the command.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The commit hash is missing.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The filepath isn't specified.",
+        "isCorrect": false
+      },
+      {
+        "answer": "\"rerere.enabled\" isn't enable in the config file.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which setting determines what pager is used when Git pages output?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "core.page",
+        "isCorrect": false
+      },
+      {
+        "answer": "page",
+        "isCorrect": false
+      },
+      {
+        "answer": "pager",
+        "isCorrect": false
+      },
+      {
+        "answer": "core.pager",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What does commit object contain?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "A set of files, representing the state of a project at a given point of time.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Reference to parent commit objects.",
+        "isCorrect": false
+      },
+      {
+        "answer": "An SHA1 name, a 40-character string that uniquely identifies the commit object.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Reference to parent commit objects and a set of files, representing the state of a project at a given point of time, and an SHA1 name, a 40-character string that uniquely identifies the commit object.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which option enables inclusion of committer name in custom log format?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "%ce",
+        "isCorrect": false
+      },
+      {
+        "answer": "%cr",
+        "isCorrect": false
+      },
+      {
+        "answer": "%cd",
+        "isCorrect": false
+      },
+      {
+        "answer": "%cn",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How many ways are present in Git to integrate changes from one branch into another?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "3",
+        "isCorrect": false
+      },
+      {
+        "answer": "5",
+        "isCorrect": false
+      },
+      {
+        "answer": "4",
+        "isCorrect": false
+      },
+      {
+        "answer": "2",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which user should be created first during setting up of SSH?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git",
+        "isCorrect": false
+      },
+      {
+        "answer": "admin",
+        "isCorrect": false
+      },
+      {
+        "answer": "root",
+        "isCorrect": false
+      },
+      {
+        "answer": "None of these",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which command will list tags with the 1.4.2 series?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git tag 'v1.4.2'",
+        "isCorrect": false
+      },
+      {
+        "answer": "git tag-list 'v1.4.2\\*'",
+        "isCorrect": false
+      },
+      {
+        "answer": "git tag 'v1.4.2\\*'",
+        "isCorrect": false
+      },
+      {
+        "answer": "git tag -l 'v1.4.2.\\*'",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which of the following is an integration manager?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "lieutenants",
+        "isCorrect": false
+      },
+      {
+        "answer": "benevolent dictator",
+        "isCorrect": false
+      },
+      {
+        "answer": "Depends upon data",
+        "isCorrect": false
+      },
+      {
+        "answer": "Depends upon project type",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which Git command begins tracking of a new file?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "addfile",
+        "isCorrect": false
+      },
+      {
+        "answer": "begin",
+        "isCorrect": false
+      },
+      {
+        "answer": "track",
+        "isCorrect": false
+      },
+      {
+        "answer": "add",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which of the following is called dumb protocol?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "All of these",
+        "isCorrect": false
+      },
+      {
+        "answer": "SSH",
+        "isCorrect": false
+      },
+      {
+        "answer": "Git",
+        "isCorrect": false
+      },
+      {
+        "answer": "HTTP",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which key press returns a set of suggestions to pick from, when writing a Git command?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Control",
+        "isCorrect": false
+      },
+      {
+        "answer": "Shift",
+        "isCorrect": false
+      },
+      {
+        "answer": "Alt",
+        "isCorrect": false
+      },
+      {
+        "answer": "Tab",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which of these terms best describes Git?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Issue Tracking System",
+        "isCorrect": false
+      },
+      {
+        "answer": "Integrated Development Environment",
+        "isCorrect": false
+      },
+      {
+        "answer": "Web-Based Repository Hosting Service",
+        "isCorrect": false
+      },
+      {
+        "answer": "Distributed Version Control System",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How does Git think of its data?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "File",
+        "isCorrect": false
+      },
+      {
+        "answer": "None of these",
+        "isCorrect": false
+      },
+      {
+        "answer": "Folder",
+        "isCorrect": false
+      },
+      {
+        "answer": "Snapshot",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which option enables inclusion of author name in custom log format?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "%am",
+        "isCorrect": false
+      },
+      {
+        "answer": "%ad",
+        "isCorrect": false
+      },
+      {
+        "answer": "%ae",
+        "isCorrect": false
+      },
+      {
+        "answer": "%an",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which version onwards did Git offer reversing a file back to what it looked like when last committed?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "1.7",
+        "isCorrect": false
+      },
+      {
+        "answer": "2.0",
+        "isCorrect": false
+      },
+      {
+        "answer": "1.8",
+        "isCorrect": false
+      },
+      {
+        "answer": "1.6",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which strategy is used by Git for merging two branches?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "LIFO",
+        "isCorrect": false
+      },
+      {
+        "answer": "recursive",
+        "isCorrect": false
+      },
+      {
+        "answer": "FIFO",
+        "isCorrect": false
+      },
+      {
+        "answer": "octopus",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What does refs store?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "SHA-1 value",
+        "isCorrect": false
+      },
+      {
+        "answer": "None of these",
+        "isCorrect": false
+      },
+      {
+        "answer": "Project name",
+        "isCorrect": false
+      },
+      {
+        "answer": "Branch name",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What Language is used in GIT?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "C++",
+        "isCorrect": false
+      },
+      {
+        "answer": "C#",
+        "isCorrect": false
+      },
+      {
+        "answer": "Java",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is usually the extension of file which has the public key?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "ssh",
+        "isCorrect": false
+      },
+      {
+        "answer": "key",
+        "isCorrect": false
+      },
+      {
+        "answer": "pk",
+        "isCorrect": false
+      },
+      {
+        "answer": "pub",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the difference between initializing a normal repo and a bare repo?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Bare repos store their git history in a .git subfolder.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Bare repos do not have the .git extension.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Bare repos should be used for local rather than remote repos.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Bare repos do not come with working or checked-out source files.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How many individual commits can a single repository have?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "only one commit local per repository",
+        "isCorrect": false
+      },
+      {
+        "answer": "only three commits per branch",
+        "isCorrect": false
+      },
+      {
+        "answer": "only one commit per HEAD",
+        "isCorrect": false
+      },
+      {
+        "answer": "any number of commits",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What types of tags does Git support?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "heavy and concise",
+        "isCorrect": false
+      },
+      {
+        "answer": "lightweight and immutable",
+        "isCorrect": false
+      },
+      {
+        "answer": "heavy and annotated",
+        "isCorrect": false
+      },
+      {
+        "answer": "lightweight and annotated",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "After staging a series of changes to the index, which command could you use to review them prior to a commit?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git diff",
+        "isCorrect": false
+      },
+      {
+        "answer": "git diff --HEAD",
+        "isCorrect": false
+      },
+      {
+        "answer": "git status -v -v",
+        "isCorrect": false
+      },
+      {
+        "answer": "git diff --cached",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What does the git stash drop command do?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "deletes the stash",
+        "isCorrect": false
+      },
+      {
+        "answer": "lists everything in the stash",
+        "isCorrect": false
+      },
+      {
+        "answer": "throws away the oldest entry",
+        "isCorrect": false
+      },
+      {
+        "answer": "removes the most recent stash entry",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What command creates a new branch from the currently checked-out branch?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`git -b checkout <nameOfBranch>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git branch`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git checkout <nameOfBranch>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git checkout -b <nameOfBranch>`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "After mistakenly staging a file named myFile to the index, how would you remove it from the index to exclude it from your next commit?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Use git reset HEAD^.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use git -rm myFile.txt.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use git reset.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use git reset myFile.txt.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What happens if you run this command from your master branch?",
+    "codeExamples": [
+      "bash\ngit checkout -b beta-test\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "The beta-test branch will be checked out of the current commit.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The beta-test branch will be checked out and deleted.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The beta-test branch will be merged with the master branch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A new branch called beta-test will be created and switched to.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How does Git internally manage branches?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "by creating a data array of branches in the same repository.",
+        "isCorrect": false
+      },
+      {
+        "answer": "by creating a data dictionary of code changes.",
+        "isCorrect": false
+      },
+      {
+        "answer": "be creating a debug log that stores repository changes.",
+        "isCorrect": false
+      },
+      {
+        "answer": "by creating a pointer to the most recent snapshot/commit for the branch.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "You want to perform a git reset but cannot recall all of the available options. What command would you use to see a description of them?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git -h reset",
+        "isCorrect": false
+      },
+      {
+        "answer": "git options reset",
+        "isCorrect": false
+      },
+      {
+        "answer": "git reset help",
+        "isCorrect": false
+      },
+      {
+        "answer": "git help reset",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is a remote repository?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "a version of the repository that mirrors changes made in the local repository's master branch for open-source collaboration efforts",
+        "isCorrect": false
+      },
+      {
+        "answer": "the lead repository elected by the Git arbitrator found within local repositories of collaborating team members",
+        "isCorrect": false
+      },
+      {
+        "answer": "a read-only version of the repository stored on a backup server in case local repositories become lost or corrupted",
+        "isCorrect": false
+      },
+      {
+        "answer": "a version of the repository hosted on the internet or network that is pushed to or pulled from by collaborators",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "After modifying some existing files in a repository, you decide to discard the changes. What command can you use?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git restore",
+        "isCorrect": false
+      },
+      {
+        "answer": "git undo",
+        "isCorrect": false
+      },
+      {
+        "answer": "git clean",
+        "isCorrect": false
+      },
+      {
+        "answer": "git checkout .",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "After starting to merge a feature branch into your master branch, you encounter a merge conflict and decide you do not want to perform the merge. How can you stop the merge and restore to the pre-merge state?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Use git restore -p.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use git merge -u.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use git merge --undo.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use git merge --abort.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which command correctly creates a lightweight tag?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`git tag --light \"v3.8.1\"`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git tag v3.8.1 —-annotate -m \"<tagMessage>\"`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git tag -l v3.8.1`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git tag v3.8.1`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the main issue with using git rebase when working with multiple developers?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Rebase creates a temporary copy of the master branch in the remote repo.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Rebase moves the HEAD of the remote master branch one commit forward.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Rebase deletes all commit history for the new feature branch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Rebase affects only your repository and creates a diff in the master branch.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What Git workflow is used by teams that collaborate on a single branch and avoid creating long-lived development branches?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Git flow",
+        "isCorrect": false
+      },
+      {
+        "answer": "Trunk-Based Development",
+        "isCorrect": false
+      },
+      {
+        "answer": "GitHub flow",
+        "isCorrect": false
+      },
+      {
+        "answer": "Mainline flow",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which option on the git log command allows you to limit output to commits made after certain date?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`--sinceWhen`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`-<n>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`--afterDate`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`--since`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How would you delete unreachable objects older than a specified time from your project database?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`git cache --obsolete <time>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git branch --rebase <time>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git delete --inert <time>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git prune --expire <time>`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What conflicts can occur when forcing a push after rebasing?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "The origin URL will be reset to its default value.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The current HEAD will be deleted and can't be reinstated.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Nothing, it's common practice to force a push after rebasing.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The remote master branch could have existing changes overwritten.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the difference between Git and SVN?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Git works only on Linux, while SVN works on all operating systems.",
+        "isCorrect": false
+      },
+      {
+        "answer": "SVN works only on Linux, while Git works on all operating systems.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Git a centralized system, while SVN is a distributed system.",
+        "isCorrect": false
+      },
+      {
+        "answer": "SVN is a centralized system, while Git is a distributed system.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "This command is an example of what kind of tag?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "verbose",
+        "isCorrect": false
+      },
+      {
+        "answer": "lightweight",
+        "isCorrect": false
+      },
+      {
+        "answer": "deferred",
+        "isCorrect": false
+      },
+      {
+        "answer": "annotated",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the difference between a soft reset (`git reset --soft`) and a hard reset (`git reset –hard`) ?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "A soft reset caches the old HEAD pointer, while a hard reset deletes it entirely.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A hard reset changes only where the HEAD is pointing, while a soft reset changes the HEAD and index.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A hard reset caches the old HEAD pointer, while a soft reset deletes it entirely.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A soft reset only changes the commit that HEAD points to, while a hard reset resets the index and working tree to match the specified commit, discarding any changes.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Consider the following Git workflow:",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`1. Develop 2. Release 3. Hotfix 4. Feature 5. Master`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`1. Master 2. Release 3. Hotfix 4. Feature 5. Develop`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`1. Develop 2. Master 3. Hotfix 4. Feature 5. Develop`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`1. Master 2. Hotfix 3. Develop 4. Feature 5. Release`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What information does the git config file store?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "shell scripts and flags",
+        "isCorrect": false
+      },
+      {
+        "answer": "keychain and account information",
+        "isCorrect": false
+      },
+      {
+        "answer": "pre-compile scripts and settings",
+        "isCorrect": false
+      },
+      {
+        "answer": "local and global repository options",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is version control?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "a type of architecture used to manage large databases",
+        "isCorrect": false
+      },
+      {
+        "answer": "a programmatic design pattern used to manage code between multiple engineering teams",
+        "isCorrect": false
+      },
+      {
+        "answer": "a type of software that links a project with a GitHub repository",
+        "isCorrect": false
+      },
+      {
+        "answer": "a system that shows, tracks, and controls changes to a set of files over time",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the difference between using the `git stash` and `git stash pop` commands?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`git stash` removes a commit from the repo history, while `git stash pop` saves changes to multiple branches.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git stash` saves changes to multiple branches, while `git stash pop` removes a commit from the repo history.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git stash` removes the most recent commit, while `git stash pop` saves current changes.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git stash` creates a stash entry, while `git stash pop` places a saved state from the stash list onto the working directory.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which command can be used to list the branches that have been merged into the currently checked-out branch?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git master --status",
+        "isCorrect": false
+      },
+      {
+        "answer": "git branch --status",
+        "isCorrect": false
+      },
+      {
+        "answer": "git status --merged",
+        "isCorrect": false
+      },
+      {
+        "answer": "git branch --merged",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How would you configure Git to abort a commit if a smoke test script fails?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Create a post-commit shell script that triggers the action.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create a post-commit hook to trigger the script.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create a pre-commit shell script that triggers the action.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create a pre-commit hook to trigger the script.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which use case is NOT a good candidate for a Git hook?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "continuous integration",
+        "isCorrect": false
+      },
+      {
+        "answer": "increasing code coverage",
+        "isCorrect": false
+      },
+      {
+        "answer": "enforcing commit rules",
+        "isCorrect": false
+      },
+      {
+        "answer": "state dependent environment changes",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What information do Git reflogs (reference logs) store?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "shell script pointers and keychain credentials",
+        "isCorrect": false
+      },
+      {
+        "answer": "release notes and hook script values",
+        "isCorrect": false
+      },
+      {
+        "answer": "tag and versioning information",
+        "isCorrect": false
+      },
+      {
+        "answer": "updates to branch tips and other references in the local repository",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "You have just completed rebasing your master branch and need to manually update the remote master, even though there is a merge conflict. How can you accomplish this?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`git push --overwrite`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git push --update`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git push --assert`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git push --force-with-lease`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the difference between `git fetch` and `git pull`",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`git fetch` creates a new branch off the master branch, while `git pull` creates a new branch off the local repository's master branch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git pull` downloads new data from a remote repository without integrating it into local files, while `git fetch` updates the current HEAD branch with the latest changes from the remote server.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git fetch` downloads and merges data from the local repository, while `git pull` informs your colleagues you are about to make changes to the master branch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git fetch` updates remote tracking branches with changes from a remote repository, while `git pull` updates remote tracking branches with changes from a remote repository and merges them into their corresponding local branches.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What command displays the difference between the working tree and the stage/index area, as well as files not tracked by Git?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`git current`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git local`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git context`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git status`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "You would like to restore some previously stashed work to a new branch. How can you do that?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Use `git branch <stash hash>`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Add the stashed commits to the current commit, then create a new branch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use `git checkout -b`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Run `git stash branch <branch name>`.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the difference between git branch -d and git branch -D?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "-D deletes the local branch, while -d deletes the branch regardless of push and merge status.",
+        "isCorrect": false
+      },
+      {
+        "answer": "-d deletes the current commit head, while -D deletes the entire branch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "-D deletes the current commit head, while -d deletes the entire branch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "-d deletes the local branch, while -D deletes the local branch regardless of push and merge status.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "You stashed three sets of changes but cannot remember the contents of the first stash entry. What command would you use to see the details of the changes in the first of the three stash entries?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git stash show -p stash@{2}",
+        "isCorrect": false
+      },
+      {
+        "answer": "git stash list",
+        "isCorrect": false
+      },
+      {
+        "answer": "git stash show -p stash@{1}",
+        "isCorrect": false
+      },
+      {
+        "answer": "git stash show -p",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How would you delete a remote branch in your repository?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Use `git --delete <branch_name>`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use `git push <remote_name> --d <branch_name>`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use `git push <remote_name> --D`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use `git push <remote_name> --delete <branch_name>`.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the default setting of `git reflog` when no subcommands are specified?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "delete",
+        "isCorrect": false
+      },
+      {
+        "answer": "expire",
+        "isCorrect": false
+      },
+      {
+        "answer": "update",
+        "isCorrect": false
+      },
+      {
+        "answer": "show",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How does the `-p` option change the behavior of the `git add` command",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "It causes tracked files in the parent directory to be included in the staged files.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It automatically pushes changes to the corresponding branch on the remote repository.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It allows developers to interactively choose which files are committed and outputs the differences for review.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It allows developers to interactively choose which changes to tracked files are staged and outputs the differences for review.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "After checking out a specific commit, you receive a warning message indicating You are in 'detached HEAD' state. What is Git warning you of?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "You are not working on the most recent commit of a branch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A teammate has flagged the code with an issue.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The branch has not been pushed to the remote repository.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The commit does not have a parent.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "After accidentally deleting a branch in your local repository, how can you recover it?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "It cannot be recovered.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Find the hash of the branch with the `log` command, then execute `git checkout -b <branchname> <hash>`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Execute `git checkout -b <branchname>`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Find the hash of the branch with the `reflog` command, then execute `git checkout -b <branchname> <hash>`.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How would you display a histogram showing inserts, deletion, and modifications per file for a specific commit along with its general commit information?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Use `git stat`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use `git debug --prettyprint`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Query the remote repository with the commit hash.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use `git show <commit> --stat`.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What features do repository managers such as GitHub provide beyond Git?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Repository managers are proprietary versions of Git that do not include enhanced features.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Repository managers provide an enhanced command-line tool that is used to manage multiple local repositories.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Repository managers distribute repositories across multiple locations on a user's workstation, providing redundant storage that allows for quick backup and recovery.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Repository managers provide an online service for hosting Git repositories that include collaboration features such as pull requests, issue tracking, and peer reviews.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What command finds the HEAD of the current branch?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`git head --verify`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git log --head`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git hash --head`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git show-ref --head`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "When Git Workflows contain a long-running branch, what purpose does the long-running branch serve?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Long-running branches store unstable code until it os peer reviewed for integration into a feature branch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Long-running branches correspond to agile sprints and are used to store related to features developed in the sprint.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Long-running branches contain code related to experimental feature development that is merged into short-lived branches such as master.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Long-running branches correspond to different stages of development and are always open for topic/feature branches to be pulled into.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What command takes changes from the master branch on the remote repository origin and merges then to the local checked-out branch?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`git commit -u origin`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git checkout origin`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git push origin master`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git pull origin master`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "While pushing changes to a remote repository, you receive the following message. How do you resolve this issue?",
+    "codeExamples": [
+      "bash\nerror: failed to push some refs to 'https://github.com/myrepo/simple.git'\nhint: Updates were rejected because the remote contains work that you do not hint: not have locally.\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "Use the --atomic option with the push command.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Execute a fetch, then execute another push.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the --force option with the push command.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Execute a pull, then resolve any merge conflicts and execute another push.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What does the -p option add to the output of the `git log` command?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "It adds patch output that shows a summary listing modified files.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It adds padding to the output and displays a histogram showing the number of lines changed in each commit.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It adds the full commit message and notes associated with each commit.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It adds patch output that shows the differences introduced in each commit.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the staging area or index?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "an area that stores commits prior to them being pushed to the remote repository",
+        "isCorrect": false
+      },
+      {
+        "answer": "an area containing stash entries that can applied to the working files",
+        "isCorrect": false
+      },
+      {
+        "answer": "an area where changes from a branch in the remote repository are stored before they are applied to a local branch",
+        "isCorrect": false
+      },
+      {
+        "answer": "an area that stores information about changes that will be included in the next commit",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What command would you use to stage changes to the index strictly for properties files in the current directory?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`git add %.properties`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git add .properties`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git add properties`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git add *.properties`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What are untracked files?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "files in the local repository that have not been merged into the master branch",
+        "isCorrect": false
+      },
+      {
+        "answer": "staged files that Git does not know about because the have not been committed",
+        "isCorrect": false
+      },
+      {
+        "answer": "files in the remote repository that Git does not know about because they have not been tagged",
+        "isCorrect": false
+      },
+      {
+        "answer": "files in the working directory that Git does not know about because they have not been staged or committed",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What type of Git hook could be used to validate that a commit message contains a ticket number?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "pre-commit",
+        "isCorrect": false
+      },
+      {
+        "answer": "applypatch-msg",
+        "isCorrect": false
+      },
+      {
+        "answer": "prepare-commit-msg",
+        "isCorrect": false
+      },
+      {
+        "answer": "commit-msg",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the difference between git stash pop and git stash apply?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git stash pop pushes the topmost commit to the current branch, while git stash apply caches the last commit in the current branch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "git stash pop merges the topmost commit to the current branch, while git stash apply merges the last commit in the current branch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "git stash pop applies the topmost entry in the stash to the working files but leaves it in the stash, while git stash apply applies the topmost entry in the stash to the working files and removes it from the stash.",
+        "isCorrect": false
+      },
+      {
+        "answer": "git stash pop applies the topmost entry in the stash to the working files and removes it from the stash, while git stash apply applies the topmost entry in the stash to the working files but leaves it in the stash.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "After making some major changes to your code, you are a little nervous about committing. What command would you use to review the commit prior to making it?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git commit --verify",
+        "isCorrect": false
+      },
+      {
+        "answer": "git notes show",
+        "isCorrect": false
+      },
+      {
+        "answer": "git commit preview",
+        "isCorrect": false
+      },
+      {
+        "answer": "git commit --dry-run",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What statement best describes Git's concept of HEAD?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "a pointer to the most recently changed file in the stage/index",
+        "isCorrect": false
+      },
+      {
+        "answer": "a pointer to the master branch",
+        "isCorrect": false
+      },
+      {
+        "answer": "a pointer to where the repository is stored in memory",
+        "isCorrect": false
+      },
+      {
+        "answer": "a pointer to the most recent commit in the currently checked-out branch",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "After staging changes to several files, you realize the changes to the config.properties file are incorrect, and need to be removed from the stage and working directory. What command can you use to remove the staged changes to the file?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git rm config.properties",
+        "isCorrect": false
+      },
+      {
+        "answer": "git rf config.properties",
+        "isCorrect": false
+      },
+      {
+        "answer": "git checkout HEAD -- config.properties",
+        "isCorrect": false
+      },
+      {
+        "answer": "git reset HEAD^ -- config.properties",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "After a recent release with a stack trace, an issue is create that indicates the problem is with a newly added configuration property named MaxConnections. What command can find all commits that add or remove the string MaxConnections?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git grep -a \"MaxConnections\"",
+        "isCorrect": false
+      },
+      {
+        "answer": "git log --search-string \"MaxConnections\"",
+        "isCorrect": false
+      },
+      {
+        "answer": "git commit --with \"MaxConnections\"",
+        "isCorrect": false
+      },
+      {
+        "answer": "git log -S \"MaxConnections\"",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Your company has moved its remote repository to GitHub at this location: https://github.com/yourcompany/core-api.git. What command updates the remote repository, named origin, to point to the new remote repository at this location?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git remote create-update origin https://github.com/yourcompany/core-api.git",
+        "isCorrect": false
+      },
+      {
+        "answer": "git remote update origin https://github.com/yourcompany/core-api.git",
+        "isCorrect": false
+      },
+      {
+        "answer": "git remote add https://github.com/yourcompany/core-api.git",
+        "isCorrect": false
+      },
+      {
+        "answer": "git remote set-url origin https://github.com/yourcompany/core-api.git",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "When is the cherry-pick command used?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "when the HEAD needs to be reset to a specific commit",
+        "isCorrect": false
+      },
+      {
+        "answer": "when a specific commit needs to be pulled down from the remote repository",
+        "isCorrect": false
+      },
+      {
+        "answer": "when a hook script needs to be invoked",
+        "isCorrect": false
+      },
+      {
+        "answer": "when a commit from one branch needs to be copied into another branch",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How would you describe a forked repository?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "a deleted or archived copy of a repository",
+        "isCorrect": false
+      },
+      {
+        "answer": "a beta release branch of a repository",
+        "isCorrect": false
+      },
+      {
+        "answer": "a future branch of a repository",
+        "isCorrect": false
+      },
+      {
+        "answer": "a separate copy of a repository",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How can you exclude untracked files within the working directory from a Git repository?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "You cannot exclude the files from the repository.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Tag the files with excluded.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Add the files to the omitted branch",
+        "isCorrect": false
+      },
+      {
+        "answer": "Add a pattern matching the files to the .gitignore file.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What command creates a near-exact copy of the entire repository from a server?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`git checkout <url>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git pull <url>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git replicate <url>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git clone <url>`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What would happen if you ran the `git reset testfile.js` command?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "testfile.js would be reverted to a blank file.",
+        "isCorrect": false
+      },
+      {
+        "answer": "testfile.js would be reset to its first saved state.",
+        "isCorrect": false
+      },
+      {
+        "answer": "testfile.js would be removed from the stage/index area, if present.",
+        "isCorrect": false
+      },
+      {
+        "answer": "testfile.js would be reverted to its last saved copy.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What situation can occur when attempting to combine branches containing changes to the same piece of code?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "lost code",
+        "isCorrect": false
+      },
+      {
+        "answer": "automatic override",
+        "isCorrect": false
+      },
+      {
+        "answer": "collisions",
+        "isCorrect": false
+      },
+      {
+        "answer": "merge conflict",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "When Git workflows contain a topic branch, what purpose does the topic branch serve?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Topic branches store unstable code until it is peer reviewed for integration into another feature branch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Topic branches correspond to different stages of development and are always open for long-running branches to be pulled into.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Topic branches are used in waterfall development methodologies to track the state of the code during the various stages of waterfall.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Topic branches are short-lived branches used to store work related to a particular feature.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What practice can help reduce the chances of encountering a merge conflict?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Provide detailed commit messages that describe the changes being introduced by the commit.",
+        "isCorrect": false
+      },
+      {
+        "answer": "make large commits that introduce multiple features.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Avoid frequent interaction with the remote repository to reduce the probability of pulling conflicts.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Keep local repository branches in sync with upstream branches in the remote repository by committing,pushing and pulling frequently.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What command can you use to remove untracked files from the working directory?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`git rm -all`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git rm --cached`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git checkout`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git clean -d -f`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "After making a commit, you notice that you forgot to include changes to the doge.txt file. What command or commands would you use to add the changes to the commit?",
+    "codeExamples": [
+      "bash\n  git add doge.txt\n  git commit --amend --no-edit\n",
+      "bash\n  git commit --amend --no-edit\n",
+      "bash\n  git add doge.txt\n  git commit --patch --no-edit\n",
+      "bash\n  git commit --patch --no-edit\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "⠀",
+        "isCorrect": false
+      },
+      {
+        "answer": "⠀",
+        "isCorrect": false
+      },
+      {
+        "answer": "⠀",
+        "isCorrect": false
+      },
+      {
+        "answer": "⠀",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which command would remove a file named wrongfile from the current branch of a repository, the index, and working files?",
+    "codeExamples": [
+      "bash\ngit rm wrongfile\ngit commit -m \"Removed file\"\n",
+      "bash\n  git forget -rf wrongfile\n  git commit -m \"Removed file\"\n",
+      "bash\n  git untrack -rf wrongfile\n  git commit -m \"Removed file\"\n",
+      "bash\n  git rm --cached wrongfile\n  git commit -m \"Removed file\"\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "⠀",
+        "isCorrect": false
+      },
+      {
+        "answer": "⠀",
+        "isCorrect": false
+      },
+      {
+        "answer": "⠀",
+        "isCorrect": false
+      },
+      {
+        "answer": "⠀",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the best way to report a bug to a GitHub project?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Send an email to a project owner.",
+        "isCorrect": false
+      },
+      {
+        "answer": "I don't bother reporting software bugs because there's no transparency and they never get fixed anyway.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use git search -diff to compare all commits in your repository history.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Search for the bug in the project's existing issues and create a new one if it hasn't been reported yet.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Suppose you have created a bug fix on a new branch and want it to become part of the next production build generated from the main branch. What should you do next?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Copy your branch changes and commit them directly to the main branch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "On second thought, maybe I won't share this fix. I'll just put it in my own private version of the source code.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use git bisect to compare the buggy commit to an early commit that works as expected.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create a pull request to merge your new branch into the main branch.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is GitHub?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "version control",
+        "isCorrect": false
+      },
+      {
+        "answer": "for keeping images",
+        "isCorrect": false
+      },
+      {
+        "answer": "for social networking",
+        "isCorrect": false
+      },
+      {
+        "answer": "A hosting platform for Git repositories",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Git Pull is a combination of?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Add and commit.",
+        "isCorrect": false
+      },
+      {
+        "answer": "branch and checkout.",
+        "isCorrect": false
+      },
+      {
+        "answer": "None of these.",
+        "isCorrect": false
+      },
+      {
+        "answer": "fetch and merge.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the command to set the user email for the current repository?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git email.user",
+        "isCorrect": false
+      },
+      {
+        "answer": "git config email",
+        "isCorrect": false
+      },
+      {
+        "answer": "All of the above.",
+        "isCorrect": false
+      },
+      {
+        "answer": "git config user.email",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "**\\_** will rewind your project to a specific point in time, losing all commits that came after it. **\\_** will keep changes in those rewound commits as local modifications",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`git reset HEAD`; `git reset HEAD^`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git reset --soft`; `git reset --hard`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git rewind`; `git update`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git reset --hard`; `git reset --soft`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Explain the concept of \"Git blame\" and when it is used in a version control workflow.",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Git blame is a command for finding and exposing the identity of contributors in a Git repository.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It's used for blaming others for code issues in a collaborative project.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Git blame is a feature for tracking the location of bugs in code.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Git blame is a tool for displaying who last modified each line of a file, helping to track changes and understand code history and authorship.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the purpose of C++ move constructor, and when is it automatically generated?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "A move constructor creates deep copies of objects, improving memory efficiency.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is generated when you explicitly define a copy constructor.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The move constructor is used for copying objects between different data types.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A move constructor allows efficient transfer of resources from one object to another,reducing unnecessary copying.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "You have changed your mind about adding broccoli to your project. How should you remove it?",
+    "codeExamples": [
+      "\nUntracked files:\n(use \"git add <file>...\" to include in what will be committed)\nbroccoli\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`git remove .`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git remove broccoli`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git clean`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`git clean -f`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "You're creating an action for the Github marketplace. why is it importance to create a release?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "to initiate a continuos integration process",
+        "isCorrect": false
+      },
+      {
+        "answer": "to create workflows and automate the process of generating software",
+        "isCorrect": false
+      },
+      {
+        "answer": "to alow you to create .zip files that you can easily share",
+        "isCorrect": true
+      },
+      {
+        "answer": "to package your software so that it can become available through the Github marketplace",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "You're looking at a repository page and click a folder name to open it. You have code search on, so you land in the code view. What is the quickest way to find a file on a path in your repo?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Go to advanced search.",
+        "isCorrect": false
+      },
+      {
+        "answer": "From the search menu, select Path.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Press the T key.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Press the slash(/) key and then the T key.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How do you save a search that you use often using GitHub?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Click Save on the Search box.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Click Save in the advanced search menu.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Bookmark the search results page.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Click Save on the search results page.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "which of these is not a label that github creates by default?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "bug",
+        "isCorrect": false
+      },
+      {
+        "answer": "documentation",
+        "isCorrect": false
+      },
+      {
+        "answer": "wontfix",
+        "isCorrect": false
+      },
+      {
+        "answer": "repo",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the fastest way to start a search using Github web pages?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Press the slash(/) key on any page of the site.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Click the Search tab from the Github Version",
+        "isCorrect": false
+      },
+      {
+        "answer": "Click the advanced Search link.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Click the search box and type your search query.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Assigning an issue to a person implies that they \\_\\_\\_\\_.",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "will get a notification asking them to review the issue",
+        "isCorrect": false
+      },
+      {
+        "answer": "are being informed of the issue's details",
+        "isCorrect": false
+      },
+      {
+        "answer": "supervise the team resolving the issue",
+        "isCorrect": false
+      },
+      {
+        "answer": "are responsible for resolving the issue",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What does a Template repository do?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "It creates a live demo of the current repository for training.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It lets you archive and store project settings.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It imports another project’s settings to the current project.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It allows you to create a default structure and files based on the current repository.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "You’re creating an action for the GitHub Marketplace. Why is it important to create a release?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "To allow you to create .zip files that you can easily share",
+        "isCorrect": false
+      },
+      {
+        "answer": "To initiate a continuous integration process",
+        "isCorrect": false
+      },
+      {
+        "answer": "To create workflows and automate the process of generating software",
+        "isCorrect": false
+      },
+      {
+        "answer": "To package your software so that it can become available through the Github Marketplace",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What are two ways to help Copilot give you more accurate suggestions?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Add instructions in parentheses.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use shorthand, but accurate, descriptors.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use concise variable names.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Add context in comments.",
+        "isCorrect": true
+      },
+      {
+        "answer": "Use descriptive function names.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the main purpose of the Chat panel?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "To search for answers in the current project’s repository",
+        "isCorrect": false
+      },
+      {
+        "answer": "To chat with other developers who are working at your company",
+        "isCorrect": false
+      },
+      {
+        "answer": "To get a list possible answers to a question",
+        "isCorrect": false
+      },
+      {
+        "answer": "To have a conversational discussion with the AI behind Copilot",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "While doing a code review, you want to start an issue by highlighting a function that takes up several lines of code. What is the fastest way to do this in code view?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Click the first line number with the function, click the last line number to select a range, then in the hamburger menu select Reference in new issues",
+        "isCorrect": false
+      },
+      {
+        "answer": "Copy the code and start a new issue, then use backticks around the function to create the issue",
+        "isCorrect": false
+      },
+      {
+        "answer": "Select the function with the mouse, then right click and select reference in new issue",
+        "isCorrect": false
+      },
+      {
+        "answer": "Click the line number with the function and select reference function in an issue",
+        "isCorrect": false
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "You’re reviewing a file in a repository and want to link to the current version of the file, even if it gets updated later. How can you achieve this?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Go to the Code tab and click Download zip",
+        "isCorrect": false
+      },
+      {
+        "answer": "Right click the code text and select Permalink",
+        "isCorrect": false
+      },
+      {
+        "answer": "Copy the URL from the address bar",
+        "isCorrect": false
+      },
+      {
+        "answer": "Click Permalink on the code view",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "You’re organizing a desktop application project. You want to use an overview f your project statuses and be able to drag and drop issues. Which view would you use?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Overview",
+        "isCorrect": false
+      },
+      {
+        "answer": "Roadmap",
+        "isCorrect": false
+      },
+      {
+        "answer": "Table",
+        "isCorrect": false
+      },
+      {
+        "answer": "Board",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "You’re in the repo for a specific project while working on an app module. You want to look for some of the docs you’ve been working on, which you wrote in markdown. To quickly look in your own repo for all files with a markdown extension, press the slash (/) button on the keyboard while on the repository page and type \\_\\_\\_.",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Path:.md",
+        "isCorrect": false
+      },
+      {
+        "answer": "Grep:.md",
+        "isCorrect": false
+      },
+      {
+        "answer": "Ext:\\*.md",
+        "isCorrect": false
+      },
+      {
+        "answer": "Code:\\*.md",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "In GitHub Projects, how can you assign an issue to a collaborator?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Label the item with their username.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Move the item to their column in the Boards view.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Add their handle in the comments.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Select their username from the Assignees field.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Why should you include a descriptive function name when writing code with Copilot?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "It helps Copilot add more variables to a function.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It trains the algorithm for the next time a GitHub client answers the question.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The function names are not fed to Copilot and are ignored by the AI.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It helps Copilot have better context for code assistance and generation.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "You are working on a project that uses a Python library and you want to find an example of how to use a function across all public repositories. Which part of GitHub’s platform would you use?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Issues.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Discussions",
+        "isCorrect": false
+      },
+      {
+        "answer": "Projects",
+        "isCorrect": false
+      },
+      {
+        "answer": "Search",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Working late on a project, you need to find an issue that was assigned to you. What query do you type?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Is:issue user:username",
+        "isCorrect": false
+      },
+      {
+        "answer": "Issue:issue user:username",
+        "isCorrect": false
+      },
+      {
+        "answer": "assignee:username is:rep",
+        "isCorrect": false
+      },
+      {
+        "answer": "Is:issue assignee:username",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "you are working on an AI app and need to add information on project tables about the AI model being targeted. What feature allows you to do this?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Comments",
+        "isCorrect": false
+      },
+      {
+        "answer": "Pull requests",
+        "isCorrect": false
+      },
+      {
+        "answer": "Custom properties",
+        "isCorrect": false
+      },
+      {
+        "answer": "Custom fields",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What feature does the shortcut /table activate when used inside a GitHub comment section?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "A data visualization table",
+        "isCorrect": false
+      },
+      {
+        "answer": "An HTML table structure",
+        "isCorrect": false
+      },
+      {
+        "answer": "A table of contents",
+        "isCorrect": false
+      },
+      {
+        "answer": "A markdown table structure",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How can you get better suggestions when creating functions?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Type “function” and then press Ctrl+/ (Windows) or Command +/ (Mac).",
+        "isCorrect": false
+      },
+      {
+        "answer": "Include variables in the parentheses.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use consistent formatting for your function names.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Type “function” and then add a detailed and expressive function name.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What does the RUN command do in a Dockerfile?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "It allows you to specify which type of machine to procure.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It helps run your workflows.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It fires up an additional container",
+        "isCorrect": false
+      },
+      {
+        "answer": "It allows you to execute a shell command during the image generation process",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How can you ensure that you are matching an exact combination of words?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Enclose your query in parentheses",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the exact: qualifier",
+        "isCorrect": false
+      },
+      {
+        "answer": "Add the AND operator to the end of your query",
+        "isCorrect": false
+      },
+      {
+        "answer": "Put the series of words in quotes",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the main function of the Entrypoint instruction in a Dockerfile?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "It gives instructions to the Docker container to follow before it loads",
+        "isCorrect": false
+      },
+      {
+        "answer": "It serves as the first file that an editor opens when it loads the container.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It indicates a specific command to be run during the Docker image build process",
+        "isCorrect": false
+      },
+      {
+        "answer": "It executes a script when the docker container starts.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Inside a GitHub action, which keyword do you use to specify the operating system to run jobs?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Hardware",
+        "isCorrect": false
+      },
+      {
+        "answer": "Machine",
+        "isCorrect": false
+      },
+      {
+        "answer": "Os",
+        "isCorrect": false
+      },
+      {
+        "answer": "Runs-on",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How can you get additional context from other files in your code?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Right-click a file and add it to context",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create a comment with the list of files you want Copilot to have context from",
+        "isCorrect": false
+      },
+      {
+        "answer": "Highlight the files you want to add context to form the file sidebar",
+        "isCorrect": false
+      },
+      {
+        "answer": "Open additional tabs with some of your codes; they will be in Copilot context",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "When creating a release, which of these would count as a valid release format?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "\\*3.2.4",
+        "isCorrect": false
+      },
+      {
+        "answer": "@3.2.4",
+        "isCorrect": false
+      },
+      {
+        "answer": "#3.2.4",
+        "isCorrect": false
+      },
+      {
+        "answer": "V3.2.4",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the maximum number of suggestions the completions panel gives at one time?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "100",
+        "isCorrect": false
+      },
+      {
+        "answer": "5",
+        "isCorrect": false
+      },
+      {
+        "answer": "8",
+        "isCorrect": false
+      },
+      {
+        "answer": "10",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "You are looking for markdown files in a project, so you type in the following search: repo:planetoftheweb/slides_vue3 \\*.md. What does the commits section in the filter by siderbar show?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Any commits that you are mentioned on",
+        "isCorrect": false
+      },
+      {
+        "answer": "The most recent commits",
+        "isCorrect": false
+      },
+      {
+        "answer": "All the commits you personally made",
+        "isCorrect": false
+      },
+      {
+        "answer": "The commits that match your search query",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Your company worked on a popular utility module and you remember that it had between 100 and 200 stars. How would you write qualifiers that would limit that search?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Stars: 100 or 200",
+        "isCorrect": false
+      },
+      {
+        "answer": "Stars:100,200",
+        "isCorrect": false
+      },
+      {
+        "answer": "Stars:100-200",
+        "isCorrect": false
+      },
+      {
+        "answer": "Stars:100..200",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What’s a good way to use the filter feature to display only the issues that are assigned to a specific user?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Owner: username",
+        "isCorrect": false
+      },
+      {
+        "answer": "Assigned:username",
+        "isCorrect": false
+      },
+      {
+        "answer": "User: username",
+        "isCorrect": false
+      },
+      {
+        "answer": "Assignee:username",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which feature is enabled for a checklist when added to the description of an issue?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "You can convert an individual checklist item to a GitHub issue.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You can link directly to an issue and show a popup with issue information",
+        "isCorrect": false
+      },
+      {
+        "answer": "You can reorder the checklist items",
+        "isCorrect": false
+      },
+      {
+        "answer": "You can mark the checklist items as completed",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "You are building a visual studio code extension and you remember that microsoft has sample code you could learn from. Which search would yield the fewest results while searching all of GitHub for “vscode” repos from “microsoft”?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Vscode",
+        "isCorrect": false
+      },
+      {
+        "answer": "Company:microsoft repo:vscode",
+        "isCorrect": false
+      },
+      {
+        "answer": "Microsoft/vscode",
+        "isCorrect": false
+      },
+      {
+        "answer": "Owner:microsoft repo:vscode",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "What is the purpose of the git clone command?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "To create a new repository from scratch",
+        "isCorrect": false
+      },
+      {
+        "answer": "To initialize a new repository",
+        "isCorrect": false
+      },
+      {
+        "answer": "To delete a repository",
+        "isCorrect": false
+      },
+      {
+        "answer": "To copy an existing repository",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "Which of the following is used to stage changes for the next commit?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git stage",
+        "isCorrect": false
+      },
+      {
+        "answer": "git push",
+        "isCorrect": false
+      },
+      {
+        "answer": "git commit",
+        "isCorrect": false
+      },
+      {
+        "answer": "git add",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  },
+  {
+    "categories": [
+      "git"
+    ],
+    "question": "How can you create a new branch and switch to it immediately?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "git branch <branch-name>",
+        "isCorrect": false
+      },
+      {
+        "answer": "git switch <branch-name>",
+        "isCorrect": false
+      },
+      {
+        "answer": "git merge <branch-name>",
+        "isCorrect": false
+      },
+      {
+        "answer": "git checkout -b <branch-name>",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/git/git-quiz.md"
+  }
+]

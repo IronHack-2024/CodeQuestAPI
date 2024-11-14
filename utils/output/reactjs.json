@@ -1,0 +1,3821 @@
+[
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "If you want to import just the Component from the React library, what syntax do you use?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`import React.Component from 'react'`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`import [ Component ] from 'react'`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`import Component from 'react'`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`import { Component } from 'react'`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "If a function component should always render the same way given the same props, what is a simple performance optimization available for it?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Implement the `useReducer` Hook.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Implement the `useMemo` Hook.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Implement the `shouldComponentUpdate` lifecycle method.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Wrap it in the `React.memo` higher-order component.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "How do you fix the syntax error that results from running this code?",
+    "codeExamples": [
+      "javascript\nconst person =(firstName, lastName) =>\n{\n  first: firstName,\n  last: lastName\n}\nconsole.log(person(\"Jill\", \"Wilson\"))\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "Call the function from another file.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Add a return statement before the first curly brace.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Replace the object with an array.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Wrap the object in parentheses.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "If you see the following import in a file, what is being used for state management in the component?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "stateful components",
+        "isCorrect": false
+      },
+      {
+        "answer": "math",
+        "isCorrect": false
+      },
+      {
+        "answer": "class components",
+        "isCorrect": false
+      },
+      {
+        "answer": "React Hooks",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Using object literal enhancement, you can put values back into an object. When you log person to the console, what is the output?",
+    "codeExamples": [
+      "javascript\nconst name = 'Rachel';\nconst age = 31;\nconst person = { name, age };\nconsole.log(person);\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`{{name: \"Rachel\", age: 31}}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`{person: \"Rachel\", person: 31}}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`{person: {name: \"Rachel\", age: 31}}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`{name: \"Rachel\", age: 31}`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the testing library most often associated with React?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Mocha",
+        "isCorrect": false
+      },
+      {
+        "answer": "Chai",
+        "isCorrect": false
+      },
+      {
+        "answer": "Sinon",
+        "isCorrect": false
+      },
+      {
+        "answer": "Jest",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "To get the first item from the array (\"cooking\") using array destructuring, how do you adjust this line?",
+    "codeExamples": [
+      "javascript\nconst topics = ['cooking', 'art', 'history'];\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`const first = [\"cooking\", \"art\", \"history\"]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`const [] = [\"cooking\", \"art\", \"history\"]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`const [, first][\"cooking\", \"art\", \"history\"]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`const [first] = [\"cooking\", \"art\", \"history\"]`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "How do you handle passing through the component tree without having to pass props down manually at every level?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "React Send",
+        "isCorrect": false
+      },
+      {
+        "answer": "React Pinpoint",
+        "isCorrect": false
+      },
+      {
+        "answer": "React Router",
+        "isCorrect": false
+      },
+      {
+        "answer": "React Context",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What should the console read when the following code is run?",
+    "codeExamples": [
+      "javascript\nconst [, , animal] = ['Horse', 'Mouse', 'Cat'];\nconsole.log(animal);\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "Horse",
+        "isCorrect": false
+      },
+      {
+        "answer": "Mouse",
+        "isCorrect": false
+      },
+      {
+        "answer": "undefined",
+        "isCorrect": false
+      },
+      {
+        "answer": "Cat",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the name of the tool used to take JSX and turn it into createElement calls?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "JSX Editor",
+        "isCorrect": false
+      },
+      {
+        "answer": "ReactDOM",
+        "isCorrect": false
+      },
+      {
+        "answer": "Browser Buddy",
+        "isCorrect": false
+      },
+      {
+        "answer": "Babel",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Why might you use useReducer over useState in a React component?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "when you want to replace Redux",
+        "isCorrect": false
+      },
+      {
+        "answer": "when you want to improve performance",
+        "isCorrect": false
+      },
+      {
+        "answer": "when you want to break your production app",
+        "isCorrect": false
+      },
+      {
+        "answer": "when you need to manage more complex state in an app",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which props from the props object is available to the component with the following syntax?",
+    "codeExamples": [
+      "javascript\n<Message {...props} />\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "any that have not changed",
+        "isCorrect": false
+      },
+      {
+        "answer": "child props",
+        "isCorrect": false
+      },
+      {
+        "answer": "any that have changed",
+        "isCorrect": false
+      },
+      {
+        "answer": "all of them",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Consider the following code from React Router. What do you call :id in the path prop?",
+    "codeExamples": [
+      "javascript\n<Route path=\"/:id\" />\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "This is a route modal",
+        "isCorrect": false
+      },
+      {
+        "answer": "This is a route splitter",
+        "isCorrect": false
+      },
+      {
+        "answer": "This is a route link",
+        "isCorrect": false
+      },
+      {
+        "answer": "This is a route parameter",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "If you created a component called Dish and rendered it to the DOM, what type of element would be rendered?",
+    "codeExamples": [
+      "javascript\nfunction Dish() {\n  return <h1>Mac and Cheese</h1>;\n}\n\nReactDOM.render(<Dish />, document.getElementById('root'));\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`div`",
+        "isCorrect": false
+      },
+      {
+        "answer": "section",
+        "isCorrect": false
+      },
+      {
+        "answer": "component",
+        "isCorrect": false
+      },
+      {
+        "answer": "`h1`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What does this React element look like given the following code? (Alternative: Given the following code, what does this React element look like?)",
+    "codeExamples": [
+      "javascript\nReact.createElement('h1', null, \"What's happening?\");\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`<h1 props={null}>What's happening?</h1>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`<h1 id=\"component\">What's happening?</h1>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`<h1 id=\"element\">What's happening?</h1>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`<h1>What's happening?</h1>`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What property do you need to add to the Suspense component in order to display a spinner or loading state?",
+    "codeExamples": [
+      "javascript\nfunction MyComponent() {\n  return (\n    <Suspense>\n      <div>\n        <Message />\n      </div>\n    </Suspense>\n  );\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "lazy",
+        "isCorrect": false
+      },
+      {
+        "answer": "loading",
+        "isCorrect": false
+      },
+      {
+        "answer": "spinner",
+        "isCorrect": false
+      },
+      {
+        "answer": "fallback",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "How would you describe the message variable wrapped in curly braces below?",
+    "codeExamples": [
+      "javascript\nconst message = 'Hi there';\nconst element = <p>{message}</p>;\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "a JS function",
+        "isCorrect": false
+      },
+      {
+        "answer": "a JS element",
+        "isCorrect": false
+      },
+      {
+        "answer": "a JSX wrapper",
+        "isCorrect": false
+      },
+      {
+        "answer": "a JS expression",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What can you use to handle code splitting?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`React.memo`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`React.split`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`React.fallback`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`React.lazy`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "When do you use `useLayoutEffect`?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "to optimize for all devices",
+        "isCorrect": false
+      },
+      {
+        "answer": "to complete the update",
+        "isCorrect": false
+      },
+      {
+        "answer": "when you need the browser to paint before the effect runs",
+        "isCorrect": false
+      },
+      {
+        "answer": "to change the layout of the screen",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the difference between the click behaviors of these two buttons (assuming that this.handleClick is bound correctly)?",
+    "codeExamples": [
+      "javascript\nA. <button onClick={this.handleClick}>Click Me</button>\nB. <button onClick={event => this.handleClick(event)}>Click Me</button>\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "Button A will not have access to the event object on click of the button.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Button B will not fire the handler this.handleClick successfully.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Button A will not fire the handler this.handleClick successfully.",
+        "isCorrect": false
+      },
+      {
+        "answer": "There is no difference.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "How do you destructure the properties that are sent to the Dish component?",
+    "codeExamples": [
+      "javascript\nfunction Dish(props) {\n  return (\n    <h1>\n      {props.name} {props.cookingTime}\n    </h1>\n  );\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`function Dish([name, cookingTime]) { return <h1>{name} {cookingTime}</h1>; }`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`function Dish(props) { return <h1>{name} {cookingTime}</h1>; }`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`function Dish(...props) { return <h1>{name} {cookingTime}</h1>; }`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`function Dish({name, cookingTime}) { return <h1>{name} {cookingTime}</h1>; }`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "When might you use `React.PureComponent`?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "when you do not want your component to have props",
+        "isCorrect": false
+      },
+      {
+        "answer": "when you have sibling components that need to be compared",
+        "isCorrect": false
+      },
+      {
+        "answer": "when you do not want your component to have state",
+        "isCorrect": false
+      },
+      {
+        "answer": "when you want a default implementation of `shouldComponentUpdate()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Why is it important to avoid copying the values of props into a component's state where possible?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "because you should never mutate state",
+        "isCorrect": false
+      },
+      {
+        "answer": "because `getDerivedStateFromProps()` is an unsafe method to use",
+        "isCorrect": false
+      },
+      {
+        "answer": "because you want to allow data to flow back up to the parent",
+        "isCorrect": false
+      },
+      {
+        "answer": "because you want to allow a component to update in response to changes in the props",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the children prop?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "a property that adds child components to state",
+        "isCorrect": false
+      },
+      {
+        "answer": "a property that lets you set an array as a property",
+        "isCorrect": false
+      },
+      {
+        "answer": "a property that lets you pass data to child elements",
+        "isCorrect": false
+      },
+      {
+        "answer": "a special property that JSX creates on components that contain both an opening tag and a closing tag, referencing it's contents.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which attribute is React's replacement for using innerHTML in the browser DOM?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "injectHTML",
+        "isCorrect": false
+      },
+      {
+        "answer": "weirdSetInnerHTML",
+        "isCorrect": false
+      },
+      {
+        "answer": "strangeHTML",
+        "isCorrect": false
+      },
+      {
+        "answer": "dangerouslySetInnerHTML",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which of these terms commonly describe React applications?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "integrated",
+        "isCorrect": false
+      },
+      {
+        "answer": "closed",
+        "isCorrect": false
+      },
+      {
+        "answer": "imperative",
+        "isCorrect": false
+      },
+      {
+        "answer": "declarative",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "When using webpack, why would you need to use a loader?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "to put together physical file folders",
+        "isCorrect": false
+      },
+      {
+        "answer": "to load external data",
+        "isCorrect": false
+      },
+      {
+        "answer": "to load the website into everyone's phone",
+        "isCorrect": false
+      },
+      {
+        "answer": "to preprocess files",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "A representation of a user interface that is kept in memory and is synced with the \"real\" DOM is called what?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "DOM",
+        "isCorrect": false
+      },
+      {
+        "answer": "virtual elements",
+        "isCorrect": false
+      },
+      {
+        "answer": "shadow DOM",
+        "isCorrect": false
+      },
+      {
+        "answer": "virtual DOM",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "You have written the following code but nothing is rendering. How do you fix this problem?",
+    "codeExamples": [
+      "javascript\nconst Heading = () => {\n  <h1>Hello!</h1>;\n};\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "Add a render function.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Move the `h1` to another component.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Surround the `h1` in a `div`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Change the curly braces to parentheses or add a return statement before the `h1` tag.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "To create a constant in JavaScript, which keyword do you use?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "let",
+        "isCorrect": false
+      },
+      {
+        "answer": "constant",
+        "isCorrect": false
+      },
+      {
+        "answer": "var",
+        "isCorrect": false
+      },
+      {
+        "answer": "const",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What do you call a React component that catches JavaScript errors anywhere in the child component tree?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "error bosses",
+        "isCorrect": false
+      },
+      {
+        "answer": "error catchers",
+        "isCorrect": false
+      },
+      {
+        "answer": "error helpers",
+        "isCorrect": false
+      },
+      {
+        "answer": "error boundaries",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "In which lifecycle method do you make requests for data in a class component?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "constructor",
+        "isCorrect": false
+      },
+      {
+        "answer": "componentWillReceiveProps",
+        "isCorrect": false
+      },
+      {
+        "answer": "componentWillMount",
+        "isCorrect": false
+      },
+      {
+        "answer": "componentDidMount",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "React components are composed to create a user interface. How are components composed?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "by putting them in the same file",
+        "isCorrect": false
+      },
+      {
+        "answer": "with webpack",
+        "isCorrect": false
+      },
+      {
+        "answer": "with code splitting",
+        "isCorrect": false
+      },
+      {
+        "answer": "by nesting components",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "All React components must act like **\\_** with respect to their props.",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "monads",
+        "isCorrect": false
+      },
+      {
+        "answer": "recursive functions",
+        "isCorrect": false
+      },
+      {
+        "answer": "higher-order functions",
+        "isCorrect": false
+      },
+      {
+        "answer": "pure functions",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is `[e.target.id]` called in this code snippet?",
+    "codeExamples": [
+      "javascript\nconst handleChange = (e) => {\n  setState((prevState) => ({ ...prevState, [e.target.id]: e.target.value }));\n};\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "a computed property name",
+        "isCorrect": false
+      },
+      {
+        "answer": "a set value",
+        "isCorrect": false
+      },
+      {
+        "answer": "a JSX code string",
+        "isCorrect": false
+      },
+      {
+        "answer": "a dynamic key",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the name of this component?",
+    "codeExamples": [
+      "javascript\nclass Clock extends React.Component {\n  render() {\n    return <h1>Look at the time: {time}</h1>;\n  }\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "It does not have a name prop.",
+        "isCorrect": false
+      },
+      {
+        "answer": "React.Component",
+        "isCorrect": false
+      },
+      {
+        "answer": "Component",
+        "isCorrect": false
+      },
+      {
+        "answer": "Clock",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is sent to an `Array.map()` function?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "the name of another array to iterate over",
+        "isCorrect": false
+      },
+      {
+        "answer": "the number of times you want to call the function",
+        "isCorrect": false
+      },
+      {
+        "answer": "a string describing what the function should do",
+        "isCorrect": false
+      },
+      {
+        "answer": "a callback function that is called once for each element in the array",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Why is it a good idea to pass a function to `setState` instead of an object?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "It provides better encapsulation.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It makes sure that the object is not mutated.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It automatically updates a component.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`setState` is asynchronous and might result in out of sync values.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What package contains the render() function that renders a React element tree to the DOM?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`React`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Render`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`DOM`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`ReactDOM`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "How do you set a default value for an uncontrolled form field?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Use the `value` property.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the `default` property.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It assigns one automatically.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the `defaultValue` property.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What do you need to change about this code to get this code to run?",
+    "codeExamples": [
+      "js\nconst clock = (props) => {\n  return <h1>Look at the time: {props.time}</h1>;\n};\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "Add quotes around the return value",
+        "isCorrect": false
+      },
+      {
+        "answer": "Remove `this`",
+        "isCorrect": false
+      },
+      {
+        "answer": "Remove the render method",
+        "isCorrect": false
+      },
+      {
+        "answer": "Capitalize `clock`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which Hook could be used to update the document's title?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`useEffect(() => { title = name + ' ' + lastname; });`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`useEffect(function updateTitle() { name + ' ' + lastname; });`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`useEffect(function updateTitle() { title = name + ' ' + lastname; });`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`useEffect(function updateTitle() { document.title = name + ' ' + lastname; });`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which function from React can you use to wrap Component imports to load them lazily?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`fallback`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`split`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`memo`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`lazy`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "How do you invoke setDone only when component mounts, using hooks?",
+    "codeExamples": [
+      "javascript\nfunction MyComponent(props) {\n  const [done, setDone] = useState(false);\n\n  return <h1>Done: {done}</h1>;\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`useEffect(() => { setDone(true); });`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`useEffect(() => { setDone(true); }, [setDone]);`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`useEffect(() => { setDone(true); }, [done, setDone]);`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`useEffect(() => { setDone(true); }, []);`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Currently, `handleClick` is being called instead of passed as a reference. How do you fix this?",
+    "codeExamples": [
+      "javascript\n<button onClick={this.handleClick()}>Click this</button>\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`<button onClick={this.handleClick.bind(handleClick)}>Click this</button>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`<button onClick={handleClick()}>Click this</button>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`<button onclick={this.handleClick}>Click this</button>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`<button onClick={this.handleClick}>Click this</button>`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which answer best describes a function component?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "A function component is the same as a class component.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A function component is the only way to create a component.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A function component is required to create a React component.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A function component accepts a single props object and returns a React element.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which library does the `fetch()` function come from?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "FetchJS",
+        "isCorrect": false
+      },
+      {
+        "answer": "ReactDOM",
+        "isCorrect": false
+      },
+      {
+        "answer": "React",
+        "isCorrect": false
+      },
+      {
+        "answer": "No library. `fetch()` is supported by most browsers.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What will happen when this useEffect Hook is executed, assuming name is not already equal to John?",
+    "codeExamples": [
+      "javascript\nuseEffect(() => {\n  setName('John');\n}, [name]);\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "It will cause an error immediately.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It will execute the code inside the function, but only after waiting to ensure that no other component is accessing the name variable.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It will cause an infinite loop.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It will update the value of name once and not run again until name is changed from the outside.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which choice will not cause a React component to rerender?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "if the component calls `this.setState(...)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "the value of one of the component's props changes",
+        "isCorrect": false
+      },
+      {
+        "answer": "if the component calls `this.forceUpdate()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "one of the component's siblings rerenders",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "You have created a new method in a class component called handleClick, but it is not working. Which code is missing?",
+    "codeExamples": [
+      "javascript\nclass Button extends React.Component{\n\n  constructor(props) {\n    super(props);\n    // Missing line\n  }\n\n  handleClick() {...}\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`this.handleClick.bind(this);`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`props.bind(handleClick);`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`this.handleClick.bind();`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`this.handleClick = this.handleClick.bind(this);`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "React does not render two sibling elements unless they are wrapped in a fragment. Below is one way to render a fragment. What is the shorthand for this?",
+    "codeExamples": [
+      "javascript\n<React.Fragment>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</React.Fragment>\n",
+      "javascript\n<...>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</...>\n",
+      "javascript\n<//>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n<///>\n",
+      "javascript\n<>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</>\n",
+      "javascript\n<Frag>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</Frag>\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "If you wanted to display the count state value in the component, what do you need to add to the curly braces in the `h1`?",
+    "codeExamples": [
+      "javascript\nclass Ticker extends React.component {\n  constructor(props) {\n    super(props);\n    this.state = { count: 0 };\n  }\n  render() {\n    return <h1>{}</h1>;\n  }\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "count",
+        "isCorrect": false
+      },
+      {
+        "answer": "state",
+        "isCorrect": false
+      },
+      {
+        "answer": "state.count",
+        "isCorrect": false
+      },
+      {
+        "answer": "this.state.count",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Per the following code, when is the Hello component assigned to greeting?",
+    "codeExamples": [
+      "javascript\nconst greeting = isLoggedIn ? <Hello /> : null;\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "never",
+        "isCorrect": false
+      },
+      {
+        "answer": "when a user logs in",
+        "isCorrect": false
+      },
+      {
+        "answer": "when the Hello function is called",
+        "isCorrect": false
+      },
+      {
+        "answer": "when `isLoggedIn` is true",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "In the following code block, what type is orderNumber?",
+    "codeExamples": [
+      "javascript\nReactDOM.render(<Message orderNumber=\"16\" />, document.getElementById('root'));\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "boolean",
+        "isCorrect": false
+      },
+      {
+        "answer": "object",
+        "isCorrect": false
+      },
+      {
+        "answer": "number",
+        "isCorrect": false
+      },
+      {
+        "answer": "string",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "You have added a style property to the `h1` but there is an unexpected token error when it runs. How do you fix this?",
+    "codeExamples": [
+      "javascript\nconst element = <h1 style={ backgroundColor: \"blue\" }>Hi</h1>;\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`const element = <h1 style=\"backgroundColor: \"blue\"\"}>Hi</h1>;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`const element = <h1 style={blue}>Hi</h1>;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`const element = <h1 style=\"blue\">Hi</h1>;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`const element = <h1 style={{backgroundColor: \"blue\"}}>Hi</h1>;`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which function is used to update state variables in a React class component?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "`replaceState`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`refreshState`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`updateState`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`setState`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Consider the following component. What is the default color for the star?",
+    "codeExamples": [
+      "javascript\nconst Star = ({ selected = false }) => <Icon color={selected ? 'red' : 'grey'} />;\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "black",
+        "isCorrect": false
+      },
+      {
+        "answer": "red",
+        "isCorrect": false
+      },
+      {
+        "answer": "white",
+        "isCorrect": false
+      },
+      {
+        "answer": "grey",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the difference between the click behaviors of these two buttons(assuming that this.handleClick is not bound correctly)",
+    "codeExamples": [
+      "javascript\n  A. <button onClick=this.handleClick>Click Me</button>\n  B. <button onClick={event => this.handleClick(event)}>Click Me</button>\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`Button A will not have access to the event object on click of the button`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`There is no difference`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Button B will not fire the handler this.handleClick successfully`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Button A will not fire the handler this.handleClick successfully`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "How would you add to this code, from React Router, to display a component called About?",
+    "codeExamples": [
+      "javascript\n<Route path=\"/:id\">\n  {' '}\n  <About />\n</Route>\n",
+      "javascript\n<Route path=\"/tid\" about={Component} />\n",
+      "javascript\n<Route path=\"/:id\" route={About} />\n",
+      "javascript\n<Route>\n  <About path=\"/:id\" />\n</Route>\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "A",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which class-based component is equivalent to this function component?",
+    "codeExamples": [
+      "javascript\nconst Greeting = ({ name }) => <h1>Hello {name}!</h1>;\n",
+      "javascript\nclass Greeting extends React.Component {\n  constructor() {\n    return <h1>Hello {this.props.name}!</h1>;\n  }\n}\n",
+      "javascript\nclass Greeting extends React.Component {\n  <h1>Hello {this.props.name}!</h1>;\n}\n",
+      "javascript\nclass Greeting extends React.Component {\n  render() {\n    return <h1>Hello {this.props.name}!</h1>;\n  }\n}\n",
+      "javascript\nclass Greeting extends React.Component {\n  render({ name }) {\n    return <h1>Hello {name}!</h1>;\n  }\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Give the code below, what does the second argument that is sent to the render function describe?",
+    "codeExamples": [
+      "javascript\nReactDOM.render(\n  <h1>Hi<h1>,\n    document.getElementById('root')\n)\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "where to call the function",
+        "isCorrect": false
+      },
+      {
+        "answer": "where the root component is",
+        "isCorrect": false
+      },
+      {
+        "answer": "where to create a new JavaScript file",
+        "isCorrect": false
+      },
+      {
+        "answer": "where the React element should be added to the DOM",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Why should you use React Router's Link component instead of a basic `<a>` tag in React?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "The link component allows the user to use the browser's `Back` button.",
+        "isCorrect": false
+      },
+      {
+        "answer": "There is no difference--the `Link` component is just another name for the `<a>` tag.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The `<a>` tag will cause an error when used in React.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The `<a>` tag triggers a full page reload, while the `Link` component does not.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the first argument, `x`, that is sent to the `createElement` function?",
+    "codeExamples": [
+      "javascript\nReact.createElement(x, y, z);\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "the order in which this element should be placed on the page",
+        "isCorrect": false
+      },
+      {
+        "answer": "the properties of the element",
+        "isCorrect": false
+      },
+      {
+        "answer": "data that should be displayed in the element",
+        "isCorrect": false
+      },
+      {
+        "answer": "the element that should be created",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which class-based lifecycle method would be called at the same time as this effect Hook?",
+    "codeExamples": [
+      "javascript\nuseEffect(() => {\n  // do things\n}, []);\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "componentWillUnmount",
+        "isCorrect": false
+      },
+      {
+        "answer": "render",
+        "isCorrect": false
+      },
+      {
+        "answer": "componentDidUpdate",
+        "isCorrect": false
+      },
+      {
+        "answer": "componentDidMount",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the name of the base component of this component?",
+    "codeExamples": [
+      "javascript\nclass Comp extends React.Component {\n  render() {\n    return <h1>Look at the time: {time}</h1>;\n  }\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "Comp",
+        "isCorrect": false
+      },
+      {
+        "answer": "h1",
+        "isCorrect": false
+      },
+      {
+        "answer": "React.Component",
+        "isCorrect": false
+      },
+      {
+        "answer": "Component",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "When using a portal, what is the first argument?",
+    "codeExamples": [
+      "javascript\nReactDOM.createPortal(x, y);\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "the current state",
+        "isCorrect": false
+      },
+      {
+        "answer": "the App component",
+        "isCorrect": false
+      },
+      {
+        "answer": "the page",
+        "isCorrect": false
+      },
+      {
+        "answer": "the element to render",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is `setCount`?",
+    "codeExamples": [
+      "javascript\nconst [count, setCount] = useState(0);\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "the initial state value",
+        "isCorrect": false
+      },
+      {
+        "answer": "a variable",
+        "isCorrect": false
+      },
+      {
+        "answer": "a state object",
+        "isCorrect": false
+      },
+      {
+        "answer": "a function to update the state",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the use of map function below?",
+    "codeExamples": [
+      "javascript\nconst database = [{ data: 1 }, { data: 2 }, { data: 3 }];\ndatabase.map((user) => <h1>{user.data}</h1>);\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "gives a map of all the entries in database",
+        "isCorrect": false
+      },
+      {
+        "answer": "returns one heading tag for all the entries in database",
+        "isCorrect": false
+      },
+      {
+        "answer": "checks which entry in the database is suitable for heading tag",
+        "isCorrect": false
+      },
+      {
+        "answer": "returns a heading tag for every entry in the database containing it's data",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Describe what is happening in this code?",
+    "codeExamples": [
+      "javascript\nconst { name: firstName } = props;\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "It is creating a new object that contains the same name property as the props object.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is assigning the value of the props object's firstName property to a constant called name.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is retrieving the value of props.name.firstName.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is assigning the value of the props object's name property to a constant called firstName.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is wrong with this code?",
+    "codeExamples": [
+      "javascript\nconst MyComponent = ({ names }) => (\n  <h1>Hello</h1>\n  <p>Hello again</p>\n);\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "React components cannot be defined using functions.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The component needs to use the return keyword.",
+        "isCorrect": false
+      },
+      {
+        "answer": "String literals must be surrounded by quotes.",
+        "isCorrect": false
+      },
+      {
+        "answer": "React does not allow components to return more than one element.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "When using a portal, what is the second argument?",
+    "codeExamples": [
+      "javascript\nReactDOM.createPortal(x, y);\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "the App component",
+        "isCorrect": false
+      },
+      {
+        "answer": "the page",
+        "isCorrect": false
+      },
+      {
+        "answer": "the current state",
+        "isCorrect": false
+      },
+      {
+        "answer": "the DOM element that exists outside of the parent component",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Given this code, what will be printed in the `<div>` tag?",
+    "codeExamples": [
+      "javascript\nconst MyComponent = ({ children }) => (\n  <div>{children.length}</div>\n);\n...\n<MyComponent>\n<p>\n  Hello <span>World!</span>\n</p>\n<p>Goodbye</p>\n</MyComponent>\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "It will produce an error saying \"cannot read property \"length\" of undefined.\"",
+        "isCorrect": false
+      },
+      {
+        "answer": "1",
+        "isCorrect": false
+      },
+      {
+        "answer": "undefined",
+        "isCorrect": false
+      },
+      {
+        "answer": "2",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is this pattern called?",
+    "codeExamples": [
+      "javascript\nconst [count, setCount] = useState(0);\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "object destructuring",
+        "isCorrect": false
+      },
+      {
+        "answer": "spread operating",
+        "isCorrect": false
+      },
+      {
+        "answer": "code pushing",
+        "isCorrect": false
+      },
+      {
+        "answer": "array destructuring",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the first file loaded by the browser in a basic React project?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "src/App.js",
+        "isCorrect": false
+      },
+      {
+        "answer": "src/index.js",
+        "isCorrect": false
+      },
+      {
+        "answer": "public/manifest.json",
+        "isCorrect": false
+      },
+      {
+        "answer": "public/index.html",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "The code below is rendering nothing and generates this error: \"ReactDOM is not defined.\" How do you fix this issue?",
+    "codeExamples": [
+      "javascript\nimport React from 'react';\nimport { createRoot } from 'reactjs-dom';\n\nconst element = <h1>Hi</h1>;\n// Note: error on the line below\nconst root = ReactDOM.createRoot(document.getElementById('root'));\n\nroot.render(element);\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`ReactDOM(element, document.getElementById(\"root\"));`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`renderDOM(element, document.getElementById(\"root\"));`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`DOM(element, document.getElementById(\"root\"));`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`createRoot(document.getElementById(\"root\"));`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "In this component, how do you display whether the user was logged in or not?",
+    "codeExamples": [
+      "javascript\nrender() {\n  const isLoggedIn = this.state.isLoggedIn;\n  return (\n    <div>\n      The user is:\n    </div>\n  );\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`The user is loggedIn ? logged in : not logged in.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "Write a function to check the login status.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`The user is {isLoggedIn = \"no\"}.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`The user is {isLoggedIn ? \"logged in.\" : \"not logged in\"}.`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "You are rendering a list with React when this warning appears in the console: \"Warning: Each child in a list should have a unique 'key' prop.\" How do you fix this issue?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Add a key prop with the same value to each item in the list",
+        "isCorrect": false
+      },
+      {
+        "answer": "Clear the console warnings",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the UseId hook to generate a unique key for each element in the list",
+        "isCorrect": false
+      },
+      {
+        "answer": "When iterating over the list items, add a unique property to each list item.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "How would you generate the boilerplate code for a new app that you are building to collect underpants?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "npm create-react-app collect-underpants",
+        "isCorrect": false
+      },
+      {
+        "answer": "npx start-app collect-underpants",
+        "isCorrect": false
+      },
+      {
+        "answer": "react new collect-underpants",
+        "isCorrect": false
+      },
+      {
+        "answer": "npx create-react-app collect-underpants",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Add the code that will fire the photon torpedoes when the button is clicked.",
+    "codeExamples": [
+      "javascript\nclass StarTrekkin extends React.Component {\n  firePhotonTorpedoes(e) {\n    console.log('pew pew');\n  }\n  render() {\n    return; // Missing code\n  }\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`<button onClick={firePhotonTorpedoes()}>Pew Pew</button>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`<button onClick={firePhotonTorpedoes}>Pew Pew</button>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`<button onClick={this.firePhotonTorpedoes()}>Pew Pew</button>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`<button onClick={this.firePhotonTorpedoes}>Pew Pew</button>`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the process of deciding whether an update is necessary?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "shadow DOM",
+        "isCorrect": false
+      },
+      {
+        "answer": "fiber",
+        "isCorrect": false
+      },
+      {
+        "answer": "setting state",
+        "isCorrect": false
+      },
+      {
+        "answer": "reconciliation",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "React is an open-source project but is maintained by which company?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Intuit",
+        "isCorrect": false
+      },
+      {
+        "answer": "Twitter",
+        "isCorrect": false
+      },
+      {
+        "answer": "Snapchat",
+        "isCorrect": false
+      },
+      {
+        "answer": "Facebook",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What command can you use to generate a React project?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "react-starter",
+        "isCorrect": false
+      },
+      {
+        "answer": "react-gen",
+        "isCorrect": false
+      },
+      {
+        "answer": "react-start",
+        "isCorrect": false
+      },
+      {
+        "answer": "create-react-app",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the browser extension called that React developers use to debug applications?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "React Tooling Add-on",
+        "isCorrect": false
+      },
+      {
+        "answer": "React Codewatch",
+        "isCorrect": false
+      },
+      {
+        "answer": "React Debug",
+        "isCorrect": false
+      },
+      {
+        "answer": "React Developer Tools",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which tool is not part of Create React App?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "React",
+        "isCorrect": false
+      },
+      {
+        "answer": "webpack",
+        "isCorrect": false
+      },
+      {
+        "answer": "ReactDOM",
+        "isCorrect": false
+      },
+      {
+        "answer": "jQuery",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the JavaScript syntax extension that is commonly used to create React elements?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "HTML",
+        "isCorrect": false
+      },
+      {
+        "answer": "JavaScriptX",
+        "isCorrect": false
+      },
+      {
+        "answer": "React JavaScript",
+        "isCorrect": false
+      },
+      {
+        "answer": "JSX",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "How might you check property types without using Flow or TypeScript?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Check Manually.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use `prop-helper`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "user `checker-types`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "use `prop-types`.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "How do you add an id of heading to the following h1 element?",
+    "codeExamples": [
+      "javascript\nlet dish = <h1>Mac and Cheese</h1>;\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`let dish = <h1 id={heading}>Mac and Cheese</h1>;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`let dish = <h1 id:\"heading\">Mac and Cheese</h1>;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`let dish = <h1 class=\"heading\">Mac and Cheese</h1>;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`let dish = <h1 id=\"heading\">Mac and Cheese</h1>;`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What value of button will allow you to pass the name of the person to be hugged?",
+    "codeExamples": [
+      "javascript\nclass Huggable extends React.Component {\n  hug(id) {\n    console.log(\"hugging \" + id);\n  }\n  render() {\n    let name = \"kitten\";\n    let button = // Missing code\n    return button;\n  }\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`<button onClick={(name) => this.hug(name)}>Hug Button</button>;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`<button onClick={this.hug(e, name)}>Hug Button</button>;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`<button onClick={(e) => hug(name, e)}>Hug Button</button>;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`<button onClick={(e) => this.hug(name, e)}>Hug Button</button>;`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What syntax do you use to create a component in React?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "a generator",
+        "isCorrect": false
+      },
+      {
+        "answer": "a service worker",
+        "isCorrect": false
+      },
+      {
+        "answer": "a tag",
+        "isCorrect": false
+      },
+      {
+        "answer": "a function or a class",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "You want to disable a button so that it does not emit any events onClick. Which prop do you use to acomplish this?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "onBlur",
+        "isCorrect": false
+      },
+      {
+        "answer": "onPress",
+        "isCorrect": false
+      },
+      {
+        "answer": "defaultValue",
+        "isCorrect": false
+      },
+      {
+        "answer": "disabled",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "In this function, which is the best way to describe the Dish component?",
+    "codeExamples": [
+      "javascript\nfunction Dish() {\n  return (\n    <>\n      <Ingredient />\n      <Ingredient />\n    </>\n  );\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "child component",
+        "isCorrect": false
+      },
+      {
+        "answer": "nested component",
+        "isCorrect": false
+      },
+      {
+        "answer": "sibling component",
+        "isCorrect": false
+      },
+      {
+        "answer": "parent component",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "When does the componentDidMount function fire?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "before the component is added to the DOM",
+        "isCorrect": false
+      },
+      {
+        "answer": "right after the component is updated",
+        "isCorrect": false
+      },
+      {
+        "answer": "right after an API call",
+        "isCorrect": false
+      },
+      {
+        "answer": "right after the component is added to the DOM",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What might you use webpack for in React development?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "to fetch remote dependencies used by your app",
+        "isCorrect": false
+      },
+      {
+        "answer": "to format your code so that it is more readable",
+        "isCorrect": false
+      },
+      {
+        "answer": "to ensure your app is not vulnerable to code injection",
+        "isCorrect": false
+      },
+      {
+        "answer": "to split your app into smaller chunks that can be more easily loaded by the browser",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "When using the React Developer Tools Chrome extension, what does it mean if the React icon is red?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "You are using the production build of React.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You are using webpack.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You are using Create React App.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You are using the development build of React.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "How would you modify the constructor to fix this error: \"ReferenceError: Must call super constructor in derived class before accessing 'this'...\"?",
+    "codeExamples": [
+      "javascript\nclass TransIsBeautiful extends React.Component {\n  constructor(props){\n  // Missing line\n  console.log(this) ;\n  }\n  ...\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "render(props);",
+        "isCorrect": false
+      },
+      {
+        "answer": "super(this);",
+        "isCorrect": false
+      },
+      {
+        "answer": "this.super();",
+        "isCorrect": false
+      },
+      {
+        "answer": "super(props);",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which language can you not use with React?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "JSX.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Javascipt.",
+        "isCorrect": false
+      },
+      {
+        "answer": "TypeScript.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Swift.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "This code is part of an app that collects Pokemon. How would you print the list of the ones collected so far?",
+    "codeExamples": [
+      "javascript\nconstructor(props) {\n    super(props);\n    this.state = {\n        pokeDex: []\n    };\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "console.log(props.pokeDex);",
+        "isCorrect": false
+      },
+      {
+        "answer": "console.log(this.props.pokeDex);",
+        "isCorrect": false
+      },
+      {
+        "answer": "console.log(pokeDex);",
+        "isCorrect": false
+      },
+      {
+        "answer": "console.log(this.state.pokeDex);",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What would be the result of running this code?",
+    "codeExamples": [
+      "javascript\nfunction add(x = 1, y = 2) {\n  return x + y;\n}\n\nadd();\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "null",
+        "isCorrect": false
+      },
+      {
+        "answer": "0",
+        "isCorrect": false
+      },
+      {
+        "answer": "undefined",
+        "isCorrect": false
+      },
+      {
+        "answer": "3",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Why might you use a React.ref?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "to refer to another JS file",
+        "isCorrect": false
+      },
+      {
+        "answer": "to bind the function",
+        "isCorrect": false
+      },
+      {
+        "answer": "to call a function",
+        "isCorrect": false
+      },
+      {
+        "answer": "to directly access the DOM node",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What pattern is being used in this code block?",
+    "codeExamples": [
+      "javascript\nconst { tree, lake } = nature;\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "function defaults",
+        "isCorrect": false
+      },
+      {
+        "answer": "array destructuring",
+        "isCorrect": false
+      },
+      {
+        "answer": "PRPL pattern",
+        "isCorrect": false
+      },
+      {
+        "answer": "destructuring assignment",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "How would you correct this code block to make sure that the sent property is set to the Boolean value false?",
+    "codeExamples": [
+      "javascript\nReactDom.render(\n  <Message sent=false />,\n  document.getElementById(\"root\")\n);\n",
+      "javascript\n<Message sent={false} />,\n",
+      "javascript\nReactDom.render(<Message sent=\"false\" />, document.getElementById('root'));\n",
+      "javascript\n<Message sent=\"false\" />,\n",
+      "javascript\nReactDom.render(<Message sent=\"false\" />, document.getElementById('root'));\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "A",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "This code is part of an app that collects Pokemon. The useState hook below is a piece of state holding onto the names of the Pokemon collected so far. How would you access the collected Pokemon in state?",
+    "codeExamples": [
+      "javascript\nconst PokeDex = (props) => {\n  const [pokeDex, setPokeDex] = useState([]);\n  /// ...\n};\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "props.pokeDex",
+        "isCorrect": false
+      },
+      {
+        "answer": "this.props.pokeDex",
+        "isCorrect": false
+      },
+      {
+        "answer": "setPokeDex()",
+        "isCorrect": false
+      },
+      {
+        "answer": "pokeDex",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What would you pass to the onClick prop that will allow you to pass the initName prop into the greet handler?",
+    "codeExamples": [
+      "javascript\nconst Greeting = ({ initName }) => {\n  const greet = (name) => console.log(\"Hello, \" + name + \"!\");\n  return <button onClick={ ... }>Greeting Button </button>\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "hug",
+        "isCorrect": false
+      },
+      {
+        "answer": "this.hug(initName)",
+        "isCorrect": false
+      },
+      {
+        "answer": "(name) => this.hug(name)",
+        "isCorrect": false
+      },
+      {
+        "answer": "() => hug(initName)",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the name of the compiler used to transform JSX into JavaScript?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "JSX Editor",
+        "isCorrect": false
+      },
+      {
+        "answer": "Browser Buddy",
+        "isCorrect": false
+      },
+      {
+        "answer": "ReactDOM",
+        "isCorrect": false
+      },
+      {
+        "answer": "Babel",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which hook is used to prevent a function from being recreated on every component render?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "useMemo",
+        "isCorrect": false
+      },
+      {
+        "answer": "useRef",
+        "isCorrect": false
+      },
+      {
+        "answer": "useTransition",
+        "isCorrect": false
+      },
+      {
+        "answer": "useCallback",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Why might you use the `useRef` hook?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "To bind the function",
+        "isCorrect": false
+      },
+      {
+        "answer": "To call a function",
+        "isCorrect": false
+      },
+      {
+        "answer": "To refer to another JS file",
+        "isCorrect": false
+      },
+      {
+        "answer": "To directly access a DOM",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which of the following is required to use React?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "React Router",
+        "isCorrect": false
+      },
+      {
+        "answer": "Redux",
+        "isCorrect": false
+      },
+      {
+        "answer": "Prop-Types",
+        "isCorrect": false
+      },
+      {
+        "answer": "JavaScript",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the correct way to get a value from context?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "const value = useContext(MyContext.Consumer)",
+        "isCorrect": false
+      },
+      {
+        "answer": "const value = useContext(MyContext.Provider)",
+        "isCorrect": false
+      },
+      {
+        "answer": "const value = useContext({value: \"intiial value\"})",
+        "isCorrect": false
+      },
+      {
+        "answer": "const value = useContext(MyContext)",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Why is ref used?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "to bind function",
+        "isCorrect": false
+      },
+      {
+        "answer": "to call function",
+        "isCorrect": false
+      },
+      {
+        "answer": "to refer to another JS file",
+        "isCorrect": false
+      },
+      {
+        "answer": "to directly access DOM node",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Choose the method which should be overridden to stop the component from updating?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "componentDidMount",
+        "isCorrect": false
+      },
+      {
+        "answer": "componentDidUpdate",
+        "isCorrect": false
+      },
+      {
+        "answer": "willComponentUpdate",
+        "isCorrect": false
+      },
+      {
+        "answer": "shouldComponentUpdate",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the functionality of a “webpack” command?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Runs react local development server",
+        "isCorrect": false
+      },
+      {
+        "answer": "Transfers all JS files to down into one file",
+        "isCorrect": false
+      },
+      {
+        "answer": "A module builder",
+        "isCorrect": false
+      },
+      {
+        "answer": "All of the above",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Choose the method which is not a part of ReactDOM?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "ReactDOM.createPortal()",
+        "isCorrect": false
+      },
+      {
+        "answer": "ReactDOM.hydrate()",
+        "isCorrect": false
+      },
+      {
+        "answer": "ReactDOM.findDOMnode()",
+        "isCorrect": false
+      },
+      {
+        "answer": "ReactDOM.destroy()",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "In react, the key should be?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Unique in DOM",
+        "isCorrect": false
+      },
+      {
+        "answer": "Does not requires to be unique",
+        "isCorrect": false
+      },
+      {
+        "answer": "all of the above",
+        "isCorrect": false
+      },
+      {
+        "answer": "Unique among his siblings",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which company developed ReactJS?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Google",
+        "isCorrect": false
+      },
+      {
+        "answer": "Apple",
+        "isCorrect": false
+      },
+      {
+        "answer": "Twitter",
+        "isCorrect": false
+      },
+      {
+        "answer": "Meta (ex Facebook)",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Choose the library which is most often associated with react?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Chai",
+        "isCorrect": false
+      },
+      {
+        "answer": "Sinon",
+        "isCorrect": false
+      },
+      {
+        "answer": "Mocha",
+        "isCorrect": false
+      },
+      {
+        "answer": "Jest",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What of the following is used in React.js to increase performance?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Original DOM",
+        "isCorrect": false
+      },
+      {
+        "answer": "Both of the above",
+        "isCorrect": false
+      },
+      {
+        "answer": "None of the above",
+        "isCorrect": false
+      },
+      {
+        "answer": "Virtual DOM",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Among The following options, choose the one which helps react for keeping their data uni-directional?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "DOM",
+        "isCorrect": false
+      },
+      {
+        "answer": "JSX",
+        "isCorrect": false
+      },
+      {
+        "answer": "Props",
+        "isCorrect": false
+      },
+      {
+        "answer": "flux",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which choice is a correct refactor of the Greeting class component into a function component?",
+    "codeExamples": [
+      "javascript\nclass Greeting extends React.Component {\n  render() {\n    return <h1>Hello {this.props.name}!<h1>;\n  }\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "`const Greeting = (name) => <h1>{name}</h1>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`function Greeting(name){return <h1>{name}</h1>;}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`const Greeting = props => { <h1>{props.name}</h1> }`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`const Greeting = ({ name }) => <h1>Hello {name}</h1>;`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Why is the `waitlist` not updating correctly?",
+    "codeExamples": [
+      "javascript\nconst Waitlist = () => {\n  const [name, setName] = useState('');\n  const [waitlist, setWaitlist] = useState([]);\n  const onSubmit = (e) => {\n    e.preventDefault();\n    waitlist.push(name);\n  };\n  return (\n    <div>\n      <form onSubmit={onSubmit}>\n        <label>\n          Name: <input type=\"text\" value={name} onChange={(e) => setName(e.target.value)} />\n        </label>\n        <button type=\"submit\">Add to waitlist</button>\n      </form>\n\n      <ol>\n        {waitlist.map((name) => (\n          <li key={name}>{name}</li>\n        ))}\n      </ol>\n    </div>\n  );\n};\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "The form is reloading the page each time `Add to waitlist` is clicked.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The `Add to waitlist` button is missing a click handler.",
+        "isCorrect": false
+      },
+      {
+        "answer": "There are likely repeated names inside of the `waitlist` array.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`waitlist` is being mutated directly. Use the `setWaitlist` function instead to update the waitlist state.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the pattern that is used in the Context.Consumer below?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "higher-order component",
+        "isCorrect": false
+      },
+      {
+        "answer": "wish component",
+        "isCorrect": false
+      },
+      {
+        "answer": "setup Componet",
+        "isCorrect": false
+      },
+      {
+        "answer": "Render Props",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "In React.js which one of the following is used to create a class for Inheritance ?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Create",
+        "isCorrect": false
+      },
+      {
+        "answer": "Inherits",
+        "isCorrect": false
+      },
+      {
+        "answer": "Delete",
+        "isCorrect": false
+      },
+      {
+        "answer": "Extends",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the purpose of render() in React.js?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "To replace the existing markup",
+        "isCorrect": false
+      },
+      {
+        "answer": "To update the existing markup",
+        "isCorrect": false
+      },
+      {
+        "answer": "None of the above",
+        "isCorrect": false
+      },
+      {
+        "answer": "Both of the above",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the use of super(props) in React.js?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "To call the constructor of the parent class",
+        "isCorrect": false
+      },
+      {
+        "answer": "To initialize this.props in the constructor",
+        "isCorrect": false
+      },
+      {
+        "answer": "None of the above",
+        "isCorrect": false
+      },
+      {
+        "answer": "Both of the above",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is Redux in React.js?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "A tool for building UI components",
+        "isCorrect": false
+      },
+      {
+        "answer": "Both of the above",
+        "isCorrect": false
+      },
+      {
+        "answer": "None of the above",
+        "isCorrect": false
+      },
+      {
+        "answer": "A state container for JavaScript apps",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the purpose of the virtual DOM in React.js, and how does it improve performance in web applications??",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "The virtual DOM is used to store user authentication data securely.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The virtual DOM is a backup copy of the actual DOM, created for debugging purposes.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The virtual DOM is a database used to store component states.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The virtual DOM is a lightweight representation of the actual DOM, and it helps improve performance by minimizing direct manipulation of the real DOM.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "You run the following code and get this error message: \"invalid hook call.\" what is wrong with the code?",
+    "codeExamples": [
+      "javascript\nimport React from 'react';\n\nconst [poked, setPoked] = React.useState(false);\n\nfunction PokeButton() {\n  return <button onClick={() => setPoked(true)}>{poked ? 'You have left a poke.' : 'Poke'}</button>;\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "The react package is likely not installed correctly.",
+        "isCorrect": false
+      },
+      {
+        "answer": "useState is not imported correctly. Import useState directly instead of importing react.",
+        "isCorrect": false
+      },
+      {
+        "answer": "PokeButton is a pure function and therefore cannot have any local state.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The useState call needs to be called inside of the PokeButton component.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "A colleague comes to you for help on a react component. They say that the poke button renders correctly, however when the button is clicked, this error is shown: \"setPoked is not defined\". What is wrong with their code?",
+    "codeExamples": [
+      "javascript\nfunction PokeButton() {\n  const { poked, setPoked } = useState(false);\n  return <button onclick={() => setPoked(true)}>{poked ? 'You have left a poke.' : 'Poke'}</button>;\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "onClick prop should be onclick.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The click handler passed to the onClick prop is inlined. Move this handler into a variable outside of JSX.",
+        "isCorrect": false
+      },
+      {
+        "answer": "poked and setPoked are not destructured in the correct order.",
+        "isCorrect": false
+      },
+      {
+        "answer": "They use object destructructing instead of array destructructing. Wrap the poked and setPoked values in an array.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "This component is loaded dynamically. What should you replace XXXX with to complete the code?",
+    "codeExamples": [
+      "javascript\nconst OtherComponent = React.lazy(() => import('./OtherComponent.js'));\n\nfunction MyComponent() {\n  return (\n    <XXXX fallback={<spinner />}>\n      <OtherComponent />\n    </XXXX>\n  );\n}\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "Component",
+        "isCorrect": false
+      },
+      {
+        "answer": "Fragment",
+        "isCorrect": false
+      },
+      {
+        "answer": "Lazy",
+        "isCorrect": false
+      },
+      {
+        "answer": "Suspense",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Elements in lists in React should have \\_**\\_ that are \\_\\_\\_** .",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "keys ; indexes",
+        "isCorrect": false
+      },
+      {
+        "answer": "style ; inline",
+        "isCorrect": false
+      },
+      {
+        "answer": "values ; not-null",
+        "isCorrect": false
+      },
+      {
+        "answer": "keys ; unique",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "You want to memorize a callback function so you ensure that React does not recreate the function at each render. Which hook would you use to accomplish this?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "useRef",
+        "isCorrect": false
+      },
+      {
+        "answer": "useMemo",
+        "isCorrect": false
+      },
+      {
+        "answer": "memo",
+        "isCorrect": false
+      },
+      {
+        "answer": "useCallback",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "You want to perform a network operation as the result of a change to a component's state named userInput. what would you replace XXXX with?",
+    "codeExamples": [
+      "javascript\nuseEffect(callNetworkFunc, XXXX);\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "userInput",
+        "isCorrect": false
+      },
+      {
+        "answer": "undefined",
+        "isCorrect": false
+      },
+      {
+        "answer": "[]",
+        "isCorrect": false
+      },
+      {
+        "answer": "[userInput]",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "When is the Hello component displayed?",
+    "codeExamples": [
+      "javascript\n<div>{isLoggedIn ? <Hello /> : null}</div>\n"
+    ],
+    "answersOptions": [
+      {
+        "answer": "when isLoggedIn is false",
+        "isCorrect": false
+      },
+      {
+        "answer": "when isLoggedIn is false and the Hello function is invoked",
+        "isCorrect": false
+      },
+      {
+        "answer": "never",
+        "isCorrect": false
+      },
+      {
+        "answer": "when isLoggedIn is true",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "When do you use `useLayoutEffect`?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "to optimize for all devices",
+        "isCorrect": false
+      },
+      {
+        "answer": "to complete the update",
+        "isCorrect": false
+      },
+      {
+        "answer": "when you need the browser to paint before the effect runs",
+        "isCorrect": false
+      },
+      {
+        "answer": "to change the layout of the screen",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the difference between state and props in React?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Props are set by the parent component, state is set by the child component",
+        "isCorrect": false
+      },
+      {
+        "answer": "Props can be updated, state cannot be updated",
+        "isCorrect": false
+      },
+      {
+        "answer": "There is no difference - props and state are the same",
+        "isCorrect": false
+      },
+      {
+        "answer": "Props are passed to a component, state is managed within the component",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which language can you not use with React?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "JSX.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Javascipt.",
+        "isCorrect": false
+      },
+      {
+        "answer": "TypeScript.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Swift.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which answer best describes a function component?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "A function component is the same as a class component.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A function component is the only way to create a component.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A function component is required to create a React component.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A function component accepts a single props object and returns a React element.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "Which library does the `fetch()` function come from?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "FetchJS",
+        "isCorrect": false
+      },
+      {
+        "answer": "ReactDOM",
+        "isCorrect": false
+      },
+      {
+        "answer": "React",
+        "isCorrect": false
+      },
+      {
+        "answer": "The `key` prop is used to provide a unique identifier for the component.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The `key` prop is used to define the color of the component.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The `key` prop is required to render a list of components.",
+        "isCorrect": false
+      },
+      {
+        "answer": "No library. `fetch()` is supported by most browsers.",
+        "isCorrect": true
+      },
+      {
+        "answer": "The `key` prop is used by React to optimize updates and identify which items have changed or been added/removed in the list.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the primary function of React Router?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "React Router is used for fetching data from APIs.",
+        "isCorrect": false
+      },
+      {
+        "answer": "React Router is used to create animations in React applications.",
+        "isCorrect": false
+      },
+      {
+        "answer": "React Router is used for managing state in React components.",
+        "isCorrect": false
+      },
+      {
+        "answer": "React Router is used for adding navigation and routing to React applications, allowing users to navigate between different views or pages.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "When should you use Redux in a React application?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "Redux is always required in React applications.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Redux should be used when you need to fetch data from APIs.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Redux is used for creating user interfaces but not for state management.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Redux is typically used when you have complex state management needs, such as sharing state between multiple components or handling deeply nested state.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "What is the use of React hooks?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "To optimize React apps for mobile devices",
+        "isCorrect": false
+      },
+      {
+        "answer": "To add visual effects to React components.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To integrate with external UI libraries like Bootstrap",
+        "isCorrect": false
+      },
+      {
+        "answer": "To allow using state and lifecycle methods in function components",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  },
+  {
+    "categories": [
+      "reactjs"
+    ],
+    "question": "How can you pass data through a React component tree without having to pass props down manually at every level?",
+    "codeExamples": [],
+    "answersOptions": [
+      {
+        "answer": "By using redux",
+        "isCorrect": false
+      },
+      {
+        "answer": "By using react router",
+        "isCorrect": false
+      },
+      {
+        "answer": "By using react lifecycle methods",
+        "isCorrect": false
+      },
+      {
+        "answer": "By using React context",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/reactjs/reactjs-quiz.md"
+  }
+]
