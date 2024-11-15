@@ -156,8 +156,7 @@ async function sendEmails() {
     for (const email of contacts) {
       console.log(`Sending email to ${email}`);
       const name = email.split("@")[0]; // Use the part before '@' as a name
-      example (questionRandom);
-      // const htmlTemplate = getEmailTemplate(name, questionRandom);
+      const htmlTemplate = getEmailTemplate(name, questionRandom);
       console.log(htmlTemplate);
 
       mailOptions.to = email;
