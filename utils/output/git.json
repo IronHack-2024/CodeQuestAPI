@@ -5,7 +5,7 @@
     ],
     "question": "How can you check your current git version?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git --v",
         "isCorrect": false
@@ -31,7 +31,7 @@
     ],
     "question": "What command lets you create a connection between a local and remote repository?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git remote add new",
         "isCorrect": false
@@ -59,7 +59,7 @@
     "codeExamples": [
       "bash\ngit reset --hard HEAD~5\ngit merge --squash HEAD@{1}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "They reset the HEAD to the fifth commit in the repo, then merge to the master branch.",
         "isCorrect": false
@@ -85,7 +85,7 @@
     ],
     "question": "Your current project has several branches; master, beta, and push-notifications. You've just finished the notification feature in the push-notification branch, and you want to commit it to beta branch. How can you accomplish this?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Checkout the push-notifications branch and run git merge beta",
         "isCorrect": false
@@ -111,7 +111,7 @@
     ],
     "question": "Which of the following is true when you use the following command?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Files are staged in alphabetical order.",
         "isCorrect": false
@@ -137,7 +137,7 @@
     ],
     "question": "What will the following command print to the Terminal?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The current git version you're running",
         "isCorrect": false
@@ -165,7 +165,7 @@
     "codeExamples": [
       "bash\ngit checkout feature-user-location\ngit cherry-pick kj2342134sdf090093f0sdgasdf99sdfo992mmmf9921231\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The commit is being tagged for release on the feature-user-location branch",
         "isCorrect": false
@@ -195,7 +195,7 @@
     ],
     "question": "What does the following command do to the git repository?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It deletes all previous commits and resets the repository history back to its initial state.",
         "isCorrect": false
@@ -221,7 +221,7 @@
     ],
     "question": "You find a bug in your project, but can't locate where it was introduced in the commit history. How would you diagnose this problem?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Manually backtrack through your commit history.",
         "isCorrect": false
@@ -247,7 +247,7 @@
     ],
     "question": "Why would the following command be used?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To run a comparative search of the last 10 commits for differences",
         "isCorrect": false
@@ -273,7 +273,7 @@
     ],
     "question": "Why would you use a pre-receive hook in your remote repository?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "You wouldn't, you would use it in the local repository",
         "isCorrect": false
@@ -299,7 +299,7 @@
     ],
     "question": "What option can you use to apply git configurations across your entire git environment?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`--all`",
         "isCorrect": false
@@ -325,7 +325,7 @@
     ],
     "question": "How could you squash multiple commits together without using git merge --squash?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Caching",
         "isCorrect": false
@@ -351,7 +351,7 @@
     ],
     "question": "If you cloned an existing git repository, what would happen?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A new copy would overwrite the central repository",
         "isCorrect": false
@@ -377,7 +377,7 @@
     ],
     "question": "How can you display a list of files added or modified in a specific commit?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Find the commit in the remote repository, as that's the only place that kind of information is stored.",
         "isCorrect": false
@@ -405,7 +405,7 @@
     "codeExamples": [
       "shell\n#.swift\nbuild/\n\n*.txt\n*.metadata\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "All files with a .swift, .txt, or metadata file extension, as well as the entire build directory",
         "isCorrect": false
@@ -431,7 +431,7 @@
     ],
     "question": "After you make changes to a local repository, you run the following command. What will this do?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Nothing, you can't use multiple options in the same command",
         "isCorrect": false
@@ -459,7 +459,7 @@
     "codeExamples": [
       "shell\nChange to be committed:\n\n(use \"git reset HEAD <file>...\" to unstage)\nmodified: beta-notes.js\nChanges not staged for commit:\n(use \"git add <file>...\" to update what will be committed)\n(use \"git checkout --<file>...\" to discard changes in working directory)\n\nmodified: beta-notes.js\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "There were two copies of beta-notes.js but one was deleted",
         "isCorrect": false
@@ -485,7 +485,7 @@
     ],
     "question": "Where are files stored before they are committed to the local repository?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Saved files",
         "isCorrect": false
@@ -516,7 +516,7 @@
       "bash\n  git pull origin master\n  git reset --hard origin/myCurrentBranch\n",
       "bash\n  git fetch --all\n  git reset --hard origin/master\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "⠀",
         "isCorrect": false
@@ -542,7 +542,7 @@
     ],
     "question": "You find that your project has a tag and branch both named push-notifications, which causes confusion when trying to print out given reference. How can you specify which branch you want to look at?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "use git show refs/push-notifications",
         "isCorrect": false
@@ -568,7 +568,7 @@
     ],
     "question": "Your team lead needs a list of all commits that will be moved before you perform a rebase. Which command can you use to access that information?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git rebase -log",
         "isCorrect": false
@@ -596,7 +596,7 @@
     "codeExamples": [
       "\ngit bisect start\ngit bisect bad 5d41402abc4b2a76b9719d911017c592\ngit bisect good 69faab6268350295550de7d587bc323d\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It runs a merge of a good commit that is discovered using a known bad commit and known good commit",
         "isCorrect": false
@@ -622,7 +622,7 @@
     ],
     "question": "In a situation where you have several commits for a single task, what is the most efficient way to restructure your commit history?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Cherry pick the related commits to another branch.",
         "isCorrect": false
@@ -648,7 +648,7 @@
     ],
     "question": "Which of the following is true of the git push command?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Commits can only be tagged when they are created.",
         "isCorrect": false
@@ -676,7 +676,7 @@
     "codeExamples": [
       "bash\ngit push -u origin master\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git push master",
         "isCorrect": false
@@ -702,7 +702,7 @@
     ],
     "question": "How would you create a custom shortcut or command across your Git environment?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Run `git hotfix` with the shortcut name.",
         "isCorrect": false
@@ -730,7 +730,7 @@
     "codeExamples": [
       "shell\nChanges not staged for commit:\n(use \"git add <file>...\" to update what will be committed)\n(use \"git checkout -- <file>...\" to discard changes in working directory)\n\nmodified: beta-notes.js\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "beta-notes.js is untracked and has been modified.",
         "isCorrect": false
@@ -756,7 +756,7 @@
     ],
     "question": "What command would let you modify your previous commit?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "--fix",
         "isCorrect": false
@@ -782,7 +782,7 @@
     ],
     "question": "What is the best way to characterize the git commit structure?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Data array",
         "isCorrect": false
@@ -808,7 +808,7 @@
     ],
     "question": "What change will the following command make to the staging area files?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "testfile.js will be removed from the staging area but its changes will still be tracked.",
         "isCorrect": false
@@ -834,7 +834,7 @@
     ],
     "question": "After you've successfully merged two branches and committed the changes, what is the next step in keeping your git structure organized?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use the git reset --soft HEAD to roll back one commit.",
         "isCorrect": false
@@ -860,7 +860,7 @@
     ],
     "question": "While modifying a file, you're unexpectedly assigned an urgent bug fix on another branch. How can you temporarily save your local work without committing?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "This is not possible, as you cannot save locally without committing.",
         "isCorrect": false
@@ -886,7 +886,7 @@
     ],
     "question": "What command would you use to create a new git repository?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git add",
         "isCorrect": false
@@ -912,7 +912,7 @@
     ],
     "question": "While working on a feature branch you try to use \"git rerere\" to solve a recurring merge conflict but nothing is happening. What could be causing this issue?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The \"-all\" option isn't added to the command.",
         "isCorrect": false
@@ -938,7 +938,7 @@
     ],
     "question": "Which setting determines what pager is used when Git pages output?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "core.page",
         "isCorrect": false
@@ -964,7 +964,7 @@
     ],
     "question": "What does commit object contain?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A set of files, representing the state of a project at a given point of time.",
         "isCorrect": false
@@ -990,7 +990,7 @@
     ],
     "question": "Which option enables inclusion of committer name in custom log format?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "%ce",
         "isCorrect": false
@@ -1016,7 +1016,7 @@
     ],
     "question": "How many ways are present in Git to integrate changes from one branch into another?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "3",
         "isCorrect": false
@@ -1042,7 +1042,7 @@
     ],
     "question": "Which user should be created first during setting up of SSH?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git",
         "isCorrect": false
@@ -1068,7 +1068,7 @@
     ],
     "question": "Which command will list tags with the 1.4.2 series?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git tag 'v1.4.2'",
         "isCorrect": false
@@ -1094,7 +1094,7 @@
     ],
     "question": "Which of the following is an integration manager?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "lieutenants",
         "isCorrect": false
@@ -1120,7 +1120,7 @@
     ],
     "question": "Which Git command begins tracking of a new file?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "addfile",
         "isCorrect": false
@@ -1146,7 +1146,7 @@
     ],
     "question": "Which of the following is called dumb protocol?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "All of these",
         "isCorrect": false
@@ -1172,7 +1172,7 @@
     ],
     "question": "Which key press returns a set of suggestions to pick from, when writing a Git command?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Control",
         "isCorrect": false
@@ -1198,7 +1198,7 @@
     ],
     "question": "Which of these terms best describes Git?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Issue Tracking System",
         "isCorrect": false
@@ -1224,7 +1224,7 @@
     ],
     "question": "How does Git think of its data?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "File",
         "isCorrect": false
@@ -1250,7 +1250,7 @@
     ],
     "question": "Which option enables inclusion of author name in custom log format?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "%am",
         "isCorrect": false
@@ -1276,7 +1276,7 @@
     ],
     "question": "Which version onwards did Git offer reversing a file back to what it looked like when last committed?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "1.7",
         "isCorrect": false
@@ -1302,7 +1302,7 @@
     ],
     "question": "Which strategy is used by Git for merging two branches?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "LIFO",
         "isCorrect": false
@@ -1328,7 +1328,7 @@
     ],
     "question": "What does refs store?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "SHA-1 value",
         "isCorrect": false
@@ -1354,7 +1354,7 @@
     ],
     "question": "What Language is used in GIT?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "C++",
         "isCorrect": false
@@ -1380,7 +1380,7 @@
     ],
     "question": "What is usually the extension of file which has the public key?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "ssh",
         "isCorrect": false
@@ -1406,7 +1406,7 @@
     ],
     "question": "What is the difference between initializing a normal repo and a bare repo?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Bare repos store their git history in a .git subfolder.",
         "isCorrect": false
@@ -1432,7 +1432,7 @@
     ],
     "question": "How many individual commits can a single repository have?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "only one commit local per repository",
         "isCorrect": false
@@ -1458,7 +1458,7 @@
     ],
     "question": "What types of tags does Git support?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "heavy and concise",
         "isCorrect": false
@@ -1484,7 +1484,7 @@
     ],
     "question": "After staging a series of changes to the index, which command could you use to review them prior to a commit?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git diff",
         "isCorrect": false
@@ -1510,7 +1510,7 @@
     ],
     "question": "What does the git stash drop command do?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "deletes the stash",
         "isCorrect": false
@@ -1536,7 +1536,7 @@
     ],
     "question": "What command creates a new branch from the currently checked-out branch?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`git -b checkout <nameOfBranch>`",
         "isCorrect": false
@@ -1562,7 +1562,7 @@
     ],
     "question": "After mistakenly staging a file named myFile to the index, how would you remove it from the index to exclude it from your next commit?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use git reset HEAD^.",
         "isCorrect": false
@@ -1590,7 +1590,7 @@
     "codeExamples": [
       "bash\ngit checkout -b beta-test\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The beta-test branch will be checked out of the current commit.",
         "isCorrect": false
@@ -1616,7 +1616,7 @@
     ],
     "question": "How does Git internally manage branches?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "by creating a data array of branches in the same repository.",
         "isCorrect": false
@@ -1642,7 +1642,7 @@
     ],
     "question": "You want to perform a git reset but cannot recall all of the available options. What command would you use to see a description of them?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git -h reset",
         "isCorrect": false
@@ -1668,7 +1668,7 @@
     ],
     "question": "What is a remote repository?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "a version of the repository that mirrors changes made in the local repository's master branch for open-source collaboration efforts",
         "isCorrect": false
@@ -1694,7 +1694,7 @@
     ],
     "question": "After modifying some existing files in a repository, you decide to discard the changes. What command can you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git restore",
         "isCorrect": false
@@ -1720,7 +1720,7 @@
     ],
     "question": "After starting to merge a feature branch into your master branch, you encounter a merge conflict and decide you do not want to perform the merge. How can you stop the merge and restore to the pre-merge state?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use git restore -p.",
         "isCorrect": false
@@ -1746,7 +1746,7 @@
     ],
     "question": "Which command correctly creates a lightweight tag?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`git tag --light \"v3.8.1\"`",
         "isCorrect": false
@@ -1772,7 +1772,7 @@
     ],
     "question": "What is the main issue with using git rebase when working with multiple developers?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Rebase creates a temporary copy of the master branch in the remote repo.",
         "isCorrect": false
@@ -1798,7 +1798,7 @@
     ],
     "question": "What Git workflow is used by teams that collaborate on a single branch and avoid creating long-lived development branches?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Git flow",
         "isCorrect": false
@@ -1824,7 +1824,7 @@
     ],
     "question": "Which option on the git log command allows you to limit output to commits made after certain date?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`--sinceWhen`",
         "isCorrect": false
@@ -1850,7 +1850,7 @@
     ],
     "question": "How would you delete unreachable objects older than a specified time from your project database?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`git cache --obsolete <time>`",
         "isCorrect": false
@@ -1876,7 +1876,7 @@
     ],
     "question": "What conflicts can occur when forcing a push after rebasing?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The origin URL will be reset to its default value.",
         "isCorrect": false
@@ -1902,7 +1902,7 @@
     ],
     "question": "What is the difference between Git and SVN?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Git works only on Linux, while SVN works on all operating systems.",
         "isCorrect": false
@@ -1928,7 +1928,7 @@
     ],
     "question": "This command is an example of what kind of tag?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "verbose",
         "isCorrect": false
@@ -1954,7 +1954,7 @@
     ],
     "question": "What is the difference between a soft reset (`git reset --soft`) and a hard reset (`git reset –hard`) ?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A soft reset caches the old HEAD pointer, while a hard reset deletes it entirely.",
         "isCorrect": false
@@ -1980,7 +1980,7 @@
     ],
     "question": "Consider the following Git workflow:",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`1. Develop 2. Release 3. Hotfix 4. Feature 5. Master`",
         "isCorrect": false
@@ -2006,7 +2006,7 @@
     ],
     "question": "What information does the git config file store?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "shell scripts and flags",
         "isCorrect": false
@@ -2032,7 +2032,7 @@
     ],
     "question": "What is version control?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "a type of architecture used to manage large databases",
         "isCorrect": false
@@ -2058,7 +2058,7 @@
     ],
     "question": "What is the difference between using the `git stash` and `git stash pop` commands?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`git stash` removes a commit from the repo history, while `git stash pop` saves changes to multiple branches.",
         "isCorrect": false
@@ -2084,7 +2084,7 @@
     ],
     "question": "Which command can be used to list the branches that have been merged into the currently checked-out branch?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git master --status",
         "isCorrect": false
@@ -2110,7 +2110,7 @@
     ],
     "question": "How would you configure Git to abort a commit if a smoke test script fails?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Create a post-commit shell script that triggers the action.",
         "isCorrect": false
@@ -2136,7 +2136,7 @@
     ],
     "question": "Which use case is NOT a good candidate for a Git hook?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "continuous integration",
         "isCorrect": false
@@ -2162,7 +2162,7 @@
     ],
     "question": "What information do Git reflogs (reference logs) store?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "shell script pointers and keychain credentials",
         "isCorrect": false
@@ -2188,7 +2188,7 @@
     ],
     "question": "You have just completed rebasing your master branch and need to manually update the remote master, even though there is a merge conflict. How can you accomplish this?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`git push --overwrite`",
         "isCorrect": false
@@ -2214,7 +2214,7 @@
     ],
     "question": "What is the difference between `git fetch` and `git pull`",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`git fetch` creates a new branch off the master branch, while `git pull` creates a new branch off the local repository's master branch.",
         "isCorrect": false
@@ -2240,7 +2240,7 @@
     ],
     "question": "What command displays the difference between the working tree and the stage/index area, as well as files not tracked by Git?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`git current`",
         "isCorrect": false
@@ -2266,7 +2266,7 @@
     ],
     "question": "You would like to restore some previously stashed work to a new branch. How can you do that?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use `git branch <stash hash>`.",
         "isCorrect": false
@@ -2292,7 +2292,7 @@
     ],
     "question": "What is the difference between git branch -d and git branch -D?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "-D deletes the local branch, while -d deletes the branch regardless of push and merge status.",
         "isCorrect": false
@@ -2318,7 +2318,7 @@
     ],
     "question": "You stashed three sets of changes but cannot remember the contents of the first stash entry. What command would you use to see the details of the changes in the first of the three stash entries?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git stash show -p stash@{2}",
         "isCorrect": false
@@ -2344,7 +2344,7 @@
     ],
     "question": "How would you delete a remote branch in your repository?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use `git --delete <branch_name>`.",
         "isCorrect": false
@@ -2370,7 +2370,7 @@
     ],
     "question": "What is the default setting of `git reflog` when no subcommands are specified?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "delete",
         "isCorrect": false
@@ -2396,7 +2396,7 @@
     ],
     "question": "How does the `-p` option change the behavior of the `git add` command",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It causes tracked files in the parent directory to be included in the staged files.",
         "isCorrect": false
@@ -2422,7 +2422,7 @@
     ],
     "question": "After checking out a specific commit, you receive a warning message indicating You are in 'detached HEAD' state. What is Git warning you of?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "You are not working on the most recent commit of a branch.",
         "isCorrect": false
@@ -2448,7 +2448,7 @@
     ],
     "question": "After accidentally deleting a branch in your local repository, how can you recover it?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It cannot be recovered.",
         "isCorrect": false
@@ -2474,7 +2474,7 @@
     ],
     "question": "How would you display a histogram showing inserts, deletion, and modifications per file for a specific commit along with its general commit information?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use `git stat`.",
         "isCorrect": false
@@ -2500,7 +2500,7 @@
     ],
     "question": "What features do repository managers such as GitHub provide beyond Git?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Repository managers are proprietary versions of Git that do not include enhanced features.",
         "isCorrect": false
@@ -2526,7 +2526,7 @@
     ],
     "question": "What command finds the HEAD of the current branch?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`git head --verify`",
         "isCorrect": false
@@ -2552,7 +2552,7 @@
     ],
     "question": "When Git Workflows contain a long-running branch, what purpose does the long-running branch serve?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Long-running branches store unstable code until it os peer reviewed for integration into a feature branch.",
         "isCorrect": false
@@ -2578,7 +2578,7 @@
     ],
     "question": "What command takes changes from the master branch on the remote repository origin and merges then to the local checked-out branch?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`git commit -u origin`",
         "isCorrect": false
@@ -2606,7 +2606,7 @@
     "codeExamples": [
       "bash\nerror: failed to push some refs to 'https://github.com/myrepo/simple.git'\nhint: Updates were rejected because the remote contains work that you do not hint: not have locally.\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use the --atomic option with the push command.",
         "isCorrect": false
@@ -2632,7 +2632,7 @@
     ],
     "question": "What does the -p option add to the output of the `git log` command?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It adds patch output that shows a summary listing modified files.",
         "isCorrect": false
@@ -2658,7 +2658,7 @@
     ],
     "question": "What is the staging area or index?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "an area that stores commits prior to them being pushed to the remote repository",
         "isCorrect": false
@@ -2684,7 +2684,7 @@
     ],
     "question": "What command would you use to stage changes to the index strictly for properties files in the current directory?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`git add %.properties`",
         "isCorrect": false
@@ -2710,7 +2710,7 @@
     ],
     "question": "What are untracked files?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "files in the local repository that have not been merged into the master branch",
         "isCorrect": false
@@ -2736,7 +2736,7 @@
     ],
     "question": "What type of Git hook could be used to validate that a commit message contains a ticket number?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "pre-commit",
         "isCorrect": false
@@ -2762,7 +2762,7 @@
     ],
     "question": "What is the difference between git stash pop and git stash apply?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git stash pop pushes the topmost commit to the current branch, while git stash apply caches the last commit in the current branch.",
         "isCorrect": false
@@ -2788,7 +2788,7 @@
     ],
     "question": "After making some major changes to your code, you are a little nervous about committing. What command would you use to review the commit prior to making it?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git commit --verify",
         "isCorrect": false
@@ -2814,7 +2814,7 @@
     ],
     "question": "What statement best describes Git's concept of HEAD?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "a pointer to the most recently changed file in the stage/index",
         "isCorrect": false
@@ -2840,7 +2840,7 @@
     ],
     "question": "After staging changes to several files, you realize the changes to the config.properties file are incorrect, and need to be removed from the stage and working directory. What command can you use to remove the staged changes to the file?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git rm config.properties",
         "isCorrect": false
@@ -2866,7 +2866,7 @@
     ],
     "question": "After a recent release with a stack trace, an issue is create that indicates the problem is with a newly added configuration property named MaxConnections. What command can find all commits that add or remove the string MaxConnections?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git grep -a \"MaxConnections\"",
         "isCorrect": false
@@ -2892,7 +2892,7 @@
     ],
     "question": "Your company has moved its remote repository to GitHub at this location: https://github.com/yourcompany/core-api.git. What command updates the remote repository, named origin, to point to the new remote repository at this location?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git remote create-update origin https://github.com/yourcompany/core-api.git",
         "isCorrect": false
@@ -2918,7 +2918,7 @@
     ],
     "question": "When is the cherry-pick command used?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "when the HEAD needs to be reset to a specific commit",
         "isCorrect": false
@@ -2944,7 +2944,7 @@
     ],
     "question": "How would you describe a forked repository?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "a deleted or archived copy of a repository",
         "isCorrect": false
@@ -2970,7 +2970,7 @@
     ],
     "question": "How can you exclude untracked files within the working directory from a Git repository?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "You cannot exclude the files from the repository.",
         "isCorrect": false
@@ -2996,7 +2996,7 @@
     ],
     "question": "What command creates a near-exact copy of the entire repository from a server?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`git checkout <url>`",
         "isCorrect": false
@@ -3022,7 +3022,7 @@
     ],
     "question": "What would happen if you ran the `git reset testfile.js` command?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "testfile.js would be reverted to a blank file.",
         "isCorrect": false
@@ -3048,7 +3048,7 @@
     ],
     "question": "What situation can occur when attempting to combine branches containing changes to the same piece of code?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "lost code",
         "isCorrect": false
@@ -3074,7 +3074,7 @@
     ],
     "question": "When Git workflows contain a topic branch, what purpose does the topic branch serve?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Topic branches store unstable code until it is peer reviewed for integration into another feature branch.",
         "isCorrect": false
@@ -3100,7 +3100,7 @@
     ],
     "question": "What practice can help reduce the chances of encountering a merge conflict?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Provide detailed commit messages that describe the changes being introduced by the commit.",
         "isCorrect": false
@@ -3126,7 +3126,7 @@
     ],
     "question": "What command can you use to remove untracked files from the working directory?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`git rm -all`",
         "isCorrect": false
@@ -3157,7 +3157,7 @@
       "bash\n  git add doge.txt\n  git commit --patch --no-edit\n",
       "bash\n  git commit --patch --no-edit\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "⠀",
         "isCorrect": false
@@ -3188,7 +3188,7 @@
       "bash\n  git untrack -rf wrongfile\n  git commit -m \"Removed file\"\n",
       "bash\n  git rm --cached wrongfile\n  git commit -m \"Removed file\"\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "⠀",
         "isCorrect": false
@@ -3214,7 +3214,7 @@
     ],
     "question": "What is the best way to report a bug to a GitHub project?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Send an email to a project owner.",
         "isCorrect": false
@@ -3240,7 +3240,7 @@
     ],
     "question": "Suppose you have created a bug fix on a new branch and want it to become part of the next production build generated from the main branch. What should you do next?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Copy your branch changes and commit them directly to the main branch.",
         "isCorrect": false
@@ -3266,7 +3266,7 @@
     ],
     "question": "What is GitHub?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "version control",
         "isCorrect": false
@@ -3292,7 +3292,7 @@
     ],
     "question": "Git Pull is a combination of?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Add and commit.",
         "isCorrect": false
@@ -3318,7 +3318,7 @@
     ],
     "question": "What is the command to set the user email for the current repository?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git email.user",
         "isCorrect": false
@@ -3344,7 +3344,7 @@
     ],
     "question": "**\\_** will rewind your project to a specific point in time, losing all commits that came after it. **\\_** will keep changes in those rewound commits as local modifications",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`git reset HEAD`; `git reset HEAD^`",
         "isCorrect": false
@@ -3370,7 +3370,7 @@
     ],
     "question": "Explain the concept of \"Git blame\" and when it is used in a version control workflow.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Git blame is a command for finding and exposing the identity of contributors in a Git repository.",
         "isCorrect": false
@@ -3396,7 +3396,7 @@
     ],
     "question": "What is the purpose of C++ move constructor, and when is it automatically generated?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A move constructor creates deep copies of objects, improving memory efficiency.",
         "isCorrect": false
@@ -3424,7 +3424,7 @@
     "codeExamples": [
       "\nUntracked files:\n(use \"git add <file>...\" to include in what will be committed)\nbroccoli\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`git remove .`",
         "isCorrect": false
@@ -3450,7 +3450,7 @@
     ],
     "question": "You're creating an action for the Github marketplace. why is it importance to create a release?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "to initiate a continuos integration process",
         "isCorrect": false
@@ -3476,7 +3476,7 @@
     ],
     "question": "You're looking at a repository page and click a folder name to open it. You have code search on, so you land in the code view. What is the quickest way to find a file on a path in your repo?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Go to advanced search.",
         "isCorrect": false
@@ -3502,7 +3502,7 @@
     ],
     "question": "How do you save a search that you use often using GitHub?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Click Save on the Search box.",
         "isCorrect": false
@@ -3528,7 +3528,7 @@
     ],
     "question": "which of these is not a label that github creates by default?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "bug",
         "isCorrect": false
@@ -3554,7 +3554,7 @@
     ],
     "question": "What is the fastest way to start a search using Github web pages?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Press the slash(/) key on any page of the site.",
         "isCorrect": false
@@ -3580,7 +3580,7 @@
     ],
     "question": "Assigning an issue to a person implies that they \\_\\_\\_\\_.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "will get a notification asking them to review the issue",
         "isCorrect": false
@@ -3606,7 +3606,7 @@
     ],
     "question": "What does a Template repository do?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It creates a live demo of the current repository for training.",
         "isCorrect": false
@@ -3632,7 +3632,7 @@
     ],
     "question": "You’re creating an action for the GitHub Marketplace. Why is it important to create a release?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To allow you to create .zip files that you can easily share",
         "isCorrect": false
@@ -3658,7 +3658,7 @@
     ],
     "question": "What are two ways to help Copilot give you more accurate suggestions?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Add instructions in parentheses.",
         "isCorrect": false
@@ -3688,7 +3688,7 @@
     ],
     "question": "What is the main purpose of the Chat panel?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To search for answers in the current project’s repository",
         "isCorrect": false
@@ -3714,7 +3714,7 @@
     ],
     "question": "While doing a code review, you want to start an issue by highlighting a function that takes up several lines of code. What is the fastest way to do this in code view?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Click the first line number with the function, click the last line number to select a range, then in the hamburger menu select Reference in new issues",
         "isCorrect": false
@@ -3740,7 +3740,7 @@
     ],
     "question": "You’re reviewing a file in a repository and want to link to the current version of the file, even if it gets updated later. How can you achieve this?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Go to the Code tab and click Download zip",
         "isCorrect": false
@@ -3766,7 +3766,7 @@
     ],
     "question": "You’re organizing a desktop application project. You want to use an overview f your project statuses and be able to drag and drop issues. Which view would you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Overview",
         "isCorrect": false
@@ -3792,7 +3792,7 @@
     ],
     "question": "You’re in the repo for a specific project while working on an app module. You want to look for some of the docs you’ve been working on, which you wrote in markdown. To quickly look in your own repo for all files with a markdown extension, press the slash (/) button on the keyboard while on the repository page and type \\_\\_\\_.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Path:.md",
         "isCorrect": false
@@ -3818,7 +3818,7 @@
     ],
     "question": "In GitHub Projects, how can you assign an issue to a collaborator?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Label the item with their username.",
         "isCorrect": false
@@ -3844,7 +3844,7 @@
     ],
     "question": "Why should you include a descriptive function name when writing code with Copilot?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It helps Copilot add more variables to a function.",
         "isCorrect": false
@@ -3870,7 +3870,7 @@
     ],
     "question": "You are working on a project that uses a Python library and you want to find an example of how to use a function across all public repositories. Which part of GitHub’s platform would you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Issues.",
         "isCorrect": false
@@ -3896,7 +3896,7 @@
     ],
     "question": "Working late on a project, you need to find an issue that was assigned to you. What query do you type?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Is:issue user:username",
         "isCorrect": false
@@ -3922,7 +3922,7 @@
     ],
     "question": "you are working on an AI app and need to add information on project tables about the AI model being targeted. What feature allows you to do this?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Comments",
         "isCorrect": false
@@ -3948,7 +3948,7 @@
     ],
     "question": "What feature does the shortcut /table activate when used inside a GitHub comment section?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A data visualization table",
         "isCorrect": false
@@ -3974,7 +3974,7 @@
     ],
     "question": "How can you get better suggestions when creating functions?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Type “function” and then press Ctrl+/ (Windows) or Command +/ (Mac).",
         "isCorrect": false
@@ -4000,7 +4000,7 @@
     ],
     "question": "What does the RUN command do in a Dockerfile?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It allows you to specify which type of machine to procure.",
         "isCorrect": false
@@ -4026,7 +4026,7 @@
     ],
     "question": "How can you ensure that you are matching an exact combination of words?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Enclose your query in parentheses",
         "isCorrect": false
@@ -4052,7 +4052,7 @@
     ],
     "question": "What is the main function of the Entrypoint instruction in a Dockerfile?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It gives instructions to the Docker container to follow before it loads",
         "isCorrect": false
@@ -4078,7 +4078,7 @@
     ],
     "question": "Inside a GitHub action, which keyword do you use to specify the operating system to run jobs?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Hardware",
         "isCorrect": false
@@ -4104,7 +4104,7 @@
     ],
     "question": "How can you get additional context from other files in your code?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Right-click a file and add it to context",
         "isCorrect": false
@@ -4130,7 +4130,7 @@
     ],
     "question": "When creating a release, which of these would count as a valid release format?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "\\*3.2.4",
         "isCorrect": false
@@ -4156,7 +4156,7 @@
     ],
     "question": "What is the maximum number of suggestions the completions panel gives at one time?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "100",
         "isCorrect": false
@@ -4182,7 +4182,7 @@
     ],
     "question": "You are looking for markdown files in a project, so you type in the following search: repo:planetoftheweb/slides_vue3 \\*.md. What does the commits section in the filter by siderbar show?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Any commits that you are mentioned on",
         "isCorrect": false
@@ -4208,7 +4208,7 @@
     ],
     "question": "Your company worked on a popular utility module and you remember that it had between 100 and 200 stars. How would you write qualifiers that would limit that search?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Stars: 100 or 200",
         "isCorrect": false
@@ -4234,7 +4234,7 @@
     ],
     "question": "What’s a good way to use the filter feature to display only the issues that are assigned to a specific user?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Owner: username",
         "isCorrect": false
@@ -4260,7 +4260,7 @@
     ],
     "question": "Which feature is enabled for a checklist when added to the description of an issue?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "You can convert an individual checklist item to a GitHub issue.",
         "isCorrect": false
@@ -4286,7 +4286,7 @@
     ],
     "question": "You are building a visual studio code extension and you remember that microsoft has sample code you could learn from. Which search would yield the fewest results while searching all of GitHub for “vscode” repos from “microsoft”?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Vscode",
         "isCorrect": false
@@ -4312,7 +4312,7 @@
     ],
     "question": "What is the purpose of the git clone command?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To create a new repository from scratch",
         "isCorrect": false
@@ -4338,7 +4338,7 @@
     ],
     "question": "Which of the following is used to stage changes for the next commit?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git stage",
         "isCorrect": false
@@ -4364,7 +4364,7 @@
     ],
     "question": "How can you create a new branch and switch to it immediately?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "git branch <branch-name>",
         "isCorrect": false

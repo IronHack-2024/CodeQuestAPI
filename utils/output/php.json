@@ -5,7 +5,7 @@
     ],
     "question": "What does this code output?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "1",
         "isCorrect": false
@@ -31,7 +31,7 @@
     ],
     "question": "Which is the most secure way to avoid storing a password in clear text in database?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`$encrypted = shal($password);`",
         "isCorrect": false
@@ -59,7 +59,7 @@
     "codeExamples": [
       "php\n$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);\nif ($email === false) {\n    $emailErr = \"Please re-enter valid email\";\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It makes sure the email address is a good and functioning address",
         "isCorrect": false
@@ -87,7 +87,7 @@
     "codeExamples": [
       "php\n1 <?php\n2       $count = 0;\n3       $_xval = 5;\n4       $_yval = 1.0;\n5       $some_string = \"Hello there!\";\n6       $some_string = \"How are you?\";\n7       $will i work = 6;\n8       $3blindmice = 3;\n9 ?>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Line 6 will cause an error because you can't reassign a new value to a variable that has already been set.",
         "isCorrect": false
@@ -113,7 +113,7 @@
     ],
     "question": "In a conditional statement, you want to execute the code only if both value are true. Which comparison operator should you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "||",
         "isCorrect": false
@@ -139,7 +139,7 @@
     ],
     "question": "All variables in PHP start with which symbol?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "&",
         "isCorrect": false
@@ -165,7 +165,7 @@
     ],
     "question": "What is a key difference between GET and POST?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "GET is used with the HTTP protocol. POST is used with HTTPS.",
         "isCorrect": false
@@ -191,7 +191,7 @@
     ],
     "question": "The **operator is useful for sorting operations. It compares two values and returns an integer less than, equal to, or greater than 0 depending on whether the value on the** is less than, equal to, or greater than the other",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "greater-than; right",
         "isCorrect": false
@@ -217,7 +217,7 @@
     ],
     "question": "Which are valid PHP error handling keywords?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "try, throw, catch, callable",
         "isCorrect": false
@@ -243,7 +243,7 @@
     ],
     "question": "Which value equates to true?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "0",
         "isCorrect": false
@@ -271,7 +271,7 @@
     "codeExamples": [
       "php\n$string_name = \"testcookie\";\n$string_value = \"This is a test cookie\";\n$expiry_info = info()+259200;\n$string_domain = \"localhost.localdomain\";\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The `$_REQUEST` is missing.",
         "isCorrect": false
@@ -297,7 +297,7 @@
     ],
     "question": "What is the value of \\$total in this calculation?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "44",
         "isCorrect": false
@@ -323,7 +323,7 @@
     ],
     "question": "What is the purpose of adding a lowercase \"u\" as a modifier after the final delimiter in a Perl-compatible regular expression?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It makes the dot metacharacter match anything, including newline characters.",
         "isCorrect": false
@@ -349,7 +349,7 @@
     ],
     "question": "Which code snippet uses the correct syntax for creating an instance of the Pet class?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`$dog = new Pet;`",
         "isCorrect": false
@@ -377,7 +377,7 @@
     "codeExamples": [
       "php\nif (!$_SESSION['myusername'])\n{\n  header('locaton: /login.php');\n  exit;\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "This script times out the session for myusername.",
         "isCorrect": false
@@ -403,7 +403,7 @@
     ],
     "question": "Which is the correct format for adding a comment to a PHP script?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "#This is a comment",
         "isCorrect": false
@@ -429,7 +429,7 @@
     ],
     "question": "PHP supports multiple types of loops. If you wanted to loop through a block of code if and as long a specified condition is true, which type of loop would you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "for",
         "isCorrect": false
@@ -455,7 +455,7 @@
     ],
     "question": "The `ignore_user_abort( )` function sets whether a client disconnect should abort a script execution. In what scenario would you, as a web developer, use this function?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "You would use it to stop a user from clicking the back button if they decide not to view as a result of a click.",
         "isCorrect": false
@@ -486,7 +486,7 @@
       "php\n  <?php\n  array_reduce([11 2, 5, 10, 11], function ($item, $carry) {\n      echo $carry + $item;\n  });\n?>\n",
       "php\n  <?php\n  echo array_reduce([1, 2, 5, 10, 11], function ($carry, $item) {\n      return $carry += $item;\n  });\n?>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "&shy;",
         "isCorrect": false
@@ -517,7 +517,7 @@
       "php\n  class MyClass {\n  public function _construct()\n  {\n  echo 'Winter is almost over!..\"\\n\";\n  }\n  }\n  $userclass = new MyClass;\n",
       "php\n  class MyClass {\n  public function _construct()\n  {\n  echo 'Winter is almost over!'.\"n\";\n  }\n  }\n  $userclass = MyClass;\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "&shy;",
         "isCorrect": false
@@ -543,7 +543,7 @@
     ],
     "question": "How might you troubleshoot a \"call to undefined function\" error?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Make sure you have imported the file containing the function.",
         "isCorrect": false
@@ -569,7 +569,7 @@
     ],
     "question": "Which line could you NOT use to comment out \"Space: the final frontier\"?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`/* Space: the final frontier */`",
         "isCorrect": false
@@ -595,7 +595,7 @@
     ],
     "question": "What displays in a browser when the following code is written? `<?php echo \"How much are the bananas?\"?>`",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The browser would display nothing due to a syntax error.",
         "isCorrect": false
@@ -621,7 +621,7 @@
     ],
     "question": "Which operator would you use to find the remainder after division?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "/",
         "isCorrect": false
@@ -649,7 +649,7 @@
     "codeExamples": [
       "php\nfunction process(...$vals) {\n    // do some processing\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It makes the function variadic, allowing it to accept as an argument an array containing an arbitrary number of values.",
         "isCorrect": false
@@ -675,7 +675,7 @@
     ],
     "question": "Assuming the `Horse` class exists, which is a valid example of inheritance in PHP?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`class Alicorn imports Pegasus, Unicorn {}`",
         "isCorrect": false
@@ -701,7 +701,7 @@
     ],
     "question": "Both triple === and double == can be used to **variables in php. If you want to hear that string \"33\" and the number 33 are equal, you would use** . If you want to check if an array contains a particular string value at a particular index, you would use \\_",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "compare; triples; doubles",
         "isCorrect": false
@@ -727,7 +727,7 @@
     ],
     "question": "Your php page is unexpectedly rendering as totally blank. Which step will shed light on the problem?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Add this code to the top of your script: `ini_set('display_errors',1);`",
         "isCorrect": false
@@ -755,7 +755,7 @@
     "codeExamples": [
       "php\nseasons=array(\n    1=>'spring',\n    2=>'summer',\n    3=>'autumn',\n    4=>'winter',\n);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "&shy;",
         "isCorrect": false
@@ -781,7 +781,7 @@
     ],
     "question": "Both `self` and `this` are keywords that can be used to refer to member variables of an enclosing class. The difference is that `$this->member` should be used for **members and `self::$member` should be used for** members",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "private, public",
         "isCorrect": false
@@ -809,7 +809,7 @@
     "codeExamples": [
       "php\n$mathe=array('archi','euler','pythagoras');\narray_push($mathe,'hypatia');\narray_push($mathe,'fibonacci');\narray_pop($mathe);\necho array_pop($mathe);\necho sizeof($mathe);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "euler3",
         "isCorrect": false
@@ -835,7 +835,7 @@
     ],
     "question": "You are using the following code to find a users band, but it is returning false. Which step(s) would solve the problem?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "check if `fav_band` is included in the query string at the top of your browser",
         "isCorrect": false
@@ -861,7 +861,7 @@
     ],
     "question": "Which code would you use to print all the elements in an array called `$cupcakes`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`print_r($cupcakes);`",
         "isCorrect": false
@@ -887,7 +887,7 @@
     ],
     "question": "What is the cause of 'Cannot modify header information - headers already sent'?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "You are trying to modify a private value",
         "isCorrect": false
@@ -913,7 +913,7 @@
     ],
     "question": "Which php control structure is used inside a loop to skip the rest of the current loops code and go back to the start of the loop for the next iteration",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`else`",
         "isCorrect": false
@@ -939,7 +939,7 @@
     ],
     "question": "The php not operator is !. Given the snippet, is there an out put and what is it?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "there is an output '2 is an even number",
         "isCorrect": false
@@ -965,7 +965,7 @@
     ],
     "question": "You want to list the modules available in your PHP installation. What command should you run?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`php -h`",
         "isCorrect": false
@@ -993,7 +993,7 @@
     "codeExamples": [
       "php\nif (!empty($_POST[\"mail\"])) {\necho \"Yes, mail is set\";\n} else {\necho \"No, mail is not set\";\n} (correct)\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "...",
         "isCorrect": false
@@ -1007,7 +1007,7 @@
     ],
     "question": "What is the value of `$result` in this calculation?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "4.167",
         "isCorrect": false
@@ -1033,7 +1033,7 @@
     ],
     "question": "What is the job of the controller as a component in MVC?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The controller is a mechanism that allows you to create reusable code in languages such as PHP, where multiple inheritance is not supported.",
         "isCorrect": false
@@ -1059,7 +1059,7 @@
     ],
     "question": "Why does this code trigger an error?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Strings should always be wrapped in double quotes; and double quotes inside a string should be escaped by backslashes.",
         "isCorrect": false
@@ -1085,7 +1085,7 @@
     ],
     "question": "A PDO object called `$db` has been set up to use for database operations, including user authentication. All user-related properties are set. The script line `public function __construct(&$db)` shows a constructor that initializes all user-related properties to \\_ if no user has logged in. These parameters will be properly set by the login functions when a user logs in",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "TRUE",
         "isCorrect": false
@@ -1111,7 +1111,7 @@
     ],
     "question": "Assuming that `$first_name` and `$family_name` are valid strings, which statement is invalid?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`echo $first_name. ' '. $family_name;`",
         "isCorrect": false
@@ -1142,7 +1142,7 @@
       "php\n  class Cow {\n      public $milk;\n      function getMilk() {`\n          return $this->milk;\n      }\n  }\n",
       "php\n  class Cow {\n      private $milk;\n      public function getMilk() {\n          return $this->milk;\n      }\n  }\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "&shy;",
         "isCorrect": false
@@ -1174,7 +1174,7 @@
       "php\n  $books = SimpleXMLElement('books.xml');\n  echo $books->book[0]->categories->category[1];\n",
       "php\n  $books = SimpleXML('books.xml');\n  echo $books->book[0]->categories->category[1];\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "&shy;",
         "isCorrect": false
@@ -1200,7 +1200,7 @@
     ],
     "question": "When it comes to the value of a variable, what is the difference between NULL and empty?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "NULL is a blank value; empty is the lack of a value.",
         "isCorrect": false
@@ -1228,7 +1228,7 @@
     "codeExamples": [
       "php\nfunction doStuff($haystack, $needle) {\n      $length = strlen($needle)\n      if (substr($haystack, 0, $length) == $needle)\n        return true;\n      else\n        return false;\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`equals`",
         "isCorrect": false
@@ -1254,7 +1254,7 @@
     ],
     "question": "If you want to pass a formfield to another page when a button is clicked, you should use the **. If you want to store information across multiple pages, you should use the** ?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "request; response",
         "isCorrect": false
@@ -1282,7 +1282,7 @@
     "codeExamples": [
       "php\nisset($_POST['submit'])\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Make sure you are not missing any semicolons",
         "isCorrect": false
@@ -1308,7 +1308,7 @@
     ],
     "question": "Why should you follow a PSR standard?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "because coding standards are monitored for compliance across developers and companies",
         "isCorrect": false
@@ -1334,7 +1334,7 @@
     ],
     "question": "What are getters and setters?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Getters and setters ensure that if a data member is declared private, then it can be accessed only within the same function, not by an outside class",
         "isCorrect": false
@@ -1365,7 +1365,7 @@
       "php\n  error_reporting = E_ALL & ~E_NOTICE\n  display_errors = Off\n",
       "php\n  error_reporting = E_ALL & ~E_NOTICE\n  display_errors = On\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "&shy;",
         "isCorrect": false
@@ -1391,7 +1391,7 @@
     ],
     "question": "Which PHP variable name is invalid?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`$Double`",
         "isCorrect": false
@@ -1417,7 +1417,7 @@
     ],
     "question": "Which command will extract the domain suffix (\"com\") from the string `$string = \"https://cat-bounce.com\";`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`sub($string, -3)`",
         "isCorrect": false
@@ -1443,7 +1443,7 @@
     ],
     "question": "Where is PHP code executed?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "in the client's browser",
         "isCorrect": false
@@ -1469,7 +1469,7 @@
     ],
     "question": "Which is not a valid magic constant?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`__FUNCTION__`",
         "isCorrect": false
@@ -1497,7 +1497,7 @@
     "codeExamples": [
       "php\n  if( 1 == true){\n        echo \"1\";\n  }\n\n  if( 1 === true){\n      echo \"2\";\n  }\n\n  if(\"php\" == true){\n      echo \"3\";\n  }\n\n  if(\"php\" === false){\n      echo \"4\";\n  }\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "134",
         "isCorrect": false
@@ -1525,7 +1525,7 @@
     "codeExamples": [
       "php\n$secret_word = 'if i ate spinach';\nsetcookie('login', $_REQUEST['username']. ','. md5($_REQUEST['username'].$secret_word));\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "when a user goes to pay for an item online",
         "isCorrect": false
@@ -1557,7 +1557,7 @@
       "php\n  $name = \"Cat\";\n  $$name = \"Dog\";\n  echo $name . \"<br/>\";\n  echo $$name . \"<br/>\";\n  echo $Cat;\n",
       "php\n  $name = \"Cat\";\n  $$name = \"Dog\";\n  echo $name . \"<br/>\";\n  echo $name . \"<br/>\";\n  echo $Cat;\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": ":",
         "isCorrect": false
@@ -1583,7 +1583,7 @@
     ],
     "question": "Imagine a web application, built following a MVC architecture, that contains a quiz and a button to score it, When the user presses the Score button, which component should handle the request?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "router",
         "isCorrect": false
@@ -1614,7 +1614,7 @@
       "php\n  <?php\n      start_session();\n      $music =$session['music'];\n  ?>\n",
       "php\n  <?php\n      session_start();\n      $music = $_SESSION['music'];\n  ?>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "&shy;",
         "isCorrect": false
@@ -1645,7 +1645,7 @@
       "php\n  <?php\n  $dates = array('2018-02-01', '2017-02-02', '2015-02-03');\n  echo \"Latest Date: \". ($dates).\"\\n\";\n  echo \"Earliest Date: \". ($dates).\"\\n\";\n  ?>\n",
       "php\n  <?php\n  $dates = array('2018-02-01', '2017-02-02', '2015-02-03');\n  echo \"Latest Date: \" max($dates).\"\\n\";\n  echo \"Earliest Date: \" min($dates).\"\\n\";\n  ?>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "&shy;",
         "isCorrect": false
@@ -1676,7 +1676,7 @@
       "\n  kilometers = 0.6214 miles.\n  kilometers = 1.2428 miles.\n  kilometers = 1.8642 miles\n  kilometers = 2.4856 miles.\n  kilometers = 3.107 miles.\n  kilometers = 3.7284 miles.\n",
       "\n  kilometers = 1.2428 miles.\n  kilometers = 1.8642 miles.\n  kilometers = 2.4856 miles.\n  kilometers = 3.107 miles.\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "&shy;",
         "isCorrect": false
@@ -1702,7 +1702,7 @@
     ],
     "question": "In PHP 7, What is the correct way to import multiple classes from namespace in a single declaration ?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "use myApp\\myNamespace\\ClassA, ClassB, ClassC;",
         "isCorrect": false
@@ -1728,7 +1728,7 @@
     ],
     "question": "Which is the most complete list of data types that PHP supports?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "string, integer, boolean, array, object, NULL, resource",
         "isCorrect": false
@@ -1754,7 +1754,7 @@
     ],
     "question": "What type of computer language is PHP?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "compiled language",
         "isCorrect": false
@@ -1780,7 +1780,7 @@
     ],
     "question": "Which superglobal variable holds information about headers, paths, and script locations?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`$SERVER_VARIABLES`",
         "isCorrect": false
@@ -1808,7 +1808,7 @@
     "codeExamples": [
       "php\n$capitals = ['UK' => 'London', 'France' => 'Paris'];\necho \"$capitals['france'] is the capital of France.\";\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It displays: \"Paris is the capital of France.\"",
         "isCorrect": false
@@ -1834,7 +1834,7 @@
     ],
     "question": "DRY (Don't Repeat Yourself) is a principle of software development aimed at reducing repetition of software patterns. Which choice is not a way to write DRYer code with PHP?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "inheritance",
         "isCorrect": false
@@ -1860,7 +1860,7 @@
     ],
     "question": "Which code will return the IP address of the client?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`$HTTP_SERVER_VARS(\"REMOTE_IP\")`",
         "isCorrect": false
@@ -1886,7 +1886,7 @@
     ],
     "question": "Your site must allow uploading of large files. What might you need to do?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Make sure the user has the proper permissions.",
         "isCorrect": false
@@ -1914,7 +1914,7 @@
     "codeExamples": [
       "php\n$my_text = 'The quick grey [squirrel].';\npreg_match('#\\[(.*?)\\]#', $my_text, $match);\nprint $match[1].\"\\n\";\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The quick grey [squirrel].",
         "isCorrect": false
@@ -1940,7 +1940,7 @@
     ],
     "question": "What is the output of this script?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "apple",
         "isCorrect": false
@@ -1966,7 +1966,7 @@
     ],
     "question": "What are some of the main types of errors in PHP?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "runtime, logical, compile",
         "isCorrect": false
@@ -1992,7 +1992,7 @@
     ],
     "question": "What is the correct way to include the file gravy.php in the middle of HTML code?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<!-- include file=\"gravy.php\"; -->`",
         "isCorrect": false
@@ -2018,7 +2018,7 @@
     ],
     "question": "Which two functions can sanitize text and validate text formats?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`session_start()` and `filter_input()`",
         "isCorrect": false
@@ -2040,7 +2040,7 @@
     ],
     "question": "Why is it not recommended to make all of a class's variables public?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Doing so makes your code tightly coupled.",
         "isCorrect": false
@@ -2066,7 +2066,7 @@
     ],
     "question": "You want to use wildcard characters when searching for records in a MySQL/MariaDB database using a PDO prepared statement. Which code should you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`$statement->bindValue('%' . $_GET['name'] . '%', ':name');`",
         "isCorrect": false
@@ -2092,7 +2092,7 @@
     ],
     "question": "Create an associative array using `$array1` as the keys and `$array2` as the values",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`$array3 = array_merge($array1, $array2);`",
         "isCorrect": false
@@ -2118,7 +2118,7 @@
     ],
     "question": "Assume that `$r` is 255, and `$g` and `$b` are both 0. What is the correct code to output `\"#ff0000\"`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`printf('#%2x%2x%2x', 255, 0, 0);`",
         "isCorrect": false
@@ -2144,7 +2144,7 @@
     ],
     "question": "You want to find out what day Twelfth Night falls on after Christmas 2018. Which code should you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`$xmas = new DateTime('Dec 25, 2018');`",
         "isCorrect": false
@@ -2170,7 +2170,7 @@
     ],
     "question": "Which loop displays all numbers from 1 to 10 inclusive?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`$i = 1;`",
         "isCorrect": false
@@ -2196,7 +2196,7 @@
     ],
     "question": "Which are types of control structures in PHP?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`values`, `operators`, `expressions`, `keywords`, `comments`",
         "isCorrect": false
@@ -2222,7 +2222,7 @@
     ],
     "question": "Which function can you use in error handling to stop the execution of a script and is equivalent to exit()?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`return`",
         "isCorrect": false
@@ -2250,7 +2250,7 @@
     "codeExamples": [
       "php\n$numbers = array(4,6,2,22,11);\nsort($numbers);\n$arrlength = count($numbers);\nfor($x = 0; $x < $arrlength; $x++){\n    echo $numbers[$x];\n    echo \"<br />\";\n    }\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "This does not meet all the criteria because the resulting numbers will be \"2461122\", which is in no particular order.",
         "isCorrect": false
@@ -2276,7 +2276,7 @@
     ],
     "question": "Which is not true of the `toString()` in PHP?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It saves a lot of work of using setters methods to access the values of objects.",
         "isCorrect": false
@@ -2302,7 +2302,7 @@
     ],
     "question": "What is a generator and how is it used in PHP?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A generator is a function that produces a series of random values for unit testing code.",
         "isCorrect": false
@@ -2330,7 +2330,7 @@
     "codeExamples": [
       "php\nif( isset($user_info['url']) ) {\n  $_SESSION[\"loggedIn\"] = true;\n  $_SESSION[\"username\"] = $myusername;\n  header('Location: ' . $user_info['url']); //Redirects to the supplied url from the DB\n} else {\n  header(\"Location: error.htm\");\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It directs all users to the same page when they log in.",
         "isCorrect": false
@@ -2356,7 +2356,7 @@
     ],
     "question": "What is the output of this code?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "0",
         "isCorrect": false
@@ -2382,7 +2382,7 @@
     ],
     "question": "Can you extend a final defined class?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Specialized versions of built-in classes can be extended by calling the parent's constructor.",
         "isCorrect": false
@@ -2408,7 +2408,7 @@
     ],
     "question": "How can you test if a checkbox is set?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use `$_GET['test'] == ''`",
         "isCorrect": false
@@ -2439,7 +2439,7 @@
       "php\nif(empty($_POST('email'))) {\n    echo \"The email cannot be empty\";\n}\n",
       "php\nif(isset($email)) {\n    echo \"The email cannot be empty\";\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "&shy;",
         "isCorrect": false
@@ -2465,7 +2465,7 @@
     ],
     "question": "What is the PHP fatal error type?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "This type of error causes a termination of the script execution when it occurs.",
         "isCorrect": false
@@ -2496,7 +2496,7 @@
       "php\n$ip_address = \"164.12.2540.1\";\nif(validate_ip($ip_address)){\n  echo \"$ip_address is a valid IP address\";\n} else {\n  echo \"$ip_address is not a valid IP address\";\n}\n",
       "php\n$ip_address = \"164.12.2540.1\"\necho is_valid($ip_address, VALIDATE_IP);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "&shy;",
         "isCorrect": false
@@ -2524,7 +2524,7 @@
     "codeExamples": [
       "php\n    $i = 0;\n    while($i < 6) {\n    if($i++ == 3) break;\n    }\n    echo \"loop stopped at $i by break statement\";\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "loop stopped at 3 by break statement",
         "isCorrect": false
@@ -2552,7 +2552,7 @@
     "codeExamples": [
       "php\n    $dof->setTitle(\"Spot\");\n    $cat->setTitle(\"Mimi\");\n    $horse-?setTitle(\"Trigger\");\n    $dog->setPrice(10);\n    $cat->setPrice(15);\n    $horse->setPrice(7);\n    print_r($cat);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Pet Object ( [title]=> Spot[price]=>10)",
         "isCorrect": false
@@ -2584,7 +2584,7 @@
       "php\nwhile ($fruit_name = current($array)) {\n    if ($fruit_name == 'apple')\n        echo key($array).'<br />';\n    }\n    next($array);\n}\n",
       "php\nwhile ($fruit_name = current($array)) {\n    if ($fruit_name == 'apple') {\n        echo key($array).'<br />';\n    }\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "&shy;",
         "isCorrect": false
@@ -2610,7 +2610,7 @@
     ],
     "question": "What does this code return?",
     "codeExamples": [],
-    "answersOptions": [],
+    "answerOptions": [],
     "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/php/php-quiz.md"
   },
   {
@@ -2621,7 +2621,7 @@
     "codeExamples": [
       "php\nclass Smurf {\n\n  public $name = \"Papa Smurf\";\n\n  public function __construct($name) {\n    $this->name = $name;\n  }\n\n  public function set_name($name) {\n    $name = $name;\n  }\n}\n\n$smurf = new Smurf(\"Smurfette\");\n$smurf->set_name(\"Handy Smurf\");\necho $smurf->name;\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "nothing",
         "isCorrect": false
@@ -2652,7 +2652,7 @@
       "php\nif ($_FILES['image']['error'] == 0) {\n      copy($_FILES)['image']['temp_name'],\n          $path . $_FILES['image']['name']);\n )\n",
       "php\nif ($_FILES['image']['error'] == false) {\n      upload_file($_FILES)['image']['temp_name'],\n          $path . $_FILES['image']['name']);\n )\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "&shy;",
         "isCorrect": false
@@ -2678,7 +2678,7 @@
     ],
     "question": "Which super global variable holds information about headers, paths, and script locations?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`$_GET`",
         "isCorrect": false
@@ -2709,7 +2709,7 @@
       "php\n<?\n    for($i = 10; $i > 0; $i++) {\n        print \"$i <br />\\n\";\n    } // end for loop '''\n?>\n",
       "php\n<?\n    for($i = 10; $i > 0; $i--) {\n        print \"$i <br />\\n\";\n    } // end for loop\n?>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "&shy;",
         "isCorrect": false
@@ -2737,7 +2737,7 @@
     "codeExamples": [
       "php\nfunction knights(){\nreturn \"a shrubbery\";\n}\n\nif (knights())\nprintf \"you are just and fair\";\nelse\nprintf \"NI!\";\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "NI!",
         "isCorrect": false
@@ -2768,7 +2768,7 @@
       "php\ndefine(country,\"United States of America\");\ndefine('states',50);\necho \"Our country is \".country.\"<br>\";\necho \"Our country has a total of \".states.\" states\";\n",
       "php\ndefine('country',\"United States of America\");\ndefine('states','fifty');\n$K = 'strval'; echo \"Our {$K(Country)} has {$K(FIFTY)} states.\";\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "&shy;",
         "isCorrect": false
@@ -2796,7 +2796,7 @@
     "codeExamples": [
       "php\ntry{\necho \"bodacious\";\nthrow new Exception();\n} catch (Exception $e) {\necho \"egregious\";\n} finally {\necho \"excellent\";\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "bodacious",
         "isCorrect": false
@@ -2822,7 +2822,7 @@
     ],
     "question": "Passing by reference is a way to pass a variable to a function and modify it inside the function, and have that modification stick when the variable is used outside the function. Which code correctly uses passing by reference to modify the variable for use outside the function?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "1 function append($initial){ return $newString = $initial . ' belong to us'; }",
         "isCorrect": false
@@ -2850,7 +2850,7 @@
     "codeExamples": [
       "php\n$believable = 'false';\n$myth = 'The moon is made of green cheese';\n$calc = 10**3+1;\nif ($believable) {\n    echo $myth;\n}\nelse {\n    echo $calc;\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "10000",
         "isCorrect": false
@@ -2884,7 +2884,7 @@
       "php\n$x = 5;\n$y = 10;\nfunction myTest() {\n    global $x, $y;\n    $y = $x + $y;\n}\nmyTest();\necho $y;\n",
       "php\n$a = \"Hello\";\n$b = &$a;\n$b = \"World\";\necho $a;\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "return",
         "isCorrect": false

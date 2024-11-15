@@ -5,7 +5,7 @@
     ],
     "question": "When you have a subquery inside of the main query, which query is executed first?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The subquery is never executed. Only the main query is executed.",
         "isCorrect": false
@@ -31,7 +31,7 @@
     ],
     "question": "You need to export the entire database, including the database objects, in addition to the data. Which command-line tool do you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "mysqlexport",
         "isCorrect": false
@@ -57,7 +57,7 @@
     ],
     "question": "You must ensure the accuracy and reliability of the data in your database. You assign some constraints to limit the type of data that can go into a table. What type of constraints are you assigning?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "row level",
         "isCorrect": false
@@ -83,7 +83,7 @@
     ],
     "question": "Which option of most MySQL command-line programs can be used to get a description of the program's different options?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "--options",
         "isCorrect": false
@@ -109,7 +109,7 @@
     ],
     "question": "MySQL uses environment variables in some of the programs and command-line operations. Which variable is used by the shell to find MySQL programs?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "DIR",
         "isCorrect": false
@@ -140,7 +140,7 @@
       "\n1 CREATE PROCP\n2 BEGIN\n3 END;\n",
       "\n1 CREATE PROC P AS O\n2 BEGIN\n3 END;\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -166,7 +166,7 @@
     ],
     "question": "If you were building a table schema to store student grades as a letter (A, B, C, D, or F) which column type would be the best choice?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "OTEXT",
         "isCorrect": false
@@ -197,7 +197,7 @@
       "sql\n    CREATE TABLE IF EXISTS employee (\n    employeeID char(10),\n    firstName varchar(50),\n    lastName varchar(50),\n    phone varchar(20),\n    address varchar(50),\n    PRIMARY KEY (employeeID)\n    );\n",
       "sql\n    CREATE TABLE IF NOT EXISTS employee (\n    employeeID char(10),\n    firstName varchar(50),\n    lastName varchar(50),\n    phone varchar(20),\n    address varchar(50),\n    PRIMARY KEY (employeeID)\n    );\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -223,7 +223,7 @@
     ],
     "question": "You are working with the tables as shown in this diagram. You need to generate the list of customers who purchased certain car models. Which SQL clause do you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "LIKE",
         "isCorrect": false
@@ -249,7 +249,7 @@
     ],
     "question": "Which query would NOT be used to administer a MySQL server?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "USE db",
         "isCorrect": false
@@ -275,7 +275,7 @@
     ],
     "question": "MySQL server can operate in different SQL modes, depending on the value of the sql_mode system variable. Which mode changes syntax and behavior to conform more closely to standard SQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "TRADITIONAL",
         "isCorrect": false
@@ -301,7 +301,7 @@
     ],
     "question": "MySQL programs are a set of command-line utilities that are provided with typical MySQL distributions. MySQL is designed to be a database.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "database and programming",
         "isCorrect": false
@@ -327,7 +327,7 @@
     ],
     "question": "Which MySQL command shows the structure of a table?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "INFO table;",
         "isCorrect": false
@@ -353,7 +353,7 @@
     ],
     "question": "MySQL uses security based on \\_ for all connections, queries, and other operations that users can attempt to perform. or How are permissions implemented in MySQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "administrator schema",
         "isCorrect": false
@@ -379,7 +379,7 @@
     ],
     "question": "Which MySQL command modifies data records in a table?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "MODIFY",
         "isCorrect": false
@@ -405,7 +405,7 @@
     ],
     "question": "What is the best type of query for validating the format of an email address in a MySQL table?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "a SQL query using partitions",
         "isCorrect": false
@@ -431,7 +431,7 @@
     ],
     "question": "In MySQL, queries are always followed by what character?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "line break",
         "isCorrect": false
@@ -457,7 +457,7 @@
     ],
     "question": "How can you remove a record using MySQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "DELETE",
         "isCorrect": false
@@ -483,7 +483,7 @@
     ],
     "question": "Which choice is NOT a statement you would use to filter data?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "WHERE",
         "isCorrect": false
@@ -509,7 +509,7 @@
     ],
     "question": "What does the following SQL statement return?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It records in the Employees table where the value in the EmployeeName column doesn't have an \"a\".",
         "isCorrect": false
@@ -535,7 +535,7 @@
     ],
     "question": "In `SELECT * FROM clients;` what does clients represent?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "a SQL query",
         "isCorrect": false
@@ -561,7 +561,7 @@
     ],
     "question": "How does MySQL differ from SQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "SQL is a standard language for retrieving and manipulating data from structured databases. MySQL is a nonrelational database management system that is used to manage SQL databases.",
         "isCorrect": false
@@ -587,7 +587,7 @@
     ],
     "question": "If you need to order a table of movies by name, which query will work?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "SELECT \\* FROM movies GROUP BY name",
         "isCorrect": false
@@ -613,7 +613,7 @@
     ],
     "question": "A trigger is a database object that is associated with a table, and that activates when a particular event occurs for the table. Which three events are these?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "CREATE, ALTER, DROP",
         "isCorrect": false
@@ -639,7 +639,7 @@
     ],
     "question": "You are working with very large tables in your database. Which SQL clause do you use to prevent exceedingly large query results?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "UNIQUE",
         "isCorrect": false
@@ -665,7 +665,7 @@
     ],
     "question": "What is the default port for MySQL Server?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "25",
         "isCorrect": false
@@ -691,7 +691,7 @@
     ],
     "question": "How can you filter duplicate data while retrieving records from a table?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "WHERE",
         "isCorrect": false
@@ -717,7 +717,7 @@
     ],
     "question": "What is the difference between DROP and TRUNCATE?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "They both refer to the same operation of deleting the table completely.",
         "isCorrect": false
@@ -743,7 +743,7 @@
     ],
     "question": "How do you select every row in a given table named \"inventory\"?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "SELECT all FROM inventory;",
         "isCorrect": false
@@ -769,7 +769,7 @@
     ],
     "question": "In an efficiently designed relational database, what does every table have?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "set of triggers",
         "isCorrect": false
@@ -795,7 +795,7 @@
     ],
     "question": "MySQL option files provide a way to specify commonly used options so that they need not be entered on the command line each time you run a program. What is another name for the option files?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "variable settings",
         "isCorrect": false
@@ -821,7 +821,7 @@
     ],
     "question": "After installing MySQL, it may be necessary to initialize the \\_ which may be done automatically with some MySQL installation methods.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "storage engine",
         "isCorrect": false
@@ -847,7 +847,7 @@
     ],
     "question": "You need to export the data in the customers table into a CSV file, with columns headers in the first row. Which clause do you add to your MySQL command?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "JOIN",
         "isCorrect": false
@@ -873,7 +873,7 @@
     ],
     "question": "One form of backup, replication, enables you to maintain identical data on multiple servers, as a \\_ configuration.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "remote-local",
         "isCorrect": false
@@ -899,7 +899,7 @@
     ],
     "question": "What is the requirement for using a subquery in the SELECT clause?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "the subquery must use an aggregate function.",
         "isCorrect": false
@@ -925,7 +925,7 @@
     ],
     "question": "Each time MySQL is upgraded, it is best to execute mysql_upgrade, which looks for incompatibilities with the upgraded MySQL server. What does this command do, upon finding a table with a possible incompatibility?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "it stops and notifies the server administrator that the upgrade cannot complete until the incompatibility issue are resolved.",
         "isCorrect": false
@@ -951,7 +951,7 @@
     ],
     "question": "What mysql statement is used to check which accounts have specific privileges?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "show privileges (shows the list of system privileges that the MySQL server supports)",
         "isCorrect": false
@@ -977,7 +977,7 @@
     ],
     "question": "What cannot have a trigger associated with it?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "system table",
         "isCorrect": false
@@ -1003,7 +1003,7 @@
     ],
     "question": "later versions of mysql support the native json data type for storing json documents. What is a drawback of json columns?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "inefficient for storing json documents",
         "isCorrect": false
@@ -1029,7 +1029,7 @@
     ],
     "question": "Which statement is true for the diagram below",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "carid is the primary key for purchases",
         "isCorrect": false
@@ -1055,7 +1055,7 @@
     ],
     "question": "Which statement can you use to load data from a file into the table?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`cat file | mysql`",
         "isCorrect": false
@@ -1081,7 +1081,7 @@
     ],
     "question": "Which is the correct syntax of an extended insert statement?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "insert into cars (make, model, year) values ('Ford', 'Mustang', 2002)",
         "isCorrect": false
@@ -1107,7 +1107,7 @@
     ],
     "question": "You need to make an exact copy of a table, with all columns and indexes. How can you get all of the information needed to accomplish this?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "create table",
         "isCorrect": false
@@ -1133,7 +1133,7 @@
     ],
     "question": "you need to make your mysql system secure against attackers. What are you _not_ supposed to do?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Run MySQL server as a normal user.",
         "isCorrect": false
@@ -1159,7 +1159,7 @@
     ],
     "question": "You are managing a database with a table called customers. You created a temporary table also called customers with which you are working for the duration of your session. You need to re-create the temporary table with different specifications. Which command do you need to run first?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`CREATE TEMPORARY TABLE customers;`",
         "isCorrect": false
@@ -1185,7 +1185,7 @@
     ],
     "question": "You need to run a complex query with recursive subqueries, but without creating a stored procedure or a function. Which command or clause do you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "COLLATE",
         "isCorrect": false
@@ -1211,7 +1211,7 @@
     ],
     "question": "Which choice is not a processing algorithm for database views?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "merge",
         "isCorrect": false
@@ -1237,7 +1237,7 @@
     ],
     "question": "What is the MySQL `perror` command-line utility used for?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "to display your version of MySQL",
         "isCorrect": false
@@ -1263,7 +1263,7 @@
     ],
     "question": "How can you list all columns for a given table?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "SHOW table COLUMNS;",
         "isCorrect": false
@@ -1289,7 +1289,7 @@
     ],
     "question": "How would you list the full set of tables in the currently selected database?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "SELECT \\* FROM DATABASE;",
         "isCorrect": false
@@ -1315,7 +1315,7 @@
     ],
     "question": "Which choice is not one of the table maintenance statements?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "CHECK TABLE;",
         "isCorrect": false
@@ -1341,7 +1341,7 @@
     ],
     "question": "In which table does MySQL store passwords for user accounts?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "mysql.accounts;",
         "isCorrect": false
@@ -1367,7 +1367,7 @@
     ],
     "question": "Management has requested that you build an employee database. You need to include each employee's current position and salary, as well as all prior positions and salaries with the company. You decide to use a one-to-many structure: an employee table with the main information such as name and address, and an employment table with position and salary history. You can use the employeeID field to connect them. What is employment.employeeID an example of?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "primary key;",
         "isCorrect": false
@@ -1393,7 +1393,7 @@
     ],
     "question": "In recent versions of MySQL (8.0+), what's the correct syntax to declare a CTE (Common Table Expression)?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "WITH (SELECT id FROM users) as cte, SELECT ...",
         "isCorrect": false
@@ -1419,7 +1419,7 @@
     ],
     "question": "What is one reason to introduce data redundancy into a normalized database design?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "to reduce storage space",
         "isCorrect": false
@@ -1451,7 +1451,7 @@
       "xml\n<car make=\"Ford\" model=\"Mustang\" year=\"2002\"/>\n",
       "xml\n<car year=\"2010\">\n    <make>Mercedes</make> <model> C-Class</model>\n</car>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -1477,7 +1477,7 @@
     ],
     "question": "You are loading data into a table. Which command can you use to make sure that all data is inserted and duplicates rows are discarded?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`INSERT UNIQUE`",
         "isCorrect": false
@@ -1503,7 +1503,7 @@
     ],
     "question": "Which statement about the `TRUNCATE TABLE` statement is true?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It will stop and issue an error when it encounters a row that is referenced by a row in a child table.",
         "isCorrect": false
@@ -1529,7 +1529,7 @@
     ],
     "question": "You are working with the tables as shown in this diagram. You need to get the number of cars sold per the home state of each customer's residence. How can you accomplish this?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`SELECT state, COUNT(*) FROM customers WHERE ID IN (SELECT customerID FROM purchases) GROUP BY state;`",
         "isCorrect": false
@@ -1555,7 +1555,7 @@
     ],
     "question": "In data migration, there is often a need to delete duplicate rows as part of data cleanup. Which statement works best?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`DELETE DUPS`",
         "isCorrect": false
@@ -1581,7 +1581,7 @@
     ],
     "question": "When working with MySQL cursor, what must you also declare?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`DEFAULT` value",
         "isCorrect": false
@@ -1607,7 +1607,7 @@
     ],
     "question": "Which type of backup includes all the changes made to the data since the last full backup was performed?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "snapshot",
         "isCorrect": false
@@ -1633,7 +1633,7 @@
     ],
     "question": "You need to restore a MySQL database from a backup file. Which command-line tool do you use for the actual data import, after re-creating the database?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`mysqld`",
         "isCorrect": false
@@ -1659,7 +1659,7 @@
     ],
     "question": "You are importing data as JSON into a new table. You run CREATE TABLE json_data ( city JSON ); and insert rows into this table. What is the correct syntax to see the list of cities?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`SELECT city FROM json_data;`",
         "isCorrect": false
@@ -1685,7 +1685,7 @@
     ],
     "question": "If you want to use MyISAM instead of InnoDB, which option do you need to specify in the CREATE TABLE statement?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "PARTITION",
         "isCorrect": false
@@ -1716,7 +1716,7 @@
       "sql\nSELECT *\nFROM customers\nWHERE address MATCH 'Street' OR address MATCH 'Drive';\n",
       "sql\nSELECT *\nFROM customers\nWHERE MATCH(address) AGAINST ('street, drive');\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -1742,7 +1742,7 @@
     ],
     "question": "Which query lists the databases on the current server?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "LIST ALL DATABASES;",
         "isCorrect": false
@@ -1768,7 +1768,7 @@
     ],
     "question": "What is the product of the database designing phase?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "all tables, columns, data types, indexes and their relationships",
         "isCorrect": false
@@ -1794,7 +1794,7 @@
     ],
     "question": "Which choice is _not_ a valid model for a stored procedure parameter?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "INOUT",
         "isCorrect": false
@@ -1820,7 +1820,7 @@
     ],
     "question": "What is the advantage of using a temporary table instead of a heap table?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The temporary table will be dropped when the database is restarted.",
         "isCorrect": false
@@ -1846,7 +1846,7 @@
     ],
     "question": "What is the maximum number of columns that can be used by a single table index?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "2",
         "isCorrect": false
@@ -1872,7 +1872,7 @@
     ],
     "question": "Which command will return a list of triggers in the current database?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`DISPLAY TRIGGERS;`",
         "isCorrect": false
@@ -1898,7 +1898,7 @@
     ],
     "question": "Which statement is true about TIMESTAMP and DATETIME data types?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "TIMESTAMP values require more bytes for storage than DATETIME values.",
         "isCorrect": false
@@ -1924,7 +1924,7 @@
     ],
     "question": "What is the equivalent of the mysqladmin reload command?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`mysqladmin flush-threads`",
         "isCorrect": false
@@ -1950,7 +1950,7 @@
     ],
     "question": "Explain the security aspect of stored procedures",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Stored procedures are not secure, because they can be executed from the command line as the root user",
         "isCorrect": false
@@ -1976,7 +1976,7 @@
     ],
     "question": "How would you retrieve data on all the customers where no phone number is stored?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`SELECT * FROM customers WHERE PhoneNumber = NULL;`",
         "isCorrect": false
@@ -2002,7 +2002,7 @@
     ],
     "question": "In the diagram below, the price field is declared as type DECIMAL. What would be a more efficient declaration for this field?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "FLOAT",
         "isCorrect": false
@@ -2028,7 +2028,7 @@
     ],
     "question": "Which choice is `not` an available string type for a column?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`ENUM`",
         "isCorrect": false
@@ -2054,7 +2054,7 @@
     ],
     "question": "This diagram shows what type of relationship between customers and cars?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "one-to-many",
         "isCorrect": false
@@ -2080,7 +2080,7 @@
     ],
     "question": "A stored routine is a set of SQL statements stored on the server and takes form as either a procedure or a function. Which statement cannot be used inside stored routines?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`SELECT`",
         "isCorrect": false
@@ -2106,7 +2106,7 @@
     ],
     "question": "When a new student is added to a new database, you want new records to be created in the related tables such as Exam, Score and Attendance. How would you accomplish this?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "regular expression",
         "isCorrect": false
@@ -2132,7 +2132,7 @@
     ],
     "question": "In the diagram below, the ID fields are declared as type CHAR instead of INT . Which is NOT one of the possible reasons behind that decision?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The ID field needs to include letters and not just numbers.",
         "isCorrect": false
@@ -2158,7 +2158,7 @@
     ],
     "question": "Why would you use a common table expression (CTE)?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To define queries for later reuse for the duration of the current session",
         "isCorrect": false
@@ -2184,7 +2184,7 @@
     ],
     "question": "Which option modifier tells a program not to exit with an error if it does not recognize the option, but instead to issue a warning?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "--verbose",
         "isCorrect": false
@@ -2212,7 +2212,7 @@
     "codeExamples": [
       "\nSELECT name FROM students WHERE name REGEXP '^to';\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "all names with \"to,\" such as Roberto and Tommy",
         "isCorrect": false
@@ -2238,7 +2238,7 @@
     ],
     "question": "You are working with the tables as shown in the diagram. You need to generate the list of price totals for each make and model of car, with subtotals for each make, and the grand total of all prices. Which SQL clause do you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "UNION",
         "isCorrect": false
@@ -2264,7 +2264,7 @@
     ],
     "question": "The left and right joins are also known as \\_.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Inner Join",
         "isCorrect": false
@@ -2290,7 +2290,7 @@
     ],
     "question": "What is the valid way to create a database view in MySQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`CREATE VIEW v1 SELECT * FROM t1 WHERE col1 > 10;`",
         "isCorrect": false
@@ -2316,7 +2316,7 @@
     ],
     "question": "Inside a transaction, several operations need to be performed. What would you do if an exception happens during that transaction?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`UNDO`",
         "isCorrect": false
@@ -2342,7 +2342,7 @@
     ],
     "question": "What function finds the current time or date in MySQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "DATE()",
         "isCorrect": false
@@ -2368,7 +2368,7 @@
     ],
     "question": "What is the correct usage of ENUM in MySQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`Create table size (ENUM ('Small','Medium','Large'));`",
         "isCorrect": false
@@ -2394,7 +2394,7 @@
     ],
     "question": "The mysqldump command cannot generate output in **\\_**.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "CSV",
         "isCorrect": false
@@ -2425,7 +2425,7 @@
       "\nSELECT cars.*, purchases.date\nFROM cars JOIN purchases\nON cars.ID = purchases.carID;\n",
       "\nSELECT cars.*, purchases.date FROM cars LEFT JOIN purchases ON cars.ID = purchases.carID;\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -2456,7 +2456,7 @@
       "\n    IF var1 = 1 THEN SET varA = var1;\n    ELSEIF var2 = 2 THEN SET varA = var2;\n    ELSEIF var3 = 3 THEN SET varA = var3;\n    ELSE SET varA = var4;\n    END IF;\n",
       "\n    IF var1 = 1 THEN SET varA = var1;\n    ELSEIF var1 = 2 THEN SET varA = var2;\n    ELSEIF var1 = 3 THEN SET varA = var3;\n    ELSE SET varA = var4;\n    END IF;\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -2482,7 +2482,7 @@
     ],
     "question": "Why would you use stored functions?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "for formulas and business rules that should be applied on a specific trigger event like on inserts",
         "isCorrect": false
@@ -2508,7 +2508,7 @@
     ],
     "question": "What steps do you need to take to normalize the table from this diagram?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Add a column to this table to serve as a record identifier, and make it the primary key.",
         "isCorrect": false
@@ -2534,7 +2534,7 @@
     ],
     "question": "A table Item has a Boolean field endOfLife and a field makeYear of type YEAR(4). How can you set the Boolean to true for all Items that have been made before 2019?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "UPSERT Item SET endOfLife = true WHERE makeYear < 2019",
         "isCorrect": false
@@ -2560,7 +2560,7 @@
     ],
     "question": "Which choice is an example of an aggregate function?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "NOW()",
         "isCorrect": false
@@ -2586,7 +2586,7 @@
     ],
     "question": "You are working on UPDATE trigger on the employee tablein this diagram. How can you access the new value for the address inside the trigger?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use INSERTED.address",
         "isCorrect": false
@@ -2612,7 +2612,7 @@
     ],
     "question": "You are working with the tables as shown in this diagram. You need to generate the list of customers who purchased certain car models. Which SQL clause do you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "UNION ALL",
         "isCorrect": false
@@ -2638,7 +2638,7 @@
     ],
     "question": "How would you make a case-insensitive query in MySQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`SELECT * FROM customers WHERE UPPEERCASE(LastName) = 'POTTER';`",
         "isCorrect": false
@@ -2664,7 +2664,7 @@
     ],
     "question": "\"COUNT\" keyword belongs to which categories in Mysql?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Operators",
         "isCorrect": false
@@ -2690,7 +2690,7 @@
     ],
     "question": "What is the meaning of \"HAVING\" clause in Mysql?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To filter out the column values",
         "isCorrect": false
@@ -2716,7 +2716,7 @@
     ],
     "question": "Which clause is similar to \"HAVING\" clause in Mysql?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "SELECT",
         "isCorrect": false
@@ -2742,7 +2742,7 @@
     ],
     "question": "What will be the output of the following MySQL command?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "All columns",
         "isCorrect": false
@@ -2768,7 +2768,7 @@
     ],
     "question": "Is there any error in the following MySQL statement?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "YES",
         "isCorrect": false
@@ -2794,7 +2794,7 @@
     ],
     "question": "With MySQL, how do you select all the records from a table named \"Persons\" where the \"LastName\" is alphabetically between (and including) \"Hansen\" and \"Pettersen\"?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`SELECT LastName>'Hansen' AND LastName<'Pettersen' FROM Persons`",
         "isCorrect": false
@@ -2820,7 +2820,7 @@
     ],
     "question": "Consider the set of relations given below and the SQL query that follows",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Names of Students who have got an A grade in all courses taught by Sriram",
         "isCorrect": false
@@ -2846,7 +2846,7 @@
     ],
     "question": "You are working with the tables shown below. You need to make sure that any record added to the purchases table consists of a customerlD, which already exists in the customers table, and a carlD, which already exists in the cars table. You decide to use a trigger to do the validation. Which one do you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "IF EXISTS",
         "isCorrect": false
@@ -2872,7 +2872,7 @@
     ],
     "question": "Current versions of MySQL support the full-text search feature on some storage engines, as an alternative to using the LIKE operator and regular expressions. Which statement would you run to enable a full-text index for the column description in the table Car?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "MERGE TABLE car ADD FULL TEXT(description)",
         "isCorrect": false
@@ -2898,7 +2898,7 @@
     ],
     "question": "Which statement would you _not_ use to filter data?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "MATCH",
         "isCorrect": false
@@ -2924,7 +2924,7 @@
     ],
     "question": "In MySQL, which JOIN type returns all rows from the left table and the matching rows from the right table, and fills in with NULL values if there is no match on the right side?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "INNER JOIN",
         "isCorrect": false
@@ -2950,7 +2950,7 @@
     ],
     "question": "What does SQL stand for in MySQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Simple Query Language",
         "isCorrect": false
@@ -2976,7 +2976,7 @@
     ],
     "question": "Which MySQL statement is used to select data from a database?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Extract",
         "isCorrect": false
@@ -3002,7 +3002,7 @@
     ],
     "question": "What is the purpose of the `PRIMARY KEY` in a MySQL table?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To define a column as an integer",
         "isCorrect": false
@@ -3028,7 +3028,7 @@
     ],
     "question": "Which of the following is a valid SQL query to insert a new row into the users table?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`ADD users (name, email) VALUES ('John Doe', 'john.doe@example.com')`",
         "isCorrect": false
@@ -3054,7 +3054,7 @@
     ],
     "question": "Which of the following is a valid SQL query to delete the row with the id of 2 from the users table?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`REMOVE FROM users WHERE id = 2`",
         "isCorrect": false
@@ -3080,7 +3080,7 @@
     ],
     "question": "MySQL programs are a set of command-line utilities that are provided with typical MySQL distributions. MySQL is designed to be a database.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "database and programming",
         "isCorrect": false
@@ -3106,7 +3106,7 @@
     ],
     "question": "Which MySQL command shows the structure of a table?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "INFO table;",
         "isCorrect": false
@@ -3132,7 +3132,7 @@
     ],
     "question": "The left and right joins are also known as \\_.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Inner Join",
         "isCorrect": false
@@ -3158,7 +3158,7 @@
     ],
     "question": "What is the valid way to create a database view in MySQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`CREATE VIEW v1 SELECT * FROM t1 WHERE col1 > 10;`",
         "isCorrect": false
@@ -3189,7 +3189,7 @@
       "\nSELECT student_name FROM Students WHERE exam_score > 90;\n",
       "\nSELECT name FROM Students WHERE exam_score > 90;\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -3215,7 +3215,7 @@
     ],
     "question": "hich SQL command is used to retrieve data from a database?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "FETCH",
         "isCorrect": false
@@ -3241,7 +3241,7 @@
     ],
     "question": "Which MySQL function would you use to get the current date and time?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "GETDATE()",
         "isCorrect": false
@@ -3267,7 +3267,7 @@
     ],
     "question": "In MySQL, which statement is used to add a new column to an existing table?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "MODIFY TABLE",
         "isCorrect": false
@@ -3293,7 +3293,7 @@
     ],
     "question": "What is the purpose of the LIMIT clause in a MySQL SELECT statement?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To limit the number of tables that can be joined",
         "isCorrect": false
@@ -3319,7 +3319,7 @@
     ],
     "question": "Which MySQL command is used to show all databases on the server?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "LIST DATABASES;",
         "isCorrect": false
@@ -3345,7 +3345,7 @@
     ],
     "question": "What does the UNSIGNED keyword do when used in a column definition?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It makes the column accept only positive numbers",
         "isCorrect": false
@@ -3371,7 +3371,7 @@
     ],
     "question": "Which MySQL function would you use to find the length of a string?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "SIZE()",
         "isCorrect": false
@@ -3397,7 +3397,7 @@
     ],
     "question": "What is the purpose of the AUTO_INCREMENT attribute in MySQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To automatically update the column value when the row is modified",
         "isCorrect": false
@@ -3423,7 +3423,7 @@
     ],
     "question": "Which MySQL statement is used to remove a table from a database?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "REMOVE TABLE",
         "isCorrect": false
@@ -3449,7 +3449,7 @@
     ],
     "question": "What does the LIKE operator do in a WHERE clause?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It compares two values for exact equality",
         "isCorrect": false
@@ -3475,7 +3475,7 @@
     ],
     "question": "Which MySQL function returns the number of rows affected by an INSERT, UPDATE, or DELETE statement?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "AFFECTED_ROWS()",
         "isCorrect": false
@@ -3501,7 +3501,7 @@
     ],
     "question": "What is the purpose of the HAVING clause in MySQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To join multiple tables",
         "isCorrect": false
@@ -3527,7 +3527,7 @@
     ],
     "question": "Which MySQL statement is used to grant privileges to a user?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "ADD PRIVILEGES",
         "isCorrect": false
@@ -3553,7 +3553,7 @@
     ],
     "question": "What does the IFNULL() function do in MySQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It checks if a value is not NULL",
         "isCorrect": false
@@ -3579,7 +3579,7 @@
     ],
     "question": "Which MySQL command is used to show the current user and host?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "SHOW USER;",
         "isCorrect": false
@@ -3605,7 +3605,7 @@
     ],
     "question": "What is the purpose of the EXPLAIN statement in MySQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To provide documentation for a stored procedure",
         "isCorrect": false
@@ -3631,7 +3631,7 @@
     ],
     "question": "Which MySQL function would you use to round a number to the nearest integer?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "CEIL()",
         "isCorrect": false
@@ -3657,7 +3657,7 @@
     ],
     "question": "What does the UNIQUE constraint do in MySQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It ensures that the column cannot contain NULL values",
         "isCorrect": false
@@ -3683,7 +3683,7 @@
     ],
     "question": "Which MySQL statement is used to create an index on a table?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "ADD INDEX",
         "isCorrect": false
@@ -3709,7 +3709,7 @@
     ],
     "question": "What is the purpose of the COALESCE() function in MySQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To combine multiple columns into one",
         "isCorrect": false
@@ -3735,7 +3735,7 @@
     ],
     "question": "Which MySQL command is used to start a transaction?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "BEGIN TRANSACTION",
         "isCorrect": false
@@ -3761,7 +3761,7 @@
     ],
     "question": "What does the CONCAT() function do in MySQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It adds numbers together",
         "isCorrect": false
@@ -3787,7 +3787,7 @@
     ],
     "question": "Which MySQL statement is used to create a stored procedure?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "MAKE PROCEDURE",
         "isCorrect": false
@@ -3813,7 +3813,7 @@
     ],
     "question": "What is the purpose of the REGEXP operator in MySQL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To perform mathematical operations",
         "isCorrect": false
@@ -3839,7 +3839,7 @@
     ],
     "question": "Which MySQL function would you use to get the current user's username?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "CURRENT_USER()",
         "isCorrect": false
@@ -3865,7 +3865,7 @@
     ],
     "question": "What does the DISTINCT keyword do in a SELECT statement?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It sorts the result set in ascending order",
         "isCorrect": false
@@ -3891,7 +3891,7 @@
     ],
     "question": "Which MySQL statement is used to delete all rows from a table without deleting the table itself?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "DELETE TABLE",
         "isCorrect": false

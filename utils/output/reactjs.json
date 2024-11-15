@@ -5,7 +5,7 @@
     ],
     "question": "If you want to import just the Component from the React library, what syntax do you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`import React.Component from 'react'`",
         "isCorrect": false
@@ -31,7 +31,7 @@
     ],
     "question": "If a function component should always render the same way given the same props, what is a simple performance optimization available for it?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Implement the `useReducer` Hook.",
         "isCorrect": false
@@ -59,7 +59,7 @@
     "codeExamples": [
       "javascript\nconst person =(firstName, lastName) =>\n{\n  first: firstName,\n  last: lastName\n}\nconsole.log(person(\"Jill\", \"Wilson\"))\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Call the function from another file.",
         "isCorrect": false
@@ -85,7 +85,7 @@
     ],
     "question": "If you see the following import in a file, what is being used for state management in the component?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "stateful components",
         "isCorrect": false
@@ -113,7 +113,7 @@
     "codeExamples": [
       "javascript\nconst name = 'Rachel';\nconst age = 31;\nconst person = { name, age };\nconsole.log(person);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`{{name: \"Rachel\", age: 31}}`",
         "isCorrect": false
@@ -139,7 +139,7 @@
     ],
     "question": "What is the testing library most often associated with React?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Mocha",
         "isCorrect": false
@@ -167,7 +167,7 @@
     "codeExamples": [
       "javascript\nconst topics = ['cooking', 'art', 'history'];\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`const first = [\"cooking\", \"art\", \"history\"]`",
         "isCorrect": false
@@ -193,7 +193,7 @@
     ],
     "question": "How do you handle passing through the component tree without having to pass props down manually at every level?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "React Send",
         "isCorrect": false
@@ -221,7 +221,7 @@
     "codeExamples": [
       "javascript\nconst [, , animal] = ['Horse', 'Mouse', 'Cat'];\nconsole.log(animal);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Horse",
         "isCorrect": false
@@ -247,7 +247,7 @@
     ],
     "question": "What is the name of the tool used to take JSX and turn it into createElement calls?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "JSX Editor",
         "isCorrect": false
@@ -273,7 +273,7 @@
     ],
     "question": "Why might you use useReducer over useState in a React component?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "when you want to replace Redux",
         "isCorrect": false
@@ -301,7 +301,7 @@
     "codeExamples": [
       "javascript\n<Message {...props} />\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "any that have not changed",
         "isCorrect": false
@@ -329,7 +329,7 @@
     "codeExamples": [
       "javascript\n<Route path=\"/:id\" />\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "This is a route modal",
         "isCorrect": false
@@ -357,7 +357,7 @@
     "codeExamples": [
       "javascript\nfunction Dish() {\n  return <h1>Mac and Cheese</h1>;\n}\n\nReactDOM.render(<Dish />, document.getElementById('root'));\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`div`",
         "isCorrect": false
@@ -385,7 +385,7 @@
     "codeExamples": [
       "javascript\nReact.createElement('h1', null, \"What's happening?\");\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<h1 props={null}>What's happening?</h1>`",
         "isCorrect": false
@@ -413,7 +413,7 @@
     "codeExamples": [
       "javascript\nfunction MyComponent() {\n  return (\n    <Suspense>\n      <div>\n        <Message />\n      </div>\n    </Suspense>\n  );\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "lazy",
         "isCorrect": false
@@ -441,7 +441,7 @@
     "codeExamples": [
       "javascript\nconst message = 'Hi there';\nconst element = <p>{message}</p>;\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "a JS function",
         "isCorrect": false
@@ -467,7 +467,7 @@
     ],
     "question": "What can you use to handle code splitting?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`React.memo`",
         "isCorrect": false
@@ -493,7 +493,7 @@
     ],
     "question": "When do you use `useLayoutEffect`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "to optimize for all devices",
         "isCorrect": false
@@ -521,7 +521,7 @@
     "codeExamples": [
       "javascript\nA. <button onClick={this.handleClick}>Click Me</button>\nB. <button onClick={event => this.handleClick(event)}>Click Me</button>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Button A will not have access to the event object on click of the button.",
         "isCorrect": false
@@ -549,7 +549,7 @@
     "codeExamples": [
       "javascript\nfunction Dish(props) {\n  return (\n    <h1>\n      {props.name} {props.cookingTime}\n    </h1>\n  );\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`function Dish([name, cookingTime]) { return <h1>{name} {cookingTime}</h1>; }`",
         "isCorrect": false
@@ -575,7 +575,7 @@
     ],
     "question": "When might you use `React.PureComponent`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "when you do not want your component to have props",
         "isCorrect": false
@@ -601,7 +601,7 @@
     ],
     "question": "Why is it important to avoid copying the values of props into a component's state where possible?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "because you should never mutate state",
         "isCorrect": false
@@ -627,7 +627,7 @@
     ],
     "question": "What is the children prop?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "a property that adds child components to state",
         "isCorrect": false
@@ -653,7 +653,7 @@
     ],
     "question": "Which attribute is React's replacement for using innerHTML in the browser DOM?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "injectHTML",
         "isCorrect": false
@@ -679,7 +679,7 @@
     ],
     "question": "Which of these terms commonly describe React applications?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "integrated",
         "isCorrect": false
@@ -705,7 +705,7 @@
     ],
     "question": "When using webpack, why would you need to use a loader?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "to put together physical file folders",
         "isCorrect": false
@@ -731,7 +731,7 @@
     ],
     "question": "A representation of a user interface that is kept in memory and is synced with the \"real\" DOM is called what?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "DOM",
         "isCorrect": false
@@ -759,7 +759,7 @@
     "codeExamples": [
       "javascript\nconst Heading = () => {\n  <h1>Hello!</h1>;\n};\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Add a render function.",
         "isCorrect": false
@@ -785,7 +785,7 @@
     ],
     "question": "To create a constant in JavaScript, which keyword do you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "let",
         "isCorrect": false
@@ -811,7 +811,7 @@
     ],
     "question": "What do you call a React component that catches JavaScript errors anywhere in the child component tree?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "error bosses",
         "isCorrect": false
@@ -837,7 +837,7 @@
     ],
     "question": "In which lifecycle method do you make requests for data in a class component?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "constructor",
         "isCorrect": false
@@ -863,7 +863,7 @@
     ],
     "question": "React components are composed to create a user interface. How are components composed?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "by putting them in the same file",
         "isCorrect": false
@@ -889,7 +889,7 @@
     ],
     "question": "All React components must act like **\\_** with respect to their props.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "monads",
         "isCorrect": false
@@ -917,7 +917,7 @@
     "codeExamples": [
       "javascript\nconst handleChange = (e) => {\n  setState((prevState) => ({ ...prevState, [e.target.id]: e.target.value }));\n};\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "a computed property name",
         "isCorrect": false
@@ -945,7 +945,7 @@
     "codeExamples": [
       "javascript\nclass Clock extends React.Component {\n  render() {\n    return <h1>Look at the time: {time}</h1>;\n  }\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It does not have a name prop.",
         "isCorrect": false
@@ -971,7 +971,7 @@
     ],
     "question": "What is sent to an `Array.map()` function?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "the name of another array to iterate over",
         "isCorrect": false
@@ -997,7 +997,7 @@
     ],
     "question": "Why is it a good idea to pass a function to `setState` instead of an object?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It provides better encapsulation.",
         "isCorrect": false
@@ -1023,7 +1023,7 @@
     ],
     "question": "What package contains the render() function that renders a React element tree to the DOM?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`React`",
         "isCorrect": false
@@ -1049,7 +1049,7 @@
     ],
     "question": "How do you set a default value for an uncontrolled form field?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use the `value` property.",
         "isCorrect": false
@@ -1077,7 +1077,7 @@
     "codeExamples": [
       "js\nconst clock = (props) => {\n  return <h1>Look at the time: {props.time}</h1>;\n};\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Add quotes around the return value",
         "isCorrect": false
@@ -1103,7 +1103,7 @@
     ],
     "question": "Which Hook could be used to update the document's title?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`useEffect(() => { title = name + ' ' + lastname; });`",
         "isCorrect": false
@@ -1129,7 +1129,7 @@
     ],
     "question": "Which function from React can you use to wrap Component imports to load them lazily?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`fallback`",
         "isCorrect": false
@@ -1157,7 +1157,7 @@
     "codeExamples": [
       "javascript\nfunction MyComponent(props) {\n  const [done, setDone] = useState(false);\n\n  return <h1>Done: {done}</h1>;\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`useEffect(() => { setDone(true); });`",
         "isCorrect": false
@@ -1185,7 +1185,7 @@
     "codeExamples": [
       "javascript\n<button onClick={this.handleClick()}>Click this</button>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<button onClick={this.handleClick.bind(handleClick)}>Click this</button>`",
         "isCorrect": false
@@ -1211,7 +1211,7 @@
     ],
     "question": "Which answer best describes a function component?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A function component is the same as a class component.",
         "isCorrect": false
@@ -1237,7 +1237,7 @@
     ],
     "question": "Which library does the `fetch()` function come from?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "FetchJS",
         "isCorrect": false
@@ -1265,7 +1265,7 @@
     "codeExamples": [
       "javascript\nuseEffect(() => {\n  setName('John');\n}, [name]);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It will cause an error immediately.",
         "isCorrect": false
@@ -1291,7 +1291,7 @@
     ],
     "question": "Which choice will not cause a React component to rerender?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "if the component calls `this.setState(...)`",
         "isCorrect": false
@@ -1319,7 +1319,7 @@
     "codeExamples": [
       "javascript\nclass Button extends React.Component{\n\n  constructor(props) {\n    super(props);\n    // Missing line\n  }\n\n  handleClick() {...}\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`this.handleClick.bind(this);`",
         "isCorrect": false
@@ -1351,7 +1351,7 @@
       "javascript\n<>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</>\n",
       "javascript\n<Frag>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</Frag>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -1379,7 +1379,7 @@
     "codeExamples": [
       "javascript\nclass Ticker extends React.component {\n  constructor(props) {\n    super(props);\n    this.state = { count: 0 };\n  }\n  render() {\n    return <h1>{}</h1>;\n  }\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "count",
         "isCorrect": false
@@ -1407,7 +1407,7 @@
     "codeExamples": [
       "javascript\nconst greeting = isLoggedIn ? <Hello /> : null;\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "never",
         "isCorrect": false
@@ -1435,7 +1435,7 @@
     "codeExamples": [
       "javascript\nReactDOM.render(<Message orderNumber=\"16\" />, document.getElementById('root'));\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "boolean",
         "isCorrect": false
@@ -1463,7 +1463,7 @@
     "codeExamples": [
       "javascript\nconst element = <h1 style={ backgroundColor: \"blue\" }>Hi</h1>;\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`const element = <h1 style=\"backgroundColor: \"blue\"\"}>Hi</h1>;`",
         "isCorrect": false
@@ -1489,7 +1489,7 @@
     ],
     "question": "Which function is used to update state variables in a React class component?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`replaceState`",
         "isCorrect": false
@@ -1517,7 +1517,7 @@
     "codeExamples": [
       "javascript\nconst Star = ({ selected = false }) => <Icon color={selected ? 'red' : 'grey'} />;\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "black",
         "isCorrect": false
@@ -1545,7 +1545,7 @@
     "codeExamples": [
       "javascript\n  A. <button onClick=this.handleClick>Click Me</button>\n  B. <button onClick={event => this.handleClick(event)}>Click Me</button>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`Button A will not have access to the event object on click of the button`",
         "isCorrect": false
@@ -1576,7 +1576,7 @@
       "javascript\n<Route path=\"/:id\" route={About} />\n",
       "javascript\n<Route>\n  <About path=\"/:id\" />\n</Route>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "B",
         "isCorrect": false
@@ -1608,7 +1608,7 @@
       "javascript\nclass Greeting extends React.Component {\n  render() {\n    return <h1>Hello {this.props.name}!</h1>;\n  }\n}\n",
       "javascript\nclass Greeting extends React.Component {\n  render({ name }) {\n    return <h1>Hello {name}!</h1>;\n  }\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -1636,7 +1636,7 @@
     "codeExamples": [
       "javascript\nReactDOM.render(\n  <h1>Hi<h1>,\n    document.getElementById('root')\n)\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "where to call the function",
         "isCorrect": false
@@ -1662,7 +1662,7 @@
     ],
     "question": "Why should you use React Router's Link component instead of a basic `<a>` tag in React?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The link component allows the user to use the browser's `Back` button.",
         "isCorrect": false
@@ -1690,7 +1690,7 @@
     "codeExamples": [
       "javascript\nReact.createElement(x, y, z);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "the order in which this element should be placed on the page",
         "isCorrect": false
@@ -1718,7 +1718,7 @@
     "codeExamples": [
       "javascript\nuseEffect(() => {\n  // do things\n}, []);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "componentWillUnmount",
         "isCorrect": false
@@ -1746,7 +1746,7 @@
     "codeExamples": [
       "javascript\nclass Comp extends React.Component {\n  render() {\n    return <h1>Look at the time: {time}</h1>;\n  }\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Comp",
         "isCorrect": false
@@ -1774,7 +1774,7 @@
     "codeExamples": [
       "javascript\nReactDOM.createPortal(x, y);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "the current state",
         "isCorrect": false
@@ -1802,7 +1802,7 @@
     "codeExamples": [
       "javascript\nconst [count, setCount] = useState(0);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "the initial state value",
         "isCorrect": false
@@ -1830,7 +1830,7 @@
     "codeExamples": [
       "javascript\nconst database = [{ data: 1 }, { data: 2 }, { data: 3 }];\ndatabase.map((user) => <h1>{user.data}</h1>);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "gives a map of all the entries in database",
         "isCorrect": false
@@ -1858,7 +1858,7 @@
     "codeExamples": [
       "javascript\nconst { name: firstName } = props;\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It is creating a new object that contains the same name property as the props object.",
         "isCorrect": false
@@ -1886,7 +1886,7 @@
     "codeExamples": [
       "javascript\nconst MyComponent = ({ names }) => (\n  <h1>Hello</h1>\n  <p>Hello again</p>\n);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "React components cannot be defined using functions.",
         "isCorrect": false
@@ -1914,7 +1914,7 @@
     "codeExamples": [
       "javascript\nReactDOM.createPortal(x, y);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "the App component",
         "isCorrect": false
@@ -1942,7 +1942,7 @@
     "codeExamples": [
       "javascript\nconst MyComponent = ({ children }) => (\n  <div>{children.length}</div>\n);\n...\n<MyComponent>\n<p>\n  Hello <span>World!</span>\n</p>\n<p>Goodbye</p>\n</MyComponent>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It will produce an error saying \"cannot read property \"length\" of undefined.\"",
         "isCorrect": false
@@ -1970,7 +1970,7 @@
     "codeExamples": [
       "javascript\nconst [count, setCount] = useState(0);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "object destructuring",
         "isCorrect": false
@@ -1996,7 +1996,7 @@
     ],
     "question": "What is the first file loaded by the browser in a basic React project?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "src/App.js",
         "isCorrect": false
@@ -2024,7 +2024,7 @@
     "codeExamples": [
       "javascript\nimport React from 'react';\nimport { createRoot } from 'reactjs-dom';\n\nconst element = <h1>Hi</h1>;\n// Note: error on the line below\nconst root = ReactDOM.createRoot(document.getElementById('root'));\n\nroot.render(element);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`ReactDOM(element, document.getElementById(\"root\"));`",
         "isCorrect": false
@@ -2052,7 +2052,7 @@
     "codeExamples": [
       "javascript\nrender() {\n  const isLoggedIn = this.state.isLoggedIn;\n  return (\n    <div>\n      The user is:\n    </div>\n  );\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`The user is loggedIn ? logged in : not logged in.`",
         "isCorrect": false
@@ -2078,7 +2078,7 @@
     ],
     "question": "You are rendering a list with React when this warning appears in the console: \"Warning: Each child in a list should have a unique 'key' prop.\" How do you fix this issue?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Add a key prop with the same value to each item in the list",
         "isCorrect": false
@@ -2104,7 +2104,7 @@
     ],
     "question": "How would you generate the boilerplate code for a new app that you are building to collect underpants?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "npm create-react-app collect-underpants",
         "isCorrect": false
@@ -2132,7 +2132,7 @@
     "codeExamples": [
       "javascript\nclass StarTrekkin extends React.Component {\n  firePhotonTorpedoes(e) {\n    console.log('pew pew');\n  }\n  render() {\n    return; // Missing code\n  }\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<button onClick={firePhotonTorpedoes()}>Pew Pew</button>`",
         "isCorrect": false
@@ -2158,7 +2158,7 @@
     ],
     "question": "What is the process of deciding whether an update is necessary?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "shadow DOM",
         "isCorrect": false
@@ -2184,7 +2184,7 @@
     ],
     "question": "React is an open-source project but is maintained by which company?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Intuit",
         "isCorrect": false
@@ -2210,7 +2210,7 @@
     ],
     "question": "What command can you use to generate a React project?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "react-starter",
         "isCorrect": false
@@ -2236,7 +2236,7 @@
     ],
     "question": "What is the browser extension called that React developers use to debug applications?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "React Tooling Add-on",
         "isCorrect": false
@@ -2262,7 +2262,7 @@
     ],
     "question": "Which tool is not part of Create React App?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "React",
         "isCorrect": false
@@ -2288,7 +2288,7 @@
     ],
     "question": "What is the JavaScript syntax extension that is commonly used to create React elements?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "HTML",
         "isCorrect": false
@@ -2314,7 +2314,7 @@
     ],
     "question": "How might you check property types without using Flow or TypeScript?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Check Manually.",
         "isCorrect": false
@@ -2342,7 +2342,7 @@
     "codeExamples": [
       "javascript\nlet dish = <h1>Mac and Cheese</h1>;\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`let dish = <h1 id={heading}>Mac and Cheese</h1>;`",
         "isCorrect": false
@@ -2370,7 +2370,7 @@
     "codeExamples": [
       "javascript\nclass Huggable extends React.Component {\n  hug(id) {\n    console.log(\"hugging \" + id);\n  }\n  render() {\n    let name = \"kitten\";\n    let button = // Missing code\n    return button;\n  }\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<button onClick={(name) => this.hug(name)}>Hug Button</button>;`",
         "isCorrect": false
@@ -2396,7 +2396,7 @@
     ],
     "question": "What syntax do you use to create a component in React?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "a generator",
         "isCorrect": false
@@ -2422,7 +2422,7 @@
     ],
     "question": "You want to disable a button so that it does not emit any events onClick. Which prop do you use to acomplish this?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "onBlur",
         "isCorrect": false
@@ -2450,7 +2450,7 @@
     "codeExamples": [
       "javascript\nfunction Dish() {\n  return (\n    <>\n      <Ingredient />\n      <Ingredient />\n    </>\n  );\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "child component",
         "isCorrect": false
@@ -2476,7 +2476,7 @@
     ],
     "question": "When does the componentDidMount function fire?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "before the component is added to the DOM",
         "isCorrect": false
@@ -2502,7 +2502,7 @@
     ],
     "question": "What might you use webpack for in React development?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "to fetch remote dependencies used by your app",
         "isCorrect": false
@@ -2528,7 +2528,7 @@
     ],
     "question": "When using the React Developer Tools Chrome extension, what does it mean if the React icon is red?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "You are using the production build of React.",
         "isCorrect": false
@@ -2556,7 +2556,7 @@
     "codeExamples": [
       "javascript\nclass TransIsBeautiful extends React.Component {\n  constructor(props){\n  // Missing line\n  console.log(this) ;\n  }\n  ...\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "render(props);",
         "isCorrect": false
@@ -2582,7 +2582,7 @@
     ],
     "question": "Which language can you not use with React?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "JSX.",
         "isCorrect": false
@@ -2610,7 +2610,7 @@
     "codeExamples": [
       "javascript\nconstructor(props) {\n    super(props);\n    this.state = {\n        pokeDex: []\n    };\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "console.log(props.pokeDex);",
         "isCorrect": false
@@ -2638,7 +2638,7 @@
     "codeExamples": [
       "javascript\nfunction add(x = 1, y = 2) {\n  return x + y;\n}\n\nadd();\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "null",
         "isCorrect": false
@@ -2664,7 +2664,7 @@
     ],
     "question": "Why might you use a React.ref?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "to refer to another JS file",
         "isCorrect": false
@@ -2692,7 +2692,7 @@
     "codeExamples": [
       "javascript\nconst { tree, lake } = nature;\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "function defaults",
         "isCorrect": false
@@ -2724,7 +2724,7 @@
       "javascript\n<Message sent=\"false\" />,\n",
       "javascript\nReactDom.render(<Message sent=\"false\" />, document.getElementById('root'));\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "B",
         "isCorrect": false
@@ -2752,7 +2752,7 @@
     "codeExamples": [
       "javascript\nconst PokeDex = (props) => {\n  const [pokeDex, setPokeDex] = useState([]);\n  /// ...\n};\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "props.pokeDex",
         "isCorrect": false
@@ -2780,7 +2780,7 @@
     "codeExamples": [
       "javascript\nconst Greeting = ({ initName }) => {\n  const greet = (name) => console.log(\"Hello, \" + name + \"!\");\n  return <button onClick={ ... }>Greeting Button </button>\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "hug",
         "isCorrect": false
@@ -2806,7 +2806,7 @@
     ],
     "question": "What is the name of the compiler used to transform JSX into JavaScript?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "JSX Editor",
         "isCorrect": false
@@ -2832,7 +2832,7 @@
     ],
     "question": "Which hook is used to prevent a function from being recreated on every component render?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "useMemo",
         "isCorrect": false
@@ -2858,7 +2858,7 @@
     ],
     "question": "Why might you use the `useRef` hook?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To bind the function",
         "isCorrect": false
@@ -2884,7 +2884,7 @@
     ],
     "question": "Which of the following is required to use React?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "React Router",
         "isCorrect": false
@@ -2910,7 +2910,7 @@
     ],
     "question": "What is the correct way to get a value from context?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "const value = useContext(MyContext.Consumer)",
         "isCorrect": false
@@ -2936,7 +2936,7 @@
     ],
     "question": "Why is ref used?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "to bind function",
         "isCorrect": false
@@ -2962,7 +2962,7 @@
     ],
     "question": "Choose the method which should be overridden to stop the component from updating?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "componentDidMount",
         "isCorrect": false
@@ -2988,7 +2988,7 @@
     ],
     "question": "What is the functionality of a “webpack” command?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Runs react local development server",
         "isCorrect": false
@@ -3014,7 +3014,7 @@
     ],
     "question": "Choose the method which is not a part of ReactDOM?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "ReactDOM.createPortal()",
         "isCorrect": false
@@ -3040,7 +3040,7 @@
     ],
     "question": "In react, the key should be?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Unique in DOM",
         "isCorrect": false
@@ -3066,7 +3066,7 @@
     ],
     "question": "Which company developed ReactJS?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Google",
         "isCorrect": false
@@ -3092,7 +3092,7 @@
     ],
     "question": "Choose the library which is most often associated with react?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Chai",
         "isCorrect": false
@@ -3118,7 +3118,7 @@
     ],
     "question": "What of the following is used in React.js to increase performance?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Original DOM",
         "isCorrect": false
@@ -3144,7 +3144,7 @@
     ],
     "question": "Among The following options, choose the one which helps react for keeping their data uni-directional?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "DOM",
         "isCorrect": false
@@ -3172,7 +3172,7 @@
     "codeExamples": [
       "javascript\nclass Greeting extends React.Component {\n  render() {\n    return <h1>Hello {this.props.name}!<h1>;\n  }\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`const Greeting = (name) => <h1>{name}</h1>`",
         "isCorrect": false
@@ -3200,7 +3200,7 @@
     "codeExamples": [
       "javascript\nconst Waitlist = () => {\n  const [name, setName] = useState('');\n  const [waitlist, setWaitlist] = useState([]);\n  const onSubmit = (e) => {\n    e.preventDefault();\n    waitlist.push(name);\n  };\n  return (\n    <div>\n      <form onSubmit={onSubmit}>\n        <label>\n          Name: <input type=\"text\" value={name} onChange={(e) => setName(e.target.value)} />\n        </label>\n        <button type=\"submit\">Add to waitlist</button>\n      </form>\n\n      <ol>\n        {waitlist.map((name) => (\n          <li key={name}>{name}</li>\n        ))}\n      </ol>\n    </div>\n  );\n};\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The form is reloading the page each time `Add to waitlist` is clicked.",
         "isCorrect": false
@@ -3226,7 +3226,7 @@
     ],
     "question": "What is the pattern that is used in the Context.Consumer below?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "higher-order component",
         "isCorrect": false
@@ -3252,7 +3252,7 @@
     ],
     "question": "In React.js which one of the following is used to create a class for Inheritance ?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Create",
         "isCorrect": false
@@ -3278,7 +3278,7 @@
     ],
     "question": "What is the purpose of render() in React.js?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To replace the existing markup",
         "isCorrect": false
@@ -3304,7 +3304,7 @@
     ],
     "question": "What is the use of super(props) in React.js?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To call the constructor of the parent class",
         "isCorrect": false
@@ -3330,7 +3330,7 @@
     ],
     "question": "What is Redux in React.js?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A tool for building UI components",
         "isCorrect": false
@@ -3356,7 +3356,7 @@
     ],
     "question": "What is the purpose of the virtual DOM in React.js, and how does it improve performance in web applications??",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The virtual DOM is used to store user authentication data securely.",
         "isCorrect": false
@@ -3384,7 +3384,7 @@
     "codeExamples": [
       "javascript\nimport React from 'react';\n\nconst [poked, setPoked] = React.useState(false);\n\nfunction PokeButton() {\n  return <button onClick={() => setPoked(true)}>{poked ? 'You have left a poke.' : 'Poke'}</button>;\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The react package is likely not installed correctly.",
         "isCorrect": false
@@ -3412,7 +3412,7 @@
     "codeExamples": [
       "javascript\nfunction PokeButton() {\n  const { poked, setPoked } = useState(false);\n  return <button onclick={() => setPoked(true)}>{poked ? 'You have left a poke.' : 'Poke'}</button>;\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "onClick prop should be onclick.",
         "isCorrect": false
@@ -3440,7 +3440,7 @@
     "codeExamples": [
       "javascript\nconst OtherComponent = React.lazy(() => import('./OtherComponent.js'));\n\nfunction MyComponent() {\n  return (\n    <XXXX fallback={<spinner />}>\n      <OtherComponent />\n    </XXXX>\n  );\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Component",
         "isCorrect": false
@@ -3466,7 +3466,7 @@
     ],
     "question": "Elements in lists in React should have \\_**\\_ that are \\_\\_\\_** .",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "keys ; indexes",
         "isCorrect": false
@@ -3492,7 +3492,7 @@
     ],
     "question": "You want to memorize a callback function so you ensure that React does not recreate the function at each render. Which hook would you use to accomplish this?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "useRef",
         "isCorrect": false
@@ -3520,7 +3520,7 @@
     "codeExamples": [
       "javascript\nuseEffect(callNetworkFunc, XXXX);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "userInput",
         "isCorrect": false
@@ -3548,7 +3548,7 @@
     "codeExamples": [
       "javascript\n<div>{isLoggedIn ? <Hello /> : null}</div>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "when isLoggedIn is false",
         "isCorrect": false
@@ -3574,7 +3574,7 @@
     ],
     "question": "When do you use `useLayoutEffect`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "to optimize for all devices",
         "isCorrect": false
@@ -3600,7 +3600,7 @@
     ],
     "question": "What is the difference between state and props in React?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Props are set by the parent component, state is set by the child component",
         "isCorrect": false
@@ -3626,7 +3626,7 @@
     ],
     "question": "Which language can you not use with React?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "JSX.",
         "isCorrect": false
@@ -3652,7 +3652,7 @@
     ],
     "question": "Which answer best describes a function component?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A function component is the same as a class component.",
         "isCorrect": false
@@ -3678,7 +3678,7 @@
     ],
     "question": "Which library does the `fetch()` function come from?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "FetchJS",
         "isCorrect": false
@@ -3720,7 +3720,7 @@
     ],
     "question": "What is the primary function of React Router?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "React Router is used for fetching data from APIs.",
         "isCorrect": false
@@ -3746,7 +3746,7 @@
     ],
     "question": "When should you use Redux in a React application?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Redux is always required in React applications.",
         "isCorrect": false
@@ -3772,7 +3772,7 @@
     ],
     "question": "What is the use of React hooks?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To optimize React apps for mobile devices",
         "isCorrect": false
@@ -3798,7 +3798,7 @@
     ],
     "question": "How can you pass data through a React component tree without having to pass props down manually at every level?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "By using redux",
         "isCorrect": false

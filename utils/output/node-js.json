@@ -5,7 +5,7 @@
     ],
     "question": "When a javaScript function is invoked (called) in Node, where is a new frame placed?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "the event loop",
         "isCorrect": false
@@ -31,7 +31,7 @@
     ],
     "question": "Which of the following is a core module in Node?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "webpack",
         "isCorrect": false
@@ -57,7 +57,7 @@
     ],
     "question": "Which of the following Buffer class methods returns an uninitialized buffer?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "concat",
         "isCorrect": false
@@ -83,7 +83,7 @@
     ],
     "question": "Which of the following modules is NOT a built-in module in Node?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "events",
         "isCorrect": false
@@ -109,7 +109,7 @@
     ],
     "question": "Which fs module method can be used to read the content of a file without buffering it in memory?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "read",
         "isCorrect": false
@@ -135,7 +135,7 @@
     ],
     "question": "Which of the following DNS module methods uses the underlying OS facilities and does not necessarily perform any network communication?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "resolve",
         "isCorrect": false
@@ -161,7 +161,7 @@
     ],
     "question": "How do you check that a value is a date object in Node?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "assert.isDate(value)",
         "isCorrect": false
@@ -187,7 +187,7 @@
     ],
     "question": "Can you create an https web server with Node.js?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "no, there are no modules supporting it yet",
         "isCorrect": false
@@ -213,7 +213,7 @@
     ],
     "question": "What is the Api that is designed to insulate Addons from changes in the underlying JavaScript engine?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A-API",
         "isCorrect": false
@@ -239,7 +239,7 @@
     ],
     "question": "Which CLI option can you use to debug a node script in Chrome DevTools?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "--dev-tools",
         "isCorrect": false
@@ -265,7 +265,7 @@
     ],
     "question": "What command would you use to count the number of logical CPUs on the machine that is running Node?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "node -p \"process.cpus\"",
         "isCorrect": false
@@ -291,7 +291,7 @@
     ],
     "question": "Which of the following is a method on the console object?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "exit",
         "isCorrect": false
@@ -317,7 +317,7 @@
     ],
     "question": "Which object is used to manage the cache of required modules?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "global.cache",
         "isCorrect": false
@@ -343,7 +343,7 @@
     ],
     "question": "What is the command to silence all process warnings?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "node index.js --trace-warnings",
         "isCorrect": false
@@ -369,7 +369,7 @@
     ],
     "question": "How can you use the promise API with a callback-based function such as child_process.exec?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "new Promise(child_process.exec())",
         "isCorrect": false
@@ -395,7 +395,7 @@
     ],
     "question": "Which of the following is NOT a Node repl command?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": ".break",
         "isCorrect": false
@@ -421,7 +421,7 @@
     ],
     "question": "Which statement is true when you run the code shown below?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The forked process shares the event loop with the parent process",
         "isCorrect": false
@@ -447,7 +447,7 @@
     ],
     "question": "If EventEmitter is in scope, which of the following lines of code will have an event emitter emitting a change event?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "EventEmitter.new().emit('change');",
         "isCorrect": false
@@ -473,7 +473,7 @@
     ],
     "question": "Which of the following objects is a stream",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "process.uptime",
         "isCorrect": false
@@ -499,7 +499,7 @@
     ],
     "question": "Which module variable holds the resolved absolute path of the current module file?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`__pathname`",
         "isCorrect": false
@@ -525,7 +525,7 @@
     ],
     "question": "If the child_process module methods are in scope, what is a current way to execute the command ps -ef using a child process?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "spawn(\"ps -ef\")",
         "isCorrect": false
@@ -551,7 +551,7 @@
     ],
     "question": "Which console method can be used to print the stack trace to the point of its execution?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "stack",
         "isCorrect": false
@@ -577,7 +577,7 @@
     ],
     "question": "When you run JavaScript in a Node.js application, which of the following elements in a Node.js stack actually executes that JavaScript?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "the libuv library",
         "isCorrect": false
@@ -605,7 +605,7 @@
     "codeExamples": [
       "\nconst http = require('http');\n const hostname = '127.0.0.1'; const port = 3000;\n const server = http.createServer((req, res) => {\n  res.statusCode = 200;  res.setHeader(\"Content-Type\", \"text/plain\");  res.end(\"Hello World\\n\");\n});\nserver.listen(port, hostname, () => { console.log(`server running at http://${hostname}:${port}/`); });\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "server running at http://localhost:3000/",
         "isCorrect": false
@@ -631,7 +631,7 @@
     ],
     "question": "What is the purpose of the path module?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "to provide utilities to add and remove files",
         "isCorrect": false
@@ -657,7 +657,7 @@
     ],
     "question": "How do you make an HTTP server object active and listen to requests on certain ports?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "server. start",
         "isCorrect": false
@@ -685,7 +685,7 @@
     "codeExamples": [
       "\nconst fs = require('fs'); const os = require('os');\nconst system = os.platform(); const user = os.userInfo().username;\nfs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) throw err; console.log('The data was appended to file!');}\n);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "creates an image file",
         "isCorrect": false
@@ -711,7 +711,7 @@
     ],
     "question": "How do you start a Node application, if the entry file is indexjs?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "nodemon start",
         "isCorrect": false
@@ -737,7 +737,7 @@
     ],
     "question": "What is the purpose of the file system (fs) module?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "to provide methods to work with requests and responses",
         "isCorrect": false
@@ -763,7 +763,7 @@
     ],
     "question": "What is the Node LTS version?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It is the current unstable version and is to be avoided.",
         "isCorrect": false
@@ -789,7 +789,7 @@
     ],
     "question": "Which of the following is NOT a valid stream in Node?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "process. stdin",
         "isCorrect": false
@@ -815,7 +815,7 @@
     ],
     "question": "You have a script.js file with the single line of code shown here. What will be the output of executing script.js with the node command?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "an empty string",
         "isCorrect": false
@@ -841,7 +841,7 @@
     ],
     "question": "Which choice is not a valid method on event emitters?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "on",
         "isCorrect": false
@@ -867,7 +867,7 @@
     ],
     "question": "Which special object is an instance of EventEmitter?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Buffer",
         "isCorrect": false
@@ -893,7 +893,7 @@
     ],
     "question": "What is the command to get a list of available commands for Node.js?What is the command to get a list of available commands for Node.js?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "node index.js -x",
         "isCorrect": false
@@ -919,7 +919,7 @@
     ],
     "question": "When a request event is received in the HTTP module, what is the type of the first argument passed to that event, usually named req?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "http.ServerRequest",
         "isCorrect": false
@@ -945,7 +945,7 @@
     ],
     "question": "What are the arguments passed to the module wrapper function?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`exports, __filename, __dirname`",
         "isCorrect": false
@@ -971,7 +971,7 @@
     ],
     "question": "Which library provides Node.js with the event loop?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "V8",
         "isCorrect": false
@@ -997,7 +997,7 @@
     ],
     "question": "What does the .node file extension represent?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "a C++ file that can have a .node extension and that Node will be able to execute directly.",
         "isCorrect": false
@@ -1023,7 +1023,7 @@
     ],
     "question": "What can you export with module.exports?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "only objects.",
         "isCorrect": false
@@ -1049,7 +1049,7 @@
     ],
     "question": "Which core module in Node can you use to take advantage of multicore systems?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "os",
         "isCorrect": false
@@ -1075,7 +1075,7 @@
     ],
     "question": "Which core Node module has wrappers for OpenSSL methods?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "SSL",
         "isCorrect": false
@@ -1101,7 +1101,7 @@
     ],
     "question": "Which line imports a promise-based version of the readFile method?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "const { readFile } = require(fs)",
         "isCorrect": false
@@ -1127,7 +1127,7 @@
     ],
     "question": "According to the rules of semantic versioning, what does a release incrementing the third number in an npm version string communicate to users about the release changes?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Changes are not backwards compatible.",
         "isCorrect": false
@@ -1153,7 +1153,7 @@
     ],
     "question": "What does REPL stand for?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "run, examine, put, loop",
         "isCorrect": false
@@ -1179,7 +1179,7 @@
     ],
     "question": "Which file does node-gyp use to read the build configuration of a module?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": ".gyprc",
         "isCorrect": false
@@ -1205,7 +1205,7 @@
     ],
     "question": "Which core module in Node can you use for testing?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "chai",
         "isCorrect": false
@@ -1231,7 +1231,7 @@
     ],
     "question": "Which core module in Node provides an API to register callbacks to track asynchronous resources created inside a Node.js application?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "cluster",
         "isCorrect": false
@@ -1257,7 +1257,7 @@
     ],
     "question": "Which Node.js module should you use when you need to decode raw data into strings?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "buffer",
         "isCorrect": false
@@ -1283,7 +1283,7 @@
     ],
     "question": "Which global object acts like a bridge between a Node script and the host operating system?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "v8",
         "isCorrect": false
@@ -1309,7 +1309,7 @@
     ],
     "question": "Which statement is true about Node.js and threads?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Every Node process runs in a single thread, and all the I/O work is run in that same thread.",
         "isCorrect": false
@@ -1335,7 +1335,7 @@
     ],
     "question": "Which statement about event emitters is false?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The emit method allows a arbitrary set of arguments to be passed to the listener functions.",
         "isCorrect": false
@@ -1361,7 +1361,7 @@
     ],
     "question": "Which core module in Node can you use to compile and run JavaScript code in a sandbox environment?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "sandbox",
         "isCorrect": false
@@ -1387,7 +1387,7 @@
     ],
     "question": "How would you determine the number of cluster instances to start when using the cluster module?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "const numInstances = cluster.instances().length;",
         "isCorrect": false
@@ -1413,7 +1413,7 @@
     ],
     "question": "You have to read a large text file, replace some words in it, and write it back to a new file. You know that the memory on your target system is limited. What should you do?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use regular expressions directly on the file.",
         "isCorrect": false
@@ -1439,7 +1439,7 @@
     ],
     "question": "Which choice is `not` a Node global object?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "process",
         "isCorrect": false
@@ -1465,7 +1465,7 @@
     ],
     "question": "What is the correct way to pipe a readable stream and a writable stream?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "readableStream.on(pipe, writableStream)",
         "isCorrect": false
@@ -1491,7 +1491,7 @@
     ],
     "question": "How can you convert path segments into a string using the platform-specific separator as a delimiter?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "path.concat",
         "isCorrect": false
@@ -1517,7 +1517,7 @@
     ],
     "question": "What is the purpose of N-API?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "to allow users to make requests to the server",
         "isCorrect": false
@@ -1543,7 +1543,7 @@
     ],
     "question": "What is a process object and its role?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "a locally scoped object that provides information about the current node process",
         "isCorrect": false
@@ -1571,7 +1571,7 @@
     "codeExamples": [
       "\n// File: person.js\nexports.name = \"Jane\";\n\n// File: index.js\nconst person = require('./person.js');\nconsole.log(person);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`{'Jane'}`",
         "isCorrect": false
@@ -1599,7 +1599,7 @@
     "codeExamples": [
       "\n// File: person.js\nexports = \"John\";\n\n// File: index.js\nconst person = require('./person.js');\nconsole.log(person);\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`John`",
         "isCorrect": false
@@ -1625,7 +1625,7 @@
     ],
     "question": "Is it possible to write tests in Node.js without an external library?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "yes, through the debugger module",
         "isCorrect": false
@@ -1651,7 +1651,7 @@
     ],
     "question": "Which assert module method is usually used to test the error-first argument in callbacks?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "fail",
         "isCorrect": false
@@ -1677,7 +1677,7 @@
     ],
     "question": "Which choice is not a method on the util module?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "promisify",
         "isCorrect": false
@@ -1703,7 +1703,7 @@
     ],
     "question": "Which choice is not a subclass of the Error class?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "TypeError",
         "isCorrect": false
@@ -1729,7 +1729,7 @@
     ],
     "question": "What is Node built on?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Python",
         "isCorrect": false
@@ -1755,7 +1755,7 @@
     ],
     "question": "How does it affect the performance of a web application when an execution path contains a CPU-heavy operation, such as calculating a long Fibonacci sequence?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "As Node.js is asynchronous, this is handled by a libuv and a threadpool. The performance will not notably degrade.",
         "isCorrect": false
@@ -1781,7 +1781,7 @@
     ],
     "question": "What is used for parsing and running Javascript in Node.js?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "EventLoop",
         "isCorrect": false
@@ -1807,7 +1807,7 @@
     ],
     "question": "What is the importance of having good practices around status code in your response?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It is not important to have good practices regarding status codes",
         "isCorrect": false
@@ -1833,7 +1833,7 @@
     ],
     "question": "How can ECMAScript modules be used natively in Node?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "ECMAScript modules cannot be used natively in Node.",
         "isCorrect": false
@@ -1859,7 +1859,7 @@
     ],
     "question": "When exploring the Node documentation's features, what are the stability ratings?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "They tell if a feature is ES6 compliant.",
         "isCorrect": false
@@ -1885,7 +1885,7 @@
     ],
     "question": "Which DNS module method uses the underlying OS facilities and does not necessarily perform any network communication?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "resolve",
         "isCorrect": false
@@ -1911,7 +1911,7 @@
     ],
     "question": "When you `require(something)`, where will Node.js attempt to `resolve(something)`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "the local .modules folder, then the parents' node_modules folder",
         "isCorrect": false
@@ -1937,7 +1937,7 @@
     ],
     "question": "An external library has its own codebase and license. It is not managed by the Node.js core team. Which choice is an external library that Node.js uses?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "net",
         "isCorrect": false
@@ -1963,7 +1963,7 @@
     ],
     "question": "What is the main purpose of the package-lock.json file?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "to be a system file",
         "isCorrect": false
@@ -1991,7 +1991,7 @@
     "codeExamples": [
       "\nconst http = require('http');\nconst hostname = '127.0.0.1';\nconst port = 3000;\n\nconst server = http.createServer((req, res) => {\n  res.statusCode = 200;\n  res.setHeader('Content-Type', 'text/plain');\n  res.end('Hello World\\n');\n});\n\nserver.listen(port, hostname, () => {\n  console.log(`Server running at http://${hostname}:${port}/`);\n});\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`server running at http://127.0.0.1:3000`",
         "isCorrect": false

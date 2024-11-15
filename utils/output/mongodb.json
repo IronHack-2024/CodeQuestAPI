@@ -5,7 +5,7 @@
     ],
     "question": "Which command adds members to the replica set from MongoDB shell?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`replicaSetAdd(\"<hostname>\")`",
         "isCorrect": false
@@ -31,7 +31,7 @@
     ],
     "question": "Which MongoDB shell command should you use to back up a database?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "restore",
         "isCorrect": false
@@ -57,7 +57,7 @@
     ],
     "question": "Which shell query displays all citizens with an age greater than or equal to 21?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.citizens.select('WHERE age >= 21')`",
         "isCorrect": false
@@ -83,7 +83,7 @@
     ],
     "question": "What does a MongoDB collection consist of?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "data",
         "isCorrect": false
@@ -109,7 +109,7 @@
     ],
     "question": "Given an ObjectId in `_id`, how do you get the time it was created?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`getDateTime(_id)`",
         "isCorrect": false
@@ -135,7 +135,7 @@
     ],
     "question": "Given a cursor named myCursor, which command returns a boolean value?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`myCursor.sort()`",
         "isCorrect": false
@@ -161,7 +161,7 @@
     ],
     "question": "Which command returns a specific document in the user's collection?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.users.seek({_id: 1})`",
         "isCorrect": false
@@ -187,7 +187,7 @@
     ],
     "question": "To import a JSON array into Mongo, what flags are needed with MongoDBimport?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`--type jsonArray`",
         "isCorrect": false
@@ -213,7 +213,7 @@
     ],
     "question": "Choose the shell command that connects to a MongoDB database.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "mongod",
         "isCorrect": false
@@ -239,7 +239,7 @@
     ],
     "question": "In the MongoDB shell, how can you tell if an index was used with a query?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.customers.find({lastName: 'smith'}).perf()`",
         "isCorrect": false
@@ -265,7 +265,7 @@
     ],
     "question": "Suppose your aggregation pipeline terminated with an exception referring to exceeded memory limit. What is the best way to resolve the issue?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Set useMemory to twice amount indicated in exception.",
         "isCorrect": false
@@ -291,7 +291,7 @@
     ],
     "question": "What is the recommended way to delete a user?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.deleteUser(\"user\")`",
         "isCorrect": false
@@ -317,7 +317,7 @@
     ],
     "question": "What the primary database in a replica set fails, when does failover begin?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "once the primary has been down for 10 minutes",
         "isCorrect": false
@@ -343,7 +343,7 @@
     ],
     "question": "What is the correct option to set up Kerberos when starting MongoDBd?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`--setAuthentication=GSSAPI`",
         "isCorrect": false
@@ -369,7 +369,7 @@
     ],
     "question": "What is the purpose of an arbiter in a replica set?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It monitors replica set and sends email in case of failure",
         "isCorrect": false
@@ -395,7 +395,7 @@
     ],
     "question": "You want to know how many types of items you have in each category. Which query does this?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.product.group({_id: \"$category\", count: {$sum:1}})`",
         "isCorrect": false
@@ -421,7 +421,7 @@
     ],
     "question": "To restrict the number of records coming back from a query, which command should you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "take",
         "isCorrect": false
@@ -447,7 +447,7 @@
     ],
     "question": "You have a collection named restaurants with the geographical information stored in the location property, how do you create a geospatial index on it?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.restaurants.geospatial({location: \"2dsphere\"})`",
         "isCorrect": false
@@ -473,7 +473,7 @@
     ],
     "question": "How do you find documents with a matching item in an embedded array?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.customers.findmatch ({\"jobs\":\"secretary\"})`",
         "isCorrect": false
@@ -499,7 +499,7 @@
     ],
     "question": "Which query bypasses the first 5 customers and returns the next 10?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.customers.find({}, {skip: 5, limit: 10})`",
         "isCorrect": false
@@ -525,7 +525,7 @@
     ],
     "question": "How do you create a text index?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.customers.createIndex({firstName, lastName})`",
         "isCorrect": false
@@ -551,7 +551,7 @@
     ],
     "question": "Assuming you have customers collection with a firstName and lastName field, which is the correct MongoDB shell command to create an index on lastName, then firstName both ascending?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.customers.createIndex(\"lastName, firstName, ASC\")`",
         "isCorrect": false
@@ -577,7 +577,7 @@
     ],
     "question": "One of the documents in your collection has an \\_id based upon an older database design and you want to change it. You write an update command to find the document and replace the \\_id but the \\_id isn't changed. How should you fix the issue?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Set the replace option to true.",
         "isCorrect": false
@@ -603,7 +603,7 @@
     ],
     "question": "A compound index allows you to \\_ ?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Calculate interest quickly.",
         "isCorrect": false
@@ -629,7 +629,7 @@
     ],
     "question": "Why are ad-hoc queries useful?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "They do not have to use the same operators.",
         "isCorrect": false
@@ -655,7 +655,7 @@
     ],
     "question": "How often do the members of a replica set send heartbeats to each other?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "every 2 minutes",
         "isCorrect": false
@@ -681,7 +681,7 @@
     ],
     "question": "Which command returns all of the documents in the customers collection?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.customers.all();`",
         "isCorrect": false
@@ -707,7 +707,7 @@
     ],
     "question": "Given a cursor named myCursor, pointing to the customers collection, how to you get basic info about it?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`myCursor.stats()`",
         "isCorrect": false
@@ -733,7 +733,7 @@
     ],
     "question": "What is true about indexes?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "They secure the database from intruders.",
         "isCorrect": false
@@ -759,7 +759,7 @@
     ],
     "question": "What is the preferred format to store geospatial data in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Latitude, longitude",
         "isCorrect": false
@@ -785,7 +785,7 @@
     ],
     "question": "Which programming language is used to write MongoDB queries? (_Alternative_: In the MongoDB shell, what programming language is used to make queries?)",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Python",
         "isCorrect": false
@@ -811,7 +811,7 @@
     ],
     "question": "You have two text fields in your document and you'd like both to be quickly searchable. What should you do?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "MongoDB is not able to do this.",
         "isCorrect": false
@@ -837,7 +837,7 @@
     ],
     "question": "To import a CSV file into MongoDB, which command should you issue?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "mongorestore",
         "isCorrect": false
@@ -863,7 +863,7 @@
     ],
     "question": "In an MongoDB mapReduce command, the reduce function should \\_.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "access the database",
         "isCorrect": false
@@ -889,7 +889,7 @@
     ],
     "question": "On a newly created collection, which field will have an index?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "the name field",
         "isCorrect": false
@@ -915,7 +915,7 @@
     ],
     "question": "You have a collection of thousands of students. You'd like to return the second set of 20 documents from the sorted collection. What is the proper order in which to apply the operations?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "limit, skip, sort",
         "isCorrect": false
@@ -941,7 +941,7 @@
     ],
     "question": "You would like the stats() command to return kilobytes instead of bytes. Which command should you run?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.vehicle.stats(\"kilobytes\")`",
         "isCorrect": false
@@ -967,7 +967,7 @@
     ],
     "question": "You want to modify an existing index. What is the best way to do this?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use the `reIndex()` command to modify the index.",
         "isCorrect": false
@@ -993,7 +993,7 @@
     ],
     "question": "You need to delete the index you created on the description field. Which command will accomplish this?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.vehicle.dropIndex({\"description\":\"text\"})`",
         "isCorrect": false
@@ -1019,7 +1019,7 @@
     ],
     "question": "You would like to know how many different categories you have. Which query will best get the job done?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.vehicle.distinct(\"category\")`",
         "isCorrect": false
@@ -1045,7 +1045,7 @@
     ],
     "question": "From the MongoDB shell, how do you create a new document in the customers collection?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.customers.add({name: \"Bob\"})`",
         "isCorrect": false
@@ -1071,7 +1071,7 @@
     ],
     "question": "Which field is required of all MongoDB documents?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`_name`",
         "isCorrect": false
@@ -1097,7 +1097,7 @@
     ],
     "question": "A MongoDB instance has at least what three files?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "namespace, journal, and log",
         "isCorrect": false
@@ -1123,7 +1123,7 @@
     ],
     "question": "You'd like a set of documents to be returned in last name, ascending order. Which query will accomplish this?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.persons.find().sort({lastName: -1}}`",
         "isCorrect": false
@@ -1149,7 +1149,7 @@
     ],
     "question": "What is NOT a standard role in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "restore",
         "isCorrect": false
@@ -1175,7 +1175,7 @@
     ],
     "question": "Which MongoDB shell command deletes a single document?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.customers.delete({_id: 1});`",
         "isCorrect": false
@@ -1201,7 +1201,7 @@
     ],
     "question": "Using the MongoDB shell, how do you remove the customer collection and its indexes?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.customers.remove({}).indexes();`",
         "isCorrect": false
@@ -1227,7 +1227,7 @@
     ],
     "question": "By default, applications direct their read operations to which member of the replica set?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "arbiter",
         "isCorrect": false
@@ -1253,7 +1253,7 @@
     ],
     "question": "You need to get the names of all the indexes on your current collection. What is the best way to accomplish this?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.people.getName();`",
         "isCorrect": false
@@ -1279,7 +1279,7 @@
     ],
     "question": "You are going to do a series of updates to multiple records. You find setting the multi option of the update() command too tiresome. What should you do instead?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use the replaceMany() command instead",
         "isCorrect": false
@@ -1305,7 +1305,7 @@
     ],
     "question": "To cleanly shut down MongoDB, what command should you use from the MongoDB shell?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "quit()",
         "isCorrect": false
@@ -1331,7 +1331,7 @@
     ],
     "question": "Given a customer collection which includes fields for gender and city, which aggregate pipeline shows the number of female customers in each city? (_Alternative_: How can you view the execution performance statistics for a query?)",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.members.find({$match: {gender: \"Female\"}}, {$group: {_id: {city: \"$city\"}, number: {$sum: 1}}}.$sort ({number: -1})`",
         "isCorrect": false
@@ -1357,7 +1357,7 @@
     ],
     "question": "When no parameters are passed to `explain()`, what mode does it run in?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "wireTiger mode",
         "isCorrect": false
@@ -1383,7 +1383,7 @@
     ],
     "question": "What is the correct query to find all of the people who have a home phone number defined?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.person.find({exists: 'homePhone'});`",
         "isCorrect": false
@@ -1409,7 +1409,7 @@
     ],
     "question": "Which file in the MongoDB directly holds the MongoDB daemon?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "mongodb",
         "isCorrect": false
@@ -1435,7 +1435,7 @@
     ],
     "question": "You have just secured your previously unsecured MongoDB server, but the server is still not requiring authentication. What is the best option?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Issue the `secure()` command.",
         "isCorrect": false
@@ -1461,7 +1461,7 @@
     ],
     "question": "What is the most accurate statement regarding MongoDB and ad hoc queries?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "MongoDB does not allow ad hoc queries; all queries require an index.",
         "isCorrect": false
@@ -1487,7 +1487,7 @@
     ],
     "question": "In MongoDB, what does a projection do?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "allows you to do a calculation on the results",
         "isCorrect": false
@@ -1513,7 +1513,7 @@
     ],
     "question": "To remove a database and all of its records from MongoDB, what operator should you use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`removeAll()`",
         "isCorrect": false
@@ -1539,7 +1539,7 @@
     ],
     "question": "What option can be passed to start the MongoDB shell without connecting to a database?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`-db=null`",
         "isCorrect": false
@@ -1565,7 +1565,7 @@
     ],
     "question": "How can you improve the appearance of the output JSON that contains the `_id`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`Use db.collection.set({$_id:pretty})`",
         "isCorrect": false
@@ -1591,7 +1591,7 @@
     ],
     "question": "What happens to a Replica set oplog if it runs out of memory?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`The oplog will be saved on one of the secondary servers.`",
         "isCorrect": false
@@ -1617,7 +1617,7 @@
     ],
     "question": "MongoDB ships with a variety of files. Which file runs the MongoDB shell?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "mongo-s",
         "isCorrect": false
@@ -1643,7 +1643,7 @@
     ],
     "question": "How can you view the execution performance statistics for a query?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.performance.members.aggregate([ {$match: {gender: \"Female\"}}, {$group: {_id:{city:\"$city\"}, number: {$sum: 1}}}, {$sort : {number: -1}}])`",
         "isCorrect": false
@@ -1669,7 +1669,7 @@
     ],
     "question": "From the MongoDB shell, how do you execute a JavaScript file named list.js?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`node 'list.js'`",
         "isCorrect": false
@@ -1695,7 +1695,7 @@
     ],
     "question": "Which MongoDB shell query will sort the customer's collection by name descending?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.customers.sort({name: -1}.find({})`",
         "isCorrect": false
@@ -1721,7 +1721,7 @@
     ],
     "question": "Suppose you are using the `mongoimport` command to import personnel data and there is a unique index on the email field. What happens when there are duplicate emails in the import?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The import command aborts without importing any records.",
         "isCorrect": false
@@ -1747,7 +1747,7 @@
     ],
     "question": "You have a collection with millions of documents. Each time you attempt to sort. MongoDB runs out of memory. What might help?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use the purge operator before the sort.",
         "isCorrect": false
@@ -1773,7 +1773,7 @@
     ],
     "question": "You need to be able to quickly find a word in a text field. What should you do?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Create a single field index in descending order, and do a query for the word.",
         "isCorrect": false
@@ -1799,7 +1799,7 @@
     ],
     "question": "Which field is always included in a projection unless specifically excluded?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "index",
         "isCorrect": false
@@ -1825,7 +1825,7 @@
     ],
     "question": "After installing MongoDB on your machine, what must you do before launching Mongo?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Create a user account.",
         "isCorrect": false
@@ -1851,7 +1851,7 @@
     ],
     "question": "How does a --jsonArray file need to be structured?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "as YAML",
         "isCorrect": false
@@ -1877,7 +1877,7 @@
     ],
     "question": "From the MongoDB shell, how do you display all of a database's memory usage?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.size()`",
         "isCorrect": false
@@ -1903,7 +1903,7 @@
     ],
     "question": "How do you create a new MongoDB user?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.insert({user: 1})`",
         "isCorrect": false
@@ -1929,7 +1929,7 @@
     ],
     "question": "What is the internal data structure of a MongoDB document?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "JSON (JavaScript Object Notation)",
         "isCorrect": false
@@ -1955,7 +1955,7 @@
     ],
     "question": "Which projection shows only the FirstName and lastName fields of a document in the customers collection?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.customers.find({}, {firstName: 1, lastName: 1})`",
         "isCorrect": false
@@ -1981,7 +1981,7 @@
     ],
     "question": "Documents in mongodb are atomic at the \\_\\_\\_ level",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "database",
         "isCorrect": false
@@ -2007,7 +2007,7 @@
     ],
     "question": "What should the priority of a member be in order to prevent it from becoming the primary in replica set?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "1",
         "isCorrect": false
@@ -2033,7 +2033,7 @@
     ],
     "question": "You need to add an index to the large name collection in your production database. You do not want to have disruption of service for your users and you can't afford to have a team to do the work during after hours. What should you do?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use the reIndex() command to add the index quickly.",
         "isCorrect": false
@@ -2059,7 +2059,7 @@
     ],
     "question": "When using aggregation $convert. which is not a parameter?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "input",
         "isCorrect": false
@@ -2085,7 +2085,7 @@
     ],
     "question": "All tag values in tag sets must be \\_.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "JSON",
         "isCorrect": false
@@ -2111,7 +2111,7 @@
     ],
     "question": "When using the mongoimport command, how can you drop the database before importing?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use the -d option.",
         "isCorrect": false
@@ -2137,7 +2137,7 @@
     ],
     "question": "To import a CSV file into MongoDB, which command should you issue?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "upload",
         "isCorrect": false
@@ -2163,7 +2163,7 @@
     ],
     "question": "A critical record must be replicated to the two other servers in the set. Which query guarantees that it is inserted as desired?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.inventory.insert({ prodid: \"tab1122\", qty : 10}, { writeConcern: { w: 2, wtimeout: 5000} })`",
         "isCorrect": false
@@ -2189,7 +2189,7 @@
     ],
     "question": "What is the name of the default file used to configure MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "mongo.config",
         "isCorrect": false
@@ -2215,7 +2215,7 @@
     ],
     "question": "After using the dropIndexes() command on your collection, one index remains.What can you do to drop the the remaining index?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use dropIndexes({all:1}) with the all parameter.",
         "isCorrect": false
@@ -2241,7 +2241,7 @@
     ],
     "question": "To scale horizontally, what does MongoDB use?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "replication",
         "isCorrect": false
@@ -2267,7 +2267,7 @@
     ],
     "question": "Your database collection holds web session information. One field, lastActivity, holds the timestamp of when the user was last active. You want to delete the user session after 30 minutes of inactivity. What is your best option?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Create Javascript function called via an interval timeout to delete all records older than 30 minutes.",
         "isCorrect": false
@@ -2293,7 +2293,7 @@
     ],
     "question": "In the MongoDB shell, how can you tell if an index was used with a query?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.customers.find({lastName: 'smith'}).perf()`",
         "isCorrect": false
@@ -2319,7 +2319,7 @@
     ],
     "question": "You need to be able to quickly find a word in a text field. What should you do?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Create a single field index in descending order, and do a query for the word.",
         "isCorrect": false
@@ -2345,7 +2345,7 @@
     ],
     "question": "What is the name of the default file used to configure MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "mongo.config",
         "isCorrect": false
@@ -2371,7 +2371,7 @@
     ],
     "question": "You have a collection named restaurants with the geographical information stored in the location property, how do you create a geospatial index on it?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.restaurants.geospatial({location: \"2dsphere\"})`",
         "isCorrect": false
@@ -2397,7 +2397,7 @@
     ],
     "question": "What happens to a Replica set oplog if it runs out of memory?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`The oplog will be saved on one of the secondary servers.`",
         "isCorrect": false
@@ -2423,7 +2423,7 @@
     ],
     "question": "Using the MongoDB shell, how do you remove the customer collection and its indexes?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`db.customers.remove({}).indexes();`",
         "isCorrect": false
@@ -2449,7 +2449,7 @@
     ],
     "question": "What is the primary advantage of using MongoDB as a NoSQL database over traditional relational databases?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Better support for complex joins",
         "isCorrect": false
@@ -2475,7 +2475,7 @@
     ],
     "question": "What is a Replica Set in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A set of related database collections",
         "isCorrect": false
@@ -2501,7 +2501,7 @@
     ],
     "question": "Which command is used to create a new database in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`createDatabase()`",
         "isCorrect": false
@@ -2527,7 +2527,7 @@
     ],
     "question": "What is the default port number for MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "3306",
         "isCorrect": false
@@ -2553,7 +2553,7 @@
     ],
     "question": "Which of the following is a BSON data type in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Integer",
         "isCorrect": false
@@ -2579,7 +2579,7 @@
     ],
     "question": "What is the purpose of an index in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To define the structure of a document",
         "isCorrect": false
@@ -2605,7 +2605,7 @@
     ],
     "question": "Which operator is used for equality in MongoDB queries?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`$ne`",
         "isCorrect": false
@@ -2631,7 +2631,7 @@
     ],
     "question": "What is the role of the `mongod` process in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It is the MongoDB shell",
         "isCorrect": false
@@ -2657,7 +2657,7 @@
     ],
     "question": "Which method is used to remove a document from a collection in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`removeOne()`",
         "isCorrect": false
@@ -2683,7 +2683,7 @@
     ],
     "question": "What is a GridFS in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A distributed file system",
         "isCorrect": false
@@ -2709,7 +2709,7 @@
     ],
     "question": "Which aggregation stage in MongoDB is used to group documents by a specified expression and apply an accumulator expression to each group?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`$match`",
         "isCorrect": false
@@ -2735,7 +2735,7 @@
     ],
     "question": "What is sharding in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The process of dividing a database into multiple collections",
         "isCorrect": false
@@ -2761,7 +2761,7 @@
     ],
     "question": "Which operation is used to update a document in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`modify()`",
         "isCorrect": false
@@ -2787,7 +2787,7 @@
     ],
     "question": "What is a TTL index in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "An index used for full-text search",
         "isCorrect": false
@@ -2813,7 +2813,7 @@
     ],
     "question": "Which command is used to limit the number of documents returned in a MongoDB query?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`count()`",
         "isCorrect": false
@@ -2839,7 +2839,7 @@
     ],
     "question": "What is a compound index in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "An index that spans multiple collections",
         "isCorrect": false
@@ -2865,7 +2865,7 @@
     ],
     "question": "Which operator is used to perform a logical OR operation in MongoDB queries?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`$and`",
         "isCorrect": false
@@ -2891,7 +2891,7 @@
     ],
     "question": "What is a covered query in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A query that returns covered documents",
         "isCorrect": false
@@ -2917,7 +2917,7 @@
     ],
     "question": "Which method is used to create an index in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`addIndex()`",
         "isCorrect": false
@@ -2943,7 +2943,7 @@
     ],
     "question": "What is a compound shard key in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A key used for encrypting data",
         "isCorrect": false
@@ -2969,7 +2969,7 @@
     ],
     "question": "What is the purpose of the `mongos` process in MongoDB?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It is a tool for monitoring server performance",
         "isCorrect": false

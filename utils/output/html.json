@@ -5,7 +5,7 @@
     ],
     "question": "What is the purpose of the `<track>` tag, and when should it be used?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The `<track>` tag is used for specifying subtitles. It is typically applied as a child of the `<audio>` and `<video>` tags.",
         "isCorrect": false
@@ -31,7 +31,7 @@
     ],
     "question": "What are the best examples of void elements?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<link><meta><title>`",
         "isCorrect": false
@@ -57,7 +57,7 @@
     ],
     "question": "In HTML5, which tag or tags embed a webpage inside of a webpage?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<iframe>, <frame>, and <frameset>`",
         "isCorrect": false
@@ -83,7 +83,7 @@
     ],
     "question": "Where do `<header>` and `<footer>` tags typically occur?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "as children of `<body>, <article>, <aside>, and <section>` tags",
         "isCorrect": false
@@ -109,7 +109,7 @@
     ],
     "question": "What is the best way to apply bold styling to text?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<strong>`",
         "isCorrect": false
@@ -135,7 +135,7 @@
     ],
     "question": "What is the use of the `<link>` tag?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "when linking style sheets, JavaScript, and icons for mobile apps",
         "isCorrect": false
@@ -163,7 +163,7 @@
     "codeExamples": [
       "HTML\n<address ______ _____>\n  <span itemprop=\"streetAddress\">6410 Via Real</span><br />\n  <span itemprop=\"addressLocality\">Carpinteria</span>,\n  <span itemprop=\"addressRegion\">CA</span>\n  <span itemprop=\"addressCode\">93013</span>\n</address>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`itemsref=\"http://schema.org/PostalAddress\"` `itemid=\"address\"`",
         "isCorrect": false
@@ -189,7 +189,7 @@
     ],
     "question": "What is the use of the `<aside>` element?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "for anything you want to move to the side, like a pull quote box, a sidebar, or an image with text wrapping around it",
         "isCorrect": false
@@ -215,7 +215,7 @@
     ],
     "question": "With which tags is the `<source>` element associated?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<svg>, <picture>, <audio>, and <video>`",
         "isCorrect": false
@@ -241,7 +241,7 @@
     ],
     "question": "What is NOT a valid attribute for the `<textarea>` element?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "readonly",
         "isCorrect": false
@@ -272,7 +272,7 @@
       "HTML\n<details open>\n  <summary>Parmesan Deviled Eggs</summary>\n  <p>\n    These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.\n  </p>\n</details>\n",
       "HTML\n<details>\n  <h4>▸ Parmesan Deviled Eggs</h4>\n  <p>\n    These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.\n  </p>\n</details>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -298,7 +298,7 @@
     ],
     "question": "What is the purpose of the `<samp>` element?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It connects the web browser to an SA-MP server.",
         "isCorrect": false
@@ -324,7 +324,7 @@
     ],
     "question": "When should you use `<ol>` and `<ul>` elements?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use `<ul>` when you want a bulleted list and `<ol>` when you want a numbered list.",
         "isCorrect": false
@@ -350,7 +350,7 @@
     ],
     "question": "What is the difference between the post and get methods in a form?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "post is used for sending information to the server. get is used for retrieving form information from the server.",
         "isCorrect": false
@@ -376,7 +376,7 @@
     ],
     "question": "What is the difference between the `<div>` and `<span>` tags?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<div>` is used for major divisions on a page, while `<span>` is used to span across columns.",
         "isCorrect": false
@@ -404,7 +404,7 @@
     "codeExamples": [
       "HTML\n<form method=\"post\" action=\"mailto:info@linkedin.com\" ____=\"text/plain\"></form>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "media",
         "isCorrect": false
@@ -435,7 +435,7 @@
       "HTML\n<img src=\"cubism.jpg\" alt='Version of \"Whistler&apos;s Mother\" in cubist style' />\n",
       "HTML\n<img src=\"cubism.jpg\" alt=\"Version of \\\"Whistler's Mother\\\" in cubist style\">\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -463,7 +463,7 @@
     "codeExamples": [
       "HTML\n<p id=\"warning\">Be careful when installing this product.</p>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It establishes that id is a unique identifier in the document, used for styling CSS and with Javascript code.",
         "isCorrect": false
@@ -495,7 +495,7 @@
       "HTML\n<p>\n  On July 21, 1969, Neil Armstrong said,\n  <q>\"One small step for man, one giant leap for mankind.\"</q>\n</p>\n",
       "HTML\n<p>\n  On <time datetime=\"07-21-1969\">July 21, 1969</time>, Neil Armstrong said,\n  <q cite=\"https://www.hq.nasa.gov/alsj/a11l/a11.html\"\n    >One small step for man, one giant leap for mankind.</q\n  >\n</p>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "B",
         "isCorrect": false
@@ -523,7 +523,7 @@
     "codeExamples": [
       "HTML\n<a href=\"https://es.yahoo.com/\" hreflang=\"____\" target=\"_blank\">Visita Yahoo</a>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "es-spanish",
         "isCorrect": false
@@ -549,7 +549,7 @@
     ],
     "question": "Review the text in the red box in the image shown. What is the best way to code this in HTML?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "ordered list",
         "isCorrect": false
@@ -580,7 +580,7 @@
       "HTML\n<label for=\"example\">Make a choice:</label>\n<input list=\"example\" id=\"choices\" name=\"choices\" />\n\n<datalist id=\"choices\">\n  <option value=\"Choice 1\">Choice 1</option>\n  <option value=\"Choice 2\">Choice 2</option>\n  <option value=\"Choice 3\">Choice 3</option>\n</datalist>\n",
       "HTML\n<label for=\"example\">Make a choice:</label>\n<input list=\"choices\" id=\"example\" name=\"example\" />\n\n<datalist id=\"choices\">\n  <option value=\"Choice 1\"></option>\n  <option value=\"Choice 2\"></option>\n  <option value=\"Choice 3\"></option>\n</datalist>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -606,7 +606,7 @@
     ],
     "question": "How do you confirm that a document is written in HTML5?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The server wraps the webpage in an HTML5 wrapper.",
         "isCorrect": false
@@ -634,7 +634,7 @@
     "codeExamples": [
       "html\n<picture>\n  <source srcset=\"image1.jpg\" media=\"(min-width: 1000px)\" />\n  <source srcset=\"image2.jpg\" media=\"(min-width: 750px)\" />\n  <img src=\"image3.jpg\" />\n</picture>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It displays image1.jps at 1000px and higher and image2.jpg at 750-999px, image3.jpg is a default in case `<picture>` is not supported.",
         "isCorrect": false
@@ -665,7 +665,7 @@
       "HTML\n<table>\n  <group cols=\"2\" style=\"background-color: yellow\">\n  <tr scope=\"row\">\n    <th>Col 1</th>\n    <th>Col 2</th>\n    <th>Col 3</th>\n  </tr>\n  <tr scope=\"row\">\n    <td>first</td>\n    <td>second</td>\n    <td>third</td>\n  </tr>\n</table>\n",
       "HTML\n<table>\n  <columns colspan=\"2\" style=\"background-color: yellow\">\n  <tr>\n    <th>Col 1</th>\n    <th>Col 2</th>\n    <th>Col 3</th>\n  </tr>\n  <tr>\n    <td>first</td>\n    <td>second</td>\n    <td>third</td>\n  </tr>\n</table>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -691,7 +691,7 @@
     ],
     "question": "What is the `<hr>` tag typically used for? / Alt.: What is the semantic meaning of the `<hr>` tag?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "This tag is depreciated (alt.: deprecated) and should not be used.",
         "isCorrect": false
@@ -719,7 +719,7 @@
     "codeExamples": [
       "HTML\n<section itemscope itemtype=\"http://schema.org/Restaurant\">\n  <h1 itemprop=\"name\">Nadia's Garden</h1>\n  <p itemscope ______ ______>\n    <span itemprop=\"ratingValue\">4.5</span> stars - based on\n    <span itemprop=\"reviewCount\">120</span> reviews\n  </p>\n</section>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`itemprop=\"aggregateRating\" itemref=\"http://schema.org/AggregateRating\"`",
         "isCorrect": false
@@ -750,7 +750,7 @@
       "HTML\n<a href=\"#\">back to top</a> <a href=\"#top\">back to top</a>\n",
       "HTML\n<button href=\"#\">back to top</button> <button href=\"#top\">back to top</button>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "B",
         "isCorrect": false
@@ -776,7 +776,7 @@
     ],
     "question": "Which three tags were deprecated in HTML4 but returned to HTML5?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<rb> <rp> <rt>`",
         "isCorrect": false
@@ -802,7 +802,7 @@
     ],
     "question": "The **\\_** tag is used for marking up a short code snippet, while the \\_ tag is used for marking up a longer block of code",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<kdb>`, `<pre>`",
         "isCorrect": false
@@ -828,7 +828,7 @@
     ],
     "question": "What does the `<label>` element do?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It labels webpages with important information.",
         "isCorrect": false
@@ -854,7 +854,7 @@
     ],
     "question": "To get a link to open in a new window or tab, use the **\\_** attribute",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`_self`",
         "isCorrect": false
@@ -885,7 +885,7 @@
       "HTML\n<p>we are fond of our <abbr title=\"three-letter acronyms\">TLAs</abbr> in web design.</p>\n",
       "HTML\n<p>we are fond of our <acronym title=\"three-letter acronym\">TLAs</acronym> in web design.</p>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -915,7 +915,7 @@
       "HTML\n<ul>\n  <li>\n    Office Supplies\n    <ul>\n      <li>Stapler</li>\n      <li>Paper clips</li>\n    </ul>\n  </li>\n  <li>\n    Groceries\n    <ul>\n      <li>Milk</li>\n    </ul>\n  </li>\n</ul>\n",
       "HTML\n<ul>\n  <li>office</li>\n  <li>staple</li>\n  <li>paper</li>\n  <li>groceries</li>\n  <li>milk</li>\n</ul>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -939,7 +939,7 @@
     "codeExamples": [
       "HTML\n<link href=\"phone.css\" rel=\"stylesheet\" _____=\"print\" />\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "title",
         "isCorrect": false
@@ -970,7 +970,7 @@
       "html\n<blockquote>\n  <p>\n    \"Making money is what you have to do to sustain a business—being driven to make something of\n    value and purpose is much more powerful.\"\n  </p>\n  <cite>Lynda Weinman</cite>\n</blockquote>\n",
       "html\n<section>\n  <q\n    >\"Making money is what you have to do to sustain a business—being driven to make something of\n    value and purpose is much more powerful.\"</q\n  >\n  <cite>Lynda Weinman</cite>\n</section>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -996,7 +996,7 @@
     ],
     "question": "Which choice uses the correct terminology in describing this markup: `<p>info</p>`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The element opener is `<p>`, the element closer is `</p>`, and the element information is info.",
         "isCorrect": false
@@ -1022,7 +1022,7 @@
     ],
     "question": "What is the difference between `<input type=\"submit\" value=\"click me\">` and `<button type=\"submit\">Click me</button>`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "There is no difference. Both will render a button that submits a form.",
         "isCorrect": false
@@ -1048,7 +1048,7 @@
     ],
     "question": "What is the best semantic way to indicate that text refers to keyboard entry?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<p>Press the <tt>Enter</tt> key to proceed.</p>`",
         "isCorrect": false
@@ -1076,7 +1076,7 @@
     "codeExamples": [
       "html\n<audio controls>\n  <source src=\"sound.mp3\" type=\"audio/mpeg\" />\n  <source src=\"sound.ogg\" type=\"audio/ogg\" />\n  <source src=\"sound.wav\" type=\"audio/wav\" />\n</audio>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The browser chooses the best audio format to play with JavaScript-provided controls.",
         "isCorrect": false
@@ -1102,7 +1102,7 @@
     ],
     "question": "What attribute applies a keyboard shortcut hint to the current element?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`shortcut`",
         "isCorrect": false
@@ -1128,7 +1128,7 @@
     ],
     "question": "What is the correct way to code a link that, when clicked, will send an email to `email@example.com` with the subject of \"Hello\"?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<a href=\"mailto:email@example.com&subject=Hello\">Click me</a>`",
         "isCorrect": false
@@ -1154,7 +1154,7 @@
     ],
     "question": "Which tag is the root element of an HTML document?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<!DOCTYPE html>`",
         "isCorrect": false
@@ -1185,7 +1185,7 @@
       "HTML\n<tr>\n  <td>Table cell 1</td>\n  <td>Table cell 2</td>\n</tr>\n<tr>\n  <td colspan=\"2\">Table cell 3</td>\n</tr>\n",
       "HTML\n<tr>\n  <td>Table cell 1</td>\n  <td>Table cell 2</td>\n</tr>\n<tr>\n  <td>Table cell 3</td>\n</tr>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -1211,7 +1211,7 @@
     ],
     "question": "Which choice is NOT a legal value for the **name** attribute within a `<meta>` tag?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "viewport",
         "isCorrect": false
@@ -1242,7 +1242,7 @@
       "HTML\n<form>\n  <fieldset>\n    <legend>Title</legend>\n    <label for=\"name\">Your name:</label>\n    <input type=\"text\" name=\"name\" id=\"name\" />\n    <button type=\"submit\">Submit</button>\n  </fieldset>\n</form>\n",
       "HTML\n<form>\n  <legend>Title</legend>\n  <label for=\"name\">Your name:</label>\n  <input type=\"text\" name=\"name\" id=\"name\" />\n  <input type=\"submit\" value=\"Submit\" />\n</form>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -1268,7 +1268,7 @@
     ],
     "question": "What does the **poster** attribute do in the `<video>` tag?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It specifies an image that only displays if there is a problem with the video.",
         "isCorrect": false
@@ -1296,7 +1296,7 @@
     "codeExamples": [
       "HTML\n<audio controls src=\"sound.mp3\" type=\"audio/mpeg\">When does this text display?</audio>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The text displays over the audio controls unless CSS is used to position it elsewhere.",
         "isCorrect": false
@@ -1322,7 +1322,7 @@
     ],
     "question": "What is the primary purpose of the `<canvas>` tag?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It allows raster images to be rendered on the webpage.",
         "isCorrect": false
@@ -1348,7 +1348,7 @@
     ],
     "question": "Which choice contains three valid block-level elements?</li>",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<details> <abbr> <figcaption>`",
         "isCorrect": false
@@ -1376,7 +1376,7 @@
     "codeExamples": [
       "HTML\n<p lang=\"en-GB\">Welcome to our wonderful website.</p>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It establishes the language for the website—in this case, English.",
         "isCorrect": false
@@ -1402,7 +1402,7 @@
     ],
     "question": "Which image formats can be displayed by all web browsers?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "JPG, GIF, TIF",
         "isCorrect": false
@@ -1430,7 +1430,7 @@
     "codeExamples": [
       "HTML\n<base href=\"http://www.linkedin.com/dir/\" />\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`page.html`",
         "isCorrect": false
@@ -1456,7 +1456,7 @@
     ],
     "question": "What is the correct way to include a stylesheet named **style.css** in the `<head>` of your document?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<style link=\"style.css\">`",
         "isCorrect": false
@@ -1484,7 +1484,7 @@
     "codeExamples": [
       "\nAccessibility concerns\n\nCreating separate paragraphs of text using <br> is not only bad practice, it is problematic for people who navigate with the aid of screen reading technology. Screen readers may announce the presence of the element, but not any content contained within <br>s. This can be a confusing and frustrating experience for the person using the screen reader.\n\nUse <p> elements, and use CSS properties like margin to control their spacing.\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Wrap the text in a box that is the right width so everything wraps correctly. Set the box width with CSS.",
         "isCorrect": false
@@ -1510,7 +1510,7 @@
     ],
     "question": "What does the `<wbr>` tag do?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It requires the browser to wrap the current line at that point.",
         "isCorrect": false
@@ -1542,7 +1542,7 @@
       "HTML\n<ul>\n  <nav>\n    <li><a href=\"#\">Link 1</a></li>\n    <li>\n      <a href=\"#\">Link 2</a>\n      <ul>\n        <nav>\n          <li><a href=\"#\">Link 2a</a></li>\n        </nav>\n      </ul>\n    </li>\n    <li><a href=\"#\">Link 3</a></li>\n  </nav>\n</ul>\n",
       "HTML\n<nav>\n  <ul>\n    <li><a href=\"#\">Link 1</a></li>\n    <li><a href=\"#\">Link 2</a></li>\n    <nav>\n      <ul>\n        <li><a href=\"#\">Link 2a</a></li>\n      </ul>\n    </nav>\n    <li><a href=\"#\">Link 3</a></li>\n  </ul>\n</nav>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -1568,7 +1568,7 @@
     ],
     "question": "What is the correct way to code a comment in HTML?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`//this is a comment`",
         "isCorrect": false
@@ -1594,7 +1594,7 @@
     ],
     "question": "Which statement is **false**?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Inline elements can be nested inside inline elements.",
         "isCorrect": false
@@ -1620,7 +1620,7 @@
     ],
     "question": "What is the best semantic to use Quotes in HTML?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<quote>`",
         "isCorrect": false
@@ -1646,7 +1646,7 @@
     ],
     "question": "How will a video look displayed on a fully loaded webpage if the `<video>` tag is used and the **autoplay** attribute is not set?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It will display a random frame from a video, unless the **poster** attribute is set.",
         "isCorrect": false
@@ -1672,7 +1672,7 @@
     ],
     "question": "What is the correct way to describe an empty element / Alt.: What is the correct way to describe an empty element, such as a line break tag?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It has opening and closing tags but no child content.",
         "isCorrect": false
@@ -1698,7 +1698,7 @@
     ],
     "question": "What is the purpose of async in this code?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It downloads the script from the server when resources allow.",
         "isCorrect": false
@@ -1724,7 +1724,7 @@
     ],
     "question": "What does this code do on a page you are visiting for the first time?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "When the **Play** button is pressed, the browser plays the sound over and over again until the user stops it.",
         "isCorrect": false
@@ -1750,7 +1750,7 @@
     ],
     "question": "What is the difference between the `<head>` and `<header>` tags?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "There is only one `<head>` tag per page, while there may be many `<header>` tags.",
         "isCorrect": false
@@ -1776,7 +1776,7 @@
     ],
     "question": "In this code, what is the purpose of defer?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It downloads the script from the server when resources allow.",
         "isCorrect": false
@@ -1808,7 +1808,7 @@
       "HTML\n<table>\n  <caption>\n    A table\n  </caption>\n  <tr>\n    <td>Cell 1</td>\n    <td>Cell 2</td>\n  </tr>\n</table>\n",
       "HTML\n<table>\n  <tr>\n    <td>Cell 1</td>\n    <td>Cell 2</td>\n  </tr>\n  <caption>\n    A table\n  </caption>\n</table>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -1834,7 +1834,7 @@
     ],
     "question": "Given the file and directory structure shown here, what is the correct element to place in the file profit.html to link to info.html?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<a href=\"../work/info.html\">See Information </a>`",
         "isCorrect": false
@@ -1860,7 +1860,7 @@
     ],
     "question": "When should you use the `<article>` element?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "For blog posts and other social media items",
         "isCorrect": false
@@ -1891,7 +1891,7 @@
       "HTML\n<link>\n<meta>\n<title>\n",
       "HTML\n<wbr />\n<base />\n<source />\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -1917,7 +1917,7 @@
     ],
     "question": "Which snippet of HTML, when clicked, makes a phone call on a mobile device?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<a href=\"phone\">802-555-1212</a>`",
         "isCorrect": false
@@ -1943,7 +1943,7 @@
     ],
     "question": "What is the purpose of the `class` attribute?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Classes allow CSS to select specific elements on the page. You may list as many class names within the class attribute as you wish,",
         "isCorrect": false
@@ -1969,7 +1969,7 @@
     ],
     "question": "Which choice is not a legal type attribute for the `<input>` tag?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<input type=\"color\">`",
         "isCorrect": false
@@ -1995,7 +1995,7 @@
     ],
     "question": "What is the most semantic way to mark up this sentence so that \"happy talk must die\" is rendered as an inline quote?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<p>`As Steve Krug once said, `<b>`happy talk must die.`</b>` `</p>`",
         "isCorrect": false
@@ -2026,7 +2026,7 @@
       "html\n<nav>\n  <ol>\n    <li><a href=\"index.html\">Home</a></li>\n    <li><a href=\"about.html\">About</a></li>\n    <li><a href=\"contact.html\">Contact</a></li>\n  </ol>\n</nav>\n",
       "html\n<nav>\n  <ul>\n    <li><a href=\"index.html\">Home</a></li>\n    <li><a href=\"about.html\">About</a></li>\n    <li><a href=\"contact.html\">Contact</a></li>\n  </ul>\n</nav>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -2057,7 +2057,7 @@
       "HTML\n<h4>Mailing Address</h4>\n<p>\n  <em>\n    6410 Via Real <br />\n    Carpinteria, CA 93013<br />\n    <a href=\"mailto:info@linkedin.com\">info@linkedin.com</a>\n  </em>\n</p>\n",
       "HTML\n<p><strong>Mailing Address</strong></p>\n<p>\n  <em>\n    6410 Via Real <br />\n    Carpinteria, CA 93013<br />\n    <a href=\"mailto:info@linkedin.com\">info@linkedin.com</a>\n  </em>\n</p>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "B",
         "isCorrect": false
@@ -2083,7 +2083,7 @@
     ],
     "question": "What is the primary purpose of HTML?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "HTML structures and provides a rudimentary look to webpages.",
         "isCorrect": false
@@ -2111,7 +2111,7 @@
     "codeExamples": [
       "html\n<noscript>Sample Text</noscript>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "when there is no JavaScript used on this webpage",
         "isCorrect": false
@@ -2139,7 +2139,7 @@
     "codeExamples": [
       "HTML\n<details>\n  <h4>Mixed Berry Tart.</h4>\n  <p>\n    Raspberries, blueberries, and strawberries on top of a creamy filling served in a crispy tart.\n  </p>\n</details>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -2165,7 +2165,7 @@
     ],
     "question": "What is the difference between the `<svg>` and `<canvas>`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<svg>` integrates with JavaScript, while `<canvas>` does not.",
         "isCorrect": false
@@ -2191,7 +2191,7 @@
     ],
     "question": "What is the difference between the _readonly_ and _disabled_ attributes for the `<textarea>` element?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "_readonly_ is invalid attribute for `<textarea>`, while _disabled_ is a valid attribute.",
         "isCorrect": false
@@ -2217,7 +2217,7 @@
     ],
     "question": "In this code, what is _target_?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "a tag",
         "isCorrect": false
@@ -2248,7 +2248,7 @@
       "HTML\n<button formaction=\"http://example.com/process\">Process data</button>\n",
       "HTML\n<button method=\"http://example.com/process\">Process data</button>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -2274,7 +2274,7 @@
     ],
     "question": "Which is the best markup to produce this text?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<p>x<y&z>w</p>`",
         "isCorrect": false
@@ -2302,7 +2302,7 @@
     "codeExamples": [
       "HTML\n<label>Address:</label> <input type=\"text\" name=\"address\" id=\"address-input\" />\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The `<label>` and `<input>` should be nested inside of a `<fieldset>` element.",
         "isCorrect": false
@@ -2328,7 +2328,7 @@
     ],
     "question": "What is the default method for form submission?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "POST",
         "isCorrect": false
@@ -2354,7 +2354,7 @@
     ],
     "question": "Which is the most semantically correct markup for a side comment in small print?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<p>` Get 10% discount `<!--not valid in France--> </p>`",
         "isCorrect": false
@@ -2380,7 +2380,7 @@
     ],
     "question": "Which choice will produce the Spanish word <i>canción</i>?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<p lang=\"es\">canci&oacuten</p>`",
         "isCorrect": false
@@ -2406,7 +2406,7 @@
     ],
     "question": "What is the purpose of `<caption>`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<caption>` provides captions for `<audio>`,`<video>`,`<img>`, and `<table>`.",
         "isCorrect": false
@@ -2437,7 +2437,7 @@
       "HTML\n<button>\n  <input />\n  <form></form>\n</button>\n",
       "HTML\n<input /> <label> <meter></meter></label>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "B",
         "isCorrect": false
@@ -2463,7 +2463,7 @@
     ],
     "question": "What is wrong with this code?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<img>` should be paired with a `<caption>` tag.",
         "isCorrect": false
@@ -2489,7 +2489,7 @@
     ],
     "question": "Which choice is the most semantically correct markup for specifying the first definition of a term?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<p>`The `<dl>`focal length`</dl>` of a lens gives the distance from the lens to the image sensor.`</p>`",
         "isCorrect": false
@@ -2520,7 +2520,7 @@
       "HTML\n<label><input type=\"checkbox\" name=\"example\" /> Choice 1</label><br />\n<label><input type=\"checkbox\" name=\"example\" /> Choice 2</label><br />\n<label><input type=\"checkbox\" name=\"example\" /> Choice 3</label>\n",
       "HTML\n<label><input type=\"radio\" name=\"example\" /> Choice 1</label><br />\n<label><input type=\"radio\" name=\"example\" /> Choice 2</label><br />\n<label><input type=\"radio\" name=\"example\" /> Choice 3</label>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": ":",
         "isCorrect": false
@@ -2546,7 +2546,7 @@
     ],
     "question": "How would you mark up a piece of ASCII art (an emoticon) in an accessible way?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<pre role=\"img\" aria-label=\"ASCII emoticon of a shrug\">¯\\_(ツ)_/¯</pre>`",
         "isCorrect": false
@@ -2572,7 +2572,7 @@
     ],
     "question": "Which example is a standard way in HTML5 for adding author metadata to a page?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<metadata name=\"author\" content=\"Author Name\">`",
         "isCorrect": false
@@ -2598,7 +2598,7 @@
     ],
     "question": "Given the following requirements, select the correct `input` configuration: An `input` that allows the user to select from a range of integer values between 0 and 100 (inclusive) in increments of 5",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<input type=\"range\" min=\"0\" max=\"100\" by=\"5\" />`",
         "isCorrect": false
@@ -2624,7 +2624,7 @@
     ],
     "question": "Which choice is a valid markup for a `<head>` element?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<head><title>Page Title</title> <img src=\"favicon.icon\" alt=\"\"></head>`",
         "isCorrect": false
@@ -2655,7 +2655,7 @@
       "html\n<aside>\n  <h3>Comments</h3>\n  <aside>First comment.</aside>\n  <aside>Second comment.</aside>\n</aside>\n",
       "html\n<div typeof=\"comments\">\n  <h3>Comments</h3>\n  <div typeof=\"comment\">First comment.</div>\n  <div typeof=\"comment\">Second comment.</div>\n</div>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "B",
         "isCorrect": false
@@ -2681,7 +2681,7 @@
     ],
     "question": "To make something editable by the user, you need to set the **\\_** attribute to **\\_**",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`access`; allow",
         "isCorrect": false
@@ -2707,7 +2707,7 @@
     ],
     "question": "Which choice is the standard way to include a value in a form without making it visible to or editable by the user?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<input type=\"invisible\" name=\"important\" value=\"information\">`",
         "isCorrect": false
@@ -2733,7 +2733,7 @@
     ],
     "question": "What is the semantic way to add an identifying title to a table?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<table><label>Heading</label>...</table>`",
         "isCorrect": false
@@ -2761,7 +2761,7 @@
     "codeExamples": [
       "html\n<img\n  srcset=\"medium.jpg 320w, large.jpg 1280w\"\n  src=\"small.jpg\"\n  alt=\"Our favorite image\"\n  sizes=\"(min-width: 1200px) 640px, 100vw\"\n/>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "small.jpg",
         "isCorrect": false
@@ -2792,7 +2792,7 @@
       "HTML\n<dl>\n  <dt>Server</dt>\n  <dd>Software used to serve webpages, like Apache.</dd>\n  <dt>Hardware used to provide data to other computers.</dt>\n  <!-- Other terms and descriptions -->\n</dl>\n",
       "HTML\n<dl>\n  <dd>Server</dd>\n  <dt>Software used to serve webpages, like Apache.</dt>\n  <dt>Hardware used to provide data to other computers.</dt>\n  <!-- Other terms and descriptions -->\n</dl>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "B",
         "isCorrect": false
@@ -2820,7 +2820,7 @@
     "codeExamples": [
       "html\n<ul>\n  <h2>Espresso Drinks</h2>\n  <li>Espresso</li>\n  <li>Latte</li>\n  <li>Cappuccino</li>\n  <li>Mocha</li>\n</ul>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Nothing is wrong.",
         "isCorrect": false
@@ -2846,7 +2846,7 @@
     ],
     "question": "A designer gave you CSS code that should run only when the device rendering the page is in dark mode. How would you embed that code?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<style media=\"light-mode: false\">/* CSS code */</style>`",
         "isCorrect": false
@@ -2877,7 +2877,7 @@
       "HTML\n<table>\n  <tr>\n    <thead scope=\"row\">\n      Header\n    </thead>\n    <td>10</td>\n    <td>18</td>\n  </tr>\n</table>\n",
       "HTML\n<table>\n  <tr>\n    <th>Header</th>\n    <td>10</td>\n    <td>18</td>\n  </tr>\n</table>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -2903,7 +2903,7 @@
     ],
     "question": "Which statement is correct?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The `<main>` element represents the dominant content of an `<article>` in a document.",
         "isCorrect": false
@@ -2931,7 +2931,7 @@
     "codeExamples": [
       "HTML\n<form action=\"/choices\" disabled>\n  <fieldset disabled>\n    <legend>choices</legend>\n    <label>Choice 1 <input type=\"radio\" name=\"choice\" value=\"choice1\" /></label>\n    <label>Choice 2 <input type=\"radio\" name=\"choice\" value=\"choice1\" /></label>\n    <label>Choice 3 <input type=\"radio\" name=\"choice\" value=\"choice1\" /></label>\n    <label>Choice 4 <input type=\"radio\" name=\"choice\" value=\"choice1\" /></label>\n    <button>Choose!</button>\n  </fieldset>\n</form>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The form element is disabled.",
         "isCorrect": false
@@ -2962,7 +2962,7 @@
       "HTML\n<dt>\n    <dl>Server</dl>\n    <dd>Software used to server webpages, like Apache.</dd>\n    <dd>Hardware used to provide data to other computers.</dd>\n    <!--Other terms and descriptions -->\n</dt>\n",
       "HTML\n<dl>\n  <dt>Server</dt>\n  <dd>Software used to server webpages, like Apache.</dd>\n  <dt>Hardware used to provide data to other computers.</dt>\n  <!--Other terms and descriptions -->\n</dl>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "B",
         "isCorrect": false
@@ -2988,7 +2988,7 @@
     ],
     "question": "what does the a in the HTML tag stand for?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "assign",
         "isCorrect": false
@@ -3014,7 +3014,7 @@
     ],
     "question": "What is the correct HTML element for inserting a line break?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<break>`",
         "isCorrect": false
@@ -3040,7 +3040,7 @@
     ],
     "question": "The HTML global attribute, \"contenteditable\" is used to",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Update content from the server",
         "isCorrect": false
@@ -3066,7 +3066,7 @@
     ],
     "question": "HTML elements that aren't meant to store content or other elements are called **\\_** elements",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "independent",
         "isCorrect": false
@@ -3092,7 +3092,7 @@
     ],
     "question": "The **\\_** attribute of an HTML label element is a referencing mechanism to state what input or element the label is tied to",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "to",
         "isCorrect": false
@@ -3118,7 +3118,7 @@
     ],
     "question": "Coding in HTML provides which of the following?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The responsiveness of the website",
         "isCorrect": false
@@ -3144,7 +3144,7 @@
     ],
     "question": "Which HTML element is the container for all the renderable aspects of the document?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "head",
         "isCorrect": false
@@ -3170,7 +3170,7 @@
     ],
     "question": "The \"h\" in the HTML h1 tag is short for **\\_**",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "head",
         "isCorrect": false
@@ -3201,7 +3201,7 @@
       "HTML\n<a href=\"#additional-information\" class=\"Card\">\n  <p>Additional Information</p>\n  <p></p\n></a>\n",
       "html\n<a href=\"#additional-information\" class-\"Card\">\n  <img src=\"media.jpeg\" alt=\"More information\"></video>\n</a>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -3227,7 +3227,7 @@
     ],
     "question": "How to display preformatted text in HTML?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<p>`",
         "isCorrect": false
@@ -3253,7 +3253,7 @@
     ],
     "question": "Which is a valid title element?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<title><em>Exciting</em> title</title>`",
         "isCorrect": false
@@ -3279,7 +3279,7 @@
     ],
     "question": "Which link contains a valid URL?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<link rel=\"stylesheet\" href=\"/styles for me/styles.css\">`",
         "isCorrect": false
@@ -3305,7 +3305,7 @@
     ],
     "question": "Which example is missing a mandatory closing tag, making it invalid?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<p>Simple paragraph`",
         "isCorrect": false
@@ -3331,7 +3331,7 @@
     ],
     "question": "What is the semantic method for marking up a video with a caption in browsers that support it?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<video src=\"video.mp4\" caption=\"video.vtt\"></video>`",
         "isCorrect": false
@@ -3362,7 +3362,7 @@
       "HTML\n<aside role=\"complementary\">Sidebar...</aside>\n<aside role=\"supplementary\">Endnotes...</aside>\n",
       "HTML\n<aside aria-label-\"Sidebar\">Sidebar...</aside><aside aria-label=\"Endnotes\">Endnotes...</aside>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -3388,7 +3388,7 @@
     ],
     "question": "A white paper has a sidebar and endnotes, both of which are complementary to the main text. How would you mark them up to make their distinct roles more broadly accessible?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<custom-sidebar aria-label=\"Sidebar\">Sidebar...</custom-sidebar><custom-footnote aria-label=\"Endnotes\">Endnotes...</custom-footnote>`",
         "isCorrect": false
@@ -3414,7 +3414,7 @@
     ],
     "question": "Which video example will autoplay in most browsers?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<video src=\"video.mp4\" background></video>`",
         "isCorrect": false
@@ -3442,7 +3442,7 @@
     "codeExamples": [
       "HTML\n<script type=\"module\" src=\"module.js\"></script>\n// external module\n<script type=\"async\" src=\"module.js\"></script>\n// async\n<script type=\"defer\" src=\"module.js\"></script>\n// defer\n<script type=\"module\" src=\"module.js\">\n  // inline module\n</script>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "async, external module, defer, inline module",
         "isCorrect": false
@@ -3468,7 +3468,7 @@
     ],
     "question": "What is the backward-compatible method of turning a circle in an SVG into a link?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`<html:a href=\"/our-circle/\"><circle cx=\"10\" cy=\"10\" r=\"5\"/></html:a>`",
         "isCorrect": false
@@ -3496,7 +3496,7 @@
     "codeExamples": [
       "HTML\n  <form action=\"/choices\" disabled>\n    <fieldset disabled>\n      <legend>Choices</legends>\n      <label>Choice 1 <input type=\"radio\" name=\"choice\" value=\"choice1\" /></label>\n      <label>Choice 2 <input type=\"radio\" name=\"choice\" value=\"choice2\" /></label>\n      <label>Choice 3 <input type=\"radio\" name=\"choice\" value=\"choice3\" /></label>\n      <label>Choice 4 <input type=\"radio\" name=\"choice\" value=\"choice4\" /></label>\n      <button>Choose!</button>\n    </fieldset>\n  </form>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "There is no method set on the form.",
         "isCorrect": false
@@ -3524,7 +3524,7 @@
     "codeExamples": [
       "HTML\n<table>\n  <legend>A two body table!</legend>\n  <col />\n  <col />\n  <tbody>\n    <tr>\n      <td>Cell 1</td>\n      <td>Cell 1</td>\n    </tr>\n  </tbody>\n  <tbody>\n    <tr>\n      <td>Cell 1</td>\n      <td>Cell 1</td>\n    </tr>\n  </tbody>\n</table>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A table can only have one tbody element.",
         "isCorrect": false
@@ -3552,7 +3552,7 @@
     "codeExamples": [
       "HTML\n<p id=\"warning\">Be careful when installing this product.</p>\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It establishes that `warning` is a unique identifier in the document, used for styling CSS and with JavaScript code.",
         "isCorrect": false

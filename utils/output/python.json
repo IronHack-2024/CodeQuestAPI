@@ -5,7 +5,7 @@
     ],
     "question": "What is an abstract class?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "An abstract class is the name for any class from which you can instantiate an object.",
         "isCorrect": false
@@ -33,7 +33,7 @@
     "codeExamples": [
       "python\nif any([True, False, False, False]) == True:\n    print('Yes, there is True')\n>>> 'Yes, there is True'\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The `any()` function will randomly return any item from the list.",
         "isCorrect": false
@@ -59,7 +59,7 @@
     ],
     "question": "What data structure does a binary tree degenerate to if it isn't balanced properly?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "queue",
         "isCorrect": false
@@ -85,7 +85,7 @@
     ],
     "question": "What statement about static methods is true?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Static methods are called static because they always return `None`.",
         "isCorrect": false
@@ -111,7 +111,7 @@
     ],
     "question": "What are attributes?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Attributes are long-form versions of an `if/else` statement, used when testing for equality between objects.",
         "isCorrect": false
@@ -137,7 +137,7 @@
     ],
     "question": "What is the term to describe this code?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Tuple assignment.",
         "isCorrect": false
@@ -165,7 +165,7 @@
     "codeExamples": [
       "python\nmy_list = [1,2,3]\nmy_list.pop(0)\nmy_list\n>>>[2,3]\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`.delete()` method",
         "isCorrect": false
@@ -191,7 +191,7 @@
     ],
     "question": "What is one of the most common uses of Python's `sys` library?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "To connect various systems, such as connecting a web front end, an API service, a database, and a mobile app.",
         "isCorrect": false
@@ -217,7 +217,7 @@
     ],
     "question": "What is the runtime of accessing a value in a dictionary by using its key?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "O(n), also called linear time.",
         "isCorrect": false
@@ -243,7 +243,7 @@
     ],
     "question": "What is the correct syntax for defining a class called Game, if it inherits from a parent class called LogicGame?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`def Game(LogicGame): pass`",
         "isCorrect": false
@@ -274,7 +274,7 @@
       "python\ndef sum(a, b):\n    \"\"\"\n    # >>> sum(4, 3)\n    # 7\n\n    # >>> sum(-4, 5)\n    # 1\n    \"\"\"\n    return a + b\n",
       "python\ndef sum(a, b):\n    ###\n    >>> sum(4, 3)\n    7\n\n    >>> sum(-4, 5)\n    1\n    ###\n    return a + b\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -300,7 +300,7 @@
     ],
     "question": "What built-in Python data type is commonly used to represent a stack?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`set`",
         "isCorrect": false
@@ -332,7 +332,7 @@
     "codeExamples": [
       "python\ncollege_years = ['Freshman', 'Sophomore', 'Junior', 'Senior']\nreturn list(enumerate(college_years, 2019))\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`[('Freshman', 2019), ('Sophomore', 2020), ('Junior', 2021), ('Senior', 2022)]`",
         "isCorrect": false
@@ -360,7 +360,7 @@
     "codeExamples": [
       "python\nclass my_secrets:\n    def __init__(self, password):\n        self.password = password\n        pass\ninstance = my_secrets('1234')\ninstance.password\n>>>'1234'\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`self` means that no other arguments are required to be passed into the method.",
         "isCorrect": false
@@ -386,7 +386,7 @@
     ],
     "question": "Which of these is NOT a characteristic of namedtuples?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "You can assign a name to each of the `namedtuple` members and refer to them that way, similarly to how you would access keys in `dictionary`.",
         "isCorrect": false
@@ -412,7 +412,7 @@
     ],
     "question": "What is an instance method?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Instance methods hold data related to the instance.",
         "isCorrect": false
@@ -438,7 +438,7 @@
     ],
     "question": "Which statement does NOT describe the object-oriented programming concept of encapsulation?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It protects the data from outside interference.",
         "isCorrect": false
@@ -464,7 +464,7 @@
     ],
     "question": "What is the use of an if/else statement?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It tells the computer which chunk of code to run if the instructions you coded are incorrect.",
         "isCorrect": false
@@ -490,7 +490,7 @@
     ],
     "question": "What built-in Python data type is best suited for implementing a queue?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "dictionary",
         "isCorrect": false
@@ -516,7 +516,7 @@
     ],
     "question": "What is the correct syntax for instantiating a new object of the type Game?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`my_game = class.Game()`",
         "isCorrect": false
@@ -544,7 +544,7 @@
     "codeExamples": [
       "python\nimport math\nradius = [1,2,3]\narea = list(map(lambda x: round(math.pi*(x**2), 2), radius))\narea\n>>> [3.14, 12.57, 28.27]\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It creates a path from multiple values in an iterable to a single value.",
         "isCorrect": false
@@ -570,7 +570,7 @@
     ],
     "question": "If you don't explicitly return a value from a function, what happens?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The function will return a RuntimeError if you don't return a value.",
         "isCorrect": false
@@ -596,7 +596,7 @@
     ],
     "question": "What is the purpose of the `pass` statement in Python?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It is used to skip the `yield` statement of a generator and return a value of None.",
         "isCorrect": false
@@ -622,7 +622,7 @@
     ],
     "question": "What is the term used to describe items that may be passed into a function?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "paradigms",
         "isCorrect": false
@@ -648,7 +648,7 @@
     ],
     "question": "Which collection type is used to associate values with unique keys?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`slot`",
         "isCorrect": false
@@ -674,7 +674,7 @@
     ],
     "question": "When does a For loop stop iterating?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "when it encounters an infinite loop",
         "isCorrect": false
@@ -700,7 +700,7 @@
     ],
     "question": "Assuming the node is in a singly linked list, what is the runtime complexity of searching for a specific node within a singly linked list?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The runtime is O(nk), with n representing the number of nodes and k representing the amount of time it takes to access each node in memory.",
         "isCorrect": false
@@ -732,7 +732,7 @@
       "python\ngroceries = zip(fruits, quantities, prices)\nreturn groceries\n\n>>> [\n('Apples', 5, 1.50),\n('Oranges', 3, 2.25),\n('Bananas', 4, 0.89)\n]\n",
       "python\ni = 0\noutput = []\nfor fruit in fruits:\n    for qty in quantities:\n        for price in prices:\n            output.append((fruit, qty, price))\n    i += 1\nreturn output\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -760,7 +760,7 @@
     "codeExamples": [
       "python\ntest = [True, False, False, False]\nif all(test) is True:\n    print('Yeah, all of them are true.')\nelse:\n    print('There is an imposter.')\n\n>>> 'There is an imposter'\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The `all()` function returns a Boolean value that answers the question \"Are all the items in this list the same?",
         "isCorrect": false
@@ -791,7 +791,7 @@
       "python\n>>> dice = Game()\n>>> dice.roll(self)\n",
       "python\n>>> dice = Game(self)\n>>> dice.roll()\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "B",
         "isCorrect": false
@@ -817,7 +817,7 @@
     ],
     "question": "What is the algorithmic paradigm of quick sort?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Backtracking",
         "isCorrect": false
@@ -843,7 +843,7 @@
     ],
     "question": "What is the runtime complexity of the list's built-in `.append()` method?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "O(log n), also called logarithmic time.",
         "isCorrect": false
@@ -869,7 +869,7 @@
     ],
     "question": "What is the key difference between a `set` and a `list`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A set is an ordered collection of unique items. A list is an unordered collection of non-unique items.",
         "isCorrect": false
@@ -895,7 +895,7 @@
     ],
     "question": "What is the definition of abstraction as applied to object-oriented Python?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Abstraction means that a different style of code can be used since many details are already known to the program behind the scenes.",
         "isCorrect": false
@@ -927,7 +927,7 @@
       "python\naaa\nbbb\nccc\n111\n222\n333\n",
       "python\na 1 2 3\nb 1 2 3\nc 1 2 3\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "B",
         "isCorrect": false
@@ -958,7 +958,7 @@
       "python\ndef sum(a, b):\n    \"\"\"\n    >>> a = 1\n    >>> b = 2\n    >>> sum(a, b)\n    3\n    \"\"\"\n\n    return a + b\n",
       "python\ndef sum(a, b):\n    '''\n    a = 1\n    b = 2\n    sum(a, b) = 3\n    '''\n    return a + b\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -984,7 +984,7 @@
     ],
     "question": "Suppose a Game class inherits from two parent classes: BoardGame and LogicGame. Which statement is true about the methods of an object instantiated from the Game class?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "When instantiating an object, the object doesn't inherit any of the parent class's methods.",
         "isCorrect": false
@@ -1012,7 +1012,7 @@
     "codeExamples": [
       "python\n# namedtuple function accepts the following arguments to generate a class\nfrom collections import namedtuple\n>>> Point = namedtuple('Point',['x','y'])\n>>> point = Point(100, 200)\n>>> point\n    Point(x=100, y=200)\n\n# Which lets you use both unpacking and iteration to access\n>>> x, y = point\n>>> print(f'({x}, {y})')\n    (100, 200)\n>>> for coordinate in point:\n        print(coordinate)\n    100\n    200\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "a generic object class with iterable parameter fields",
         "isCorrect": false
@@ -1038,7 +1038,7 @@
     ],
     "question": "What symbol(s) do you use to assess equality between two elements?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`&&`",
         "isCorrect": false
@@ -1066,7 +1066,7 @@
     "codeExamples": [
       "python\nfruit_info = {\n  'fruit': 'apple',\n  'count': 2,\n  'price': 3.5\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`my_list [3.5] = 1.5`",
         "isCorrect": false
@@ -1092,7 +1092,7 @@
     ],
     "question": "What value would be returned by this check for equality?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`yes`",
         "isCorrect": false
@@ -1120,7 +1120,7 @@
     "codeExamples": [
       "python\nclass test:\n    def __init__(self):\n        print('I came here without your permission lol')\n        pass\nt1 = test()\n>>> 'I came here without your permission lol'\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It makes classes aware of each other if more than one class is defined in a single code file.",
         "isCorrect": false
@@ -1146,7 +1146,7 @@
     ],
     "question": "What is meant by the phrase \"space complexity\"?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`How many microprocessors it would take to run your code in less than one second`",
         "isCorrect": false
@@ -1172,7 +1172,7 @@
     ],
     "question": "What is the correct syntax for creating a variable that is bound to a dictionary?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`fruit_info =('fruit': 'apple', 'count': 2,'price': 3.5 ).dict()`",
         "isCorrect": false
@@ -1198,7 +1198,7 @@
     ],
     "question": "What is the proper way to write a list comprehension that represents all the keys in this dictionary?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`fruit_names = [x in fruits.keys() for x]`",
         "isCorrect": false
@@ -1224,7 +1224,7 @@
     ],
     "question": "What is the purpose of the `self` keyword when defining or calling methods on an instance of an object?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`self` refers to the class that was inherited from to create the object using `self`.",
         "isCorrect": false
@@ -1250,7 +1250,7 @@
     ],
     "question": "What statement about the class methods is true?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A class method is a regular function that belongs to a class, but it must return None.",
         "isCorrect": false
@@ -1276,7 +1276,7 @@
     ],
     "question": "What does it mean for a function to have linear runtime?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "You did not use very many advanced computer programming concepts in your code.",
         "isCorrect": false
@@ -1302,7 +1302,7 @@
     ],
     "question": "What is the proper way to define a function?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`def getMaxNum(list_of_nums): # body of function goes here`",
         "isCorrect": false
@@ -1328,7 +1328,7 @@
     ],
     "question": "According to the PEP 8 coding style guidelines, how should constant values be named in Python?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "in camel case without using underscores to separate words -- e.g. `maxValue = 255`",
         "isCorrect": false
@@ -1354,7 +1354,7 @@
     ],
     "question": "Describe the functionality of a deque.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A deque adds items to one side and removes items from the other side.",
         "isCorrect": false
@@ -1380,7 +1380,7 @@
     ],
     "question": "What is the correct syntax for creating a variable that is bound to a set?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`my_set = to_set(0, 'apple', 3.5)`",
         "isCorrect": false
@@ -1411,7 +1411,7 @@
       "python\nclass __init__():\n    pass\n",
       "python\ndef __init__(self):\n    pass\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": ":",
         "isCorrect": false
@@ -1437,7 +1437,7 @@
     ],
     "question": "Which of the following is TRUE About how numeric data would be organized in a Binary Search Tree?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Binary Search Tree cannot be used to organize and search through numeric data, given the complications that arise with very deep trees.",
         "isCorrect": false
@@ -1463,7 +1463,7 @@
     ],
     "question": "Why would you use a decorator?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A decorator is similar to a class and should be used if you are doing functional programming instead of object-oriented programming.",
         "isCorrect": false
@@ -1489,7 +1489,7 @@
     ],
     "question": "When would you use a for loop?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Only in some situations, as loops are used only for certain types of programming.",
         "isCorrect": false
@@ -1520,7 +1520,7 @@
       "python\ndef sales_tax(amount):\n    ''' Calculates the sales tax of a purchase. Takes in a float representing the subtotal as an argument and returns a float representing the sales tax.'''\n",
       "python\ndef calculate_sales_tax(subtotal):\n    pass\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A:",
         "isCorrect": false
@@ -1546,7 +1546,7 @@
     ],
     "question": "What would happen if you did not alter the state of the element that an algorithm is operating on recursively?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "You do not have to alter the state of the element the algorithm is recursing on.",
         "isCorrect": false
@@ -1572,7 +1572,7 @@
     ],
     "question": "What is the runtime complexity of searching for an item in a binary search tree?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The runtime for searching in a binary search tree is O(1) because each node acts as a key, similar to a dictionary.",
         "isCorrect": false
@@ -1598,7 +1598,7 @@
     ],
     "question": "Why would you use `mixin`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "You use a `mixin` to force a function to accept an argument at runtime even if the argument wasn't included in the function's definition.",
         "isCorrect": false
@@ -1624,7 +1624,7 @@
     ],
     "question": "What is the runtime complexity of adding an item to a stack and removing an item from a stack?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Add items to a stack in O(1) time and remove items from a stack on O(n) time.",
         "isCorrect": false
@@ -1650,7 +1650,7 @@
     ],
     "question": "Which statement accurately describes how items are added to and removed from a stack?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "a stack adds items to one side and removes items from the other side.",
         "isCorrect": false
@@ -1676,7 +1676,7 @@
     ],
     "question": "What is a base case in a recursive function?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The base case is a summary of the overall problem that needs to be solved.",
         "isCorrect": false
@@ -1704,7 +1704,7 @@
     "codeExamples": [
       "python\n>>> f = open('workfile', 'w', encoding=\"utf-8\")\n>>> with open('workfile', encoding=\"utf-8\") as f:\n    read_data = f.read()\n# We can check that the file has been automatically closed.\n>>> f.closed\nTrue\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The `with` keyword lets you choose which application to open the file in.",
         "isCorrect": false
@@ -1730,7 +1730,7 @@
     ],
     "question": "Why would you use a virtual environment?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Teams with remote employees use virtual environments so they can share code, do code reviews, and collaborate remotely.",
         "isCorrect": false
@@ -1756,7 +1756,7 @@
     ],
     "question": "What is the correct way to run all the doctests in a given file from the command line?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`python3 <_filename_>`",
         "isCorrect": false
@@ -1782,7 +1782,7 @@
     ],
     "question": "What is a lambda function ?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "any function that makes use of scientific or mathematical constants, often represented by Greek letters in academic writing",
         "isCorrect": false
@@ -1808,7 +1808,7 @@
     ],
     "question": "What is the primary difference between lists and tuples?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "You can access a specific element in a list by indexing to its position, but you cannot access a specific element in a tuple unless you iterate through the tuple",
         "isCorrect": false
@@ -1834,7 +1834,7 @@
     ],
     "question": "What does a generator return?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "None",
         "isCorrect": false
@@ -1860,7 +1860,7 @@
     ],
     "question": "What is the difference between class attributes and instance attributes?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Instance attributes can be changed, but class attributes cannot be changed",
         "isCorrect": false
@@ -1891,7 +1891,7 @@
       "python\ndef self.get_next_card():\n  # method body goes here\n",
       "python\ndef self.get_next_card(self):\n  # method body goes here\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": ":",
         "isCorrect": false
@@ -1917,7 +1917,7 @@
     ],
     "question": "What is the correct way to call a function?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`call.(get_max_num)`",
         "isCorrect": false
@@ -1943,7 +1943,7 @@
     ],
     "question": "How do you add a comment to an existing Python script?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`-- This is a comment`",
         "isCorrect": false
@@ -1971,7 +1971,7 @@
     "codeExamples": [
       "python\nmy_list = ['kiwi', 'apple', 'banana']\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`orange = my_list[1]`",
         "isCorrect": false
@@ -1997,7 +1997,7 @@
     ],
     "question": "What will happen if you use a while loop and forget to include logic that eventually causes the while loop to stop?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Nothing will happen; your computer knows when to stop running the code in the while loop.",
         "isCorrect": false
@@ -2023,7 +2023,7 @@
     ],
     "question": "Describe the functionality of a queue.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A queue adds items to the top and removes items from the top.",
         "isCorrect": false
@@ -2054,7 +2054,7 @@
       "python\nnum_people = 5\n\nif num_people > 10;\n    print(\"There is a lot of people in the pool.\")\nelif num_people > 4;\n    print(\"There are some people in the pool.\")\nelse;\n    print(\"There is no one in the pool.\")\n",
       "python\nif num_people > 10;\n    print(\"There is a lot of people in the pool.\")\nif num_people > 4;\n    print(\"There are some people in the pool.\")\nelse;\n    print(\"There is no one in the pool.\")\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "B:",
         "isCorrect": false
@@ -2082,7 +2082,7 @@
     "codeExamples": [
       "python\n# Function to return a default\n# values for keys that are not\n# present\ndef def_value():\n    return \"Not Present\"\n\n# Defining the dict\nd = defaultdict(def_value)\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`defaultdict` will automatically create a dictionary for you that has keys which are the integers 0-10.",
         "isCorrect": false
@@ -2108,7 +2108,7 @@
     ],
     "question": "What is the correct syntax for adding a key called `variety` to the `fruit_info` dictionary that has a value of `Red Delicious`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`fruit_info['variety'] == 'Red Delicious'`",
         "isCorrect": false
@@ -2136,7 +2136,7 @@
     "codeExamples": [
       "python\ni = 1\nwhile i<6:\n    print(f\"Countdown: {i}\")\n    i = i + 1\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "When you want to minimize the use of strings in your code.",
         "isCorrect": false
@@ -2167,7 +2167,7 @@
       "python\ndef __init__(self, attr1, attr2):\n    self.attr1 = attr1\n    self.attr2 = attr2\n",
       "python\ndef __init__(attr1, attr2):\n    self.attr1 = attr1\n    self.attr2 = attr2\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": ":",
         "isCorrect": false
@@ -2199,7 +2199,7 @@
       "python\n3\n3\n2\n2\n1\n1\n",
       "python\n1\n2\n3\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": ":",
         "isCorrect": false
@@ -2225,7 +2225,7 @@
     ],
     "question": "In Python, when using sets, you use **\\_** to calculate the intersection between two sets and **\\_** to calculate the union.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`Intersect`; `union`",
         "isCorrect": false
@@ -2253,7 +2253,7 @@
     "codeExamples": [
       "python\nimport numpy as np\nnp.ones([1,2,3,4,5])\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "It returns a 5x5 matrix; each row will have the values 1,2,3,4,5.",
         "isCorrect": false
@@ -2279,7 +2279,7 @@
     ],
     "question": "You encounter a FileNotFoundException while using just the filename in the `open` function. What might be the easiest solution?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Make sure the file is on the system `PATH`.",
         "isCorrect": false
@@ -2307,7 +2307,7 @@
     "codeExamples": [
       "python\n{x for x in range(100) if x%3 == 0}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A set of all the numbers from 0 to 100 multiplied by 3.",
         "isCorrect": false
@@ -2333,7 +2333,7 @@
     ],
     "question": "What does the // operator in Python 3 allow you to do?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Perform operations on exponents.",
         "isCorrect": false
@@ -2359,7 +2359,7 @@
     ],
     "question": "What file is imported to use dates in Python?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`dateday`",
         "isCorrect": false
@@ -2385,7 +2385,7 @@
     ],
     "question": "What is the correct syntax for defining a class called Game?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`def Game(): pass`",
         "isCorrect": false
@@ -2411,7 +2411,7 @@
     ],
     "question": "What is the correct syntax for calling an instance method on a class named Game?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`my_game = Game(self) self.my_game.roll_dice()`",
         "isCorrect": false
@@ -2439,7 +2439,7 @@
     "codeExamples": [
       "python\na = np.array([1,2,3,4])\nprint(a[[False, True, False, False]])\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`{0,2}`",
         "isCorrect": false
@@ -2468,7 +2468,7 @@
       "python\nz = y.split(';')\nlen(z)\n",
       "python\ny=\"stuff;thing;junk\"\n\tlen(z) ==> 3\n\ny=\"stuff;thing;junk;\"\n\tlen(z) ==> 4\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "17",
         "isCorrect": false
@@ -2497,7 +2497,7 @@
       "python\nnum_list = [1,2,3,4,5]\nnum_list.remove(2)\nprint(num_list)\n",
       "python\nnum_list = [1,2,3,4,5]\n\nnum_list.pop(2)\n>>> [1,2,4,5]\n\nnum_list.remove(2)\n>>> [1,3,4,5]\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`[1,2,4,5]`",
         "isCorrect": false
@@ -2523,7 +2523,7 @@
     ],
     "question": "Which command will create a list from 10 down to 1? Example:",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`reversed(list(range(1,11)))`",
         "isCorrect": false
@@ -2555,7 +2555,7 @@
       "python\ny = [x*2 for x in range(1,10)]\nprint(y)\n",
       "python\ny = 1\nfor i in range(1,10):\n    y = y * 2\nprint(y)\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": ":",
         "isCorrect": false
@@ -2581,7 +2581,7 @@
     ],
     "question": "Elements surrounded by `[]` are **\\_**, `{}` are **\\_**, and `()` are **\\_**.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "sets only; lists or dictionaries; tuples",
         "isCorrect": false
@@ -2609,7 +2609,7 @@
     "codeExamples": [
       "python\ntable = np.array([\n    [1,3],\n    [2,4]])\nprint(table.max(axis=1))\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`[2, 4]`",
         "isCorrect": false
@@ -2637,7 +2637,7 @@
     "codeExamples": [
       "python\nnumber = 3\nprint(f\"The number is {number}\")\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`the number is 3`",
         "isCorrect": false
@@ -2663,7 +2663,7 @@
     ],
     "question": "Which syntax correctly creates a variable that is bound to a tuple?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`my_tuple tup(2, 'apple', 3.5) %D`",
         "isCorrect": false
@@ -2689,7 +2689,7 @@
     ],
     "question": "Which mode is not a valid way to access a file from within a Python script?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`write('w')`",
         "isCorrect": false
@@ -2715,7 +2715,7 @@
     ],
     "question": "NumPy allows you to multiply two arrays without a for loop. This is an example of \\_.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Attributions.",
         "isCorrect": false
@@ -2741,7 +2741,7 @@
     ],
     "question": "What built-in Python data type can be used as a hash table?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`set`",
         "isCorrect": false
@@ -2767,7 +2767,7 @@
     ],
     "question": "Which Python function allows you to execute Linux shell commands in Python?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`sys.exc_info()`",
         "isCorrect": false
@@ -2796,7 +2796,7 @@
       "python\nmy_dictionary = {\n    'A': 1,\n    'B': 2,\n    'C': 3,\n    'D': 4,\n    'E': 5\n}\n",
       "python\nletters = []\n\nfor letter in my_dictionary.values():\n    letters.append(letter)\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`letters = my_dictionary.keys()`",
         "isCorrect": false
@@ -2822,7 +2822,7 @@
     ],
     "question": "When an array is large, NumPy will not print the entire array when given the built-in `print` function. What function can you use within NumPy to force it to print the entire array?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`set_printparams`",
         "isCorrect": false
@@ -2848,7 +2848,7 @@
     ],
     "question": "When would you use a try/except block in code?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "You use `try/except` blocks inside of unit tests so that the unit tests will always pass.",
         "isCorrect": false
@@ -2874,7 +2874,7 @@
     ],
     "question": "In Python, how can the compiler identify the inner block of a for loop?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`because of the end keyword at the end of the for loop`",
         "isCorrect": false
@@ -2900,7 +2900,7 @@
     ],
     "question": "What Python mechanism is best suited for telling a user they are using a deprecated function",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`sys.stdout`",
         "isCorrect": false
@@ -2928,7 +2928,7 @@
     "codeExamples": [
       "python\nx = {1,2,3,4,5}\nx.add(5)\nx.add(6)\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`{1, 2, 3, 4, 5, 5, 6}`",
         "isCorrect": false
@@ -2956,7 +2956,7 @@
     "codeExamples": [
       "python\nfruit_info = {\n    'fruit': 'apple',\n    'count': 2,\n    'price': 3.5\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`my_keys = fruit_info.to_keys()`",
         "isCorrect": false
@@ -2984,7 +2984,7 @@
     "codeExamples": [
       "python\ndef be_friendly(greet = \"How are you!\", name):\n    pass\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`name` is a reserved word.",
         "isCorrect": false
@@ -3015,7 +3015,7 @@
       "python\na = np.zeros([3,4])\nb = np.zeros([4,3])\nnp.array_equal(a,b)\n",
       "python\na = np.array([1, np.nan])\nnp.array_equal(a,a)\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": ":",
         "isCorrect": false
@@ -3041,7 +3041,7 @@
     ],
     "question": "How do you add a comment to an existing Python script?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`// This is a comment`",
         "isCorrect": false
@@ -3073,7 +3073,7 @@
       "python\nc = [ a[0] * b[0], a[1] * b[1], a[2] * b[2] ]\n\nd = sum(a) + sum(b)\n",
       "python\nc = [ a[0] * b[0], a[1] * b[1], a[2] * b[2] ]\n\nd = sum(c)\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -3099,7 +3099,7 @@
     ],
     "question": "What two functions within the NumPy library could you use to solve a system of linear equations?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`linalg.inv() and .dot()`",
         "isCorrect": false
@@ -3125,7 +3125,7 @@
     ],
     "question": "What is the correct syntax for creating a variable that is bound to a list?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`my_list = (2, 'apple', 3.5)`",
         "isCorrect": false
@@ -3153,7 +3153,7 @@
     "codeExamples": [
       "python\nnum_list = [21, 13, 19, 3, 11, 5, 18]\nnum_list.sort()\nnum_list[len(num_list) // 2]\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "mode",
         "isCorrect": false
@@ -3179,7 +3179,7 @@
     ],
     "question": "What are the two main data structures in the Pandas library?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Arrays and DataFrames",
         "isCorrect": false
@@ -3205,7 +3205,7 @@
     ],
     "question": "Suppose you have a variable named `vector` of type np.array with 10,000 elements. How can you turn `vector` into a variable named `matrix` with dimensions 100x100?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`matrix = (vector.shape = (100,100))`",
         "isCorrect": false
@@ -3231,7 +3231,7 @@
     ],
     "question": "Which choice is an immutable data type?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Dictionary",
         "isCorrect": false
@@ -3263,7 +3263,7 @@
       "python\nHello, I am from Spain\nHello, I am from\nHello, I am from France\n",
       "python\nHello, I am from Spain\nHello, I am from France\nHello, I am from France\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": ":",
         "isCorrect": false
@@ -3289,7 +3289,7 @@
     ],
     "question": "Choose the option below for which instance of the class cannot be created.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Anonymous Class",
         "isCorrect": false
@@ -3315,7 +3315,7 @@
     ],
     "question": "Using Pandas, we load a data set from Kaggle, as structured in the image below. Which command will return the total number of survivors?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`[x for x in titanic['Survived'] if x == 1]`",
         "isCorrect": false
@@ -3344,7 +3344,7 @@
       "python\ncharacters = [\"Iron Man\", \"Spider Man\", \"Captain America\"]\nactors = [\"Downey\", \"Holland\", \"Evans\"]\n\n# example output : [(\"IronMan\", \"Downey\"), (\"Spider Man\", \"Holland\"), (\"Captain America\", \"Evans\")]\n",
       "python\n  d = {}\n\n  for x in range(1, len(characters)):\n      d[x] = actors[x]\n  "
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`[(x,y)] for x in characters for y in actors]`",
         "isCorrect": false
@@ -3372,7 +3372,7 @@
     "codeExamples": [
       "python\n{x : x*x for x in range(1,100)}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A dictionary with `x` as a key, and `x` squared as its value; from 1 to 100.",
         "isCorrect": false
@@ -3398,7 +3398,7 @@
     ],
     "question": "Jaccard Similarity is a formula that tells you how similar two sets are. It is defined as the cardinality of the intersection divided by the cardinality of the union. Which choice is an accurate implementation in Python?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`def jaccard(a, b): return len (a | b) / len (a & b)`",
         "isCorrect": false
@@ -3424,7 +3424,7 @@
     ],
     "question": "Which choice is not a native numerical type in Python?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Long",
         "isCorrect": false
@@ -3452,7 +3452,7 @@
     "codeExamples": [
       "python\n[1,2,3] * 3\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`[3,2,3]`",
         "isCorrect": false
@@ -3478,7 +3478,7 @@
     ],
     "question": "Given a list defined as numbers = `[1,2,3,4]`, what is the value of `numbers[-2]`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "1",
         "isCorrect": false
@@ -3504,7 +3504,7 @@
     ],
     "question": "Which statement about strings in Python is true?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Strings can only be enclosed in single quotes (').",
         "isCorrect": false
@@ -3530,7 +3530,7 @@
     ],
     "question": "What is the correct syntax for defining an `_init_()` method that takes no parameters?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`def*init*(self): pass`",
         "isCorrect": false
@@ -3556,7 +3556,7 @@
     ],
     "question": "Suppose you need to use the `sin` function from the `math` library. What is the correct syntax for importing only that function?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`using math.sin`",
         "isCorrect": false
@@ -3582,7 +3582,7 @@
     ],
     "question": "What do you get if you apply numpy.sum() to a list that contains only Boolean values?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`0`",
         "isCorrect": false
@@ -3610,7 +3610,7 @@
     "codeExamples": [
       "python\nprint(\"foo\" if (256).bit_length() > 8 else \"bar\")\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`True`",
         "isCorrect": false
@@ -3636,7 +3636,7 @@
     ],
     "question": "If you do not explicitly return a value from a function, what happens?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "If the return keyword is absent, the function will return `True`.",
         "isCorrect": false
@@ -3662,7 +3662,7 @@
     ],
     "question": "It is often the case that the pandas library is used for **_ data and NumPy for _** data.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "string; numerical",
         "isCorrect": false
@@ -3688,7 +3688,7 @@
     ],
     "question": "What do you need to do to install additional packages into Python?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use a C compiler like `gcc` or `clang`.",
         "isCorrect": false
@@ -3714,7 +3714,7 @@
     ],
     "question": "The image below was created using Matplotlib. It is a distribution plot of a list of integers filled with numbers using the function **\\_** and plotted with **\\_**.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`random.uniform(0,50);plt.hist`",
         "isCorrect": false
@@ -3742,7 +3742,7 @@
     "codeExamples": [
       "python\nimport numpy as np\n\na = np.arange(100)\nb = a[50:60:2]\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`a`: all integers from 0 to 100 (inclusive); `b`: all even integers from 50 to 60 (inclusive).",
         "isCorrect": false
@@ -3768,7 +3768,7 @@
     ],
     "question": "When using NumPy in Python, how do you check the dimensionality (number and length of dimensions) of an object called `my_object`?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`my_object.get_shape()`",
         "isCorrect": false
@@ -3794,7 +3794,7 @@
     ],
     "question": "Assume you have a non-empty list named `mylist` and you want to search for a specific value. The minimum number of comparisons will be \\_**_ and the maximum number of comparisons will be _**?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`len(mylist); len(mylist)`",
         "isCorrect": false
@@ -3820,7 +3820,7 @@
     ],
     "question": "If a function does not have a return statement, what does it return?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`0`",
         "isCorrect": false
@@ -3848,7 +3848,7 @@
     "codeExamples": [
       "python\nimport numpy as np\n\ndef can_matrices_be_multiplied (matrix1, matrix2):\n    rowsMat1, columnsMat1 = matrix1.shape\n    rowsMat2, columnsMat2 = matrix2.shape\n\n    if _____ == ______ :\n        print(\"The matrices can be multiplied!\")\n        return True\n    else:\n        return False\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "columnsMat1; rowsMat1;",
         "isCorrect": false
@@ -3874,7 +3874,7 @@
     ],
     "question": "What is the output of this comprehension?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "[(1, 2), (2, 3), (3, 4), (4, 5), (5, 6)]",
         "isCorrect": false
@@ -3900,7 +3900,7 @@
     ],
     "question": "In Python, a class method must have \\_**\\_ as a function decorator, and the first parameter of the method will be a reference to \\_\\_**.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "inline; the class",
         "isCorrect": false
@@ -3931,7 +3931,7 @@
       "python\nclass Father():\n    name = 'Robert'\n\n\nclass Person(Father):\n    def __init__(self, name):\n        self.name = name\n\n    def introduce(self):\n        print(f\"My name is {self.name} son of {super.name}\")\n\nking = Person(\"Joffrey\")\nking.introduce()\n",
       "python\nclass Father():\n    name = 'Robert'\n\nclass Person(Father):\n    def __init__(self, name):\n        self.name = name\n\n    def introduce(self):\n        print(f\"My name is {self.name} son of {base.name}\")\n\nking = Person(\"Joffrey\")\nking.introduce()\n\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": ":",
         "isCorrect": false
@@ -3963,7 +3963,7 @@
       "python\n      ['beetle', 'bear', 'bat']\n      None\n",
       "python\n      ['bat', 'bear', 'beetle']\n      []\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "B",
         "isCorrect": false
@@ -3991,7 +3991,7 @@
     "codeExamples": [
       "python\n[x*2 for x in range(1,n)]\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A dictionary with all the even numbers less than 2\\*n.",
         "isCorrect": false
@@ -4019,7 +4019,7 @@
     "codeExamples": [
       "python\nx = 18\n\nif x > 10:\n\tif x > 15:\n\t\tprint('A')\n\telse:\n\t\tprint('B')\nelse:\n\tprint('C')\n\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "C",
         "isCorrect": false
@@ -4045,7 +4045,7 @@
     ],
     "question": "What is the maximum length of a Python identifier?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "32",
         "isCorrect": false
@@ -4073,7 +4073,7 @@
     "codeExamples": [
       "python\nfor i in range(5): pass\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "5",
         "isCorrect": false
@@ -4099,7 +4099,7 @@
     ],
     "question": "`f-strings` are also called:",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Formatted string expressions.",
         "isCorrect": false
@@ -4125,7 +4125,7 @@
     ],
     "question": "How many CPUs (or cores) will the Python threading library take advantage of simultaneously?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "All of the available CPUs.",
         "isCorrect": false
@@ -4154,7 +4154,7 @@
       "python\nx = 5\ny = 1 + (20 if x < 5 else 30)\n",
       "python\nx = 5\n# This is the same statement expanded to multiple lines\ny = 1\nif (x < 5):\n    y += 20\nelse:\n    y += 30\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`False`",
         "isCorrect": false
@@ -4180,7 +4180,7 @@
     ],
     "question": "The process of pickling in Python includes?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Conversion of a data table into a list.",
         "isCorrect": false
@@ -4208,7 +4208,7 @@
     "codeExamples": [
       "python\nprint(\"codescracker\".endswith(\"er\"))\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`1`",
         "isCorrect": false
@@ -4234,7 +4234,7 @@
     ],
     "question": "Is the list mutable in Python?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "False",
         "isCorrect": false
@@ -4254,7 +4254,7 @@
     "codeExamples": [
       "python\nprint(\"programming\".center())\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`cr`",
         "isCorrect": false
@@ -4280,7 +4280,7 @@
     ],
     "question": "Who created the Python programming language?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Tim Berners-Lee",
         "isCorrect": false
@@ -4306,7 +4306,7 @@
     ],
     "question": "Which collection is ordered, changeable, and allows duplicate members?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Set",
         "isCorrect": false
@@ -4334,7 +4334,7 @@
     "codeExamples": [
       "python\nx = 1j\nprint(x**2 == -1)\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A runtime error telling you that the variable `j` has not been initialized.",
         "isCorrect": false
@@ -4362,7 +4362,7 @@
     "codeExamples": [
       "python\nprint(0xA + 0xB + 0xC)\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`63`",
         "isCorrect": false
@@ -4393,7 +4393,7 @@
       "python\n0\n1\n2\n3\n4\n5\nDone!\n",
       "python\n0\n1\n2\n3\n4\nDone!\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A",
         "isCorrect": false
@@ -4419,7 +4419,7 @@
     ],
     "question": "Which comparison of lists and tuples in Python is correct?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Use lists instead of tuples when you have a collection of related but dissimilar objects.",
         "isCorrect": false
@@ -4451,7 +4451,7 @@
       "\nMISSING_ARG_1 is empty\n\nMISSING_ARG_2 = rval\n\nMISSING_ARG_3 = wrapper\n",
       "\nMISSING_ARG_1 is empty\n\nMISSING_ARG_2 = rval\n\nMISSING_ARG_3 = func\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": ":",
         "isCorrect": false
@@ -4477,7 +4477,7 @@
     ],
     "question": "Which of the following statements defines a new object type named `Dog` in Python?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`Dog class:`",
         "isCorrect": false
@@ -4503,7 +4503,7 @@
     ],
     "question": "To use pipelines in `scikit-learn`, import from the `scikit-learn._` submodule.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`preprocessing`",
         "isCorrect": false
@@ -4529,7 +4529,7 @@
     ],
     "question": "You should pass in a value of **\\_** for the axis argument to the Pandas apply method to apply the function to each row.",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "row",
         "isCorrect": false
@@ -4555,7 +4555,7 @@
     ],
     "question": "Data points in Pyplot are called...",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "... pointers.",
         "isCorrect": false
@@ -4583,7 +4583,7 @@
     "codeExamples": [
       "python\na = np.array([[1, 2], [3, 4], [5, 6]])\nc = a[(a > 3) & (a < 11)]\nprint(c)\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`[[3, 4], [5, 6]]`",
         "isCorrect": false
@@ -4611,7 +4611,7 @@
     "codeExamples": [
       "python\n[ [ [ randint(1,100) for i in range(m) ] for j in range(n) ] for k in range(p) ]\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "The greater value of `(m,n,p)`.",
         "isCorrect": false
@@ -4637,7 +4637,7 @@
     ],
     "question": "Suppose you have a class named `MyClass` which has multiple inheritance and methods with the same name in its ancestors. Which class method could you call to see which method will get priority when invoked?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`MyClass.hierarchy()`",
         "isCorrect": false
@@ -4665,7 +4665,7 @@
     "codeExamples": [
       "python\nemployees = {\n    'alice':{\n        'position':'Lead Developer',\n        'salary':1000\n    },\n    'bob':{\n        'position': 'Lead Artist',\n        'salary':2000\n    },\n    'charlie':{\n        'position':'cfo',\n        'salary':3000\n    }\n}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`employees.alice.salary = employees.charlie.salary`",
         "isCorrect": false
@@ -4693,7 +4693,7 @@
     "codeExamples": [
       "python\nmylist = []\n\nfor i in range(m):\n    for j in range(n):\n        mylist.append((i,j))\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`m`",
         "isCorrect": false
@@ -4721,7 +4721,7 @@
     "codeExamples": [
       "python\n{x : [y for y in range (1, x) if x % y == 0] for x in range (2, 100)}\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "A dictionary whose keys are the numbers from 2 to 99 (inclusive), and their respective values are a list from 1 to the key value itself (inclusive).",
         "isCorrect": false
@@ -4747,7 +4747,7 @@
     ],
     "question": "What is a common use of Python's sys library?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "to take a snapshot of all the packages and libraries in your virtual environment",
         "isCorrect": false
@@ -4773,7 +4773,7 @@
     ],
     "question": "What is the output of 17 % 15 ?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "17",
         "isCorrect": false
@@ -4801,7 +4801,7 @@
     "codeExamples": [
       "python\ncharacters = [\"Iron Man\", \"Spider Man\", \"Captain America\"]\nactors = [\"Downey\", \"Holland\", \"Evans\"]\n\n#Desired output : [(\"Iron Man\", \"Downey), (\"Spider Man\", \"Holland\"), (\"Captain America\", \"Evans\")]\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "print( zip( characters, actors ) )",
         "isCorrect": false
@@ -4827,7 +4827,7 @@
     ],
     "question": "When is the `if __name__ == \"__main__\":` block executed in a Python script?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Always, as it is required in every Python script.",
         "isCorrect": false
@@ -4855,7 +4855,7 @@
     "codeExamples": [
       "python\ndef square(x):\n\treturn x * x\n\nnumbers = [1, 2, 3, 4, 5]\nsquared_numbers = map(square, numbers)\nresult = list(squared_numbers)\nprint(result)\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "`[1, 2, 3, 4, 5]`",
         "isCorrect": false
@@ -4881,7 +4881,7 @@
     ],
     "question": "Which of the following is not a valid built-in function in Python?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "int",
         "isCorrect": false
@@ -4907,7 +4907,7 @@
     ],
     "question": "Which of the following is not a valid Python data type?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "int",
         "isCorrect": false
@@ -4933,7 +4933,7 @@
     ],
     "question": "In Python, which function is used to read a line from the console input?",
     "codeExamples": [],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "read_line()",
         "isCorrect": false
@@ -4961,7 +4961,7 @@
     "codeExamples": [
       "python\ndef outer_func(x):\n    y = x + 1\n    def inner_func():\n        return y + x\n    return inner_func\n\nx = 10\ny = 20\nclosure_func = outer_func(x)\nprint(closure_func())\n"
     ],
-    "answersOptions": [
+    "answerOptions": [
       {
         "answer": "Hello {name1} and {name2}",
         "isCorrect": false

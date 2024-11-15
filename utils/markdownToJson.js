@@ -70,7 +70,7 @@ function convertiraJson(markdown) {
     ].map((m) => m[1]);
 
     //llama a la funcion crea el array de opciones, poniendo las tres incorrectas primero y la correcta (True) al final
-    const answersOptions = getAnswersOptions(correctAnswers, incorrectAnswers);
+    const answerOptions = getAnswersOptions(correctAnswers, incorrectAnswers);
     if (!QUESTIONS_CATEGORIES.includes(categories)) {
       categories = [titulo];
     }
@@ -79,7 +79,7 @@ function convertiraJson(markdown) {
       categories,
       question: questionText,
       codeExamples,
-      answersOptions,
+      answerOptions,
       urlFont: MARKDOWN_URL,
     };
 
