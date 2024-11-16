@@ -1,18 +1,8 @@
-// const example = (questionRandom) => {
-//     console.log("🚀 ~ example ~ questionRandom:", questionRandom)
 
-
-//     const [{ question, answerOptions }] = questionRandom;
-//     const [{ answer, isCorrect }] = answerOptions; 
-//     console.log("🚀 ~ example ~ question:", question);
-//     console.log("🚀 ~ example ~ answer:", questionRandom[0].answerOptions[1].answer)
-
-// }
-
-
+const { shuffleArray } = require("./utils/utils.js");
 const getEmailTemplate = (name, questionRandom) => {
     const [{ question, answerOptions }] = questionRandom;
-   // const [{ answer, isCorrect }] = answerOptions;
+   
     console.log("🚀 ~ EMAIL ~ questionRandom:", questionRandom);
     console.log("🚀 ~ EMAIL ~ question:", questionRandom[0].question);
     console.log("🚀 Opcion 1", questionRandom[0].answerOptions[0].answer);
@@ -26,12 +16,11 @@ const getEmailTemplate = (name, questionRandom) => {
     console.log("🚀 Opcion 3", questionRandom[0].answerOptions[2].answer);
     console.log("🚀 Opcion 4", questionRandom[0].answerOptions[3].answer);
 
-    // Encontrar el índice donde `isCorrect` es true
+    // Find index of the answer option where `isCorrect` is true
     const correctAnswerIndex = answerOptions.findIndex(option => option.isCorrect === true);
     const correctAnswer = questionRandom[0].answerOptions[correctAnswerIndex].answer;
     console.log("🚀 ~ correctAnswer:", correctAnswer)
 
-    // console.log("Descructed Answer", question, answer, isCorrect);
     return `
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml" lang="en">

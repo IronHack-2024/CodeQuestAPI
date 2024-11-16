@@ -75,30 +75,6 @@ async function fetchSubscribedContacts(listId) {
   }
 }
 
-// // Fetch Audiences from Mailchimp
-// async function fetchAudiences() {
-//   try {
-//     const response = await mailchimp.lists.getAllLists();
-//     // console.log("Audiences:", response.lists);
-
-//     return response.lists;
-//   } catch (error) {
-//     console.error(
-//       "Error fetching audiences:",
-//       error.response ? error.response.body : error.message
-//     );
-//   }
-// }
-
-// (async () => {
-//   const audiences = await fetchAudiences(); // Fetch all audiences
-//   if (audiences.length > 0) {
-//     await fetchContacts(audiences[0].id); // Fetch contacts from the first audience, so no id needs to be entered
-//   } else {
-//     console.log("No audiences found.");
-//   }
-// })();
-
 const APP_PASSWORD = process.env.APP_PASSWORD;
 
 const transporter = nodemailer.createTransport({
@@ -119,29 +95,13 @@ let mailOptions = {
   html: "", // Placeholder, will be updated dynamically
 };
 
-// (async () => {
-//   try {
-//     const result = await getRandomQuestion(1); // Fetch one random question
-//     console.log(result); // Log the result
-//   } catch (error) {
-//     console.error("Error fetching random questions:", error);
-//   }
-// })();
-
 //sendEmails();
 
 async function sendEmails() {
   const questionRandom = await getRandomQuestion(1);
 
   try {
-  //   // Fetch all audiences to get the first list ID
-  //   const audiences = await fetchAudiences();
-  //   if (!audiences.length) {
-  //     console.log("No audiences found.");
-  //     return;
-  //   }
 
-    //const listId = audiences[0].id; // Use the first audience's ID
     const subscribedContacts = await fetchSubscribedContacts(listId); // Pass the listId to fetchContacts
 
     if (!subscribedContacts.length) {
