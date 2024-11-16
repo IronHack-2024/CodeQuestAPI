@@ -12,7 +12,14 @@
 
 const getEmailTemplate = (name, questionRandom) => {
     const [{ question, answerOptions }] = questionRandom;
-    const [{ answer, isCorrect }] = answerOptions;
+   // const [{ answer, isCorrect }] = answerOptions;
+    console.log("🚀 ~ EMAIL ~ questionRandom:", questionRandom);
+    console.log("🚀 ~ EMAIL ~ question:", questionRandom[0].question);
+    console.log("🚀 Opcion 1", questionRandom[0].answerOptions[0].answer);
+    console.log("🚀 Opcion 2", questionRandom[0].answerOptions[1].answer);
+    console.log("🚀 Opcion 3", questionRandom[0].answerOptions[2].answer);
+    console.log("🚀 Opcion 4", questionRandom[0].answerOptions[3].answer);
+    shuffleArray(questionRandom[0].answerOptions);
     console.log("🚀 ~ EMAIL ~ question:", question);
     console.log("🚀 Opcion 1", questionRandom[0].answerOptions[0].answer);
     console.log("🚀 Opcion 2", questionRandom[0].answerOptions[1].answer);
