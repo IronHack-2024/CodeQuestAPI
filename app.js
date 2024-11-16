@@ -6,7 +6,7 @@ const { getRandomQuestion } = require("./services/question.services");
 const bodyParser = require("body-parser");
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 const nodemailer = require("nodemailer");
-const { getEmailTemplate, example } = require("./emailtemplate.js");
+const { getEmailTemplate} = require("./emailtemplate.js");
 const cron = require("node-cron");
 const Questions = require("./models/question.model.js");
 
@@ -28,12 +28,13 @@ app.get("/daily-question", async (req, res) => {
   res.render("home", { question });
 });
 
+const listId = "58371aa183";
 //subscribe route to add contact to audience/ 58371aa183 is the listId from Chimp
 app.post("/subscribe", async (req, res) => {
   const email = req.body.email;
 
   try {
-    const response = await mailchimp.lists.addListMember("58371aa183", {
+    const response = await mailchimp.lists.addListMember(listId, {
       email_address: email,
       status: "subscribed",
     });
@@ -53,57 +54,57 @@ const MAILCHIMPKEY = process.env.MAILCHIMPKEY;
 
 mailchimp.setConfig({
   apiKey: MAILCHIMPKEY, // API key in dotenv
-  server: "us22", // Prefijo del servidor del API key, final
+  server: "us22", // Prefix of of API Server, found in Key end
 });
-//const listId = '58371aa183'; // ID de la lista de contactos de Mailchimp-Pero con el codigo no necesitamos. Solo hay una lista.
 
 // Function to Fetch Audience Contacts from Mailchimp
-async function fetchContacts(listId) {
+async function fetchSubscribedContacts(listId) {
   try {
     const response = await mailchimp.lists.getListMembersInfo(listId, {
-      count: 100, // Fetch up to 100 contacts
+      status: "subscribed",
+      count: 100, // limit Fetch up to 100 contacts
     });
-    // console.log("Contacts:", response.members.map(member => member.email_address));
+    console.log("Contacts with subscribed status:", response.members.map(member => member.email_address));
     return response.members.map((member) => member.email_address); // Return email addresses
   } catch (error) {
     console.error(
-      "Error fetching contacts:",
+      "Error fetching subscribed contacts:",
       error.response ? error.response.body : error.message
     );
     return []; // Return an empty array if there's an error
   }
 }
 
-// Fetch Audiences
-async function fetchAudiences() {
-  try {
-    const response = await mailchimp.lists.getAllLists();
-    // console.log("Audiences:", response.lists);
+// // Fetch Audiences from Mailchimp
+// async function fetchAudiences() {
+//   try {
+//     const response = await mailchimp.lists.getAllLists();
+//     // console.log("Audiences:", response.lists);
 
-    return response.lists;
-  } catch (error) {
-    console.error(
-      "Error fetching audiences:",
-      error.response ? error.response.body : error.message
-    );
-  }
-}
+//     return response.lists;
+//   } catch (error) {
+//     console.error(
+//       "Error fetching audiences:",
+//       error.response ? error.response.body : error.message
+//     );
+//   }
+// }
 
-(async () => {
-  const audiences = await fetchAudiences(); // Fetch all audiences
-  if (audiences.length > 0) {
-    await fetchContacts(audiences[0].id); // Fetch contacts from the first audience, so no id needs to be entered
-  } else {
-    console.log("No audiences found.");
-  }
-})();
+// (async () => {
+//   const audiences = await fetchAudiences(); // Fetch all audiences
+//   if (audiences.length > 0) {
+//     await fetchContacts(audiences[0].id); // Fetch contacts from the first audience, so no id needs to be entered
+//   } else {
+//     console.log("No audiences found.");
+//   }
+// })();
 
 const APP_PASSWORD = process.env.APP_PASSWORD;
-//para enviar de nuestro email proveedor
+
 const transporter = nodemailer.createTransport({
   service: "gmail",
-  host: "smtp.gmail.com", // Replace with your SMTP server
-  port: 587, // 587 for TLS
+  host: "smtp.gmail.com",
+  port: 587, 
   secure: true,
   auth: {
     user: "codequestapi@gmail.com",
@@ -118,50 +119,44 @@ let mailOptions = {
   html: "", // Placeholder, will be updated dynamically
 };
 
-(async () => {
-  try {
-    const result = await getRandomQuestion(1); // Fetch one random question
-    console.log(result); // Log the result
-  } catch (error) {
-    console.error("Error fetching random questions:", error);
-  }
-})();
+// (async () => {
+//   try {
+//     const result = await getRandomQuestion(1); // Fetch one random question
+//     console.log(result); // Log the result
+//   } catch (error) {
+//     console.error("Error fetching random questions:", error);
+//   }
+// })();
 
-sendEmails();
+//sendEmails();
 
 async function sendEmails() {
   const questionRandom = await getRandomQuestion(1);
-  // console.log("QUESTION of SENDEMAILS", questionRandom);
-  // console.log(
-  //   "Contenido completo de answerOptions:",
-  //   questionRandom.answerOptions[0].answer
-  // );
 
   try {
-    // Fetch all audiences to get the first list ID
-    const audiences = await fetchAudiences();
-    if (!audiences.length) {
-      console.log("No audiences found.");
-      return;
-    }
+  //   // Fetch all audiences to get the first list ID
+  //   const audiences = await fetchAudiences();
+  //   if (!audiences.length) {
+  //     console.log("No audiences found.");
+  //     return;
+  //   }
 
-    const listId = audiences[0].id; // Use the first audience's ID
-    const contacts = await fetchContacts(listId); // Pass the listId to fetchContacts
+    //const listId = audiences[0].id; // Use the first audience's ID
+    const subscribedContacts = await fetchSubscribedContacts(listId); // Pass the listId to fetchContacts
 
-    if (!contacts.length) {
+    if (!subscribedContacts.length) {
       console.log("No contacts found in the audience.");
       return;
     }
     // Loop through contacts and send personalized emails
-    for (const email of contacts) {
+    for (const email of subscribedContacts) {
       console.log(`Sending email to ${email}`);
       const name = email.split("@")[0]; // Use the part before '@' as a name
       const htmlTemplate = getEmailTemplate(name, questionRandom);
-      console.log(htmlTemplate);
+      //console.log(htmlTemplate);
 
       mailOptions.to = email;
       mailOptions.html = htmlTemplate;
-      console.log(`MailOptions: ${JSON.stringify(mailOptions)}`);
 
       const info = await transporter.sendMail(mailOptions);
       console.log(`Email sent to ${email}: ${info.response}`);

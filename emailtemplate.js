@@ -1,28 +1,30 @@
 // const example = (questionRandom) => {
 //     console.log("🚀 ~ example ~ questionRandom:", questionRandom)
-   
+
 
 //     const [{ question, answerOptions }] = questionRandom;
 //     const [{ answer, isCorrect }] = answerOptions; 
 //     console.log("🚀 ~ example ~ question:", question);
 //     console.log("🚀 ~ example ~ answer:", questionRandom[0].answerOptions[1].answer)
 
-   
-   
 // }
 
 
-const getEmailTemplate = (name, questionRandom) =>{
-   const { question, answerOptions } = questionRandom;
-   const [{ answer, isCorrect }] = answerOptions; 
-   console.log("🚀 Opcion 1", questionRandom[0].answerOptions[0].answer);
-   console.log("🚀 Opcion 2", questionRandom[0].answerOptions[1].answer)
+const getEmailTemplate = (name, questionRandom) => {
+    const [{ question, answerOptions }] = questionRandom;
+    const [{ answer, isCorrect }] = answerOptions;
+    console.log("🚀 ~ EMAIL ~ question:", question);
+    console.log("🚀 Opcion 1", questionRandom[0].answerOptions[0].answer);
+    console.log("🚀 Opcion 2", questionRandom[0].answerOptions[1].answer);
+    console.log("🚀 Opcion 3", questionRandom[0].answerOptions[2].answer);
+    console.log("🚀 Opcion 4", questionRandom[0].answerOptions[3].answer);
 
-   // Encontrar el índice donde `isCorrect` es true
-   const correctAnswerIndex = answerOptions.findIndex(option => option.isCorrect === true);
-   const correctAnswer = questionRandom[0].answerOptions[correctAnswerIndex].answer
+    // Encontrar el índice donde `isCorrect` es true
+    const correctAnswerIndex = answerOptions.findIndex(option => option.isCorrect === true);
+    const correctAnswer = questionRandom[0].answerOptions[correctAnswerIndex].answer;
+    console.log("🚀 ~ correctAnswer:", correctAnswer)
 
-   // console.log("Descructed Answer", question, answer, isCorrect);
+    // console.log("Descructed Answer", question, answer, isCorrect);
     return `
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -106,17 +108,17 @@ const getEmailTemplate = (name, questionRandom) =>{
                                     </tr>
                                     <tr>
                                         <td style="color: #41FD5B;">
-                                            <div style="border: #41FD5B solid 4px; border-radius: 4px;background-color: #007410; padding: 4px 0px">B: 443</div></td>
+                                            <div style="border: #41FD5B solid 4px; border-radius: 4px;background-color: #007410; padding: 4px 0px">B: ${questionRandom[0].answerOptions[1].answer}</div></td>
                                     </tr>
                                     <tr>
                                         <td style="color: #41FD5B;">
-                                            <div style="border: #41FD5B solid 4px; border-radius: 4px;background-color: #007410; padding: 4px 0px">C: 21
+                                            <div style="border: #41FD5B solid 4px; border-radius: 4px;background-color: #007410; padding: 4px 0px">C: ${questionRandom[0].answerOptions[2].answer}
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td style="color: #41FD5B;">
-                                            <div style="border: #41FD5B solid 4px; border-radius: 4px;background-color: #007410; padding: 4px 0px">D: 25
+                                            <div style="border: #41FD5B solid 4px; border-radius: 4px;background-color: #007410; padding: 4px 0px">D: ${questionRandom[0].answerOptions[3].answer}
                                             </div>
                                         </td>
                                     </tr>
@@ -134,15 +136,10 @@ const getEmailTemplate = (name, questionRandom) =>{
                             <td style="padding: 10px; text-align: center; font-size: 16px; background-color: #003407; color: #FFF;">
     
                                 <!-- Details Element -->
-                                <details style="font-family: 'Oxygen', Arial, sans-serif; padding-bottom: 40px;">
-                                    <summary style="cursor: pointer; color: #41FD5B; font-weight: bold; ">Show the correct answer</summary>
-                                    <p style="margin: 10px 0 0; color: #FFF;">The correct answer is <span style="color: #41FD5B;"><strong> ${correctAnswer}</strong></span>.</p>
-                                </details>
-    
-                                <!-- Alternative Text for Unsupported Clients -->
-                                <noscript>
-                                    <p style="color: #333;">The correct answer is <span style="color: #41FD5B;"><strong> 80</strong></span>.</p>
-                                </noscript>
+                                <div>
+                                    <p style="margin: 10px 0 0; color: #FFF;">The correct answer is </p>
+                                    <p style="margin: 10px 0 0"> <span style="color: #41FD5B;"><strong> ${correctAnswer}</strong></span>.</p>
+                                </div>
                             </td>
                         </tr>
     
@@ -157,7 +154,7 @@ const getEmailTemplate = (name, questionRandom) =>{
     
                         <tr>
                             <td style="padding: 20px;">
-                                <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #41FD5B; color: #003407; border: 4px solid #003407; text-decoration: none; border-radius: 4px; font-weight: bold;">Learn More</a>
+                                <a href="https://codequestapi.onrender.com/" style="display: inline-block; padding: 10px 20px; background-color: #41FD5B; color: #003407; border: 4px solid #003407; text-decoration: none; border-radius: 4px; font-weight: bold;">Learn More</a>
                             </td>
                         </tr>
                         <!-- Footer -->
@@ -165,7 +162,6 @@ const getEmailTemplate = (name, questionRandom) =>{
                             <td style="padding: 20px; font-size: 12px; color: #666666; text-align: center;">
                                 <p style="margin: 0;">
                                     <a href="#" style="color: #666666; text-decoration: none;">View email in browser</a> | 
-                                    <a href="#" style="color: #666666; text-decoration: none;">Update your preferences</a> | 
                                     <a href="https://gmail.us22.list-manage.com/unsubscribe?u=950aade7ef40ce13abf1178e1&id=58371aa183&t=1" style="color: #666666; text-decoration: none;">Unsubscribe</a>
                                 </p>
                             </td>
@@ -177,7 +173,7 @@ const getEmailTemplate = (name, questionRandom) =>{
     </body>
     </html>
     
-`        
+`
 }
 
-module.exports = {  getEmailTemplate }
+module.exports = { getEmailTemplate }
