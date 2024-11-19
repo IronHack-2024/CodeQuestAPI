@@ -72,7 +72,7 @@ function convertiraJson(markdown) {
     //llama a la funcion crea el array de opciones, poniendo las tres incorrectas primero y la correcta (True) al final
     const answerOptions = getAnswersOptions(correctAnswers, incorrectAnswers);
     if (!QUESTIONS_CATEGORIES.includes(categories)) {
-      categories = [titulo];
+      categories = ["other"];
     }
     // Crear el objeto
     const question = {
