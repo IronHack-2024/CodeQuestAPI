@@ -29,6 +29,12 @@ app.get("/daily-question", async (req, res) => {
 });
 
 
+const MAILCHIMPKEY = process.env.MAILCHIMPKEY;
+mailchimp.setConfig({
+  apiKey: MAILCHIMPKEY, // API key in dotenv
+  server: "us22", // Prefix of of API Server, found in Key end
+});
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, async () => {
