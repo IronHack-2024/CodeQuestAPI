@@ -10,6 +10,8 @@ const {
 } = require("./services/question.services");
 const { shuffleArray } = require("./utils/utils");
 const cors = require("cors");
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocs = require('./config/swagger.config');
 
 const limiter = rateLimit({
   windowMs: 60 * 1000, // 60 seconds
@@ -34,6 +36,7 @@ app.use(
         defaultSrc: ["'self'"],
         styleSrc: [
           "'self'",
+          "https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui.css",
           "https://cdn.tailwindcss.com",
           "https://cdn.jsdelivr.net",
           "https://cdnjs.cloudflare.com",
@@ -43,6 +46,7 @@ app.use(
         fontSrc: ["'self'", "https://fonts.gstatic.com"],
         scriptSrc: [
           "'self'",
+          "https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui-bundle.js",
           "https://cdn.tailwindcss.com",
           "'unsafe-eval'",
           "'unsafe-inline'",
@@ -54,6 +58,7 @@ app.use(
 
 app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.use(express.static("public"));
 app.options("/api/*", cors({ methods: ["GET"], origin: "*" }));

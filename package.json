@@ -20,6 +20,8 @@
 		"helmet": "^8.0.0",
 		"mongoose": "^8.8.1",
 		"path": "^0.12.7",
+		"swagger-jsdoc": "^6.2.8",
+		"swagger-ui-express": "^5.0.1",
 		"xlsx": "^0.18.5"
 	},
 	"devDependencies": {

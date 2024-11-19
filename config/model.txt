@@ -1,0 +1,12 @@
+// "components": 
+// {
+// 	"schemas": 
+// 	{
+// 		"question": 
+// 		{
+// 			"properties": {
+// 				"question": { "type": "string", "required": true}, "codeExamples": { "type": [ "string" ] }, "answerOptions": [{ "answer": { "type": "string", "required": true }, "isCorrect": { "type": "boolean", "required": true }}],
+// 			},
+// 		},
+// 	},
+// }

@@ -7,6 +7,18 @@ const {
 } = require("../services/question.services");
 const { shuffleArray } = require("../utils/utils");
 
+const getHome = async (req, res) => {
+  res.render("home");
+};
+
+const getAboutUs = async (req, res) => {
+  res.render("about-us");
+};
+
+const getDocs = async (req, res) => {
+  res.render("docs");
+};
+
 const validateCheckboxNewQuestion = (obj) => {
   //Function receives information from req.body and validate checkbox status
   //1) Validate exists at least one correct answer
@@ -136,7 +148,7 @@ const getDailyQuestion = async (req, res) => {
     };
   });
   // Renderizar la página con la pregunta y las opciones
-  res.render("home", { questionsWithShuffledAnswers });
+  res.render("daily-question", { questionsWithShuffledAnswers });
 };
 
 const newQuestionForm = (req, res) => {
@@ -207,6 +219,9 @@ const createNewQuestion = async (req, res) => {
 };
 
 module.exports = {
+  getHome,
+  getAboutUs,
+  getDocs,
   newQuestionForm,
   createNewQuestion,
   getTemplateQuestions,

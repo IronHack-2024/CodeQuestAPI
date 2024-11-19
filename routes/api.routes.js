@@ -1,4 +1,5 @@
-const express = require("express");
+const express = require('express');
+const questions = require('../models/question.model');
 const { rateLimit } = require("express-rate-limit");
 const router = express.Router();
 const apiControllers = require("../controllers/api.controllers");
@@ -18,5 +19,7 @@ const customLimiter = rateLimit({
 router.get("/v1/questions/random", apiControllers.getRandomQuestions);
 
 router.get("/v1/questions/ai", customLimiter, apiControllers.getAiQuestions);
+
+router.get('/v1/test-swagger', apiControllers.getTestSwaggerOption);
 
 module.exports = router;
