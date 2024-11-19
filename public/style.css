@@ -23,13 +23,77 @@ body {
     margin: 0 20% 0 20%;
     font-weight: 400
   }
-
+/* --------------------------nav bar */
   header {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 36px;
     justify-content: space-between;
+    font-family: Oxanium;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  
+  .hamburger {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Menu Styling */
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Hide menu by default on mobile */
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 57px;
+    right: 0;
+    width: 33%;
+    background-color: #245f2c;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+  }
+  
+  .nav-menu li {
+    padding: 0.5rem 0;
+  }
+  
+  .nav-menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Show menu when .show class is added */
+  .nav-menu.show {
+    display: flex;
+  }
+  
+  .logo-div{
+    display: flex;
+    color: #41fd5b;
+    gap: 1rem;
+    align-items: center;
+    font-family: "Press Start 2P", system-ui;
+  }
+  .logo-div p{
+    padding-top: 0.35rem;
+  }
+  .header-items {
+    color: #41fd5b;
+    display: flex;
+    gap: 40px;
+    padding-right: 20px;
+    z-index: 1000;
   }
   
   .header-items {
@@ -87,6 +151,10 @@ body {
       position: relative;
       max-width: none ;
       filter: grayscale(100%); /* make the image black and white */
+  }
+  .headshot:hover {
+    background-color: #41fd5b;
+    filter: none
   }
   
   @media (max-width: 768px) {
@@ -235,22 +303,108 @@ body {
     letter-spacing: 0.15em; /* Adjust as needed */
     animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
   }
+  .typewriter-container::after{
+    display: flex;
+    flex-direction: column;
+  }
+  
+.home-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: 25vh;
+  margin: 0 10%;
+}
+.home-text a:hover{
+  font-weight: 600;
+  text-decoration: underline;
+}
+.flex{
+  justify-content: center;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+
   
   @media (max-width: 1024px) {
     .typewriter h1 {
       /* Styles for screens 1024px or narrower */
       font-size: 60px;
     }
+    .examples-container {
+      width: 700px;
+    }
+  
+    .docs-text {
+      font-size: 1.1rem;
+    }
+  
+    .body-text {
+      width: 700px;
+    }
+  
+    .image-grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
   }
   
   @media (max-width: 768px) {
+    .examples-container {
+      width: 500px;
+    }
+  
+    .body-text {
+      width: 500px;
+    }
+  
+    .collapsible-header {
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: flex;
+    }
+  
+    .headshot {
+      height: 250px;
+      width: 250px;
+    }
+  
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      width: 100%;
+    }
     .typewriter h1 {
       /* Styles for screens 768px or narrower */
       font-size: 50px;
+      .image-grid {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+      }
     }
   }
   
   @media (max-width: 576px) {
+    .examples-container {
+      width: 380px;
+    }
+  
+    .pixelated-header {
+      font-size: 14px;
+    }
+  
+    .body-text {
+      width: 380px;
+    }
     .typewriter h1 {
       /* Styles for screens 576px or narrower */
       font-size: 30px;
@@ -258,6 +412,22 @@ body {
   }
   
   @media (max-width: 400px) {
+    .typewriter h1 {
+      /* Styles for screens 400px or narrower */
+      font-size: 26px;
+    }
+    .examples-container {
+      width: 320px;
+    }
+  
+    .pixelated-header {
+      font-size: 11px;
+    }
+  
+    .body-text {
+      width: 320px;
+    }
+  
     .typewriter h1 {
       /* Styles for screens 400px or narrower */
       font-size: 26px;
@@ -307,3 +477,39 @@ body {
       border-color: white;
     }
   }
+
+  /* docs */
+
+.examples-container {
+  width: 1000px;
+}
+
+.docs-text {
+  font-size: 1.3rem;
+  color: white;
+  font-family: oxanium;
+  border: solid white 1px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.daily-question {
+  word-spacing: -6px
+}
+
+.pixelated-header {
+  color: white;
+  font-size: 24px;
+}
+
+.body-text {
+  color: white;
+  width: 1000px;
+  font-family: 'Oxanium';
+  font-size: 1.3rem;
+}
+
+
+
+
+
