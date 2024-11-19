@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>404 - Page Not Found</title>
-    <link rel="stylesheet" href="/css/error.css" />
-  </head>
-  <body>
-    <div class="error-container">
-      <h1>Error 404</h1>
-      <p><%= message %></p>
-      <%/* ToDo Hay que añadir un enlace para volver a la página principal */%>
-      <a href="/api/v1/questions/random">Return to Home</a>
+  <%- include('./partials/head.ejs') %>
+
+  <body class="bg-black items-center justify-center h-screen" style="font-family: 'Oxanium', sans-serif">
+    <div class="flex">
+    <h1 class="text-2xl font-bold mb-4 text-white" style="font-family: 'Press Start 2P', sans-serif">Error 404</h1>
+    <div class="m-6 border-4 border-primaryGreen bg-backgroundGreen p-6 rounded-lg shadow-lg text-center w-9/12">
+      <p style="font-family: 'Oxanium', sans-serif"><%= message %></p>
+      <a href="/">Return to Home</a>
     </div>
+    </div>
+<script>
+   tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primaryGreen: '#41fd5b',
+          secondaryGreen: '#007410',
+          darkGreen: '#35cb49',
+          backgroundGreen: '#003407',
+          errorRed: '#FF7070',
+          secondaryErrorRed: '#DF6666'
+        },
+      },
+    },
+  };
+</script>
+
   </body>
 </html>

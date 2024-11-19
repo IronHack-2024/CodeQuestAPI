@@ -8,9 +8,11 @@ const getHome = async (req, res) => {
 	res.render('home')
 };
 
+
 const getAboutUs = async (req, res) => {
 	res.render('about-us')
 };
+
 
 const getDocs = async (req, res) => {
 	res.render('docs')
@@ -27,9 +29,12 @@ const validateCheckboxNewQuestion = (obj) => {
 	console.log(hasCorrectAnswer)
 	return hasCorrectAnswer;
 }
+
+
 const getFormTemplate = async (req, res) => {
 	res.render("template-form", {});
 };
+
 
 const getTemplateQuestions = async (req, res) => {
 	const { numberQuestions } = req.query;
@@ -126,6 +131,7 @@ const getTemplateQuestions = async (req, res) => {
 	});
 };
 
+
 const getDailyQuestion = async (req, res) => {
 	// Obtener la pregunta correspondiente al día
 	const questions = await getRandomQuestionsDB(1, { codeExamples: [] });
@@ -139,10 +145,12 @@ const getDailyQuestion = async (req, res) => {
   res.render('daily-question',  {questionsWithShuffledAnswers} );
 };
 
+
 const newQuestionForm = (req, res) => {
 	let message = '';
 	res.render('new-question', { message });
 };
+
 
 const createNewQuestion = async (req, res) => {
 	try {
@@ -194,6 +202,7 @@ const createNewQuestion = async (req, res) => {
 	}
 
 };
+
 
 module.exports = {
 	getHome,
