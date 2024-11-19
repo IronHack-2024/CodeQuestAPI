@@ -17,15 +17,46 @@
 
             <div class="typewriter-container">
                 <div class="typewriter">
-                    <h1>CODE QUEST API</h1>
+                    <h1 class="customGreen">CODE QUEST API</h1>
                 </div>
             </div>
-            <div class="home-text">
-                <h1>The ultimate API for programming questions. Access random and AI-generated questions to enhance your coding skills.</h1>
-                <h1><a href="/daily-question">Challenge your knowledge here!</a></h1>
-                <div class="flex-row">
-                    <h1><a href="/about-us">Find out more about the team</a></h1>
-                    <h1><a href="https://github.com/IronHack-2024/CodeQuestAPI"><img src="./icons/mdi_github.svg"/></a></h1>
+            
+            <div>
+                <h1 class="text-xl h-25vh">The ultimate API for programming questions. Access random and AI-generated questions to enhance your coding skills.</h1>
+            </div>
+            <div class="w-3/5 mx-auto text-white">
+
+                <h2 class="text-white mt-16" >WEEKLY QUEST SUBSCRIPTION</h2>
+                <div class="mt-8 p-8 border-solid border-4 border-customGreen rounded bg-darkGreen2 flex flex-col gap-8 font-customFont">
+                    <p>Register to receive every week a new challenge</p>
+                    <div class="flex flex-row justify-start">
+                        <input class="px-8 py-2 border border-slate-300" type="text" placeholder="your email here..." name="" id="">
+                        <button class="px-8 py-2 text-black font-customFont rounded bg-customGreen">Subscribe!</button>
+                    </div>
+                </div>
+
+                <h2 class="text-white mt-16" >GETTING STARTED</h2>
+                <div class="border-solid border-4 border-customGreen rounded mt-8 p-4 flex flex-col items-center gap-8">
+                   
+                    <div class="py-8 flex flex-col gap-8">
+                        <button class="px-8 py-2 text-black font-customFont rounded bg-customGreen">                        
+                            <h1 class="text-black"><a href="/daily-question">Challenge your knowledge here!</a></h1>
+                        </button>
+                        <button class="px-8 py-2 text-black font-customFont rounded bg-customGreen">                        
+                            <div class="flex flex-row">
+                                <h1 class="text-black"><a href="/about-us">Find out more about the team</a></h1> 
+                                
+                                <!-- <h1 class="text-black"><a href="https://github.com/IronHack-2024/CodeQuestAPI"> -->
+                                    <!-- <img src="./icons/mdi_github.svg"/> -->
+                                </a></h1>
+                            </div>
+                        </button>
+
+                    </div>
+                </div>
+                <h2 class="text-white mt-16" >BASIC USAGE</h2>
+                <div class="my-8 p-8 border-solid border-4 border-customGreen rounded bg-darkGreen2 flex flex-col gap-8 font-customFont">
+                    <p>How to use this api...</p>
                 </div>
             </div>
 
@@ -33,6 +64,7 @@
         </div>
         <script src="/script.js"></script>
         <script src="/index.js"></script>
+        <script src="tailwind.js"></script>
 </body>
 
 </html>

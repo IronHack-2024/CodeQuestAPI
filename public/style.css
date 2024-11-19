@@ -170,25 +170,6 @@ body {
     filter: none
   }
   
-  .pixelated-header {
-      color: #41fd5b;
-      font-size: 24px;
-      }
-  
-  @media (max-width: 576px) {
-    .pixelated-header {
-      /* Styles for screens 576px or narrower */
-      font-size: 16px;
-    }
-  }
-  
-  @media (max-width: 400px) {
-    .pixelated-header {
-      /* Styles for screens 400px or narrower */
-      font-size: 12px;
-    }
-  }
-  
   .body-text {
     color: white;
     width: 1000px;
@@ -294,13 +275,14 @@ body {
   
   /* TERMINAL EFFECT CSS */
   .typewriter h1 {
-    font-size: 80px;
+    font-size: 3rem;
     color: #41fd5b;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 0.15em solid white; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
+    white-space: nowrap;
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 0.15em; /* Adjust as needed */
+    overflow: hidden;
     animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
   }
   .typewriter-container::after{
@@ -334,10 +316,6 @@ body {
 
   
   @media (max-width: 1024px) {
-    .typewriter h1 {
-      /* Styles for screens 1024px or narrower */
-      font-size: 60px;
-    }
     .examples-container {
       width: 700px;
     }
@@ -355,6 +333,16 @@ body {
       grid-template-rows: repeat(4, 1fr);
     }
   }
+@media (max-width: 810px) {
+  .typewriter h1 {
+    text-wrap: wrap;
+    white-space: normal;
+    width: 90%;
+    animation: none;
+  }
+  
+}
+
   
   @media (max-width: 768px) {
     .examples-container {
@@ -383,23 +371,11 @@ body {
       grid-template-rows: repeat(6, 1fr);
       width: 100%;
     }
-    .typewriter h1 {
-      /* Styles for screens 768px or narrower */
-      font-size: 50px;
-      .image-grid {
-        grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-      }
-    }
   }
   
   @media (max-width: 576px) {
     .examples-container {
       width: 380px;
-    }
-  
-    .pixelated-header {
-      font-size: 14px;
     }
   
     .body-text {
@@ -412,26 +388,15 @@ body {
   }
   
   @media (max-width: 400px) {
-    .typewriter h1 {
-      /* Styles for screens 400px or narrower */
-      font-size: 26px;
-    }
+
     .examples-container {
       width: 320px;
     }
-  
-    .pixelated-header {
-      font-size: 11px;
-    }
-  
+
     .body-text {
       width: 320px;
     }
-  
-    .typewriter h1 {
-      /* Styles for screens 400px or narrower */
-      font-size: 26px;
-    }
+
   }
   
   .typewriter-container {
@@ -440,7 +405,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: calc(100vh - 70px);
+  height: 75vh;
   position: relative;
   }
   
@@ -497,9 +462,8 @@ body {
   word-spacing: -6px
 }
 
-.pixelated-header {
+.pixelated-text {
   color: white;
-  font-size: 24px;
 }
 
 .body-text {
