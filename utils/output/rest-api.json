@@ -1,0 +1,1730 @@
+[
+  {
+    "categories": ["rest-api"],
+    "question": "What type of relationship is defined as one resource existing only if another parent resource exist-for example, pages in a book?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`Partial`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`associative`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`linked`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`dependent`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which URL pattern is recommended when working with one resource and a collection of resources?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`/companies/{id} and /company`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`/company/{id} and /companies`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`/company/{id} and /company`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`/companies/{id} and /companies`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "When dealing with JSON web Tokens (JWTs), what is a claim?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`Ownership`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a permission`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`and integer`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`data in the token`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which REST constraint specifies that knowledge and understanding obtained from one component of the API should be generally applicable elsewhere in the API?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`Client-Server`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Stateless`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Chacheable`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Uniform Interface`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What would you enable to allow a browser on another site to make an AJAX request to your API?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`HTTP`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`REST`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`OPTIONS`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`CORS`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "APIs commonly use webhooks to **\\_**.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`catch error faster`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`improve error logging`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`log additional data`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`notify other systems of an event`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What is the underlying goal of all APIs?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`to add new technologies to an organization's infrastructure.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`to move infrastructure to the cloud.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`to appease the latest digital transformation effort.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`to share features and functionality with other system.`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which is a common command-line tool for using or exploring an API?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`bash`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`ssh`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`powerShell`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`curl`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What is the modern specification for describing an API?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`WADL`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`WSDL`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`OAuth`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`OpenAPI (Swagger)`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which HTTP verb is normally used to update or create a resource in an API?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`SUBMIT`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`WRITE`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`CREATE`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`POST`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What is one benefit of server-side caching in APIs?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`Mobile app work better.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`It improves uptime.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`It offers better security.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`It reduce load on servers.`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Your API resource does not allow deletion, and a client application attempted to delete the resource. What HTTP response code should you return?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`409 Conflict`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`400 Bad Request`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`406 Not Acceptable`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`405 Method Not Allowed`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What is OpenID Connect?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`the new name for SAML 3.0`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a modern replacement for API keys`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`an SSO competitor for OAuth 2.0`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`an identify layer on top of OAuth 2.0`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What is one benefit of GraphQl over REST approaches?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`more stable APIs`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`compatible with more gateways`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`more secure by default`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`flexible querying/responses`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which REST constraint specifies that there should be no shared context?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`Client-Server`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Uniform Interface`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Cacheable`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Stateless`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What purpose does a User-Agent serve?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`It identifies the user ID.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`It identifies if the API should expect a user authentication.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`It identifies if the API should accept microservice traffic.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`It identifies the client application or SDK.`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "If you were to add versioning by using the Accept and Content-Type header, what would be the correct format of the header value?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`application/json`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`application/json_version2`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`text/html`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`application/vnd.myapp.v2+json`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What is one benefit that OAuth provides over an API key approach?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`A token is encrypted.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`A token is encoded.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`A token can be shared between systems.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`A token is scoped to the use case.`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "The ability to execute the same API request over and over again without changing the resource's state is an example of \\_.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`stateless architecture`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a uniform interface`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`cacheability`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`idempotency`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What component can you use to wrap legacy architectures or protocols into a REST interface for easier consumption and integration?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`API gateway`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`OpenAPI`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`OAuth authorization server`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`API proxy`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What protection does a JSON Web Token (JWT) offer to mitigate tampering with its contents?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`transport over SSL`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`encrypted payload`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`encoded payload`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a signature`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What OAuth term is used to represent permissions?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`token`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`claim`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`back channel`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`scope`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What additional type of token would you see when using OpenID Connect?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`refresh token`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`access token`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`auth code token`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`ID token`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What should you add to a Cache-Control response header to specify that a response should not be stored in an intermediary cache?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`no-proxy`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`client-only`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`restricted`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`private`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which OAuth grant type can support a refresh token?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`Client Credentials Grant`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Implicit Grant`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Authentication Grant`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Authorization Code Grant`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Using OAuth, what scope would you request for write access to the API?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`It varies from API to API.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`write`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`read-write`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`admin`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which property would you use to include subresources directly into a JSON document?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`_embedded`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`resources`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`_links`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`subresources`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What is the best way to track SDK and version usage?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`Accept headers`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`user agents`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`polling users`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`tracking downloads`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which REST constraint allows for the presence of caching, routing, and other systems between the client and server?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`Stateless`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Client-Server`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Cacheable`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Layered System`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which content is best to include in your documentation?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`your tech stack`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`reasoning for your naming schema`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`your mission statement`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`sample code`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What metric tracks overall availability for your API?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`Response Time`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Time to First Hello World`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`TTL`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Uptime`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What is the recommended method and URL pattern for retrieving a specific user?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`GET /user/{id}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`GET /user?id={id}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`GET /users?id={id}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`GET /users/{id}`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What is the purpose of a link relation?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`to describe relationships between resources or actions`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`to describe subresources related to the current one`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`to describe a resource and its purpose`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`to link two resources together`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "When building SDKs, which languages should you support?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Java, Javascript, and .NET",
+        "isCorrect": false
+      },
+      {
+        "answer": "and you can support",
+        "isCorrect": false
+      },
+      {
+        "answer": "PHP, Python, and Go",
+        "isCorrect": false
+      },
+      {
+        "answer": "the languages that your target users use",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which property would you use to include references to other resources in a JSON document?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`_embedded`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`subresources`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`_links`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`resources`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What is OAuth?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "an approach to single sign-on for APIs",
+        "isCorrect": false
+      },
+      {
+        "answer": "a method for API authentication",
+        "isCorrect": false
+      },
+      {
+        "answer": "HTTP Basic Authentication 2.0",
+        "isCorrect": false
+      },
+      {
+        "answer": "an authorization framework for granted delegated access",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What should your API documentation describe?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "JSON",
+        "isCorrect": false
+      },
+      {
+        "answer": "HTTP",
+        "isCorrect": false
+      },
+      {
+        "answer": "your tech stack",
+        "isCorrect": false
+      },
+      {
+        "answer": "common use cases",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What is the purpose of an OAuth refresh token?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "to share user profile information",
+        "isCorrect": false
+      },
+      {
+        "answer": "to update an API configuration",
+        "isCorrect": false
+      },
+      {
+        "answer": "to keep a web session active",
+        "isCorrect": false
+      },
+      {
+        "answer": "to retrieve an access token",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What is Time to First Hello World?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "how long it takes to start a new programming language",
+        "isCorrect": false
+      },
+      {
+        "answer": "how long it takes to install your SDK",
+        "isCorrect": false
+      },
+      {
+        "answer": "how long it takes to read your documentation",
+        "isCorrect": false
+      },
+      {
+        "answer": "how long it takes for a developer to do something with your API",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which response header tells the client and intermediaries that the response is not to be cached anywhere?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Cache-State: none",
+        "isCorrect": false
+      },
+      {
+        "answer": "Expires:-1",
+        "isCorrect": false
+      },
+      {
+        "answer": "Cache-Control: no-cache",
+        "isCorrect": false
+      },
+      {
+        "answer": "Cache-Control: no-store",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What component hides the distinctions or boundaries between various microservices from end-client applications?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`API logging `",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a layered system `",
+        "isCorrect": false
+      },
+      {
+        "answer": "`API proxy`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`API gateway`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "The textbook approach to api versioning is to use **\\_**.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`common knowledge`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`URLs`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`no versioning`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`the Accept header`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which is the most secure method to transmit an API key?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`URL parameter`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Base64 encoding`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Basic Auth`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Authorization header`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Within Oauth, what component validates the user's identity?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`client`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`not specified`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`resource server`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`authorization server`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "API traffic that is entirely internal to your organization is normally called \\_?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`inbound traffic`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`north-south traffic `",
+        "isCorrect": false
+      },
+      {
+        "answer": "`east-west traffic`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`internal traffic `",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What is the best approach for requesting JSON instead of XML from an API?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`Add .json to the URL.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`APIs do not use XML.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Use the Content-Type header.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Use the Accept header.`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "When a user attempts to access a record that is not their own, which HTTP response code is the most appropriate?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`404`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`401`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`405`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`403`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which is a benefit of using an API gateway?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`HTTP verbs`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`JSON payloads`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`HTTP response codes`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`rate limiting/throttling`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "API testing must be treated as **\\_**?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`red team testing`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`white box testing`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`blue box testing`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`black box testing`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which HTTP verb is used in a CORS preflight request?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`PUT`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`POST`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`GET`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`OPTIONS`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which response header will tell the client that the response is cached for 1 minute ?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`Expires: 1 minute`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Expires: 1 January 2020`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Cache-Expires: max-age=60`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Cache-Control: max-age=60`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What is the concept that allows an API client to explore an API via links embedded in payloads?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`hypermedia`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`parsing`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`browsing`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`link relations`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "To create a new resource, what HTTP response code should you receive?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`405`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`204`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`202`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`201`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which is an example of Code on Demand?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "AWS Lambda",
+        "isCorrect": false
+      },
+      {
+        "answer": "downloading open-source software",
+        "isCorrect": false
+      },
+      {
+        "answer": "Serverless",
+        "isCorrect": false
+      },
+      {
+        "answer": "JavaScript on a webpage",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which URL pattern should you follow for accessing a subresource attached to a specific resource?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "/companies/employees/{companyId}/{employeeId}",
+        "isCorrect": false
+      },
+      {
+        "answer": "/company/{companyId}/employees/{employeeId}",
+        "isCorrect": false
+      },
+      {
+        "answer": "/companies/{companyId}/employee/{employeeId}",
+        "isCorrect": false
+      },
+      {
+        "answer": "/companies/{companyId}/employees/{employeeId}",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which REST constraint essentially prohibits the use of cookies?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Cacheable",
+        "isCorrect": false
+      },
+      {
+        "answer": "Layered System",
+        "isCorrect": false
+      },
+      {
+        "answer": "Uniform Interface",
+        "isCorrect": false
+      },
+      {
+        "answer": "Stateless",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which HTTP verb is used to delete a resource?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "FLUSH",
+        "isCorrect": false
+      },
+      {
+        "answer": "CLEAR",
+        "isCorrect": false
+      },
+      {
+        "answer": "DESTROY",
+        "isCorrect": false
+      },
+      {
+        "answer": "DELETE",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which verb is _not_ considered idempotent?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "DELETE",
+        "isCorrect": false
+      },
+      {
+        "answer": "GET",
+        "isCorrect": false
+      },
+      {
+        "answer": "PUT",
+        "isCorrect": false
+      },
+      {
+        "answer": "POST",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which REST constraint specifies that each request should stand on its own and not have a specific required order?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Uniform Interface",
+        "isCorrect": false
+      },
+      {
+        "answer": "Cacheable",
+        "isCorrect": false
+      },
+      {
+        "answer": "Client-Server",
+        "isCorrect": false
+      },
+      {
+        "answer": "Stateless",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "When you get a 429 response code, what should you do next?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Check you JSON structure.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Check the API uptime status.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Check you API key.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Slow down your requests.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "When exploring record sets, what is the best approach for pagination?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "date-based filtering",
+        "isCorrect": false
+      },
+      {
+        "answer": "page size and filters",
+        "isCorrect": false
+      },
+      {
+        "answer": "database IDs",
+        "isCorrect": false
+      },
+      {
+        "answer": "next/previous cursors",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "What is _not_ a method for API authentication or authorization?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "OAuth",
+        "isCorrect": false
+      },
+      {
+        "answer": "API Keys",
+        "isCorrect": false
+      },
+      {
+        "answer": "username and password",
+        "isCorrect": false
+      },
+      {
+        "answer": "biometrics",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which HTTP response code usually means the requested work is still processing and may or may not result in an error later?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "200 OK",
+        "isCorrect": false
+      },
+      {
+        "answer": "204 No Content",
+        "isCorrect": false
+      },
+      {
+        "answer": "201 Created",
+        "isCorrect": false
+      },
+      {
+        "answer": "202 Accepted",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "When validating a JWT, what are some of the claims that you must confirm? (Select all that apply.)",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "B,C,F,G",
+        "isCorrect": false
+      },
+      {
+        "answer": "A,D,G,H",
+        "isCorrect": false
+      },
+      {
+        "answer": "A,C,E,G",
+        "isCorrect": false
+      },
+      {
+        "answer": "A,B,E,H",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "API traffic that enters and leaves your organization is normally called **\\_**?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`east-west traffic`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`inbound traffic`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`external traffic`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`north-south traffic`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which OAuth grant type is appropriate for mobile apps?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Client Credentials",
+        "isCorrect": false
+      },
+      {
+        "answer": "Device",
+        "isCorrect": false
+      },
+      {
+        "answer": "Resource Owner Password",
+        "isCorrect": false
+      },
+      {
+        "answer": "Authorization Code with PKCE",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which datetime format is the easiest or most predictable to parse and process?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`YY-M-D hh:mm:ss+TZ`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`YY-M-D h:mm:ss`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`YYYY-M-D hh:mm:ss`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`YYYY-MM-DDThh:mm:ssZ`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which header is _not_ used in cache management?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Expires",
+        "isCorrect": false
+      },
+      {
+        "answer": "Etag",
+        "isCorrect": false
+      },
+      {
+        "answer": "Cache-Control",
+        "isCorrect": false
+      },
+      {
+        "answer": "Rate-Limit",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "A client application uses a filter or a search in your API correctly but there are zero results. What is the best response code?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "204 No Content",
+        "isCorrect": false
+      },
+      {
+        "answer": "400 Bad Request",
+        "isCorrect": false
+      },
+      {
+        "answer": "404 Not Found",
+        "isCorrect": false
+      },
+      {
+        "answer": "200 OK",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "Which HTTP verb is normally used to retrieve or create a resource in an API?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`RETRIEVE`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`FORM`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`READ`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`GET`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "To create a new resource, what HTTP response code should you receive?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`200`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`405`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`204`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`201`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  },
+  {
+    "categories": ["rest-api"],
+    "question": "You are developing a RESTful API for a new project on GitHub. Security is a top priority, and you want to ensure that only authorized users can access specific endpoints. Which of the following mechanisms should you use to achieve this goal?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "API rate limiting",
+        "isCorrect": false
+      },
+      {
+        "answer": "Basic Authentication",
+        "isCorrect": false
+      },
+      {
+        "answer": "HTTP Basic Auth",
+        "isCorrect": false
+      },
+      {
+        "answer": "OAuth 2.0",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/rest-api/rest-api-quiz.md"
+  }
+]
