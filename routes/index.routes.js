@@ -10,5 +10,9 @@ router.get('/daily-question', indexControllers.getDailyQuestion)
 router.get('/export-questions', indexControllers.getTemplateQuestions);
 router.get('/submit-new-question', indexControllers.newQuestionForm);
 router.post('/submit-new-question', indexControllers.createNewQuestion);
+router.get('/subscribed-contacts', indexControllers.getSubscribedContacts);
+router.get('/subscribe', indexControllers.getSubscription);
+router.post('/subscribe', indexControllers.postSubscription);
+
 
 module.exports = router;
