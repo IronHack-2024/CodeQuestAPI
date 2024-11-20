@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <%- include('./partials/head.ejs') %>
+<header class="collapsible-header">
+    <div class="logo-div">
+        <a href="/"><img class="logo" src="./images/image.svg" alt="logo" /></a>
+        <p><a href="">Code Quest API</a></p>
+    </div>
+</header>
+<body class="h-screen bg-black items-center justify-center" style="font-family: 'Oxanium', sans-serif">
+  <div class="flex flex-wrap items-center justify-center">
 
-  <body class="bg-black items-center justify-center h-screen" style="font-family: 'Oxanium', sans-serif">
-    <div class="flex">
-    <h1 class="text-2xl font-bold mb-4 text-white" style="font-family: 'Press Start 2P', sans-serif">Error 404</h1>
-    <div class="m-6 border-4 border-primaryGreen bg-backgroundGreen p-6 rounded-lg shadow-lg text-center w-9/12">
+    <h1 class="text-2xl font-bold mt-20 text-white w-full text-center" style="font-family: 'Press Start 2P', sans-serif">Error 404</h1>
+
+    <div class="m-6 border-4 border-primaryGreen bg-backgroundGreen p-6 rounded-lg shadow-lg text-center w-full max-w-md">
       <p class="text-primaryGreen" style="font-family: 'Oxanium', sans-serif"><%= message %></p>
-      <p class="text-primaryGreen">Return to <a href="/">Home</a></p>
+      <p class="text-primaryGreen">Return to <a class="hover:text-secondaryGreen hover:underline hover:decoration-2" href="/">Home.</a></p>
     </div>
-    </div>
+
+  </div>
+
+
 <script>
    tailwind.config = {
     theme: {
@@ -27,5 +37,5 @@
   };
 </script>
 
-  </body>
+</body>
 </html>
