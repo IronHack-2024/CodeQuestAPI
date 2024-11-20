@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subscribe</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Oxygen:wght@300;400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
-
-</head>
-<body class="bg-black text-white font-family flex justify-center m-8">
-    
-    <div class="bg-darkGreen2  flex flex-col items-center inline-flex gap-4 m-4 p-4 rounded border-2 border-customGreen -left">
-        <h1 class="font-bold text-xl mb-[16px]">Know more</h1>
-        <form action="/subscribe" method="POST"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Oxygen:wght@300;400;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black text-white font-family flex justify-center m-8">
+    <div
+      class="bg-darkGreen2 flex flex-col items-center inline-flex gap-4 m-4 p-4 rounded border-2 border-customGreen -left"
+    >
+      <h1 class="font-bold text-xl mb-[16px]">Know more</h1>
+      <form
+        action="/subscribe"
+        method="POST"
         class="gap-4 m-4 flex flex-col items-center"
+      >
+        <label class="" for="email"
+          >Subscribe to get your weekly quest !!</label
         >
-            <label class="" for="email">Subscribe to get your weekly quest !!</label>
-            <div class="flex flex-row gap-4">
-                <input type="email" id="email" name="email" required placeholder="&nbsp;&nbsp;Enter your email"
-                class="focus:border-customGreen text-black px-2 py-1 rounded"
-                >
-                <button type="submit"
-                class="bg-lime-500 border-2 border-customGreen hover:bg-lime-700 text-white font-bold py-2 px-4 rounded"
-                >Subscribe</button>
-            </div>
-        </form>
+        <div class="flex flex-row gap-4">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="&nbsp;&nbsp;Enter your email"
+            class="focus:border-customGreen text-black px-2 py-1 rounded"
+          />
+          <button
+            type="submit"
+            class="bg-lime-500 border-2 border-customGreen hover:bg-lime-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Subscribe
+          </button>
+        </div>
+      </form>
     </div>
 
-
     <script>
-                tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                    customGreen: '#41fd5b',
-                    darkGreen: '#35cb49',
-                    darkGreen2: '#003407'
-                    },
-                },
-                
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              customGreen: "#41fd5b",
+              darkGreen: "#35cb49",
+              darkGreen2: "#003407",
             },
-        };
+          },
+        },
+      };
     </script>
-</body>
+  </body>
 </html>
 
 <!-- fontFamily: {

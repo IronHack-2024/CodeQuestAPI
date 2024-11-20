@@ -1,53 +1,31 @@
-// const express = require("express");
-const connectDB = require("../config/db");
-const dotenv = require("dotenv");
-const indexRouter = require("../routes/index");
-const { getRandomQuestion } = require("../services/question.services");
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 const nodemailer = require("nodemailer");
-const { getEmailTemplate} = require("../emailtemplate.js");
 const cron = require("node-cron");
-const Questions = require("../models/question.model.js");
-const questionService = require('../services/question.services')
-require('dotenv').config();
-const getRandomQuestions = async (req, res) => {
-	try {
-		let { amount } = req.query;
-		amount = parseInt(amount, 10);
+const questionService = require("../services/question.services");
+const { getEmailTemplate } = require("../emailtemplate");
+const { shuffleArray } = require("../utils/utils");
+require("dotenv").config();
 
-		//validation of amount
-		if (isNaN(amount) || amount < 1) {
-			amount = 10;
-		} else if (amount > 30) {
-			amount = 30;
-		}
+// Настройка Mailchimp
+mailchimp.setConfig({
+  apiKey: process.env.MAILCHIMPKEY,
+  server: "us22",
+});
 
-		const randomQuestion = await questionService.getRandomQuestion(amount);
+const listId = "58371aa183"; // Замените на ваш актуальный List ID
 
-		res.status(200).json({
-			message: "Random questions delivered successfully",
-			results: randomQuestion
-		});
+// Рендеринг главной страницы
+const renderHomePage = (req, res) => {
+  res.render("home"); // Предполагается, что у вас есть шаблон 'home.ejs'
+};
 
-	} catch (error) {
-		res.status(500).json({
-			message: "Error fetching random questions",
-
-
-		})
-	}
-
-}
-
-const listId = "58371aa183";
-
+// GET запрос для страницы подписки
 const getSubscription = (req, res) => {
-	res.render('subscribe');
-}
-const postSubscription = async (req, res) => { 
+  res.render("subscribe"); // Ваш существующий шаблон 'subscribe.ejs'
+};
 
-//subscribe route to add contact to audience/ 58371aa183 is the listId from Chimp
-
+// POST запрос для подписки
+const postSubscription = async (req, res) => {
   const email = req.body.email;
 
   try {
@@ -55,82 +33,108 @@ const postSubscription = async (req, res) => {
       email_address: email,
       status: "subscribed",
     });
-    console.log(
-      `Successfully added contact for the weekly question. ID: ${response.id}`
-    );
+    console.log(`Successfully added contact: ${response.id}`);
     res.send(
       "Successfully added to our contact list. Thank you for subscribing for a weekly dev question"
     );
   } catch (error) {
     console.error(error);
-    res.send("There was an error at subsciption. Please, try again later.");
+    res.send("There was an error at subscription. Please, try again later.");
   }
-  
 };
 
+// Получение ежедневного вопроса
+const getDailyQuestion = async (req, res) => {
+  try {
+    const questions = await questionService.getRandomQuestion(1);
+    const question = questions[0]; // Получаем первый вопрос из массива
+    res.render("home", { question });
+  } catch (error) {
+    res.status(500).send("Error fetching daily question");
+  }
+};
 
-// añade contacto al audience list y mailchimp comprueba si contacto ya existe.
-// Function to Fetch Audience Contacts from Mailchimp
+// Получение случайных вопросов
+const getRandomQuestions = async (req, res) => {
+  try {
+    let { amount } = req.query;
+    amount = parseInt(amount, 10);
 
-const getSubscribedContacts = async (req,res) => {
+    if (isNaN(amount) || amount < 1) {
+      amount = 10;
+    } else if (amount > 30) {
+      amount = 30;
+    }
+
+    const randomQuestions = await questionService.getRandomQuestion(amount);
+
+    res.status(200).json({
+      message: "Random questions delivered successfully",
+      results: randomQuestions,
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: "Error fetching random questions",
+    });
+  }
+};
+
+// Получение подписанных контактов
+const getSubscribedContacts = async () => {
   try {
     const response = await mailchimp.lists.getListMembersInfo(listId, {
       status: "subscribed",
-      count: 100, // limit Fetch up to 100 contacts
+      count: 100,
     });
-    console.log("Contacts with subscribed status:", response.members.map(member => member.email_address));
-    return response.members.map((member) => member.email_address); // Return email addresses
+    console.log(
+      "Contacts with subscribed status:",
+      response.members.map((member) => member.email_address)
+    );
+    return response.members.map((member) => member.email_address);
   } catch (error) {
     console.error(
       "Error fetching subscribed contacts:",
       error.response ? error.response.body : error.message
     );
-    return []; // Return an empty array if there's an error
+    return [];
   }
-}
+};
 
-const APP_PASSWORD = process.env.APP_PASSWORD;
-
+// Настройка Nodemailer
 const transporter = nodemailer.createTransport({
   service: "gmail",
   host: "smtp.gmail.com",
-  port: 587, 
+  port: 587,
   secure: false,
   auth: {
     user: "codequestapi@gmail.com",
-    pass: APP_PASSWORD,
+    pass: process.env.APP_PASSWORD,
   },
 });
 
-let mailOptions = {
-  from: '"CodeQuestAPI"<codequestapi@gmail.com>',
-  to: "", // Placeholder, will be updated dynamically
-  subject: "Welcome to Our Weekly Code Quest!",
-  html: "", // Placeholder, will be updated dynamically
-};
-
- 
-
-async function sendEmails() {
-  const questionRandom = await getRandomQuestion(1);
+// Функция для отправки писем
+const sendEmails = async () => {
+  const questionRandom = await questionService.getRandomQuestion(1);
 
   try {
+    const contacts = await getSubscribedContacts();
 
-    const Contacts = await getSubscribedContacts(); // Pass the listId to fetchContacts
-
-    if (!Contacts.length) {
+    if (!contacts.length) {
       console.log("No contacts found in the audience.");
       return;
     }
-    // Loop through contacts and send personalized emails
-    for (const email of Contacts) {
-      console.log(`Sending email to ${email}`);
-      const name = email.split("@")[0]; // Use the part before '@' as a name
-      const htmlTemplate = getEmailTemplate(name, questionRandom);
-    //   console.log(htmlTemplate);
 
-      mailOptions.to = email;
-      mailOptions.html = htmlTemplate;
+    for (const email of contacts) {
+      console.log(`Sending email to ${email}`);
+      const name = email.split("@")[0];
+      const htmlTemplate = getEmailTemplate(name, questionRandom);
+
+      const mailOptions = {
+        from: '"CodeQuestAPI"<codequestapi@gmail.com>',
+        to: email,
+        subject: "Welcome to Our Weekly Code Quest!",
+        html: htmlTemplate,
+      };
 
       const info = await transporter.sendMail(mailOptions);
       console.log(`Email sent to ${email}: ${info.response}`);
@@ -138,30 +142,28 @@ async function sendEmails() {
   } catch (error) {
     console.error("Error sending emails:", error);
   }
-}
-//sending Emails with cron on scheduled time when opening endpoint
-// ("/sendEmails")
-const weeklyCrono = async (req, res) => {
-	console.log("Cron job started. It will run every Wednesday at 8 AM.");
+};
+
+// Планирование отправки писем
+const weeklyCrono = (req, res) => {
+  console.log("Cron job started. It will run every Wednesday at 8 AM.");
   try {
-    cron.schedule("* 8 * * 3", async () => {
+    cron.schedule("0 8 * * 3", async () => {
       console.log("Running scheduled weekly email job...");
       await sendEmails();
-      res.send("Emails have been successfully sent!");
     });
+    res.send("Cron job scheduled successfully.");
   } catch (error) {
     console.error("Error in /sendEmails route:", error);
-    res.status(500).send("Failed to send emails.");
+    res.status(500).send("Failed to schedule cron job.");
   }
 };
 
-weeklyCrono();
-
-
-
-module.exports = { 
-	getRandomQuestions,
-	postSubscription,
-	getSubscription,
-	getSubscribedContacts
- };
+module.exports = {
+  renderHomePage,
+  getSubscription,
+  postSubscription,
+  getDailyQuestion,
+  getRandomQuestions,
+  weeklyCrono,
+};
