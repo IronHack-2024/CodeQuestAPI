@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Submit New Question</title>
+  <%- include('./partials/head.ejs') %>
+</head>
+
+<body class="bg-black items-center justify-center h-screen" style="font-family: 'Oxanium', sans-serif">
+  <%- include('./partials/nav.ejs') %>
+    <form id="newQuestionForm" class="m-6 border-4 border-primaryGreen bg-backgroundGreen p-6 rounded-lg shadow-lg text-center" action="/submit-new-question"
+      method="POST">
+      <h1 class="text-2xl font-bold mb-2 text-white" style="font-family: 'Press Start 2P', sans-serif">SUBMIT NEW PROGRAMMING
+        QUESTION</h1>
+      <div>
+        <h2>Fill the form and you can add your questions to this amazing database. Share yours!</h2>
+      </div>
+      <div class="flex flex-col space-y-4 w-9/12">
+
+        <!-- Mostrar la pregunta -->
+        <label for="question" class="text-left text-primaryGreen">Write your question here:</label>
+        <textarea name="question" id="question" class="bg-gray-200 text-gray-800 p-2 rounded" required
+          maxlength="4000"></textarea>
+
+        <!-- Mostrar las opciones de respuesta -->
+        <p class="text-left text-primaryGreen">Write your answers here (please, mark the correct one/s):</p>
+
+        <div class="flex gap-4 justify-between">
+          <label for="answer1" hidden></label>
+          <input type="checkbox" id="answer1CheckBox" name="answer1CheckBox" value="true">
+          <input type="text" id="answer1Text" name="answer1Text" class="bg-gray-200 text-gray-800 p-2 rounded w-full"
+            required maxlength="1000">
+        </div>
+
+        <div class="flex gap-4 justify-between">
+          <label for="answer2" hidden></label>
+          <input type="checkbox" id="answer2CheckBox" name="answer2CheckBox" value="true">
+          <input type="text" id="answer2Text" name="answer2Text" class="bg-gray-200 text-gray-800 p-2 rounded w-full"
+            required maxlength="1000">
+        </div>
+
+        <div class="flex gap-4 justify-between">
+          <label for="answer3" hidden></label>
+          <input type="checkbox" id="answer3CheckBox" name="answer3CheckBox" value="true">
+          <input type="text" id="answer3Text" name="answer3Text" class="bg-gray-200 text-gray-800 p-2 rounded w-full"
+            required maxlength="1000">
+        </div>
+
+        <div class="flex gap-4 justify-between">
+          <label for="answer4" hidden></label>
+          <input type="checkbox" id="answer4CheckBox" name="answer4CheckBox" value="true">
+          <input type="text" id="answer4Text" name="answer4Text" class="bg-gray-200 text-gray-800 p-2 rounded w-full"
+            required maxlength="1000">
+        </div>
+
+      </div>
+      <input type="submit" value="SEND" class="bg-black text-white p-2 px-8 mt-4 rounded"
+        style="font-family: 'Press Start 2P', sans-serif">
+    </form>
+
+    <!--Cuadro de diálogo -->
+    <% if (message) { %>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <p>
+            <%= message %>
+          </p>
+          <button class="p-2" id="closeModal">Close</button>
+        </div>
+      </div>
+      <% } %>
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  primaryGreen: '#41fd5b',
+                  secondaryGreen: '#007410',
+                  darkGreen: '#35cb49',
+                  backgroundGreen: '#003407',
+                  errorRed: '#FF7070',
+                  secondaryErrorRed: '#DF6666'
+                },
+              },
+            },
+          };
+
+          const form = document.getElementById("newQuestionForm");
+          const modal = document.getElementById("modal");
+          const closeModal = document.getElementById("closeModal");
+
+          // Cerrar el modal
+          closeModal.addEventListener("click", function () {
+            modal.style.display = "none";
+            form.reset(); // Limpiar el formulario para agregar otra pregunta
+          });
+
+          // Cerrar el modal haciendo clic fuera del cuadro de diálogo
+          window.addEventListener("click", function (event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+              form.reset();
+            }
+          });
+
+          // form.addEventListener('submit', (event) => {
+
+          //   // NO envíes los datos todavía
+          //   event.preventDefault();
+
+          //   // Capturar datos del formulario
+          //   const question = document.getElementById("question").value;
+          //   const answerOptions = [
+          //     {
+          //       answer: document.getElementById("answer1Text").value,
+          //       isCorrect: document.getElementById("answer1CheckBox").checked,
+          //     },
+          //     {
+          //       answer: document.getElementById("answer2Text").value,
+          //       isCorrect: document.getElementById("answer2CheckBox").checked,
+          //     },
+          //     {
+          //       answer: document.getElementById("answer3Text").value,
+          //       isCorrect: document.getElementById("answer3CheckBox").checked,
+          //     },
+          //     {
+          //       answer: document.getElementById("answer4Text").value,
+          //       isCorrect: document.getElementById("answer4CheckBox").checked,
+          //     }
+          //   ];
+
+          //   // Validación en el cliente
+          //   if (answerOptions.every(option => !option.isCorrect)) {
+          //     alert('At least one answer must be marked as the correct one.');
+          //     return;
+          //   }
+
+          // })
+
+        </script>
+</body>
+
+
+</html>

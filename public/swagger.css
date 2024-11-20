@@ -1,0 +1,76 @@
+.flex{
+    display: flex;
+
+}
+.opblock-summary-control{
+    background-color: blueviolet;
+}
+#swagger-ui > div > div:nth-child(2) > div.information-container.wrapper > section > div > div > hgroup > a > span{
+    display: none;
+}
+#swagger-ui > div > div:nth-child(2) > div.information-container.wrapper > section > div > div > hgroup > h2{
+    color: #41fd5b;
+    font-family: "Press Start 2P", system-ui;
+    text-shadow: 2px 2px 4px rgb(0,0,0);
+}
+#swagger-ui > div > div:nth-child(2){
+    border: #41fd5b solid 2px;
+    border-radius: 15px;
+    margin: 3rem;
+    background-color: rgba(255, 255, 255, 0.25)
+}
+#swagger-ui > div > div:nth-child(2) > div.information-container.wrapper > section > div > div > div.description > div > p:nth-child(1),
+#swagger-ui > div > div:nth-child(2) > div:nth-child(5) > section > section > h4 > button > span
+{
+    color: #41fd5b;
+}
+#swagger-ui > div > div:nth-child(2) > div.information-container.wrapper > section > div > div > hgroup > a > span{
+    color: black;
+}
+
+#swagger-ui > div > div:nth-child(2) > div:nth-child(4),
+#swagger-ui > div > div:nth-child(2) > div:nth-child(5)
+{
+    background-color: rgba(255, 255, 255, 0);
+    width: 90%;
+}
+
+#operations-tag-question > small > div > p{
+    color: slategray;
+}
+#model-Question > span.model-box > button > span.pointer > span > span{
+    color: darkslategray;
+    font-weight: 600;
+}
+#model-Question{
+    background-color:silver;
+}
+#operations-question-random > div,
+#operations-question-randomAi > div{
+    background-color:silver;
+}
+#swagger-ui > div > div:nth-child(2) > div.scheme-container{
+    background-color: silver;
+    margin: 0 2rem 0 2rem;
+    padding: 0 0 1rem 0;
+    border-radius: 4px;
+}
+
+#operations-tag-question{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+#operations-question-random > div > button.opblock-summary-control > span,
+#operations-question-randomAi > div > button.opblock-summary-control > span{
+    background-color: #41fd5b;
+    color: black;
+}
+#operations-tag-question > a > span{
+    color: #41fd5b;
+    text-transform: capitalize;
+}
+#operations-tag-question > a > span:after{
+    content: " endpoints"
+}

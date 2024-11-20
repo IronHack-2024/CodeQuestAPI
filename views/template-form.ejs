@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CodeQuestAPI</title>
+    <%- include('./partials/head.ejs') %>
+</head>
+
+<body>
+    <nav>
+        <%- include('./partials/nav.ejs') %>
+    </nav>
+    <section id="kahoot-section">
+        <h1>Export Your Questions for Kahoot or Blooket!</h1>
+        <p>Create a quiz ready to upload into the most popular game-learning platforms: Kahoot and Blooket</p>
+        <form  action="/export-questions" method="GET">
+            <label class="form-step" for="numberQuestions">Step 1. Select the number of questions</label>
+            <input type="number" id="numberQuestions" name="numberQuestions" max=20 min="1" required placeholder="1">
+            <label class="form-step" for="templateType">Step 2. Choose your favourite platform</label>
+            <label>
+                <input type="radio" name="templateType" value="excel" required>
+                Kahoot Template
+            </label>
+            <label>
+                <input type="radio" name="templateType" value="blooket">
+                Blooket Template
+            </label>
+            <label class="form-step">Step 3. Generate your quiz</label>
+            <input class="input-btn" type="submit" value="Download!">
+        </form>
+    </section>
+</body>
+
+</html>

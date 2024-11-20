@@ -13,12 +13,20 @@
 	"dependencies": {
 		"@mailchimp/mailchimp_marketing": "^3.0.80",
 		"body-parser": "^1.20.3",
+		"node-cron": "^3.0.3",
+		"nodemailer": "^6.9.16",
+		"@google/generative-ai": "^0.21.0",
+		"cors": "^2.8.5",
 		"dotenv": "^16.4.5",
 		"ejs": "^3.1.10",
 		"express": "^4.21.1",
-		"mongoose": "^8.7.2",
-		"node-cron": "^3.0.3",
-		"nodemailer": "^6.9.16"
+		"express-rate-limit": "^7.4.1",
+		"helmet": "^8.0.0",
+		"mongoose": "^8.8.1",
+		"path": "^0.12.7",
+		"swagger-jsdoc": "^6.2.8",
+		"swagger-ui-express": "^5.0.1",
+		"xlsx": "^0.18.5"
 	},
 	"devDependencies": {
 		"jest": "^29.7.0",

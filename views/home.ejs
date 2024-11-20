@@ -1,89 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pregunta del Día</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>CodeQuestAPI</title>
+    <%- include('./partials/head.ejs') %>
+
 </head>
-<body class="bg-black flex items-center justify-center h-screen"style="font-family: 'Oxanium', sans-serif">
-  <div class="bg-customGreen p-6 rounded-lg shadow-lg text-center">
-    <h1 class="text-2xl font-bold mb-4" style="font-family: 'Press Start 2P', sans-serif">DAILY PROGRAMMING QUESTION</h1>
 
-    <!-- Mostrar la pregunta -->
-    <p class="text-xl text-gray-700 mb-4 italic text-white"><strong><%= question.question %></strong></p>
+<body>
+    <%- include('./partials/nav.ejs') %>
+        <div>
+            
+            <div class="page-one">
+                <canvas id="Matrix"></canvas>
+            </div>
 
-    <!-- Mostrar las opciones de respuesta -->
-    <div class="flex flex-col space-y-4">
-      <% question.answerOptions.forEach(option => { %>
-        <button class="bg-gray-200 text-gray-800 p-2 rounded"><%= option.answer %></button>
-      <% }); %>
-    </div>
-  </div>
-
-  <script>
-    
-    const answerA = '<%= question.answerOptions[0].answer %>';
-    const answerAIsCorrect = '<%= question.answerOptions[0].isCorrect %>';
-    const answerB = '<%= question.answerOptions[1].answer %>';
-    const answerBIsCorrect = '<%= question.answerOptions[1].isCorrect %>';
-    const answerC = '<%= question.answerOptions[2].answer %>';
-    const answerCIsCorrect = '<%= question.answerOptions[2].isCorrect %>';
-    const answerD = '<%= question.answerOptions[3].answer %>';
-    const answerDIsCorrect = '<%= question.answerOptions[3].isCorrect %>';
+            <div class="typewriter-container">
+                <div class="typewriter">
+                    <h1>CODE QUEST API</h1>
+                </div>
+            </div>
+            <div class="home-text">
+                <h1>The ultimate API for programming questions. Access random and AI-generated questions to enhance your coding skills.</h1>
+                <h1><a href="/daily-question">Challenge your knowledge here!</a></h1>
+                <div class="flex-row">
+                    <h1><a href="/about-us">Find out more about the team</a></h1>
+                    <h1><a href="https://github.com/IronHack-2024/CodeQuestAPI"><img src="./icons/mdi_github.svg"/></a></h1>
+                </div>
+            </div>
 
 
-    const rightAnswer = (answer1, answer2, answer3, answer4, answer1bool, answer2bool, answer3bool, answer4bool) => {
-      if (answer1bool == "true") {
-        console.log("answer1: ", answer1)
-        return answer1;
-      } else if (answer2bool == "true") {
-        console.log("answer2: ", answer2)
-        return answer2;
-      } else if (answer3bool == "true") {
-        console.log("answer3: ", answer3)
-        return answer3;
-      } else if (answer4bool == "true") {
-        console.log("answer4: ", answer4)
-        return answer4;
-      }
-    }
-    const rightAnswerDef = rightAnswer(answerA, answerB, answerC, answerD, answerAIsCorrect, answerBIsCorrect, answerCIsCorrect, answerDIsCorrect)
-    console.log('rightAnswer: ', rightAnswerDef)
-
-  
-  document.querySelectorAll('button').forEach(button => {
-    button.addEventListener('click', function() {
-      console.log('rightAnswerDef: ', rightAnswerDef)
-      if (this.textContent === rightAnswerDef) {
-        // alert('¡Correct!');
-        button.classList.remove("bg-gray-200")
-        button.classList.add("bg-darkGreen");
-      } else {
-        button.classList.remove("bg-gray-200")
-        button.classList.add("bg-red-500")
-        // alert('Incorrect. The right answer is: ' + rightAnswerDef);
-      }
-       // Disable all buttons after any button is clicked
-    document.querySelectorAll('button').forEach(btn => btn.disabled = true);
-    });
-  });
-
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          customGreen: '#41fd5b',
-          darkGreen: '#35cb49'
-        },
-      },
-    },
-  };
-
-  </script>
+        </div>
+        <script src="/script.js"></script>
+        <script src="/index.js"></script>
 </body>
+
 </html>

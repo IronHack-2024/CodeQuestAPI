@@ -1,0 +1,309 @@
+body {
+    background-color: black;
+    justify-content: center;
+    font-family: "Press Start 2P", system-ui;
+    margin: 0;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #41fd5b;
+  }
+  
+  h1, h2{
+    color: #41fd5b;
+    text-align: center;
+  }
+
+  .form-step{
+    color: #41fd5b;
+    text-align: center;
+    border: solid 2px #41fd5b;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin: 0 20% 0 20%;
+    font-weight: 400
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+    justify-content: space-between;
+  }
+  
+  .header-items {
+    color: #41fd5b;
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    z-index: 1000;
+  }
+  form{
+    color: black;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  form label{
+    color: #41fd5b;
+  }
+
+  .input-btn {
+    border: solid 2px #41fd5b;
+    background-color: black;
+    color: #41fd5b;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+  }
+  .input-btn:hover{
+    transition: 0.5s;
+    background-color: #41fd5b;
+    color: black;
+  }
+  #numberQuestions{
+    width: 100px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1rem;
+  }
+  #kahoot-section{
+    margin-top: 10%;
+  }
+  .logo {
+      height: 70px;
+      padding-left: 10px;
+  }
+  
+  .headshot {
+      height: 200px;
+      width: 200px;
+      background-color: white;
+      border-radius: 50%;
+      overflow: visible;
+      position: relative;
+      max-width: none ;
+      filter: grayscale(100%); /* make the image black and white */
+  }
+  
+  @media (max-width: 768px) {
+    .headshot {
+      /* Styles for screens 768px or narrower */
+      height: 250px;
+      width: 250px;
+    }
+  }
+  
+  .headshot:hover{
+    background-color: #41fd5b;
+    filter: none
+  }
+  
+  .pixelated-header {
+      color: #41fd5b;
+      font-size: 24px;
+      }
+  
+  @media (max-width: 576px) {
+    .pixelated-header {
+      /* Styles for screens 576px or narrower */
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .pixelated-header {
+      /* Styles for screens 400px or narrower */
+      font-size: 12px;
+    }
+  }
+  
+  .body-text {
+    color: white;
+    width: 1000px;
+    font-family: 'Oxanium';
+    font-size: 1.3rem;
+  }
+  
+  @media (max-width: 1024px) {
+    .body-text {
+      /* Styles for screens 1024px or narrower */
+      width: 700px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .body-text {
+      /* Styles for screens 576px or narrower */
+      width: 380px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .body-text {
+      /* Styles for screens 400px or narrower */
+      width: 300px;
+    }
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 48px;
+  }
+  
+  @media (max-width: 1024px) {
+    .image-grid  {
+      /* Styles for screens 1024px or narrower */
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .image-grid  {
+      /* Styles for screens 768px or narrower */
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      width: 100%;
+  
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .image-grid  {
+      /* Styles for screens 767px or narrower */
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+  
+    }
+  }
+  
+  .main-user-block:hover .hidden-element {
+    display: block;
+    position: absolute;
+    top: 34px;
+    opacity: 100%;
+    transition: opacity 1s ease;
+  }
+  
+  .main-user-block:hover .headshot {
+    background-color: #41fd5b;
+    filter: none;
+    transition: background-color 1s ease;
+  }
+  
+  .hidden-element {
+    position: absolute;
+    top: 34px;
+  }
+  
+  .name-element{
+    color: white;
+    font-family: 'Oxanium';
+  }
+  
+  .hidden-element {
+    display: block;
+    opacity: 0%;
+  }
+  
+  .name-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /* TERMINAL EFFECT CSS */
+  .typewriter h1 {
+    font-size: 80px;
+    color: #41fd5b;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+  
+  @media (max-width: 1024px) {
+    .typewriter h1 {
+      /* Styles for screens 1024px or narrower */
+      font-size: 60px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .typewriter h1 {
+      /* Styles for screens 768px or narrower */
+      font-size: 50px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .typewriter h1 {
+      /* Styles for screens 576px or narrower */
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .typewriter h1 {
+      /* Styles for screens 400px or narrower */
+      font-size: 26px;
+    }
+  }
+  
+  .typewriter-container {
+  display: none; /* Hidden initially */
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  position: relative;
+  }
+  
+  .text-container {
+    margin: 30px 100px 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 100px 0 100px;
+  }
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+  }
