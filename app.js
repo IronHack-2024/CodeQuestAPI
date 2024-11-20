@@ -4,11 +4,6 @@ const dotenv = require("dotenv");
 const indexRouter = require("./routes/index");
 const { getRandomQuestion } = require("./services/question.services");
 const bodyParser = require("body-parser");
-const mailchimp = require("@mailchimp/mailchimp_marketing");
-const nodemailer = require("nodemailer");
-const { getEmailTemplate} = require("./emailtemplate.js");
-const cron = require("node-cron");
-const Questions = require("./models/question.model.js");
 
 dotenv.config();
 
@@ -28,12 +23,6 @@ app.get("/daily-question", async (req, res) => {
   res.render("home", { question });
 });
 
-
-const MAILCHIMPKEY = process.env.MAILCHIMPKEY;
-mailchimp.setConfig({
-  apiKey: MAILCHIMPKEY, // API key in dotenv
-  server: "us22", // Prefix of of API Server, found in Key end
-});
 
 const PORT = process.env.PORT || 3000;
 

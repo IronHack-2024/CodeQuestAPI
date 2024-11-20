@@ -9,7 +9,7 @@ const { getEmailTemplate} = require("../emailtemplate.js");
 const cron = require("node-cron");
 const Questions = require("../models/question.model.js");
 const questionService = require('../services/question.services')
-require('dotenv').config();
+dotenv.config();
 const getRandomQuestions = async (req, res) => {
 	try {
 		let { amount } = req.query;
@@ -38,6 +38,12 @@ const getRandomQuestions = async (req, res) => {
 	}
 
 }
+
+const MAILCHIMPKEY = process.env.MAILCHIMPKEY;
+mailchimp.setConfig({
+  apiKey: MAILCHIMPKEY, // API key in dotenv
+  server: "us22", // Prefix of of API Server, found in Key end
+});
 
 const listId = "58371aa183";
 
