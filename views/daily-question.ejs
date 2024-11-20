@@ -3,23 +3,21 @@
   <title>Random question</title>
   <%- include('./partials/head.ejs') %>
 
-<body class="bg-black items-center justify-center 
-h-screen"style="font-family: 'Oxanium', sans-serif">
+<body class="bg-black items-center justify-center h-screen h-auto" style="font-family: 'Oxanium', sans-serif">
   <!-- Main container with Tailwind styles for layout and custom border and background colors -->
-  <nav>
     <%- include('./partials/nav.ejs') %>
-  </nav>
 
-  <div class="flex">
-    <div class="m-6 border-4 border-primaryGreen bg-backgroundGreen p-6 rounded-lg shadow-lg text-center w-9/12">
-      <h1 class="text-2xl font-bold mb-4 text-white" style="font-family: 'Press Start 2P', sans-serif">RANDOM PROGRAMMING QUESTION</h1>
+  <h1 class="text-2xl font-bold mt-20 mb-10 text-white" style="font-family: 'Press Start 2P', sans-serif">RANDOM PROGRAMMING QUESTION</h1>
+
+  <div class="flex m-6 w-10/12 mx-auto">
+    <div class="border-4 border-primaryGreen bg-backgroundGreen p-6 rounded-lg shadow-lg text-center">
       <!-- Displaying the question text from the first question in the questions array -->
       <p class="text-xl mb-4 italic text-primaryGreen"><strong><%= questionsWithShuffledAnswers[0].question %></strong></p>
       <!-- Answer options displayed as buttons -->
       <div class="flex flex-col space-y-4 ">
         <% questionsWithShuffledAnswers[0].answerOptions.forEach(option => { %>
           <!-- Each button represents an answer option with data-istrue attribute indicating correctness -->
-          <button class="bg-secondaryGreen text-primaryGreen border-2 border-primaryGreen p-2 rounded" data-istrue="<%= option.isCorrect %>"><%= option.answer %></button>
+          <button class="bg-secondaryGreen text-primaryGreen border-2 border-primaryGreen p-2 rounded hover:bg-primaryGreen hover:text-secondaryGreen" data-istrue="<%= option.isCorrect %>"><%= option.answer %></button>
         <% }); %>
       </div>
       <!-- Explanation section hidden initially -->
