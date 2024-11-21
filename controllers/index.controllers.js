@@ -196,7 +196,7 @@ const createNewQuestion = async (req, res) => {
       };
 
       await insertQuestion(newQuestion);
-      console.log(newQuestion);
+      console.log("New question: ", newQuestion);
       let message =
         "Thank you for submitting a new question. Our team will revise it and, if correct, include it in our database.";
       res.status(201).render("new-question.ejs", { message });
