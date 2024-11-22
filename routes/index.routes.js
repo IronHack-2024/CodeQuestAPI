@@ -12,6 +12,5 @@ router.get('/export-questions', indexControllers.getTemplateQuestions);
 router.get('/submit-new-question', indexControllers.newQuestionForm);
 router.post('/submit-new-question', indexControllers.createNewQuestion);
 router.post('/subscribe', emailServices.postSubscribe);
-router.get('/sendEmails', emailServices.getSendEmails);
 
 module.exports = router;
