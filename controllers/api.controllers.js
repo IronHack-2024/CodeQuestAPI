@@ -1,6 +1,3 @@
-const xlsx = require("xlsx");
-const fs = require("fs");
-const path = require("path");
 const { generateQuestions, getRandomQuestionsDB } = require('../services/question.services');
 const jsonFile = require("../config/test.js")
 
