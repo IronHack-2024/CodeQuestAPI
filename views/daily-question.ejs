@@ -1,113 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>Random question</title>
-  <%- include('./partials/head.ejs') %>
+<title>Random question</title>
+<%- include('./partials/head.ejs') %>
 
-<body class="bg-black items-center justify-center h-screen h-auto" style="font-family: 'Oxanium', sans-serif">
-  <!-- Main container with Tailwind styles for layout and custom border and background colors -->
+  <body class="bg-black items-center justify-center h-screen h-auto" style="font-family: 'Oxanium', sans-serif">
+    <!-- Main container with Tailwind styles for layout and custom border and background colors -->
     <%- include('./partials/nav.ejs') %>
 
-  <h1 class="text-2xl font-bold mt-20 mb-10 text-white" style="font-family: 'Press Start 2P', sans-serif">RANDOM PROGRAMMING QUESTION</h1>
+      <h1 class="text-2xl font-bold mt-8 mb-4 text-white" style="font-family: 'Press Start 2P', sans-serif">RANDOM
+        PROGRAMMING QUESTION</h1>
 
-  <div class="flex m-6 w-10/12 mx-auto">
-    <div class="border-4 border-primaryGreen bg-backgroundGreen p-6 rounded-lg shadow-lg text-center">
-      <!-- Displaying the question text from the first question in the questions array -->
-      <p class="text-xl mb-4 italic text-primaryGreen"><strong><%= questionsWithShuffledAnswers[0].question %></strong></p>
-      <!-- Answer options displayed as buttons -->
-      <div class="flex flex-col space-y-4 ">
-        <% questionsWithShuffledAnswers[0].answerOptions.forEach(option => { %>
-          <!-- Each button represents an answer option with data-istrue attribute indicating correctness -->
-          <button class="bg-secondaryGreen text-primaryGreen border-2 border-primaryGreen p-2 rounded hover:bg-primaryGreen hover:text-secondaryGreen" data-istrue="<%= option.isCorrect %>"><%= option.answer %></button>
-        <% }); %>
+      <div class="flex justify-center" >
+        <div id="daily-container"
+          class="m-6 mb-64 w-3/4 border-4 border-primaryGreen bg-backgroundGreen p-6 rounded-lg shadow-lg text-center">
+          <!-- Displaying the question text from the first question in the questions array -->
+          <p class="text-xl mb-4 italic text-primaryGreen"><strong>
+              <%= questionsWithShuffledAnswers[0].question %>
+            </strong></p>
+          <!-- Answer options displayed as buttons -->
+          <div class="flex flex-col space-y-4 ">
+            <% questionsWithShuffledAnswers[0].answerOptions.forEach(option=> { %>
+              <!-- Each button represents an answer option with data-istrue attribute indicating correctness -->
+              <button
+                class="bg-secondaryGreen text-primaryGreen border-2 border-primaryGreen p-2 rounded hover:bg-primaryGreen hover:text-secondaryGreen"
+                data-istrue="<%= option.isCorrect %>">
+                <%= option.answer %>
+              </button>
+              <% }); %>
+          </div>
+          <!-- Explanation section hidden initially -->
+          <div class="mt-4 text-start bg-gray-200 rounded-sm px-1">
+            <p id="explanationtitle" class="inline mt-4 rounded"></p>
+            <p id="explanation"></p>
+          </div>
+        </div>
       </div>
-      <!-- Explanation section hidden initially -->
-      <div class="mt-4 text-start bg-gray-200 rounded-sm px-1">
-        <p id="explanationtitle" class="inline mt-4 rounded"></p>
-        <p id="explanation"></p>
-      </div>
-    </div>
-  </div>
 
-  <script>
-    // Define variables for answer options and correctness to use in the frontend script
-    const answerA = '<%= questionsWithShuffledAnswers[0].answerOptions[0].answer %>';
-    const answerAIsCorrect = '<%= questionsWithShuffledAnswers[0].answerOptions[0].isCorrect %>';
-    const answerB = '<%= questionsWithShuffledAnswers[0].answerOptions[1].answer %>';
-    const answerBIsCorrect = '<%= questionsWithShuffledAnswers[0].answerOptions[1].isCorrect %>';
-    const answerC = '<%= questionsWithShuffledAnswers[0].answerOptions[2].answer %>';
-    const answerCIsCorrect = '<%= questionsWithShuffledAnswers[0].answerOptions[2].isCorrect %>';
-    const answerD = '<%= questionsWithShuffledAnswers[0].answerOptions[3].answer %>';
-    const answerDIsCorrect = '<%= questionsWithShuffledAnswers[0].answerOptions[3].isCorrect %>';
+      <script>
+        // Define variables for answer options and correctness to use in the frontend script
+        const answerA = '<%= questionsWithShuffledAnswers[0].answerOptions[0].answer %>';
+        const answerAIsCorrect = '<%= questionsWithShuffledAnswers[0].answerOptions[0].isCorrect %>';
+        const answerB = '<%= questionsWithShuffledAnswers[0].answerOptions[1].answer %>';
+        const answerBIsCorrect = '<%= questionsWithShuffledAnswers[0].answerOptions[1].isCorrect %>';
+        const answerC = '<%= questionsWithShuffledAnswers[0].answerOptions[2].answer %>';
+        const answerCIsCorrect = '<%= questionsWithShuffledAnswers[0].answerOptions[2].isCorrect %>';
+        const answerD = '<%= questionsWithShuffledAnswers[0].answerOptions[3].answer %>';
+        const answerDIsCorrect = '<%= questionsWithShuffledAnswers[0].answerOptions[3].isCorrect %>';
 
-    //Explanation text
-    const explanation = '<%= questionsWithShuffledAnswers[0].explanation %>'
+        //Explanation text
+        const explanation = '<%= questionsWithShuffledAnswers[0].explanation %>'
 
-    // Function to find the correct answer by checking which answer option is marked as true
-    const rightAnswer = (answer1, answer2, answer3, answer4, answer1bool, answer2bool, answer3bool, answer4bool) => {
-      if (answer1bool == "true") {
-        console.log("answer1: ", answer1)
-        return answer1;
-      } else if (answer2bool == "true") {
-        console.log("answer2: ", answer2)
-        return answer2;
-      } else if (answer3bool == "true") {
-        console.log("answer3: ", answer3)
-        return answer3;
-      } else if (answer4bool == "true") {
-        console.log("answer4: ", answer4)
-        return answer4;
-      }
-    }
+        // Function to find the correct answer by checking which answer option is marked as true
+        const rightAnswer = (answer1, answer2, answer3, answer4, answer1bool, answer2bool, answer3bool, answer4bool) => {
+          if (answer1bool == "true") {
+            console.log("answer1: ", answer1)
+            return answer1;
+          } else if (answer2bool == "true") {
+            console.log("answer2: ", answer2)
+            return answer2;
+          } else if (answer3bool == "true") {
+            console.log("answer3: ", answer3)
+            return answer3;
+          } else if (answer4bool == "true") {
+            console.log("answer4: ", answer4)
+            return answer4;
+          }
+        }
 
-    // Calculate the correct answer definition using the rightAnswer function
-    const rightAnswerDef = rightAnswer(answerA, answerB, answerC, answerD, answerAIsCorrect, answerBIsCorrect, answerCIsCorrect, answerDIsCorrect)
+        // Calculate the correct answer definition using the rightAnswer function
+        const rightAnswerDef = rightAnswer(answerA, answerB, answerC, answerD, answerAIsCorrect, answerBIsCorrect, answerCIsCorrect, answerDIsCorrect)
+        // const dailyContainer = getElementById('daily-container')
 
-  
-  document.querySelectorAll('button').forEach(button => {
-    button.addEventListener('click', function() {
-      console.log('rightAnswerDef: ', rightAnswerDef)
-      console.log('this.textContent', this.textContent)
-      console.log('this.dataset.istrue', this.dataset.istrue)
-      //Check if the clicked answer is correct using data-istrue attribute
-      if (this.dataset.istrue === "true") {
-        //Add styles to show the button as correct
-        button.classList.add("bg-primaryGreen"); 
-        button.classList.add("border-secondaryGreen"); 
-        button.classList.add("text-secondaryGreen");
-      } else {
-        //add styles to show the button as incorrect
-        button.classList.add("bg-errorRed"); 
-        button.classList.add("border-secondaryErrorRed");  
-        button.classList.add("text-white"); 
-      }
-      // Display explanation if available
-       if (explanation) {
-      const explanationtitle = document.getElementById('explanationtitle');
-      const explanationEl = document.getElementById("explanation");
-      explanationtitle.textContent="Explanation:";
-      explanationEl.innerHTML = explanation;
-    }
+        document.querySelectorAll('button').forEach(button => {
+          button.addEventListener('click', function () {
+            // console.log('rightAnswerDef: ', rightAnswerDef)
+            // console.log('this.textContent', this.textContent)
+            // console.log('this.dataset.istrue', this.dataset.istrue)
+            console.log('this: ', this.dataset)
+            //Check if the clicked answer is correct using data-istrue attribute
+            if (this.dataset.istrue === "true") {
+              //Add styles to show the button as correct
+              button.classList.add("bg-primaryGreen");
+              button.classList.add("border-secondaryGreen");
+              button.classList.add("text-secondaryGreen");
+              // const correctSign = document.createElement('p');
+              // correctSign.textContent = 'This is the new element'
+              // dailyContainer.appenChild(newElement)
 
-       // Disable all buttons after any button is clicked to prevent further answers
-    document.querySelectorAll('button').forEach(btn => btn.disabled = true);
-    });
-  });
+            } else {
+              //add styles to show the button as incorrect
+              button.classList.add("bg-errorRed");
+              button.classList.add("border-secondaryErrorRed");
+              button.classList.add("text-white");
+            }
+            // Display explanation if available
+            if (explanation) {
+              const explanationtitle = document.getElementById('explanationtitle');
+              const explanationEl = document.getElementById("explanation");
+              explanationtitle.textContent = "Explanation:";
+              explanationEl.innerHTML = explanation;
+            }
 
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          primaryGreen: '#41fd5b',
-          secondaryGreen: '#007410',
-          darkGreen: '#35cb49',
-          backgroundGreen: '#003407',
-          errorRed: '#FF7070',
-          secondaryErrorRed: '#DF6666'
-        },
-      },
-    },
-  };
+            // Disable all buttons after any button is clicked to prevent further answers
+            document.querySelectorAll('button').forEach(btn => btn.disabled = true);
 
-  </script>
-</body>
+            //Add a "Try Again" button
+            const tryAgainButton = document.createElement('button');
+            if (this.dataset.istrue === "true") {
+              tryAgainButton.textContent = "Correct! Request another question";
+              tryAgainButton.className = "mt-4 bg-secondaryGreen text-primaryGreen border-2 border-primaryGreen p-2 rounded hover:bg-primaryGreen hover:text-secondaryGreen";
+            } else if  (this.dataset.istrue === "false"){
+              tryAgainButton.textContent = "Wrong! You can do another request"
+              tryAgainButton.className = "mt-4 bg-secondaryErrorRed text-white border-2 border-errorRed p-2 rounded hover:bg-errorRed hover:text-white";
+            }
+
+            tryAgainButton.addEventListener('click', () => {
+              location.reload();
+            });
+
+            const dailyContainer = document.getElementById('daily-container');
+            dailyContainer.appendChild(tryAgainButton);
+
+          });
+        });
+
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primaryGreen: '#41fd5b',
+                secondaryGreen: '#007410',
+                darkGreen: '#35cb49',
+                backgroundGreen: '#003407',
+                errorRed: '#FF7070',
+                secondaryErrorRed: '#DF6666'
+              },
+            },
+          },
+        };
+
+      </script>
+  </body>
+
 </html>
