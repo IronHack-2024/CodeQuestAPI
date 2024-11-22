@@ -4,7 +4,6 @@ const { getRandomQuestionsDB } = require("./question.services");
 const { getEmailTemplate } = require("../utils/email.template")
 const mailchimp = require('@mailchimp/mailchimp_marketing');
 const nodemailer = require('nodemailer');
-const cron = require('node-cron'); // For scheduling emails
 
 // Load environment variables from .env file
 dotenv.config();
@@ -22,7 +21,6 @@ const postSubscribe = async (req, res) => {
       // Placeholder email for testing 
   const email = req.body.email
 
-  console.log("email:", email)
   try {
     // Add new subscriber to Mailchimp
     const response = await mailchimp.lists.addListMember(listId, {
@@ -46,7 +44,6 @@ async function fetchSubscribedContacts(listId) {
       status: "subscribed", // Filter for subscribed contacts only
       count: 100, // Limit to 100 contacts
     });
-    console.log("Contacts with subscribed status:", response.members.map(member => member.email_address));
     return response.members.map((member) => member.email_address); // Return email addresses
   } catch (error) {
     console.error("Error fetching subscribed contacts:", error.response ? error.response.body : error.message);
@@ -74,40 +71,23 @@ let mailOptions = {
   html: "", // Email body (HTML content)
 };
 
-// Schedule emails to be sent at a regular time (e.g., every Wednesday at 8 AM)
-const getSendEmails = async (req, res) => {
-  try {
-    cron.schedule("0 8 * * 3", async () => { // Change this to run every Wednesday at 8 AM: "0 8 * * 3"
-        console.log("email template", getEmailTemplate); 
-      console.log("Running scheduled weekly email job...");
-      await sendEmails(); // Call function to send emails
-      res.send("Emails have been successfully sent!");
-    });
-  } catch (error) {
-    console.error("Error in /sendEmails route:", error); // Log any errors in the cron job
-    res.status(500).send("Failed to send emails.");
-  }
-};
 
 // Function to send emails to subscribed contacts
 async function sendEmails() {
     const questionRandom = await getRandomQuestionsDB(1); // Get a random question for the weekly dev question
-    console.log("questionRandom", questionRandom)
     try {
       const subscribedContacts = await fetchSubscribedContacts(listId); // Get list of subscribed contacts
       if (!subscribedContacts.length) {
-        console.log("No contacts found in the audience.");
         return;
       }
       // Loop through contacts and send personalized emails
       for (const email of subscribedContacts) {
-        console.log(`Sending email to ${email}`);
         const name = email.split("@")[0]; // Extract the username part of the email address
         const htmlTemplate = getEmailTemplate(name, questionRandom); // Get personalized HTML email template
         mailOptions.to = email; // Update recipient email
         mailOptions.html = htmlTemplate; // Set email body
         const info = await transporter.sendMail(mailOptions); // Send the email
-        console.log(`Email sent to ${email}: ${info.response}`);
+        console.log("Email sent");
       }
     } catch (error) {
       console.error("Error sending emails:", error); // Log any errors during email sending
@@ -117,6 +97,6 @@ async function sendEmails() {
 
 module.exports = {
     postSubscribe,
-    getSendEmails
+    sendEmails
   };
   
