@@ -2,13 +2,8 @@ const express = require("express");
 const { rateLimit } = require("express-rate-limit");
 const { connectDB } = require("./utils/db");
 const dotenv = require("dotenv");
-
 const indexRouter = require("./routes/index.routes");
 const apiRouter = require("./routes/api.routes");
-const {
-  getRandomQuestionWithoutCodeExamples,
-} = require("./services/question.services");
-const { shuffleArray } = require("./utils/utils");
 const cors = require("cors");
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocs = require('./config/swagger.config');
