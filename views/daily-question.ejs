@@ -3,7 +3,7 @@
 <title>Random question</title>
 <%- include('./partials/head.ejs') %>
 
-  <body class="bg-black items-center justify-center h-screen h-auto" style="font-family: 'Oxanium', sans-serif">
+  <body class="bg-black items-center justify-center h-auto" style="font-family: 'Oxanium', sans-serif">
     <!-- Main container with Tailwind styles for layout and custom border and background colors -->
     <%- include('./partials/nav.ejs') %>
 
@@ -12,7 +12,7 @@
 
       <div class="flex justify-center" >
         <div id="daily-container"
-          class="m-6 mb-64 w-3/4 border-4 border-primaryGreen bg-backgroundGreen p-6 rounded-lg shadow-lg text-center">
+          class="lg:w-6/12 sm:w-3/4 m-6 mb-64 p-6 border-4 border-primaryGreen bg-backgroundGreen rounded-lg shadow-lg text-center">
           <!-- Displaying the question text from the first question in the questions array -->
           <p class="text-xl mb-4 italic text-primaryGreen"><strong>
               <%= questionsWithShuffledAnswers[0].question %>

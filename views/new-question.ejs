@@ -12,7 +12,8 @@
   <h1 class="text-2xl font-bold mt-20 mb-10 text-white" style="font-family: 'Press Start 2P', sans-serif">SUBMIT NEW PROGRAMMING
     QUESTION</h1>
 
-  <form id="newQuestionForm" class="m-6 w-6/12 mx-auto border-4 border-primaryGreen bg-backgroundGreen p-4 rounded-lg shadow-lg text-center" action="/submit-new-question"
+<div class="flex justify-center" >
+  <form id="newQuestionForm" class="lg:w-6/12 sm:w-3/4 m-6 border-4 border-primaryGreen bg-backgroundGreen p-4 rounded-lg shadow-lg text-center" action="/submit-new-question"
       method="POST">
       
       <div>
@@ -59,8 +60,8 @@
       </div>
       <input type="submit" value="SEND" class="bg-black hover:bg-primaryGreen hover:text-secondaryGreen text-white p-2 px-8 mt-2 rounded"
         style="font-family: 'Press Start 2P', sans-serif">
-    </form>
-
+  </form>
+</div>
     <!--Cuadro de diálogo -->
     <% if (message) { %>
       <div id="modal" class="modal">
