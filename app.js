@@ -7,7 +7,7 @@ const apiRouter = require("./routes/api.routes");
 const cors = require("cors");
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocs = require('./config/swagger.config');
-const { startEmailCronJob } = require("./cron/cron")
+const { startEmailCronJob } = require("./utils/cron")
 
 const limiter = rateLimit({
   windowMs: 60 * 1000, // 60 seconds
