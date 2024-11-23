@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>500 - Internal Server Error</title>
-    <link rel="stylesheet" href="/css/error.css" />
-  </head>
-  <body>
-    <div class="error-container">
-      <h1>Error 500</h1>
-      <p><%= message %></p>
-      <%/* ToDo Hay que añadir un enlace para volver a la página principal */%>
+  <%- include('./partials/head.ejs') %>
 
-      <a href="/">Return to Home</a>
+<title>Error 500</title>
+
+  <header class="collapsible-header">
+      <div class="logo-div">
+          <a href="/"><img class="logo" src="./images/image.svg" alt="logo" /></a>
+          <p><a href="">Code Quest API</a></p>
+      </div>
+  </header>
+  <body class="h-screen bg-black items-center justify-center" style="font-family: 'Oxanium', sans-serif">
+
+    <div class="flex flex-wrap items-center justify-center">
+  
+      <h1 class="text-2xl font-bold mt-20 text-white w-full text-center" style="font-family: 'Press Start 2P', sans-serif">Error 500</h1>
+  
+      <div class="m-6 border-4 border-primaryGreen bg-backgroundGreen p-6 rounded-lg shadow-lg text-center w-full max-w-md">
+        <p class="text-primaryGreen" style="font-family: 'Oxanium', sans-serif"><%= message %></p>
+        <p class="text-primaryGreen">Return to <a class="hover:text-secondaryGreen hover:underline hover:decoration-2" href="/">Home.</a></p>
+      </div>
+
     </div>
+
+    <script>
+      tailwind.config = {
+       theme: {
+         extend: {
+           colors: {
+             primaryGreen: '#41fd5b',
+             secondaryGreen: '#007410',
+             darkGreen: '#35cb49',
+             backgroundGreen: '#003407',
+             errorRed: '#FF7070',
+             secondaryErrorRed: '#DF6666'
+           },
+         },
+       },
+     };
+   </script>
   </body>
 </html>

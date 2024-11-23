@@ -6,17 +6,20 @@
   <%- include('./partials/head.ejs') %>
 </head>
 
-<body class="bg-black items-center justify-center h-screen" style="font-family: 'Oxanium', sans-serif">
+<body class="bg-black items-center justify-center h-auto" style="font-family: 'Oxanium', sans-serif">
   <%- include('./partials/nav.ejs') %>
-    <form id="newQuestionForm" class="m-6 border-4 border-primaryGreen bg-backgroundGreen p-6 rounded-lg shadow-lg text-center" action="/submit-new-question"
-      method="POST">
-      <h1 class="text-2xl font-bold mb-2 text-white" style="font-family: 'Press Start 2P', sans-serif">SUBMIT NEW PROGRAMMING
-        QUESTION</h1>
-      <div>
-        <h2>Fill the form and you can add your questions to this amazing database. Share yours!</h2>
-      </div>
-      <div class="flex flex-col space-y-4 w-9/12">
 
+  <h1 class="text-2xl font-bold mt-20 mb-10 text-white" style="font-family: 'Press Start 2P', sans-serif">SUBMIT NEW PROGRAMMING
+    QUESTION</h1>
+
+  <form id="newQuestionForm" class="m-6 w-6/12 mx-auto border-4 border-primaryGreen bg-backgroundGreen p-4 rounded-lg shadow-lg text-center" action="/submit-new-question"
+      method="POST">
+      
+      <div>
+        <h2>Fill the form and share your questions to this amazing database!</h2>
+      </div>
+
+      <div class="flex flex-col space-y-4 w-11/12">
         <!-- Mostrar la pregunta -->
         <label for="question" class="text-left text-primaryGreen">Write your question here:</label>
         <textarea name="question" id="question" class="bg-gray-200 text-gray-800 p-2 rounded" required
@@ -54,7 +57,7 @@
         </div>
 
       </div>
-      <input type="submit" value="SEND" class="bg-black text-white p-2 px-8 mt-4 rounded"
+      <input type="submit" value="SEND" class="bg-black hover:bg-primaryGreen hover:text-secondaryGreen text-white p-2 px-8 mt-2 rounded"
         style="font-family: 'Press Start 2P', sans-serif">
     </form>
 
@@ -69,7 +72,7 @@
         </div>
       </div>
       <% } %>
-        <script>
+<script>
           tailwind.config = {
             theme: {
               extend: {
@@ -137,7 +140,7 @@
 
           // })
 
-        </script>
+</script>
 </body>
 
 
