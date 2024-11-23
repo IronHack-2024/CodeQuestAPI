@@ -134,9 +134,6 @@ body {
     text-align: center;
     font-size: 1rem;
   }
-  #kahoot-section{
-    margin-top: 10%;
-  }
   #container
   .logo {
       height: 70px;
@@ -458,10 +455,6 @@ body {
 
 .daily-question {
   word-spacing: -6px
-}
-
-.pixelated-text {
-  color: white;
 }
 
 .body-text {
