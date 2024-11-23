@@ -9,60 +9,62 @@
 <body class="bg-black items-center justify-center h-auto" style="font-family: 'Oxanium', sans-serif">
   <%- include('./partials/nav.ejs') %>
 
-  <h1 class="text-2xl font-bold mt-20 mb-10 text-white" style="font-family: 'Press Start 2P', sans-serif">SUBMIT NEW PROGRAMMING
-    QUESTION</h1>
+    <h1 class="text-2xl font-bold mt-20 mb-10 text-white" style="font-family: 'Press Start 2P', sans-serif">SUBMIT NEW
+      PROGRAMMING
+      QUESTION</h1>
 
-<div class="flex justify-center" >
-  <form id="newQuestionForm" class="lg:w-6/12 sm:w-3/4 m-6 border-4 border-primaryGreen bg-backgroundGreen p-4 rounded-lg shadow-lg text-center" action="/submit-new-question"
-      method="POST">
-      
-      <div>
-        <h2>Fill the form and share your questions to this amazing database!</h2>
-      </div>
+    <div class="flex justify-center">
+      <form id="newQuestionForm"
+        class="lg:w-6/12 sm:w-3/4 m-6 border-4 border-primaryGreen bg-backgroundGreen p-4 rounded-lg shadow-lg text-center gap-4"
+        action="/submit-new-question" method="POST">
 
-      <div class="flex flex-col space-y-4 w-11/12">
-        <!-- Mostrar la pregunta -->
-        <label for="question" class="text-left text-primaryGreen">Write your question here:</label>
-        <textarea name="question" id="question" class="bg-gray-200 text-gray-800 p-2 rounded" required
-          maxlength="4000"></textarea>
-
-        <!-- Mostrar las opciones de respuesta -->
-        <p class="text-left text-primaryGreen">Write your answers here (please, mark the correct one/s):</p>
-
-        <div class="flex gap-4 justify-between">
-          <label for="answer1" hidden></label>
-          <input type="checkbox" id="answer1CheckBox" name="answer1CheckBox" value="true">
-          <input type="text" id="answer1Text" name="answer1Text" class="bg-gray-200 text-gray-800 p-2 rounded w-full"
-            required maxlength="1000">
+        <div class="pb-6">
+          <h2>Fill the form and share your questions to this amazing database!</h2>
         </div>
 
-        <div class="flex gap-4 justify-between">
-          <label for="answer2" hidden></label>
-          <input type="checkbox" id="answer2CheckBox" name="answer2CheckBox" value="true">
-          <input type="text" id="answer2Text" name="answer2Text" class="bg-gray-200 text-gray-800 p-2 rounded w-full"
-            required maxlength="1000">
-        </div>
+        <div class="flex flex-col space-y-4 w-11/12">
 
-        <div class="flex gap-4 justify-between">
-          <label for="answer3" hidden></label>
-          <input type="checkbox" id="answer3CheckBox" name="answer3CheckBox" value="true">
-          <input type="text" id="answer3Text" name="answer3Text" class="bg-gray-200 text-gray-800 p-2 rounded w-full"
-            required maxlength="1000">
-        </div>
+          <label for="question" class="text-left text-primaryGreen">Write your question here:</label>
+          <textarea name="question" id="question" class="bg-gray-200 text-gray-800 p-2 rounded" required
+            maxlength="4000"></textarea>
 
-        <div class="flex gap-4 justify-between">
-          <label for="answer4" hidden></label>
-          <input type="checkbox" id="answer4CheckBox" name="answer4CheckBox" value="true">
-          <input type="text" id="answer4Text" name="answer4Text" class="bg-gray-200 text-gray-800 p-2 rounded w-full"
-            required maxlength="1000">
-        </div>
+          <p class="text-left text-primaryGreen">Write your answers here (please, mark the correct one/s):</p>
 
-      </div>
-      <input type="submit" value="SEND" class="bg-black hover:bg-primaryGreen hover:text-secondaryGreen text-white p-2 px-8 mt-2 rounded"
-        style="font-family: 'Press Start 2P', sans-serif">
-  </form>
-</div>
-    <!--Cuadro de diálogo -->
+          <div class="flex gap-4 justify-between">
+            <label for="answer1" hidden></label>
+            <input type="checkbox" id="answer1CheckBox" name="answer1CheckBox" value="true">
+            <input type="text" id="answer1Text" name="answer1Text" class="bg-gray-200 text-gray-800 p-2 rounded w-full"
+              required maxlength="1000">
+          </div>
+
+          <div class="flex gap-4 justify-between">
+            <label for="answer2" hidden></label>
+            <input type="checkbox" id="answer2CheckBox" name="answer2CheckBox" value="true">
+            <input type="text" id="answer2Text" name="answer2Text" class="bg-gray-200 text-gray-800 p-2 rounded w-full"
+              required maxlength="1000">
+          </div>
+
+          <div class="flex gap-4 justify-between">
+            <label for="answer3" hidden></label>
+            <input type="checkbox" id="answer3CheckBox" name="answer3CheckBox" value="true">
+            <input type="text" id="answer3Text" name="answer3Text" class="bg-gray-200 text-gray-800 p-2 rounded w-full"
+              required maxlength="1000">
+          </div>
+
+          <div class="flex gap-4 justify-between">
+            <label for="answer4" hidden></label>
+            <input type="checkbox" id="answer4CheckBox" name="answer4CheckBox" value="true">
+            <input type="text" id="answer4Text" name="answer4Text" class="bg-gray-200 text-gray-800 p-2 rounded w-full"
+              required maxlength="1000">
+          </div>
+
+        </div>
+        <input type="submit" value="SEND"
+          class="bg-black hover:bg-primaryGreen hover:text-secondaryGreen text-white p-2 px-8 my-8 rounded"
+          style="font-family: 'Press Start 2P', sans-serif">
+      </form>
+    </div>
+    <!-- modal -->
     <% if (message) { %>
       <div id="modal" class="modal">
         <div class="modal-content">
@@ -74,9 +76,9 @@
       </div>
       <% } %>
 
-<script src="tailwind.js"></script>
+        <script src="tailwind.js"></script>
 
-<script>
+        <script>
           const form = document.getElementById("newQuestionForm");
           const modal = document.getElementById("modal");
           const closeModal = document.getElementById("closeModal");
@@ -129,7 +131,7 @@
 
           // })
 
-</script>
+        </script>
 </body>
 
 

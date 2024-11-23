@@ -109,12 +109,10 @@ body {
   }
   form{
     color: black;
-    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
   }
 
   form label{
@@ -314,7 +312,7 @@ body {
   font-weight: 600;
   text-decoration: underline;
 }
-.flex{
+/* .flex{
   justify-content: center;
 }
 .flex-row{
@@ -322,7 +320,7 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 2rem;
-}
+} */
 
 
   
