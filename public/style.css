@@ -84,9 +84,13 @@ body {
     gap: 1rem;
     align-items: center;
     font-family: "Press Start 2P", system-ui;
+    padding-left: 16px;
   }
   .logo-div p{
     padding-top: 0.35rem;
+  }
+  .logo-div img{
+    width: 64px;
   }
   .header-items {
     color: #41fd5b;
