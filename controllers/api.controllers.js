@@ -1,6 +1,3 @@
-const xlsx = require("xlsx");
-const fs = require("fs");
-const path = require("path");
 const { generateQuestions, getRandomQuestionsDB } = require('../services/question.services');
 const jsonFile = require("../config/test.js")
 
@@ -24,9 +21,9 @@ const jsonFile = require("../config/test.js")
  * @throws {Error} If an unexpected error occurs, a 500 status code is returned with the error message.
  */
 const getRandomQuestions = async (req, res) => {
-	try {
-		let { amount, categories } = req.query;
-		amount = parseInt(amount, 10);
+  try {
+    let { amount, categories } = req.query;
+    amount = parseInt(amount, 10);
 
     //validation of amount
     if (isNaN(amount) || amount < 1) {
@@ -35,10 +32,10 @@ const getRandomQuestions = async (req, res) => {
       amount = 30;
     }
 
-		//const randomQuestion = await getRandomQuestionsDB(amount, {categories : categories});
-		const randomQuestion = categories
-			? await getRandomQuestionsDB(amount, { categories: categories })
-			: await getRandomQuestionsDB(amount);
+    //const randomQuestion = await getRandomQuestionsDB(amount, {categories : categories});
+    const randomQuestion = categories
+      ? await getRandomQuestionsDB(amount, { categories: categories })
+      : await getRandomQuestionsDB(amount);
 
     res.status(200).json({
       message: "Random questions delivered successfully",
@@ -69,7 +66,7 @@ const getAiQuestions = async (req, res) => {
     // Log error details to the console for debugging
     console.error(
       "Error generating the questions:",
-      error.response ? error.response.data : error.message
+      /*  error.response ? error.response.data : */ error.message
     );
     // Send a 400 error response with a custom error message if generation fails
     return res.status(400).json({

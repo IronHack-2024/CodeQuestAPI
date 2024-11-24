@@ -1,0 +1,4665 @@
+[
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Among these selectors which selector has the highest specificity ranking for selecting the anchor link element?",
+    "codeExamples": [
+      "css\nul li a\na\n.example a\ndiv a\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`div a`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`ul li a`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`.example a`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Using an attribute selector, how would you select an `<a>` element with a \"title\" attribute?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`a > title {...}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a.title {...}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a=title {...}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a[title]{...}`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the CSS selector for an `<a>` tag containing the title attribute?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`a > title`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a=title`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a.title`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a[title]`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "CSS grid and flexbox are now becoming a more popular way to create page layouts. However, floats are still commonly used, especially when working with an older code base, or if you need to support an older browser version. What are two valid techniques used to clear floats?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Use the \"clearfix hack\" on the floated element and add a float to the parent element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the overflow property on the floated element or the \"clearfix hack\" on either the floated or parent element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the \"clearfix hack\" on the floated element or the overflow property on the parent element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use the \"clearfix hack\" on the parent element or use the overflow property with a value other than \"visible.\"",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What element(s) do the following selectors match?",
+    "codeExamples": [
+      "css\n1) .nav {\n  ...;\n}\n2) nav {\n  ...;\n}\n3) #nav {\n  ...;\n}\n",
+      "\n  1. An element with an ID of \"nav\"\n  2. A nav element\n  3. An element with a class of \"nav\"\n",
+      "\n  1. An element with a class of \"nav\"\n  2. A nav element\n  3. An element with an id of \"nav\"\n",
+      "\n  1. An element with a class of \"nav\"\n  2. A nav element\n  3. A div with an id of \"nav\"\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "B `They all target the same nav element.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "When adding transparency styles, what is the difference between using the opacity property versus the background property with a `rgba()` value?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Opacity specifies the level of transparency of the child elements. Background with a `rgba()` value applies transparency to the background color only.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Opacity applies transparency to the background color only. Background with an `rgba()` value specifies the level of transparency of an element, as a whole, including its content.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Opacity applies transparency to the parent and child elements. Background with a `rgba()` value specifies the level of transparency of the parent element only.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Opacity specifies the level of transparency of an element, including its content. Background with a `rgba()` value applies transparency to the background color only.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is true of block and inline elements? (_Alternative_: Which statement about block and inline elements is true?)",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "By default, block elements are the same height and width as the content container between their tags; inline elements span the entire width of its container.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A `<nav>` element is an example of an inline element. `<header>` is an example of a block element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A `<span>` is an example of a block element. `<div>` is an example of an inline element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "By default, block elements span the entire width of their container; inline elements are the same height and width as the content contained between their tags.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "CSS grid introduced a new length unit, fr, to create flexible grid tracks. Referring to the code sample below, what will the widths of the three columns be?",
+    "codeExamples": [
+      "css\n.grid {\n  display: grid;\n  width: 500px;\n  grid-template-columns: 50px 1fr 2fr;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The first column will have a width of 50px. The second column will be 50px wide and the third column will be 100px wide.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The first column will have a width of 50px. The second column will be 300px wide and the third column will be 150px wide.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The first column will have a width of 50px. The second column will be 500px wide and the third column will be 1000px wide.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The first column will have a width of 50px. The second column will be 150px wide and the third column will be 300px wide.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "If the width of the container is 500 pixels, what would the width of the three columns be in this layout?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "50px, 200px, 300px",
+        "isCorrect": false
+      },
+      {
+        "answer": "50px, 100px, 200px",
+        "isCorrect": false
+      },
+      {
+        "answer": "50px, 50px, 100px",
+        "isCorrect": false
+      },
+      {
+        "answer": "50px, 150px, 300px",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the use of line-height property?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "to control the height of the space between heading elements",
+        "isCorrect": false
+      },
+      {
+        "answer": "to control the height of the character size",
+        "isCorrect": false
+      },
+      {
+        "answer": "to control the width of the space between characters",
+        "isCorrect": false
+      },
+      {
+        "answer": "to control the height of the space between two lines of content",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Three of these choices are true about class selectors. Which is NOT true?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Multiple classes can be used within the same element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The same class can be used multiple times per page.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Class selectors begin with a leading period",
+        "isCorrect": false
+      },
+      {
+        "answer": "Classes can be used multiple times per page but not within the same element.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is not true about class selectors?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "An element can have multiple class values.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Class selectors are marked with a leading period.",
+        "isCorrect": false
+      },
+      {
+        "answer": "More than one element can have the same class value.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Only one class value can be assigned to an element.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "There are many properties that can be used to align elements and create page layouts such as float, position, flexbox, and grid. Of these four properties, which one should be used to align a global navigation bar that stays fixed at the top of the page?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "flexbox",
+        "isCorrect": false
+      },
+      {
+        "answer": "grid",
+        "isCorrect": false
+      },
+      {
+        "answer": "float",
+        "isCorrect": false
+      },
+      {
+        "answer": "position",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "In the shorthand example below, which individual background properties are represented?",
+    "codeExamples": [
+      "css\nbackground: blue url(image.jpg) no-repeat scroll 0px 0px;\n",
+      "css\nbackground-color: blue;\nbackground-image: url(image.jpg);\nbackground-repeat: no-repeat;\nbackground-attachment: scroll;\nbackground-position: 0px 0px;\n",
+      "css\nbackground-color: blue;\nbackground-img: URL(image.jpg);\nbackground-position: no-repeat;\nbackground-scroll: scroll;\nbackground-size: 0px 0px;\n",
+      "css\nbackground-color: blue;\nbackground-src: URL(image.jpg);\nbackground-repeat: no-repeat;\nbackground-wrap: scroll;\nbackground-position: 0px 0px;\n",
+      "css\nbackground-color: blue;\nbackground-src: URL(image.jpg);\nbackground-repeat: no-repeat;\nbackground-scroll: scroll;\nbackground-position: 0px 0px;\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "A",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "In this example, according to cascading and specificity rules, what color will the link be?",
+    "codeExamples": [
+      "css\n.example {\n  color: yellow;\n}\nul li a {\n  color: blue;\n}\nul a {\n  color: green;\n}\na {\n  color: red;\n}\n",
+      "HTML\n<ul>\n  <li><a href=\"#\" class=\"example\">link</a></li>\n  <li>list item</li>\n  <li>list item</li>\n</ul>\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "green",
+        "isCorrect": false
+      },
+      {
+        "answer": "blue",
+        "isCorrect": false
+      },
+      {
+        "answer": "red",
+        "isCorrect": false
+      },
+      {
+        "answer": "yellow",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "When elements overlap, they are ordered on the z-axis (i.e., which element covers another). The z-index property can be used to specify the z-order of overlapping elements. Which set of statements about the z-index property are true?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index must also be used with positioned elements.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Larger z-index values appear on top of elements with a lower z-index value. Only positive numbers can be used. z-index must also be used with positioned elements.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index can be used with or without positioned elements.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Larger z-index values appear on top of elements with a lower z-index value. Negative and positive numbers can be used. z-index can only be used on positioned elements.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "When elements within a container overlap, the z-index property can be used to indicate how those items are stacked on top of each other. Which set of statements is true?",
+    "codeExamples": [
+      "\n  1. Larger z-index values appear on top elements with a lower z-index value.\n  2. Negative and positive numbers can be used.\n  3. The z-index can be used only on positioned elements.\n",
+      "\n  1. Smaller z-index values appear on top of elements with a larger z-index value.\n  2. Negative and positive numbers can be used.\n  3. The z-index can be used with or without positioned elements.\n",
+      "\n  1. Smaller z-index values appear on top of elements with a larger z-index value.\n  2. Negative and positive numbers can be used.\n  3. The z-index must also be used with positioned elements.\n",
+      "\n  1. Larger z-index values appear on top of elements with a lower z-index value.\n  2. Only a positive number can be used.\n  3. The z-index must also be used with positioned elements.\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "A",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the difference between the following line-height settings?",
+    "codeExamples": [
+      "css\nline-height: 20px;\nline-height: 2;\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The value of 20px will set the line-height to 20px. The value of 2 is not valid.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The value of 20px will set the line-height to 20px. The value of 2 will default to a value of 2px.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The value of 20px will set the line-height to 20px. The value of 2 will set the line height to 20% of the corresponding font-size value.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The value of 20px will set the line-height to 20px. The value of 2 will set the line height to twice the size of the corresponding font-size value.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "In the following example, what color will paragraph one and paragraph two be? (_Alternative_: In this example, what color will paragraphs one and two be?)",
+    "codeExamples": [
+      "HTML\n<section>\n  <p>paragraph one</p>\n</section>\n\n<p>paragraph two</p>\n",
+      "css\nsection p {\n  color: red;\n}\nsection + p {\n  color: blue;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "Paragraph one will be blue, and paragraph two will be red.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Both paragraphs will be blue.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Both paragraphs will be red.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Paragraph one will be red, and paragraph two will be blue.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What are three valid ways of adding CSS to an HTML page?",
+    "codeExamples": [
+      "\n  1. External; CSS is written in a separate file.\n  2. Inline; CSS is added to the <head> of the HTML page.\n  3. Internal; CSS is included within the HTML tags.\n",
+      "\n  1. External; CSS is written in a separate file and is linked within the <header> element of the HTML file.\n  2. Inline; CSS is added to the HTML tag.\n  3. Internal; CSS is included within the <header> element of the HTML file.\n",
+      "\n  1. External; CSS is written in a separate file and is linked within the <head> element of the HTML file.\n  2. Internal; CSS is included within the <header> element of the HTML file.\n  3. Inline; CSS is added to the HTML tag.\n",
+      "\n  1. External; CSS is written in a separate file and is linked within the <head> element of the HTML file.\n  2. Inline; CSS is added to the HTML tag.\n  3. Internal; CSS is included within the <head> element of the HTML file.\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which statement is true for the SVG image format?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "CSS can be applied to SVG but JavaScript cannot be.",
+        "isCorrect": false
+      },
+      {
+        "answer": "SVGs work best for creating 3D graphics.",
+        "isCorrect": false
+      },
+      {
+        "answer": "SVGs are a HAML-based markup language for creating vector graphics.",
+        "isCorrect": false
+      },
+      {
+        "answer": "SVGs can be created as a vector graphic or coded using SVG-specific elements such as &#x3C;svg&#x3E;, &#x3C; line&#x3E;, and &#x3C; ellipse&#x3E;.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "In the example below, when will the color pink be applied to the anchor element?",
+    "codeExamples": [
+      "css\na:active {\n  color: pink;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The color of the link will display as pink after it has been clicked or if the mouse is hovering over the link.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The color of the link will display as pink on mouse hover.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The color of the link will display as pink before it has been clicked.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The color of the link will display as pink while the link is being clicked but before the mouse click is released.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "To change the color of an SVG using CSS, which property is used?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Use background-fill to set the color inside the object and stroke or border to set the color of the border.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The color cannot be changed with CSS.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use fill or background to set the color inside the object and stroke to set the color of the border.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use fill to set the color inside the object and stroke to set the color of the border.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "When using position: fixed, what will the element always be positioned relative to?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "the closest element with position: relative",
+        "isCorrect": false
+      },
+      {
+        "answer": "the parent element",
+        "isCorrect": false
+      },
+      {
+        "answer": "the wrapper element",
+        "isCorrect": false
+      },
+      {
+        "answer": "the viewport",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "By default, a background image will repeat \\_",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "only if the background-repeat property is set to repeat",
+        "isCorrect": false
+      },
+      {
+        "answer": "indefinitely on the horizontal axis only",
+        "isCorrect": false
+      },
+      {
+        "answer": "once, on the x and y axis",
+        "isCorrect": false
+      },
+      {
+        "answer": "indefinitely, vertically, and horizontally",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "When using media queries, media types are used to target a device category. Which choice lists current valid media types?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "print, screen, aural",
+        "isCorrect": false
+      },
+      {
+        "answer": "print, screen, television",
+        "isCorrect": false
+      },
+      {
+        "answer": "print, speech, device",
+        "isCorrect": false
+      },
+      {
+        "answer": "print, screen, speech",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "How would you make the first letter of every paragraph on the page red?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "p:first-letter { color: red; }",
+        "isCorrect": false
+      },
+      {
+        "answer": "first-letter::p { color: red; }",
+        "isCorrect": false
+      },
+      {
+        "answer": "first-letter:p { color: red; }",
+        "isCorrect": false
+      },
+      {
+        "answer": "p::first-letter { color: red; }",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "In this example, what is the selector, property, and value?",
+    "codeExamples": [
+      "css\np {\n  color: #000000;\n}\n",
+      "\n  \"p\" is the selector\n  \"#000000\" is the property\n  \"color\" is the value\n",
+      "\n  \"p\" is the selector\n  \"color\" is the property\n  \"#000000\" is the value\n",
+      "\n  \"color\" is the selector\n  \"#000000\" is the property\n  \"#p\" is the value\n",
+      "\n  \"color\" is the selector\n  \"p\" is the property\n  \"#000000\" is the value\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the rem unit based on?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "The rem unit is relative to the font-size of the p element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You have to set the value for the rem unit by writing a declaration such as rem { font-size: 1 Spx; }",
+        "isCorrect": false
+      },
+      {
+        "answer": "The rem unit is relative to the font-size of the containing (parent) element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The rem unit is relative to the font-size of the root element of the page.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which choice would give a block element rounded corners?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`corner-radius: 10px;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`border-corner: 10px;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`corner-curve: 10px;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`border-radius: 10px;`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "In the following media query example, what conditions are being targeted?",
+    "codeExamples": [
+      "css\n@media (min-width: 1024px), screen and (orientation: landscape) { … }\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The rule will apply to a device that has a width of 1024px or narrower and is a screen device in landscape mode.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The rule will apply to a device that has a width of 1024px or wider and is a screen device in landscape mode.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The rule will apply to a device that has a width of 1024px or narrower or is a screen device in landscape mode.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The rule will apply to a device that has either a width of 1024px or wider or is a screen device in landscape mode.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "CSS transform properties are used to change the shape and position of the selected objects. The transform-origin property specifies the location of the element's transformation origin. By default, what is the location of the origin?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "the top left corner of the element",
+        "isCorrect": false
+      },
+      {
+        "answer": "the top right corner of the element",
+        "isCorrect": false
+      },
+      {
+        "answer": "the bottom left of the element",
+        "isCorrect": false
+      },
+      {
+        "answer": "the center of the element",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which of the following is not a valid color value? (_Alternative:_ Which choice is not a valid color value?)",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`color: #000`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`color: rgb(0,0,0)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`color: #000000`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`color: 000000`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the vertical gap between the two elements below?",
+    "codeExamples": [
+      "HTML\n<div style=\"margin-bottom: 2rem;\">Div 1</div>\n<div style=\"margin-top: 2rem;\">Div 2</div>\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "32px",
+        "isCorrect": false
+      },
+      {
+        "answer": "64px",
+        "isCorrect": false
+      },
+      {
+        "answer": "4rem",
+        "isCorrect": false
+      },
+      {
+        "answer": "2rem",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "When using the Flexbox method, what property and value is used to display flex items in a column?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "flex-flow: column;",
+        "isCorrect": false
+      },
+      {
+        "answer": "flex-column: auto;",
+        "isCorrect": false
+      },
+      {
+        "answer": "flex-direction: column;",
+        "isCorrect": false
+      },
+      {
+        "answer": "flex-flow: column; or flex-direction: column",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which type of declaration will take precedence?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "any declarations in user-agent stylesheets",
+        "isCorrect": false
+      },
+      {
+        "answer": "normal declarations in author stylesheets",
+        "isCorrect": false
+      },
+      {
+        "answer": "important declarations in author stylesheets",
+        "isCorrect": false
+      },
+      {
+        "answer": "important declarations in user stylesheets",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "The flex-direction property is used to specify the direction in which flex items are displayed. What are the values used to specify the direction of the items in the following examples?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "&shy;",
+        "isCorrect": false
+      },
+      {
+        "answer": "&shy;",
+        "isCorrect": false
+      },
+      {
+        "answer": "&shy;",
+        "isCorrect": false
+      },
+      {
+        "answer": "&shy;",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "There are two sibling combinators that can be used to select elements contained within the same parent element; the general sibling combinator (~) and the adjacent sibling combinator (+). Referring to the example below, which elements will the styles be applied to?",
+    "codeExamples": [
+      "css\nh2 ~ p {\n  color: blue;\n}\nh2 + p {\n  background: beige;\n}\n",
+      "HTML\n<section>\n  <p>paragraph 1</p>\n  <h2>Heading</h2>\n  <p>paragraph 2</p>\n  <p>paragraph 3</p>\n</section>\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "Paragraphs 2 and 3 will be blue. The h2 and paragraph 2 will have a beige background.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Paragraph 2 will be blue. Paragraphs 2 and 3 will have a beige background.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Paragraphs 2, and 3 will be blue, and paragraph 2 will have a beige background.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which element(s) will be blue?",
+    "codeExamples": [
+      "css\nh2 ~ p {\n  color: blue;\n}\n",
+      "HTML\n<section>\n  <p>P1</p>\n  <h2>H2</h2>\n  <p>P3</p>\n  <p>P4</p>\n</section>\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "P3",
+        "isCorrect": false
+      },
+      {
+        "answer": "P1, P3 and P4",
+        "isCorrect": false
+      },
+      {
+        "answer": "P1",
+        "isCorrect": false
+      },
+      {
+        "answer": "P3 and P4",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "When using Flexbox, the \"justify-content\" property can be used to distribute the space between the flex items along the main axis. Which value should be used to evenly distribute the flex items within the container shown below?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "justify-content: space-around;",
+        "isCorrect": false
+      },
+      {
+        "answer": "justify-content: center;",
+        "isCorrect": false
+      },
+      {
+        "answer": "justify-content: auto;",
+        "isCorrect": false
+      },
+      {
+        "answer": "justify-content: space-between;",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "There are many advantages to using icon fonts. What is one of those advantages?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Icon fonts increase accessibility.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Icon fonts can be used to replace custom fonts.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Icon fonts are also web-safe fonts.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Icon fonts can be styled with typography-related properties such as font-size and color.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the difference between `display:none` and `visibility:hidden`?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Both will hide the element on the page, but display:none has greater browser support. visibility:hidden is a new property and does not have the best browser support",
+        "isCorrect": false
+      },
+      {
+        "answer": "display:none hides the elements but maintains the space it previously occupied. visibility:hidden will hide the element from view and remove it from the normal flow of the document",
+        "isCorrect": false
+      },
+      {
+        "answer": "There is no difference; both will hide the element on the page",
+        "isCorrect": false
+      },
+      {
+        "answer": "display:none hides the element from view and removes it from the normal flow of the document. visibility:hidden will hide the element but maintain the space it previously occupied.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What selector and property would you use to scale an element to be 50% smaller on hover?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "element:hover {scale: 0.5;}",
+        "isCorrect": false
+      },
+      {
+        "answer": "element:hover {scale: 50%;}",
+        "isCorrect": false
+      },
+      {
+        "answer": "element:hover {transform: scale(50%);}",
+        "isCorrect": false
+      },
+      {
+        "answer": "element:hover {transform: scale(0.5);}",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which statement regarding icon fonts is true?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Icon fonts can be inserted only using JavaScript.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Icon fonts are inserted as inline images.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Icon fonts require browser extensions.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Icon fonts can be styled with typography-related properties such as font-size and color.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "The values for the font-weight property can be keywords or numbers. For each numbered value below, what is the associated keyword?",
+    "codeExamples": [
+      "css\nfont-weight: 400;\nfont-weight: 700;\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "bold; normal",
+        "isCorrect": false
+      },
+      {
+        "answer": "light; normal",
+        "isCorrect": false
+      },
+      {
+        "answer": "normal; bolder",
+        "isCorrect": false
+      },
+      {
+        "answer": "normal; bold",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Using the:nth-child pseudo class, what would be the most efficient way to style every third item in a list, no matter how many items are present, starting with item 2?",
+    "codeExamples": [
+      "css\nli:nth-child(3 + 2n) {\n  margin: 0 5 px;\n}\n",
+      "css\nli:nth-child(3n + 2) {\n  margin: 0 5 px;\n}\n",
+      "css\nli:nth-child(2),\nli:nth-child(5),\nli:nth-child(8) {\n  margin: 0 5 px;\n}\n",
+      "css\nli:nth-child(2n + 3) {\n  margin: 0 5 px;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which selector would select only internal links within the current page?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`a[href=\"#\"] {...}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a[href~=\"#\"]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a[href=\"#\"]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a[href^=\"#\"]`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the difference between the margin and padding properties?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Margin adds space around and inside of an element; padding adds space only inside of an element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Margin adds a line around an element, and padding adds space inside of an element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Margin adds space inside of an element, and padding adds space around an element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Margin adds space around an element; padding adds space inside of an element.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is not a valid way of declaring a padding value of 10 pixels on the top and bottom, and 0 pixels on the left and right?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "padding: 10px 0px;",
+        "isCorrect": false
+      },
+      {
+        "answer": "padding: 10px 0;",
+        "isCorrect": false
+      },
+      {
+        "answer": "padding: 10px 0px 10px 0px;",
+        "isCorrect": false
+      },
+      {
+        "answer": "padding: 10px 10px 0px 0px;",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Is there an error in this code? If so, find the best description of the problem",
+    "codeExamples": [
+      "css\n@font-face {\n  font-family: 'Avenir', sans-serif;\n  src:\n    url('avenir.woff2') format('woff2'),\n    url('avenir.woff') format('woff');\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The font file formats are not supported in modern browsers.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The src attribute requires a comma between the URL and format values.",
+        "isCorrect": false
+      },
+      {
+        "answer": "There are no errors in the example.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The sans-serif inclusion is problematic.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which style places an element at a fixed location within its container?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "display: flex;",
+        "isCorrect": false
+      },
+      {
+        "answer": "display: block;",
+        "isCorrect": false
+      },
+      {
+        "answer": "float: left;",
+        "isCorrect": false
+      },
+      {
+        "answer": "position: absolute;",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "The calc() CSS function is often used for calculating relative values. In the example below, what is the specified margin-left value?",
+    "codeExamples": [
+      "css\n.example {\n  margin-left: calc(5% + 5px);\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The left margin value is equal to 5% of the viewport width plus 5px",
+        "isCorrect": false
+      },
+      {
+        "answer": "The left margin value is equal to 5% of the closest positioned element's width plus 5px",
+        "isCorrect": false
+      },
+      {
+        "answer": "The left margin value is equal to 5% of the selected element's width (.example) plus 5px",
+        "isCorrect": false
+      },
+      {
+        "answer": "The left margin value is equal to 5% of its parent element's width plus 5px",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which code would you use to absolutely position an element of the logo class?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`.logo { position: absolute; margin-left: 100px; margin-top: 150px; }`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`.logo { position: absolute; padding-left: 100px; padding-top: 150px; }`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`.logo { position: absolute; left-padding: 100px; top-padding: 150px; }`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`.logo { position: absolute; left: 100px; top: 150px; }`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "In this example, what color will Paragraph 1 be?",
+    "codeExamples": [
+      "css\np:first-of-type {\n  color: red;\n}\np {\n  color: blue;\n}\n.container {\n  color: yellow;\n}\np:first-child {\n  color: green;\n}\n",
+      "HTML\n<div class=\"container\">\n  <h1>Heading</h1>\n  <p>Paragraph1</p>\n  <p>Paragraph2</p>\n</div>\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "blue",
+        "isCorrect": false
+      },
+      {
+        "answer": "green",
+        "isCorrect": false
+      },
+      {
+        "answer": "yellow",
+        "isCorrect": false
+      },
+      {
+        "answer": "red",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the `::placeholder pseudo-element` used for?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "It specifies the default input text for a form control.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It writes text content into a hyperlink tooltip.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It writes text content into any page element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is used to format the appearance of placeholder text within a form control.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which statement is true of the single colon (`:`) or double colon (`::`) notations for pseudo-elements-for example, `::before` and `:before`?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "All browsers support single and double colons for new and older pseudo-elements. So you can use either but it is convention to use single colons for consistency.",
+        "isCorrect": false
+      },
+      {
+        "answer": "In CSS3, the double colon notation (`::`) was introduced to create a consistency between pseudo-elements from pseudo-classes. For newer browsers, use the double colon notation. For IE8 and below, use single colon notation (`:`).",
+        "isCorrect": false
+      },
+      {
+        "answer": "Only the new CSS3 pseudo-elements require the double colon notation while the CSS2 pseudo-elements do not.",
+        "isCorrect": false
+      },
+      {
+        "answer": "In CSS3, the double colon notation (`::`) was introduced to differentiate pseudo-elements from pseudo-classes. However, modern browsers support both formats. Older browsers such as IE8 and below do not.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which choice is not a valid value for the font-style property?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "normal",
+        "isCorrect": false
+      },
+      {
+        "answer": "italic",
+        "isCorrect": false
+      },
+      {
+        "answer": "oblique",
+        "isCorrect": false
+      },
+      {
+        "answer": "none",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "When would you use the @font-face method?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "to set the font size of the text",
+        "isCorrect": false
+      },
+      {
+        "answer": "to change the name of the font declared in the font-family",
+        "isCorrect": false
+      },
+      {
+        "answer": "to set the color of the text",
+        "isCorrect": false
+      },
+      {
+        "answer": "to load custom fonts into stylesheet",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "You have a large image that needs to fit into a 400 x 200 pixel area. What should you resize the image to if your users are using Retina displays?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "2000 x 1400 pixels",
+        "isCorrect": false
+      },
+      {
+        "answer": "200 x 100 pixels",
+        "isCorrect": false
+      },
+      {
+        "answer": "400 x 200 pixels",
+        "isCorrect": false
+      },
+      {
+        "answer": "800 x 400 pixels",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "In Chrome's Developer Tools view, where are the default styles listed?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "in the third panel under the Layout tab",
+        "isCorrect": false
+      },
+      {
+        "answer": "under the HTML view on the left",
+        "isCorrect": false
+      },
+      {
+        "answer": "in the middle panel",
+        "isCorrect": false
+      },
+      {
+        "answer": "under the User Agent Stylesheet section on the right",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "While HTML controls document structure, CSS controls `___`.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "semantic meaning",
+        "isCorrect": false
+      },
+      {
+        "answer": "content meaning",
+        "isCorrect": false
+      },
+      {
+        "answer": "document structure",
+        "isCorrect": false
+      },
+      {
+        "answer": "content appearance",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the recommended name you should give the folder that holds your project's images?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "#images",
+        "isCorrect": false
+      },
+      {
+        "answer": "Images",
+        "isCorrect": false
+      },
+      {
+        "answer": "my images",
+        "isCorrect": false
+      },
+      {
+        "answer": "images",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the advantage of using inline CSS?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "It is easier to manage.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It can be used to quickly test local CSS overrides.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It reduces conflict with other CSS definition methods.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is easier to add multiple styles through it.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which W3C status code represents a CSS specification that is fully implemented by modern browsers?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Proposed Recommendation",
+        "isCorrect": false
+      },
+      {
+        "answer": "Working Draft",
+        "isCorrect": false
+      },
+      {
+        "answer": "Candidate Recommendation",
+        "isCorrect": false
+      },
+      {
+        "answer": "Recommendation",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Are any of the following declarations invalid?",
+    "codeExamples": [
+      "css\ncolor: red; /* declaration A */\nfont-size: 1em; /* declaration B */\npadding: 10px 0; /* declaration C */\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "Declaration A is invalid.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Declaration B is invalid.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Declaration C is invalid.",
+        "isCorrect": false
+      },
+      {
+        "answer": "All declarations are valid.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which CSS will cause your links to have a solid blue background that changes to semitransparent on hover?",
+    "codeExamples": [
+      "css\na:link {\n  background: #0000ff;\n}\na:hover {\n  background: rgba(0, 0, 255, 0.5);\n}\n",
+      "css\na {\n  color: blue;\n}\na:hover {\n  background: white;\n}\n",
+      "css\na:link {\n  background: blue;\n}\na:hover {\n  color: rgba(0, 0, 255, 0.5);\n}\n",
+      "css\na:hover {\n  background: rgba(blue, 50%);\n}\na:link {\n  background: rgba(blue);\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "A",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which CSS rule takes precedence over the others listed?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`div.sidebar {}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`* {}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`.sidebar p {}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`div#sidebar2 p {}`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "The body of your page includes some HTML sections. How will it look with the following CSS applied?",
+    "codeExamples": [
+      "css\nbody {\n  background: #ffffff; /* white */\n}\nsection {\n  background: #0000ff; /* blue */\n  height: 200px;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "Yellow sections on a blue background",
+        "isCorrect": false
+      },
+      {
+        "answer": "Green sections on a white background",
+        "isCorrect": false
+      },
+      {
+        "answer": "blue sections on a red background",
+        "isCorrect": false
+      },
+      {
+        "answer": "blue sections on a white background",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which CSS keyword can you use to override standard source order and specificity rules?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`!elevate!`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`*prime`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`override`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`!important`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "You can use the `___` pseudo-class to set a different color on a link if it was clicked on.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`a:hover`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a:link`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a:focus`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a:visited`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which color will look the brightest on your screen, assuming the background is white?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`background-color: #aaa;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`background-color: #999999;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`background-color: rgba(170,170,170,0.5);`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`background-color: rgba(170,170,170,0.2);`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which CSS selector can you use to select all elements on your page associated with the two classes header and clear?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`.\"header clear\" {}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`header#clear {}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`.header clear {}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`.header.clear {}`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "A universal selector is specified using a(n) `___`.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "\"h1\" string",
+        "isCorrect": false
+      },
+      {
+        "answer": "\"a\" character",
+        "isCorrect": false
+      },
+      {
+        "answer": "\"p\" character",
+        "isCorrect": false
+      },
+      {
+        "answer": "\"\\*\" character",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "In the following CSS code, `'h1'` is the `___`, while `'color'` is the `___`.",
+    "codeExamples": [
+      "css\nh1 {\n  color: red;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "property; declaration",
+        "isCorrect": false
+      },
+      {
+        "answer": "declaration; rule",
+        "isCorrect": false
+      },
+      {
+        "answer": "\"p\" character",
+        "isCorrect": false
+      },
+      {
+        "answer": "selector; property",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is an alternate way to define the following CSS rule?",
+    "codeExamples": [
+      "css\nfont-weight: bold;\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "font-weight: 400;",
+        "isCorrect": false
+      },
+      {
+        "answer": "font-weight: medium;",
+        "isCorrect": false
+      },
+      {
+        "answer": "font-weight: Black;",
+        "isCorrect": false
+      },
+      {
+        "answer": "font-weight: 700;",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "You want your styling to be based on a font stack consisting of three fonts. Where should the generic font for your font family be specified?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "It should be the first one on the list.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Generic fonts are discouraged from this list.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It should be the second one on the list.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It should be the last one on the list.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "When using a font stack to declare the font family, in what order should the values appear?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "The first value is the first choice. The order of the alternative options does not matter. It depends on what is available on the user's computer.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The first value is the first choice, and must be followed by at least one alternative option before adding the generic font.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The first value is the first choice, followed by a maximum of three alternatives.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The first value is the first choice, followed by alternative options, ordered by preference. The last option should be a generic font.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is one disadvantage of using a web font service?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "It requires you to host font files on your own server.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It uses more of your site's bandwidth.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It offers a narrow selection of custom fonts.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is not always a free service.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "How do you add Google fonts to your project?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "by embedding the font file directly into the project's master JavaScript",
+        "isCorrect": false
+      },
+      {
+        "answer": "by using a Google-specific CSS syntax that directly links to the desired font file",
+        "isCorrect": false
+      },
+      {
+        "answer": "by using a standard font-face CSS definition sourcing a font file on Google's servers",
+        "isCorrect": false
+      },
+      {
+        "answer": "by using an HTML link element referring to a Google-provided CSS",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Using the following HTML and CSS example, what will the equivalent pixel value be for .em and .rem elements?",
+    "codeExamples": [
+      "css\nHTML {\n  font-size: 10px;\n}\nbody {\n  font-size: 2rem;\n}\n.rem {\n  font-size: 1.5rem;\n}\n.em {\n  font-size: 2em;\n}\n",
+      "HTML\n<body>\n  <p class=\"rem\"></p>\n  <p class=\"em\"></p>\n</body>\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The .rem will be equivalent to 25px; the .em value will be 20px.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The .rem will be equivalent to 15px; the .em value will be 20px.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The .rem will be equivalent to 20px; the .em value will be 40px.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The .rem will be equivalent to 15px; the .em value will be 40px.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What property is used to adjust the space between text characters?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`font-style`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`text-transform`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`font-variant`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`letter-spacing`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the correct syntax for changing the cursor from an arrow to a pointing hand when it interacts with a named element?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`.element {cursor: hand;}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`.element {cursor: move-hand;}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`.element {cursor: pointer-hand;}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`.element {cursor: pointer;}`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the effect of this style?",
+    "codeExamples": [
+      "css\nbackground-position: 10% 50%;\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The background image is placed 10% from the bottom and 50% from the left of its container",
+        "isCorrect": false
+      },
+      {
+        "answer": "The background image is placed 10% from the right and 50% from the bottom of its container",
+        "isCorrect": false
+      },
+      {
+        "answer": "The background image is placed 10% from the top and 50% from the left of its container",
+        "isCorrect": false
+      },
+      {
+        "answer": "The background image is placed 10% from the left and 50% from the top of its container",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "How will the grid items display?",
+    "codeExamples": [
+      "css\ngrid-template-columns: 2fr 1fr;\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The first column will be twice the height of the second column and will be as wide as the content.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The first column will be half the size of the container, and the second column will absorb the remaining space.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The first column will be twice the width and height of the second column and will fit proportionally within the grid container.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The first column will be twice as wide as the second column and will fit proportionally within the grid container.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which style rule would make the image 50% smaller during a hover?",
+    "codeExamples": [
+      "HTML\n<img id=\"photo\" alt=\"\" src=\"...\" />\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "img#photo:hover {scale: 0.5;}",
+        "isCorrect": false
+      },
+      {
+        "answer": "img#photo {hover-scale: 0.5;}",
+        "isCorrect": false
+      },
+      {
+        "answer": "img#photo:hover {size: smaller;}",
+        "isCorrect": false
+      },
+      {
+        "answer": "img#photo:hover {transform: scale(0.5);}",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which CSS properties can you use to create a rounded corner on just the top-left and top-right corners of an element?",
+    "codeExamples": [
+      "css\nA. border-radius: 10px 10px 0 0;\nB. border-top-left-radius: 10px; and border-top-right-radius: 10px;\nC. border-radius: 10px 0;\nD. border-top-radius: 10px;\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A and C",
+        "isCorrect": false
+      },
+      {
+        "answer": "C and D",
+        "isCorrect": false
+      },
+      {
+        "answer": "B and C",
+        "isCorrect": false
+      },
+      {
+        "answer": "A and B",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Review the HTML example below. Then choose the list of selectors that select the \\<p>, from lowest to highest specificity.",
+    "codeExamples": [
+      "HTML\n<section>\n  <p class=\"example\">...</p>\n</section>\n",
+      "css\n1. section \\* {\n  ...;\n}\n2. [class*='example'] {\n  ...;\n}\n3. p.example {\n  ...;\n}\n4. section p {\n  ...;\n}\n",
+      "css\n1. p {\n  ...;\n}\n2. p.example {\n  ...;\n}\n3. section p {\n  ...;\n}\n4. [class*='example'] {\n  ...;\n}\n",
+      "css\n1. p.example {\n  ...;\n}\n2. section p {\n  ...;\n}\n3. [class*='example'] {\n  ...;\n}\n4. section \\* {\n  ...;\n}\n",
+      "css\n1. p {\n  ...;\n}\n2. section p {\n  ...;\n}\n3. [class*='example'] {\n  ...;\n}\n4. p.example {\n  ...;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which property is used to create a drop shadow effect on an HTML element?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "element-shadow",
+        "isCorrect": false
+      },
+      {
+        "answer": "outer-shadow",
+        "isCorrect": false
+      },
+      {
+        "answer": "dropbox-shadow",
+        "isCorrect": false
+      },
+      {
+        "answer": "box-shadow",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the correct selector for targeting all text inputs that are not disabled?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`input[type=\"text\"]:not(\"disabled\") {...}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`input[type*=\"text\"]:not([disabled=\"disabled\"]) {...}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`input[type=\"text\"]:not([type=\"disabled\"]) {...}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`input[type=\"text\"]:not([disabled]) {...}`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "How can you create a semi-transparent background color?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`background-color: hsl(0, 0, 0, 0.5);`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`background-color: rgbx(0, 0, 0, 0.5);`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`background-color: rgba(0, 0, 0, 1);`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`background-color: rgba(0, 0, 0, 0.5);`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Using this HTML markup, how would you select only the headings contained within the `<header>` element?",
+    "codeExamples": [
+      "HTML\n<header>\n  <h1>Heading 1</h1>\n  <h2>Heading 2</h2>\n</header>\n<h2>Heading 2</h2>\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`header h1 + header h2 {...}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`header h1, h2 {...}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`h1, h2 {...}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`header h1, header h2 {...}`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Suppose you want to have a list of items (.item) displayed in a row and in reverse order using flexbox. What is the error in the CSS below?",
+    "codeExamples": [
+      "css\n.container {\n  display: flex;\n}\n.item {\n  border: 1px solid red;\n  flex-direction: row-reverse;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The value for flex-direction should be reverse-row.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The .container element should have a property of flex: display.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The display value should be flex-inline to display the items in a row.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The flex-direction property should be declared in the container.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which choice is not a valid transition?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`transition: margin 1000ms ease-in-out;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`transition: color 1.3s ease-in;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`transition: opacity 1s ease-in;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`transition: position 400ms linear;`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "In this example, what color will the paragraphs be and why?",
+    "codeExamples": [
+      "css\narticle p {\n  color: blue;\n}\narticle > p {\n  color: green;\n}\n",
+      "HTML\n<article>\n  <p>Paragraph 1</p>\n\n  <aside>\n    <p>Paragraph 2</p>\n  </aside>\n</article>\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "Paragraph 1 will be blue. Paragraph 2 will be green.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Both paragraphs will be green.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Both paragraphs will be blue.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Paragraph 1 will be green. Paragraph 2 will be blue.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Review the declaration of border style shown below. What is the corresponding longhand syntax?",
+    "codeExamples": [
+      "css\nborder: 1px solid red;\n",
+      "css\nborder-size: 1px;\nborder-style: solid;\nborder-color: red;\n",
+      "css\nborder-size: 1px;\nborder-type: solid;\nborder-color: red;\n",
+      "css\nborder-width: 1px;\nborder-style: solid;\nborder-color: red;\n",
+      "css\nborder-width: 1px;\nborder-line: solid;\nborder-color: red;\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Pseudo-classes are used to `_`.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "insert presentational content",
+        "isCorrect": false
+      },
+      {
+        "answer": "style a specific part of the selected element",
+        "isCorrect": false
+      },
+      {
+        "answer": "style the elements using class selectors",
+        "isCorrect": false
+      },
+      {
+        "answer": "style the state of the selected element",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "In this example, what styles will be applied to which elements?",
+    "codeExamples": [
+      "css\nsection {\n  color: gray;\n}\n",
+      "HTML\n<section>\n  <p>paragraph</p>\n  <a href=\"#\">link</a>\n</section>\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The paragraph and link will be gray.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The background color of the section element will be gray.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The paragraph will be gray. The link will be the browser default, black.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Only the paragraph will be gray.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which answer is an example of a type selector (also sometimes referred to as an element selector)?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`.header {...}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`#header {...}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`header > h1 {...}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`header {...}`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the correct order for listing different link states on a website so those states display correctly on the page?",
+    "codeExamples": [
+      "css\n  a\n  a:hover\n",
+      "css\n  :link\n  :visited\n  :hover\n  :active\n  :focus\n",
+      "css\n  :active\n  :focus\n  :hover\n  :link\n  :visited\n",
+      "css\n  :link\n  :visited\n  :focus\n  :hover\n  :active\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which selector is used to select the paragraph element that is a direct descendent of the section?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`section * p`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`section + p`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`section ~ p`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`section > p`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "For this code, what is the font color of the hypertext link?",
+    "codeExamples": [
+      "css\nul {\n  --color: red;\n}\np {\n  color: var(--color);\n}\na {\n  color: var(--color, orange);\n}\n",
+      "HTML\n<p>Paragraph</p>\n<ul>\n  <li>\n    <a href=\"#\">list item a link </a>\n  </li>\n  <li>list item</li>\n</ul>\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "orange",
+        "isCorrect": false
+      },
+      {
+        "answer": "blue",
+        "isCorrect": false
+      },
+      {
+        "answer": "black",
+        "isCorrect": false
+      },
+      {
+        "answer": "red",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which statement is not true?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Specificity determines which CSS rule is applied by the browsers.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The last rule defined overrides all previous rules and even conflicting rules.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Rules with more specific selectors have greater specificity.",
+        "isCorrect": false
+      },
+      {
+        "answer": "When two selectors apply to the same element, the one with lower specificity wins.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the output of the margin value when used within this context, assuming that its containing element is larger than 800px?",
+    "codeExamples": [
+      "css\n.example {\n  width: 800px;\n  margin: 0 auto;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The example element will have 0 margin space around the whole element. The auto value will center align the element horizontally and vertically within its container.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The example element will have 0 margin spaces on the left and right. It will be sized automatically on the top and bottom, which will center align the element within its container.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The margin value is invalid because it's missing a unit measurement after the 0.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The example element will have 0 margin spaces on the top and bottom. The margin will be sized automatically on the left and right, which may center-align the element within its container.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "There are currently four viewport-percentage lengths that can be used to define the value relative to the viewport size: vw, vh, vmin, and vmax. If the current viewport size has a width of 800px and a height of 600px, what will these values be equivalent to in pixels?",
+    "codeExamples": [
+      "css\n10vw = ?px\n10vh = ?px\n10vmin = ?px\n10vmax = ?px\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "10vw = 60px",
+        "isCorrect": false
+      },
+      {
+        "answer": "10vw = 8px",
+        "isCorrect": false
+      },
+      {
+        "answer": "10vw = 6px",
+        "isCorrect": false
+      },
+      {
+        "answer": "10vw = 80px",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Referring to the HTML markup and CSS example below, which element(s) will be targeted?",
+    "codeExamples": [
+      "css\np:first-of-type:first-letter {\n  color: red;\n}\n",
+      "HTML\n<body>\n  <p>Paragraph 1.</p>\n  <p>Paragraph 2.</p>\n\n  <article>\n    <h1>Heading</h1>\n    <p>Paragraph 3.</p>\n    <p>paragraph 4.</p>\n  </article>\n\n  <section>\n    <p>Paragraph 5.</p>\n    <p>Paragraph 6.</p>\n  </section>\n</body>\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The first letter in all paragraphs will be red.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Only the first letter in paragraphs 1 and 5 will be red.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Only the first letter in paragraph 1 will be red.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The first letter in paragraphs 1, 3, and 5 will be red.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which five style features are associated with the box model?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "width, height, z-index, overflow, font size",
+        "isCorrect": false
+      },
+      {
+        "answer": "margin, padding, font size, line height, border",
+        "isCorrect": false
+      },
+      {
+        "answer": "font size, line height, letter spacing, width, height",
+        "isCorrect": false
+      },
+      {
+        "answer": "margin, padding, border, width, height",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which choice will not set all links that include domain.com to pink?",
+    "codeExamples": [
+      "css\na[href$='domain.com'] {\n  color: pink;\n}\n",
+      "css\na[href='*domain.com'] {\n  color: pink;\n}\n",
+      "css\na[href*='domain.com'] {\n  color: rgba(255, 155, 155);\n}\n",
+      "css\na[href*='domain.com'] {\n  color: pink;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which property and value pair could be used to apply a linear gradient effect?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`css background-image: linear(#648880, #293f50);`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`css background: gradient(linear, #648880, #293f50);`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`css background-color: linear-gradient(#648880, #293f50);`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`css background: linear-gradient(#648880, #293f50);`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "You want to add a background circle behind an icon. Which style declaration is correct?",
+    "codeExamples": [
+      "css\n.glyphicon-bgcircle {\n  circle-radius: 50%;\n  margins: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n",
+      "css\nglyphicon-bgcircle {\n  border-circle: 50%;\n  padding: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n",
+      "css\n.glyphicon-bgcircle {\n  border-radius: 50%;\n  padding: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n",
+      "css\n.glyphicon-bgcircle {\n  radius-rounded: 50%;\n  margins: auto;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which items are valid values for the font-size property?",
+    "codeExamples": [
+      "css\nA. font-size: xsmall\nB. font-size: 50%\nC. font-size: 1em\nD. font-size: 20px\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "C, D",
+        "isCorrect": false
+      },
+      {
+        "answer": "A, C",
+        "isCorrect": false
+      },
+      {
+        "answer": "A, B, C, D",
+        "isCorrect": false
+      },
+      {
+        "answer": "B, C, D",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "In this image, the blue box and sample text are both contained within the same parent element. The blue box is floated on the left margin of the container. Why is it not contained in the container?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Floating the blue box increased its height.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Floating the blue box on the left also moves it down.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Floating the blue box actually shifts it to the right and down.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Floating the blue box took it out of document flow and the container is sized only to the sample text.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Given this code, which CSS declaration of .overlay will span the entire width and height of its container?",
+    "codeExamples": [
+      "css\n<style>\n.container {\n  position: relative;\n  height: 200px;\n  width: 200px;\n  border: 1px solid black;\n}\n</style>\n<div class=\"container\"><div class=\"overlay\"></div></div>\n",
+      "css\n.overlay {\n  position: static;\n  top: 200px;\n  bottom: 200px;\n  right: 200px;\n  left: 200px;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n",
+      "css\n.overlay {\n  position: absolute;\n  top: 200px;\n  bottom: 200px;\n  right: 200px;\n  left: 200px;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n",
+      "css\n.overlay {\n  position: static;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n",
+      "css\n.overlay {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which missing line of code would place the text on top of the image?",
+    "codeExamples": [
+      "js\n<div class=\"container\">\n  <img src=\"grumpy-cat.gif\" />\n  <p>The z-index property is cool!</p>\n</div>\n",
+      "css\nimg {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  // Missing line\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`z-index: 1;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`z-index: 0;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`z-index: true;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`z-index: -1;`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "To make the font size of an element one size smaller than the font size of the element's container, which style property would you apply?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`font-size: reduce;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`font-size: 8px;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`font-size: -1em;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`font-size: smaller;`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Given this markup, which selector would result in the text being highlighted in yellow?",
+    "codeExamples": [
+      "js\n<span class=\"highlight\">#BLM</span>\n",
+      "css\n.highlight {\n  background-color: yellow;\n}\n",
+      "css\n#highlight {\n  background-color: yellow;\n}\n",
+      "css\n.highlight {\n  color: yellow;\n}\n",
+      "css\n#highlight {\n  color: yellow;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "A",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "To prevent a background image from tiling in any direction, which style property would you apply?",
+    "codeExamples": [
+      "css\nbackground-repeat: no-repeat;\n",
+      "css\nbackground-repeat: fixed;\n",
+      "css\nbackground-repeat: none;\n",
+      "css\nbackground-tile: none;\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "A",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "To rotate an object 30 degrees counterclockwise, which style property would you apply?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`transform: rotate(30deg);`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`rotate: 30deg;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`spin: 30deg;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`transform: rotate(-30deg);`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which style rule would you apply to set the background image to display the contents of the wood.png file?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`background-image: file('wood.png');`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`background-image: wood.png;`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`image: wood.png`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`background-image: URL('wood.png');`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What style rule would set the font color of only paragraph two to blue?",
+    "codeExamples": [
+      "js\n<section><p>paragraph one</p></section><p>paragraph two</p>\n",
+      "css\nsection > p {\n  color: blue;\n}\n",
+      "css\np {\n  color: blue;\n}\n",
+      "css\nsection + p {\n  color: blue;\n}\n",
+      "css\np + section {\n  color: blue;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "You want to move an element up 100px. Which CSS property would you use?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`transform: translateX(-100px)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`transform: translateY(100px)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`transform: translateX(100px)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`transform: translateY(-100px)`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which style will horizontally center the inner &lt;div&gt; within the outer &lt;div&gt;?",
+    "codeExamples": [
+      "js\n<div id=\"outer\">\n  <div id=\"inner\">Center Me!</div>\n</div>\n",
+      "css\n#inner {\n  width: 50%;\n}\n\n#outer {\n  width: 100%;\n}\n",
+      "css\n#inner {\n  left: 0;\n  right: 0;\n  position: center;\n}\n",
+      "css\n#inner {\n  text-align: center;\n}\n",
+      "css\n#inner {\n  width: 50%;\n  margin: 0 auto;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which corner will the puppy be in when these CSS rules are applied?",
+    "codeExamples": [
+      "css\n.pen {\n  height: 100px;\n  width: 100px;\n  border: 2px dashed brown;\n  position: relative;\n}\n\n#puppy {\n  position: absolute;\n  right: 80px;\n  bottom: 0px;\n}\n",
+      "HTML\n<div class=\"pen\">\n  <span id=\"puppy\">:dog:</span>\n</div>\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "top-right corner",
+        "isCorrect": false
+      },
+      {
+        "answer": "bottom-right corner",
+        "isCorrect": false
+      },
+      {
+        "answer": "top-left corner",
+        "isCorrect": false
+      },
+      {
+        "answer": "bottom-left corner",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which choice uses the correct syntax for adding a hover pseudo-class to \\<a> element?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`a :hover {...}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a.hover {...}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a hover {...}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a:hover {...}`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which missing code will give \"Cellar Door\" a shadow?",
+    "codeExamples": [
+      "css\n  <style>\n    #cellar-door {\n      box-shadow: 3px 5px 10px #000;\n    }\n    .text-shadow {\n      text-shadow: 3px 5px 10px #000;\n    }\n  </style>\n\n  <h1 _____> Cellar Door</h1>\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`id=\"cellar-door\"`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`id=\"text-shadow\"`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`class=\"cellar-door\"`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`class=\"text-shadow\"`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which choice is a valid example of a comment in CSS?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`-- This line has been cancelled.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`// This line has been cancelled.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`# This line has been cancelled.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`/* This line has been cancelled. */`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which element(s) will be displayed in blue text?",
+    "codeExamples": [
+      "css\n    h2 ~ p {\n      color: blue;\n    }\n  <section>\n    <p>P1</p>\n    <h2>H2</h2>\n    <p>P3</p>\n    <p>P4</p>\n  </section>\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "P3",
+        "isCorrect": false
+      },
+      {
+        "answer": "P1, P3 and P4",
+        "isCorrect": false
+      },
+      {
+        "answer": "P1",
+        "isCorrect": false
+      },
+      {
+        "answer": "P3 and P4",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "When these pseudo-class selectors are applied to a link, what states will the styles be applied to?",
+    "codeExamples": [
+      "css\na:visited {\n  ...;\n}\na:active {\n  ...;\n}\na:hover {\n  ...;\n}\na:focus {\n  ...;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`:visited` styles are applied after the link has been opened.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`:visited` styles are applied after the link has been opened.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`:visited` styles are applied on mouse hold.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`:visited` styles are applied after the link has been opened.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What style rule should you use to display all input elements that have failed the validation test with a red font?",
+    "codeExamples": [
+      "css\ninput.valid[false] {\n  color: red;\n}\n",
+      "css\ninput:invalid {\n  color: red;\n}\n",
+      "css\ninput.not(valid) {\n  color: red;\n}\n",
+      "css\ninput.invalid {\n  color: red;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What style rule should you apply to the img element to display the element in grayscale with no color?",
+    "codeExamples": [
+      "css\nimg {\n  transform: grayscale(1);\n}\n",
+      "css\nimg {\n  filter: grayscale(0);\n}\n",
+      "css\nimg {\n  transform: grayscale(0);\n}\n",
+      "css\nimg {\n  filter: grayscale(1);\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Why might you create a reset style sheet?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "to reduce page size by removing browser styles from the page rendering.",
+        "isCorrect": false
+      },
+      {
+        "answer": "to make it easier to minify the content of your web page design",
+        "isCorrect": false
+      },
+      {
+        "answer": "to increase execution time by not relying on built-in browser styles",
+        "isCorrect": false
+      },
+      {
+        "answer": "to start designing a page style by overriding any built-in browser styles",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which option is an invalid way of declaring a padding value of 10 pixels on the top and bottom, and 0 pixels on the left and right?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "padding: 10px 0px;",
+        "isCorrect": false
+      },
+      {
+        "answer": "padding: 10px 0;",
+        "isCorrect": false
+      },
+      {
+        "answer": "padding: 10px 0px 10px 0px;",
+        "isCorrect": false
+      },
+      {
+        "answer": "padding: 10px 10px 0px 0px;",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "How would you absolutely position an element of the logo class inside of a relatively positioned container?",
+    "codeExamples": [
+      "css\n.logo {\n  position: absolute;\n  padding-left: 100px;\n  padding-top: 150px;\n}\n",
+      "css\n.logo {\n  position: absolute;\n  left: 100px;\n  top: 150px;\n}\n",
+      "css\n.logo {\n  position: absolute;\n  left-padding: 100px;\n  top-padding: 150px;\n}\n",
+      "css\n.logo {\n  position: absolute;\n  margin-left: 100px;\n  margin-top: 150px;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "How would the `<div>` with the class .child be positioned within its container?",
+    "codeExamples": [
+      "HTML\n<style>\n  .container {\n    height: 200px;\n    width: 200px;\n  }\n  .child {\n    margin: auto 0;\n    height: 100px;\n  }\n</style>\n<div class=\"container\">\n  <div class=\"child\">...</div>\n</div>\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "horizontally centered",
+        "isCorrect": false
+      },
+      {
+        "answer": "vertically centered, spanning the container's width",
+        "isCorrect": false
+      },
+      {
+        "answer": "at the bottom of the container, spanning the container's width",
+        "isCorrect": false
+      },
+      {
+        "answer": "at the top of the container, spanning the container's width",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "By default, a CSS transition is \\_\\_",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "asymmetric, so that the transition going from the initial state to the end state is different from the transition going from the end state back to the initial state.",
+        "isCorrect": false
+      },
+      {
+        "answer": "one-sided, so that there is only one transition and it goes from the initial state to the end state.",
+        "isCorrect": false
+      },
+      {
+        "answer": "one-sided, so that there is only one transition and it goes from the end state to the initial state.",
+        "isCorrect": false
+      },
+      {
+        "answer": "symmetric, so that the transition going from the initial state to the end state is the reverse of the transition going from the end state back to the initial state.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which style rule will extend the header element across an entire grid row from the first column through the last column?",
+    "codeExamples": [
+      "css\nheader {\n  grid-column: 1 / auto;\n}\n",
+      "css\nheader {\n  grid-column: 1/-1;\n}\n",
+      "css\nheader {\n  grid-column: -1/1;\n}\n",
+      "css\nheader {\n  grid-column: 1/100%;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "To center the content of a grid cell horizontally and vertically within the cell, which style rule should you apply?",
+    "codeExamples": [
+      "css\nalign-items: start;\njustify-items: end;\n",
+      "css\nalign--items: center;\njustify-items: center;\n",
+      "css\nalign-items: middle;\njustify-items: middle;\n",
+      "css\nalign-items: stretch;\njustify-items: stretch;\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What style rule should you use to display all input elements that have failed the validation test with a red font?",
+    "codeExamples": [
+      "css\ninput.valid[false] {\n  color: red;\n}\n",
+      "css\ninput:invalid {\n  color: red;\n}\n",
+      "css\ninput.not(valid) {\n  color: red;\n}\n",
+      "css\ninput.invalid {\n  color: red;\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "To insert an external style sheet file into another style sheet file, which rule should you use?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`@link`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`@insert`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`@style`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`@import`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Given this code, how tall will the following element be in pixels?",
+    "codeExamples": [
+      "HTML\n<style>\n  #tall-text {\n    display: inline;\n    font-size: 20px;\n    height: 200px;\n  }\n</style>\n\n<p id=\"tall-text\">Did I grow?</p>\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "200px",
+        "isCorrect": false
+      },
+      {
+        "answer": "180px",
+        "isCorrect": false
+      },
+      {
+        "answer": "220px",
+        "isCorrect": false
+      },
+      {
+        "answer": "20px",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which style rule will place an X within the grid to win the game?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "row: 3;",
+        "isCorrect": false
+      },
+      {
+        "answer": "row: 2;",
+        "isCorrect": false
+      },
+      {
+        "answer": "grid-row: 2;",
+        "isCorrect": false
+      },
+      {
+        "answer": "grid-row: 3;",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which CSS property is used to create an image reflection?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "img-reflect",
+        "isCorrect": false
+      },
+      {
+        "answer": "None of the above",
+        "isCorrect": false
+      },
+      {
+        "answer": "reflect-img",
+        "isCorrect": false
+      },
+      {
+        "answer": "box-reflect",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the general syntax of writing the var() function?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "var(--name)",
+        "isCorrect": false
+      },
+      {
+        "answer": "var(value)",
+        "isCorrect": false
+      },
+      {
+        "answer": "None of the Above",
+        "isCorrect": false
+      },
+      {
+        "answer": "var(--name, value)",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "How many layout modes were there before the Flexbox Layout Module was introduced in CSS?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "2",
+        "isCorrect": false
+      },
+      {
+        "answer": "1",
+        "isCorrect": false
+      },
+      {
+        "answer": "3",
+        "isCorrect": false
+      },
+      {
+        "answer": "4",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which of the following components of the CSS box model are transparent?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Padding",
+        "isCorrect": false
+      },
+      {
+        "answer": "Margin",
+        "isCorrect": false
+      },
+      {
+        "answer": "None",
+        "isCorrect": false
+      },
+      {
+        "answer": "Both A and B",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "How are custom fonts defined using CSS?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Custom font cannot be defined",
+        "isCorrect": false
+      },
+      {
+        "answer": "src tags",
+        "isCorrect": false
+      },
+      {
+        "answer": "None of the above",
+        "isCorrect": false
+      },
+      {
+        "answer": "@Font-Face Rule",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which of the following CSS properties sets what kind of line decorations are added to an element, such as underlines, overlines, etc?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "text-decoration",
+        "isCorrect": false
+      },
+      {
+        "answer": "text-style",
+        "isCorrect": false
+      },
+      {
+        "answer": "text-line",
+        "isCorrect": false
+      },
+      {
+        "answer": "text-decoration-line",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which of the following CSS Properties sets the stacking order of positioned elements?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "y-index",
+        "isCorrect": false
+      },
+      {
+        "answer": "x-index",
+        "isCorrect": false
+      },
+      {
+        "answer": "all of the mentioned",
+        "isCorrect": false
+      },
+      {
+        "answer": "z-index",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which of the following properties allows a marquee to be used in the case of a text overflow?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "overflow-marquee",
+        "isCorrect": false
+      },
+      {
+        "answer": "overflow-text",
+        "isCorrect": false
+      },
+      {
+        "answer": "none of the mentioned",
+        "isCorrect": false
+      },
+      {
+        "answer": "overflow-style",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which of the following Cascading order has the highest precedence?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "user normal declarations",
+        "isCorrect": false
+      },
+      {
+        "answer": "author normal declarations",
+        "isCorrect": false
+      },
+      {
+        "answer": "author important declarations",
+        "isCorrect": false
+      },
+      {
+        "answer": "user agent declarations",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "The CSS cascade assigns a weight to each style rule.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "False",
+        "isCorrect": false
+      },
+      {
+        "answer": "True",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "The \\***\\*\\_\\_\\_\\_\\*\\*** represents the result of the cascade: it is the declared value that wins the cascade.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "specified Value",
+        "isCorrect": false
+      },
+      {
+        "answer": "actual value",
+        "isCorrect": false
+      },
+      {
+        "answer": "computed value",
+        "isCorrect": false
+      },
+      {
+        "answer": "cascaded value",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Using negative text-indent is also known as **\\_**?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "The Scott Kellum method",
+        "isCorrect": false
+      },
+      {
+        "answer": "Radu Darvas Technique",
+        "isCorrect": false
+      },
+      {
+        "answer": "The Langridge method",
+        "isCorrect": false
+      },
+      {
+        "answer": "The Phark method",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Using margin is also known as **\\_**?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Fahrner image replacement",
+        "isCorrect": false
+      },
+      {
+        "answer": "The Lindsay method",
+        "isCorrect": false
+      },
+      {
+        "answer": "The Langridge method",
+        "isCorrect": false
+      },
+      {
+        "answer": "Radu Darvas Technique",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "If a particular rule should never be overridden by another rule, the \\***\\*\\_\\_\\_\\_\\*\\*** indication should be used.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "@important",
+        "isCorrect": false
+      },
+      {
+        "answer": "!important!",
+        "isCorrect": false
+      },
+      {
+        "answer": "important!",
+        "isCorrect": false
+      },
+      {
+        "answer": "!important",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What does CSS stand for?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Creative Style Sheets",
+        "isCorrect": false
+      },
+      {
+        "answer": "Colourful Style Sheets",
+        "isCorrect": false
+      },
+      {
+        "answer": "Colourful Style Sheets",
+        "isCorrect": false
+      },
+      {
+        "answer": "Cascading Style Sheets",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What color would rgb(255,0,0) give?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Blue",
+        "isCorrect": false
+      },
+      {
+        "answer": "Green",
+        "isCorrect": false
+      },
+      {
+        "answer": "Yellow",
+        "isCorrect": false
+      },
+      {
+        "answer": "Red",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the correct HTML for referring to an external style sheet?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`<stylesheet>mystyle.css</stylesheet>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`<style src= \"mystyle.css\">`",
+        "isCorrect": false
+      },
+      {
+        "answer": "None of these.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "The \\<link> tag goes inside:",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "the title section",
+        "isCorrect": false
+      },
+      {
+        "answer": "the body section",
+        "isCorrect": false
+      },
+      {
+        "answer": "None of the above",
+        "isCorrect": false
+      },
+      {
+        "answer": "the head section",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is CSS defined in HTML?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "How to send HTML elements",
+        "isCorrect": false
+      },
+      {
+        "answer": "How to save HTML elements",
+        "isCorrect": false
+      },
+      {
+        "answer": "How to make HTML elements",
+        "isCorrect": false
+      },
+      {
+        "answer": "How to display HTML elements",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which of the following statements is TRUE for CSS?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "An inline style sheet should be used when a single document has a unique style",
+        "isCorrect": false
+      },
+      {
+        "answer": "Both and b above",
+        "isCorrect": false
+      },
+      {
+        "answer": "An external style sheet can be written in HTML",
+        "isCorrect": false
+      },
+      {
+        "answer": "An external style sheet is ideal when the style is applied to many pages",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "In CSS, margin collapsing only happens with?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "The horizontal margins of inline elements in the normal flow.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The horizontal margins of block elements in the normal flow.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The vertical margins of inline elements in the normal flow.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The vertical margins of block elements in the normal flow.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which of the following CSS selectors selects all <p> elements that are the direct child of a <div> element?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "div p",
+        "isCorrect": false
+      },
+      {
+        "answer": "Tdiv + p",
+        "isCorrect": false
+      },
+      {
+        "answer": "div ~ p",
+        "isCorrect": false
+      },
+      {
+        "answer": "div > p",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "In CSS, the box-sizing property is used to control how an element's total width and height are calculated. Which value of box-sizing includes the element's padding and border within its total width and height?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "content-box",
+        "isCorrect": false
+      },
+      {
+        "answer": "padding-box",
+        "isCorrect": false
+      },
+      {
+        "answer": "margin-box",
+        "isCorrect": false
+      },
+      {
+        "answer": "border-box",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "In CSS, which of the following is NOT an effect of an inert attribute?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Prevents the click event from being fired when the user clicks on an element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Prevents the focus event from being fired when an element gains focus.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Hides the element and its content from assistive technologies by excluding them from the accessibility tree.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Makes the element interactive.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What elements does the accent-color property target?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Line break tags",
+        "isCorrect": false
+      },
+      {
+        "answer": "Hyperlink tags",
+        "isCorrect": false
+      },
+      {
+        "answer": "Image tags",
+        "isCorrect": false
+      },
+      {
+        "answer": "The width of the element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The color of the text.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The spacing between characters.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To control the order of elements within a flex container.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To adjust the space between the inner content and the border of an element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To control the stacking order of elements in the z-axis.",
+        "isCorrect": false
+      },
+      {
+        "answer": "cursor-style",
+        "isCorrect": false
+      },
+      {
+        "answer": "mouse-pointer",
+        "isCorrect": false
+      },
+      {
+        "answer": "pointer-type",
+        "isCorrect": false
+      },
+      {
+        "answer": "To control the width of an element's border.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To change the background color of an element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To control the transparency of an element.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Input tags",
+        "isCorrect": true
+      },
+      {
+        "answer": "The height of the space between lines of text.",
+        "isCorrect": true
+      },
+      {
+        "answer": "To control the visibility of an element.",
+        "isCorrect": true
+      },
+      {
+        "answer": "cursor",
+        "isCorrect": true
+      },
+      {
+        "answer": "To create a visible outline around an element, which is often used for accessibility or highlighting.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What are the valid values of the text-align property?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "left, bottom, top, right",
+        "isCorrect": false
+      },
+      {
+        "answer": "left, right, up, bottom",
+        "isCorrect": false
+      },
+      {
+        "answer": "side, justify, up, down",
+        "isCorrect": false
+      },
+      {
+        "answer": "left, center, right, justify",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the difference between visibility: hidden and display: none?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Both will hide the element on the page, but display: none has greater browser support.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`display:none hides the elements but maintains the space it previously occupied. visibility:hidden will hide the element from view and remove it from the normal flow of the document`",
+        "isCorrect": false
+      },
+      {
+        "answer": "display: none removes the element from the document. It does not take up any space.",
+        "isCorrect": false
+      },
+      {
+        "answer": "` There is no difference; both will hide the element on the page`",
+        "isCorrect": false
+      },
+      {
+        "answer": "visibility: hidden hides the element, but it still takes up space in the layout.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "Which of the following is NOT a valid CSS selector?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`p`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`.class`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`#id`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`-`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  },
+  {
+    "categories": [
+      "css"
+    ],
+    "question": "What is the difference between a class and an id in CSS?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "IDs are denoted by a period (.) followed by the ID name, while classes use a hash (#).",
+        "isCorrect": false
+      },
+      {
+        "answer": "Classes have higher specificity in CSS than IDs.",
+        "isCorrect": false
+      },
+      {
+        "answer": "There is no difference between a class and an id.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Classes can only be applied to one HTML element, while IDs can be used multiple times.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/css/css-quiz.md"
+  }
+]

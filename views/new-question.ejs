@@ -4,6 +4,7 @@
 <head>
   <title>Submit New Question</title>
   <%- include('./partials/head.ejs') %>
+
 </head>
 
 <body class="bg-black items-center justify-center h-auto" style="font-family: 'Oxanium', sans-serif">
@@ -66,7 +67,7 @@
     <% if (message) { %>
       <div id="modal" class="modal">
         <div class="modal-content">
-          <p>
+          <p id="message">
             <%= message %>
           </p>
           <button class="p-2" id="closeModal">Close</button>
@@ -84,50 +85,51 @@
           // Cerrar el modal
           closeModal.addEventListener("click", function () {
             modal.style.display = "none";
-            form.reset(); // Limpiar el formulario para agregar otra pregunta
+            // form.reset(); // Limpiar el formulario para agregar otra pregunta
           });
 
           // Cerrar el modal haciendo clic fuera del cuadro de diálogo
           window.addEventListener("click", function (event) {
-            if (event.target == modal) {
-              modal.style.display = "none";
-              form.reset();
+          if (event.target == modal) {
+            modal.style.display = "none";
+            // form.reset();
+          }
+        });
+
+          form.addEventListener('submit', (event) => {
+
+            
+
+            // Capturar datos del formulario
+            const question = document.getElementById("question").value;
+            const answerOptions = [
+              {
+                answer: document.getElementById("answer1Text").value,
+                isCorrect: document.getElementById("answer1CheckBox").checked,
+              },
+              {
+                answer: document.getElementById("answer2Text").value,
+                isCorrect: document.getElementById("answer2CheckBox").checked,
+              },
+              {
+                answer: document.getElementById("answer3Text").value,
+                isCorrect: document.getElementById("answer3CheckBox").checked,
+              },
+              {
+                answer: document.getElementById("answer4Text").value,
+                isCorrect: document.getElementById("answer4CheckBox").checked,
+              }
+            ];
+
+            // Validación en el cliente
+            if (answerOptions.every(option => !option.isCorrect)) {
+              modal.style.display = "block"
+              document.getElementById("message").innerHTML= 'At least one answer must be marked as the correct one.'
+              event.preventDefault();
+              return;
             }
-          });
 
-          // form.addEventListener('submit', (event) => {
-
-          //   // NO envíes los datos todavía
-          //   event.preventDefault();
-
-          //   // Capturar datos del formulario
-          //   const question = document.getElementById("question").value;
-          //   const answerOptions = [
-          //     {
-          //       answer: document.getElementById("answer1Text").value,
-          //       isCorrect: document.getElementById("answer1CheckBox").checked,
-          //     },
-          //     {
-          //       answer: document.getElementById("answer2Text").value,
-          //       isCorrect: document.getElementById("answer2CheckBox").checked,
-          //     },
-          //     {
-          //       answer: document.getElementById("answer3Text").value,
-          //       isCorrect: document.getElementById("answer3CheckBox").checked,
-          //     },
-          //     {
-          //       answer: document.getElementById("answer4Text").value,
-          //       isCorrect: document.getElementById("answer4CheckBox").checked,
-          //     }
-          //   ];
-
-          //   // Validación en el cliente
-          //   if (answerOptions.every(option => !option.isCorrect)) {
-          //     alert('At least one answer must be marked as the correct one.');
-          //     return;
-          //   }
-
-          // })
+          })
 
         </script>
 </body>

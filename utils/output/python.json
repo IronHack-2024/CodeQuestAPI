@@ -1,0 +1,5000 @@
+[
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is an abstract class?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "An abstract class is the name for any class from which you can instantiate an object.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Abstract classes must be redefined any time an object is instantiated from them.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Abstract classes must inherit from concrete classes.",
+        "isCorrect": false
+      },
+      {
+        "answer": "An abstract class exists only so that other \"concrete\" classes can inherit from the abstract class.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What happens when you use the built-in function `any()` on a list?",
+    "codeExamples": [
+      "python\nif any([True, False, False, False]) == True:\n    print('Yes, there is True')\n>>> 'Yes, there is True'\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The `any()` function will randomly return any item from the list.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The `any()` function takes as arguments the list to check inside, and the item to check for. If \"any\" of the items in the list match the item to check for, the function returns True.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The `any()` function returns a Boolean value that answers the question \"Are there any items in this list?\"",
+        "isCorrect": false
+      },
+      {
+        "answer": "The `any()` function returns True if any item in the list evaluates to True. Otherwise, it returns False.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What data structure does a binary tree degenerate to if it isn't balanced properly?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "queue",
+        "isCorrect": false
+      },
+      {
+        "answer": "set",
+        "isCorrect": false
+      },
+      {
+        "answer": "OrderedDict",
+        "isCorrect": false
+      },
+      {
+        "answer": "linked list",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What statement about static methods is true?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Static methods are called static because they always return `None`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Static methods can be bound to either a class or an instance of a class.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Static methods can access and modify the state of a class or an instance of a class.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Static methods serve mostly as utility methods or helper methods since they can't access or modify a class's state.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What are attributes?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Attributes are long-form versions of an `if/else` statement, used when testing for equality between objects.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Attributes are strings that describe characteristics of a class.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Function arguments are called \"attributes\" in the context of class methods and instance methods.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Attributes are a way to hold data or describe a state for a class or an instance of a class.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the term to describe this code?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Tuple assignment.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Tuple matching.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Tuple duplication.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Tuple unpacking.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What built-in list method would you use to remove items from a list?",
+    "codeExamples": [
+      "python\nmy_list = [1,2,3]\nmy_list.pop(0)\nmy_list\n>>>[2,3]\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`.delete()` method",
+        "isCorrect": false
+      },
+      {
+        "answer": "`pop(my_list)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`del(my_list)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`.pop()` method",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is one of the most common uses of Python's `sys` library?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "To connect various systems, such as connecting a web front end, an API service, a database, and a mobile app.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To take a snapshot of all the packages and libraries in your virtual environment.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To scan the health of your Python ecosystem while inside a virtual environment.",
+        "isCorrect": false
+      },
+      {
+        "answer": "To capture command-line arguments given at a file's runtime.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the runtime of accessing a value in a dictionary by using its key?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "O(n), also called linear time.",
+        "isCorrect": false
+      },
+      {
+        "answer": "O(log n), also called logarithmic time.",
+        "isCorrect": false
+      },
+      {
+        "answer": "O(n^2), also called quadratic time.",
+        "isCorrect": false
+      },
+      {
+        "answer": "O(1), also called constant time.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the correct syntax for defining a class called Game, if it inherits from a parent class called LogicGame?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`def Game(LogicGame): pass`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`def Game.LogicGame(): pass`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`class Game.LogicGame(): pass`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`class Game(LogicGame): pass`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the proper format for writing a doctest?",
+    "codeExamples": [
+      "python\ndef sum(a, b):\n    \"\"\"\n    sum(4, 3)\n    7\n\n    sum(-4, 5)\n    1\n    \"\"\"\n    return a + b\n",
+      "python\ndef sum(a, b):\n    \"\"\"\n    >>> sum(4, 3)\n    7\n\n    >>> sum(-4, 5)\n    1\n    \"\"\"\n    return a + b\n",
+      "python\ndef sum(a, b):\n    \"\"\"\n    # >>> sum(4, 3)\n    # 7\n\n    # >>> sum(-4, 5)\n    # 1\n    \"\"\"\n    return a + b\n",
+      "python\ndef sum(a, b):\n    ###\n    >>> sum(4, 3)\n    7\n\n    >>> sum(-4, 5)\n    1\n    ###\n    return a + b\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What built-in Python data type is commonly used to represent a stack?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`set`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`None`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`dictionary`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`You can only build a stack from scratch.`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`list`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What would this expression return?",
+    "codeExamples": [
+      "python\ncollege_years = ['Freshman', 'Sophomore', 'Junior', 'Senior']\nreturn list(enumerate(college_years, 2019))\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`[('Freshman', 2019), ('Sophomore', 2020), ('Junior', 2021), ('Senior', 2022)]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[(2019, 2020, 2021, 2022), ('Freshman', 'Sophomore', 'Junior', 'Senior')]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[('Freshman', 'Sophomore', 'Junior', 'Senior'), (2019, 2020, 2021, 2022)]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[(2019, 'Freshman'), (2020, 'Sophomore'), (2021, 'Junior'), (2022, 'Senior')]`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the purpose of the \"self\" keyword when defining or calling instance methods?",
+    "codeExamples": [
+      "python\nclass my_secrets:\n    def __init__(self, password):\n        self.password = password\n        pass\ninstance = my_secrets('1234')\ninstance.password\n>>>'1234'\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`self` means that no other arguments are required to be passed into the method.",
+        "isCorrect": false
+      },
+      {
+        "answer": "There is no real purpose for the `self` method; it's just historic computer science jargon that Python keeps to stay consistent with other programming languages.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`self` refers to the class that was inherited from to create the object using `self`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`self` refers to the instance whose method was called.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which of these is NOT a characteristic of namedtuples?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "You can assign a name to each of the `namedtuple` members and refer to them that way, similarly to how you would access keys in `dictionary`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Each member of a namedtuple object can be indexed directly, just like in a regular `tuple`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`namedtuples` are just as memory efficient as regular `tuples`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "No import is needed to use `namedtuples` because they are available in the standard library.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is an instance method?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Instance methods hold data related to the instance.",
+        "isCorrect": false
+      },
+      {
+        "answer": "An instance method is any class method that doesn't take any arguments.",
+        "isCorrect": false
+      },
+      {
+        "answer": "An instance method is a regular function that belongs to a class, but it must return `None`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Instance methods can modify the state of an instance or the state of its parent class.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which statement does NOT describe the object-oriented programming concept of encapsulation?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "It protects the data from outside interference.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A parent class is encapsulated and no data from the parent class passes on to the child class.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It keeps data and the methods that can manipulate that data in one place.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It only allows the data to be changed by methods.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the use of an if/else statement?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "It tells the computer which chunk of code to run if the instructions you coded are incorrect.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It runs one chunk of code if all the imports were successful, and another chunk of code if the imports were not successful.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It tells the computer which chunk of code to run if the is enough memory to handle it, and which chunk of code to run if there is not enough memory to handle it.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It executes one chunk of code if a condition is true, but a different chunk of code if the condition is false.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What built-in Python data type is best suited for implementing a queue?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "dictionary",
+        "isCorrect": false
+      },
+      {
+        "answer": "set",
+        "isCorrect": false
+      },
+      {
+        "answer": "None. You can only build a queue from scratch.",
+        "isCorrect": false
+      },
+      {
+        "answer": "list",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the correct syntax for instantiating a new object of the type Game?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`my_game = class.Game()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_game = class(Game)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_game = Game.create()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_game = Game()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What does the built-in `map()` function do?",
+    "codeExamples": [
+      "python\nimport math\nradius = [1,2,3]\narea = list(map(lambda x: round(math.pi*(x**2), 2), radius))\narea\n>>> [3.14, 12.57, 28.27]\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "It creates a path from multiple values in an iterable to a single value.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It converts a complex value type into simpler value types.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It creates a mapping between two different elements of different iterables.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It applies a function to each item in an iterable and returns the value of that function.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "If you don't explicitly return a value from a function, what happens?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "The function will return a RuntimeError if you don't return a value.",
+        "isCorrect": false
+      },
+      {
+        "answer": "If the return keyword is absent, the function will return `True`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The function will enter an infinite loop because it won't know when to stop executing its code.",
+        "isCorrect": false
+      },
+      {
+        "answer": "If the return keyword is absent, the function will return `None`.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the purpose of the `pass` statement in Python?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "It is used to skip the `yield` statement of a generator and return a value of None.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is used to pass control from one statement block to another.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is used to skip the rest of a `while` or `for loop` and return to the start of the loop.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is a null operation used mainly as a placeholder in functions, classes, etc.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the term used to describe items that may be passed into a function?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "paradigms",
+        "isCorrect": false
+      },
+      {
+        "answer": "attributes",
+        "isCorrect": false
+      },
+      {
+        "answer": "decorators",
+        "isCorrect": false
+      },
+      {
+        "answer": "arguments",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which collection type is used to associate values with unique keys?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`slot`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`queue`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`sorted list`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`dictionary`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "When does a For loop stop iterating?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "when it encounters an infinite loop",
+        "isCorrect": false
+      },
+      {
+        "answer": "when it encounters an if/else statement that contains a break keyword",
+        "isCorrect": false
+      },
+      {
+        "answer": "when the runtime for the loop exceeds O(n^2)",
+        "isCorrect": false
+      },
+      {
+        "answer": "when it has assessed each item in the iterable it is working on or a break keyword is encountered",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Assuming the node is in a singly linked list, what is the runtime complexity of searching for a specific node within a singly linked list?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "The runtime is O(nk), with n representing the number of nodes and k representing the amount of time it takes to access each node in memory.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The runtime cannot be determined unless you know how many nodes are in the singly linked list.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The runtime is O(1) because you can index directly to a node in a singly linked list.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The runtime is O(n) because in the worst case, the node you are searching for is the last node, and every node in the linked list must be visited.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Given the following three lists, how would you create a new list that matches the desired output printed below?",
+    "codeExamples": [
+      "python\nfruits = ['Apples', 'Oranges', 'Bananas']\nquantities = [5, 3, 4]\nprices = [1.50, 2.25, 0.89]\n\n#Desired output\n[('Apples', 5, 1.50),\n('Oranges', 3, 2.25),\n('Bananas', 4, 0.89)]\n",
+      "python\noutput = []\n\nfruit_tuple_0 = (first[0], quantities[0], price[0])\noutput.append(fruit_tuple)\n\nfruit_tuple_1 = (first[1], quantities[1], price[1])\noutput.append(fruit_tuple)\n\nfruit_tuple_2 = (first[2], quantities[2], price[2])\noutput.append(fruit_tuple)\n\nreturn output\n",
+      "python\ni = 0\noutput = []\nfor fruit in fruits:\n    temp_qty = quantities[i]\n    temp_price = prices[i]\n    output.append((fruit, temp_qty, temp_price))\n    i += 1\nreturn output\n",
+      "python\ngroceries = zip(fruits, quantities, prices)\nreturn groceries\n\n>>> [\n('Apples', 5, 1.50),\n('Oranges', 3, 2.25),\n('Bananas', 4, 0.89)\n]\n",
+      "python\ni = 0\noutput = []\nfor fruit in fruits:\n    for qty in quantities:\n        for price in prices:\n            output.append((fruit, qty, price))\n    i += 1\nreturn output\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What happens when you use the built-in function all() on a list?",
+    "codeExamples": [
+      "python\ntest = [True, False, False, False]\nif all(test) is True:\n    print('Yeah, all of them are true.')\nelse:\n    print('There is an imposter.')\n\n>>> 'There is an imposter'\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The `all()` function returns a Boolean value that answers the question \"Are all the items in this list the same?",
+        "isCorrect": false
+      },
+      {
+        "answer": "The `all()` function returns True if all the items in the list can be converted to strings. Otherwise, it returns False.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The `all()` function will return all the values in the list.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The `all()` function returns True if all items in the list are evaluated to True. Otherwise, it returns False.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the correct syntax for calling an instance method on a class named Game?",
+    "codeExamples": [
+      "python\n>>> dice = Game()\n>>> dice.roll()\n",
+      "python\n>>> dice = Game(self)\n>>> dice.roll(self)\n",
+      "python\n>>> dice = Game()\n>>> dice.roll(self)\n",
+      "python\n>>> dice = Game(self)\n>>> dice.roll()\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "A",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the algorithmic paradigm of quick sort?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Backtracking",
+        "isCorrect": false
+      },
+      {
+        "answer": "Dynamic programming",
+        "isCorrect": false
+      },
+      {
+        "answer": "Decrease and conquer",
+        "isCorrect": false
+      },
+      {
+        "answer": "Divide and conquer",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the runtime complexity of the list's built-in `.append()` method?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "O(log n), also called logarithmic time.",
+        "isCorrect": false
+      },
+      {
+        "answer": "O(n^2), also called quadratic time.",
+        "isCorrect": false
+      },
+      {
+        "answer": "O(n), also called linear time.",
+        "isCorrect": false
+      },
+      {
+        "answer": "O(1), also called constant time.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the key difference between a `set` and a `list`?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "A set is an ordered collection of unique items. A list is an unordered collection of non-unique items.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Elements can be retrieved from a list but they cannot be retrieved from a set.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A set is an ordered collection of non-unique items. A list is an unordered collection of unique items.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A set is an unordered collection of unique items. A list is an ordered collection of non-unique items.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the definition of abstraction as applied to object-oriented Python?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Abstraction means that a different style of code can be used since many details are already known to the program behind the scenes.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Abstraction means that the data and the functionality of a class are combined into one entity.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Abstraction means that a class can inherit from more than one parent class.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Abstraction means the implementation is hidden from the user, and only the relevant data or information is shown.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What does this function print?",
+    "codeExamples": [
+      "python\ndef print_alpha_nums(abc_list, num_list):\n    for char in abc_list:\n        for num in num_list:\n            print(char, num)\n    return\n\nprint_alpha_nums(['a', 'b', 'c'], [1, 2, 3])\n",
+      "python\na 1\na 2\na 3\nb 1\nb 2\nb 3\nc 1\nc 2\nc 3\n",
+      "python\n['a', 'b', 'c'], [1, 2, 3]\n",
+      "python\naaa\nbbb\nccc\n111\n222\n333\n",
+      "python\na 1 2 3\nb 1 2 3\nc 1 2 3\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "A",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Pick the correct representation of doctest for a function in Python.",
+    "codeExamples": [
+      "python\ndef sum(a, b):\n    # a = 1\n    # b = 2\n    # sum(a, b) = 3\n\n    return a + b\n",
+      "python\ndef sum(a, b):\n    \"\"\"\n    a = 1\n    b = 2\n    sum(a, b) = 3\n    \"\"\"\n\n    return a + b\n",
+      "python\ndef sum(a, b):\n    \"\"\"\n    >>> a = 1\n    >>> b = 2\n    >>> sum(a, b)\n    3\n    \"\"\"\n\n    return a + b\n",
+      "python\ndef sum(a, b):\n    '''\n    a = 1\n    b = 2\n    sum(a, b) = 3\n    '''\n    return a + b\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Suppose a Game class inherits from two parent classes: BoardGame and LogicGame. Which statement is true about the methods of an object instantiated from the Game class?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "When instantiating an object, the object doesn't inherit any of the parent class's methods.",
+        "isCorrect": false
+      },
+      {
+        "answer": "When instantiating an object, the object will inherit the methods of whichever parent class has more methods.",
+        "isCorrect": false
+      },
+      {
+        "answer": "When instantiating an object, the programmer must specify which parent class to inherit methods from.",
+        "isCorrect": false
+      },
+      {
+        "answer": "An instance of the Game class will inherit whatever methods the BoardGame and LogicGame classes have.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What does calling namedtuple on a collection type return?",
+    "codeExamples": [
+      "python\n# namedtuple function accepts the following arguments to generate a class\nfrom collections import namedtuple\n>>> Point = namedtuple('Point',['x','y'])\n>>> point = Point(100, 200)\n>>> point\n    Point(x=100, y=200)\n\n# Which lets you use both unpacking and iteration to access\n>>> x, y = point\n>>> print(f'({x}, {y})')\n    (100, 200)\n>>> for coordinate in point:\n        print(coordinate)\n    100\n    200\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "a generic object class with iterable parameter fields",
+        "isCorrect": false
+      },
+      {
+        "answer": "a generic object class with non-iterable named fields",
+        "isCorrect": false
+      },
+      {
+        "answer": "a tuple subclass with non-iterable parameter fields",
+        "isCorrect": false
+      },
+      {
+        "answer": "a tuple subclass with iterable named fields",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What symbol(s) do you use to assess equality between two elements?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`&&`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`=`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`||`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`==`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Review the code below. What is the correct syntax for changing the price to 1.5?",
+    "codeExamples": [
+      "python\nfruit_info = {\n  'fruit': 'apple',\n  'count': 2,\n  'price': 3.5\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`my_list [3.5] = 1.5`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`1.5 = fruit_info ['price]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_list['price'] == 1.5`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`fruit_info ['price'] = 1.5`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What value would be returned by this check for equality?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`yes`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`False`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`None`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`True`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What does a class's `__init__()` method do?",
+    "codeExamples": [
+      "python\nclass test:\n    def __init__(self):\n        print('I came here without your permission lol')\n        pass\nt1 = test()\n>>> 'I came here without your permission lol'\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "It makes classes aware of each other if more than one class is defined in a single code file.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is included to preserve backward compatibility from Python 3 to Python 2, but it no longer needs to be used in Python 3.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It initializes any imports you may have included at the top of your file.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It is a method that acts as a constructor and is called automatically whenever a new object is created from a class. It sets the initial state of a new object.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is meant by the phrase \"space complexity\"?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`How many microprocessors it would take to run your code in less than one second`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`How many lines of code are in your code file`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`How many copies of the code file could fit in 1 GB of memory`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`The amount of space taken up in memory as a function of the input size`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the correct syntax for creating a variable that is bound to a dictionary?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`fruit_info =('fruit': 'apple', 'count': 2,'price': 3.5 ).dict()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`fruit_info = ['fruit': 'apple', 'count': 2,'price': 3.5 ].dict()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`fruit_info = to_dict('fruit': 'apple', 'count': 2, 'price': 3.5)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`fruit_info = {'fruit': 'apple', 'count': 2, 'price': 3.5}`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the proper way to write a list comprehension that represents all the keys in this dictionary?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`fruit_names = [x in fruits.keys() for x]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`fruit_names = for x in fruits.keys() *`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`fruit_names = x for x in fruits.keys()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`fruit_names = [x for x in fruits.keys()]`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the purpose of the `self` keyword when defining or calling methods on an instance of an object?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`self` refers to the class that was inherited from to create the object using `self`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "There is no real purpose for the `self` method. It's just legacy computer science jargon that Python keeps to stay consistent with other programming languages.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`self` means that no other arguments are required to be passed into the method.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`self` refers to the instance whose method was called.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What statement about the class methods is true?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "A class method is a regular function that belongs to a class, but it must return None.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A class method is similar to a regular function, but a class method doesn't take any arguments.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A class method holds all of the data for a particular class.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A class method can modify the state of the class, but it can't directly modify the state of an instance that inherits from that class.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What does it mean for a function to have linear runtime?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "You did not use very many advanced computer programming concepts in your code.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The difficulty level your code is written at is not that high.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It will take your program less than half a second to run.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The amount of time it takes the function to complete grows linearly as the input size increases.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the proper way to define a function?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`def getMaxNum(list_of_nums): # body of function goes here`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`func get_max_num(list_of_nums): # body of function goes here`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`func getMaxNum(list_of_nums): # body of function goes here`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`def get_max_num(list_of_nums): # body of function goes here`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "According to the PEP 8 coding style guidelines, how should constant values be named in Python?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "in camel case without using underscores to separate words -- e.g. `maxValue = 255`",
+        "isCorrect": false
+      },
+      {
+        "answer": "in lowercase with underscores to separate words -- e.g. `max_value = 255`",
+        "isCorrect": false
+      },
+      {
+        "answer": "in the mixed case without using underscores to separate words -- e.g. `MaxValue = 255`",
+        "isCorrect": false
+      },
+      {
+        "answer": "in all caps with underscores separating words -- e.g. `MAX_VALUE = 255`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Describe the functionality of a deque.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "A deque adds items to one side and removes items from the other side.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A deque adds items to either or both sides but only removes items from the top.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A deque adds items only to the top but removes them from either or both sides.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A deque adds items at either or both ends and removes items at either or both ends.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the correct syntax for creating a variable that is bound to a set?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`my_set = to_set(0, 'apple', 3.5)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_set = (0, 'apple', 3.5).to_set()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_set = (0, 'apple', 3.5).set()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_set = {0, 'apple', 3.5}`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the correct syntax for defining an `__init__()` method that takes no parameters?",
+    "codeExamples": [
+      "python\nclass __init__(self):\n    pass\n",
+      "python\ndef __init__():\n    pass\n",
+      "python\nclass __init__():\n    pass\n",
+      "python\ndef __init__(self):\n    pass\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which of the following is TRUE About how numeric data would be organized in a Binary Search Tree?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Binary Search Tree cannot be used to organize and search through numeric data, given the complications that arise with very deep trees.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The top node of the binary search tree would be an arbitrary number. All the nodes to the left of the top node need to be less than the top node's number, but they don't need to be ordered in any particular way.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The smallest numeric value would go in the topmost node. The next highest number would go in its left child node, the the next highest number after that would go in its right child node. This pattern would continue until all numeric values were in their node.",
+        "isCorrect": false
+      },
+      {
+        "answer": "For any given node in a binary search tree, the value of the node is greater than all the values in the node's left subtree and less than the ones in its right subtree.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Why would you use a decorator?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "A decorator is similar to a class and should be used if you are doing functional programming instead of object-oriented programming.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A decorator is a visual indicator to someone reading your code that a portion of your code is critical and should not be changed.",
+        "isCorrect": false
+      },
+      {
+        "answer": "An import statement is preceded by a decorator, python knows to import the most recent version of whatever package or library is being imported.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You use the decorator to alter the functionality of a function without having to modify the function code.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "When would you use a for loop?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Only in some situations, as loops are used only for certain types of programming.",
+        "isCorrect": false
+      },
+      {
+        "answer": "When you want to minimize the use of strings in your code.",
+        "isCorrect": false
+      },
+      {
+        "answer": "When you want to run code in one file for a function in another file.",
+        "isCorrect": false
+      },
+      {
+        "answer": "When you need to check every element in an iterable of known length.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the most self-descriptive way to define a function that calculates sales tax on a purchase?",
+    "codeExamples": [
+      "python\ndef tax(my_float):\n    ''' Calculates the sales tax of a purchase. Takes in a float representing the subtotal as an argument and returns a float representing the sales tax.'''\n    pass\n",
+      "python\ndef tx(amt):\n    ''' Gets the tax on an amount.'''\n",
+      "python\ndef sales_tax(amount):\n    ''' Calculates the sales tax of a purchase. Takes in a float representing the subtotal as an argument and returns a float representing the sales tax.'''\n",
+      "python\ndef calculate_sales_tax(subtotal):\n    pass\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A:",
+        "isCorrect": false
+      },
+      {
+        "answer": "B:",
+        "isCorrect": false
+      },
+      {
+        "answer": "C:",
+        "isCorrect": false
+      },
+      {
+        "answer": "D:",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What would happen if you did not alter the state of the element that an algorithm is operating on recursively?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "You do not have to alter the state of the element the algorithm is recursing on.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You would eventually get a KeyError when the recursive portion of the code ran out of items to recurse on.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The function using recursion would return None.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You would get a RuntimeError: maximum recursion depth exceeded.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the runtime complexity of searching for an item in a binary search tree?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "The runtime for searching in a binary search tree is O(1) because each node acts as a key, similar to a dictionary.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The runtime for searching in a binary search tree is O(n!) because every node must be compared to every other node.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The runtime for searching in a binary search tree is O(n) because every node in the tree must be visited.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The runtime for searching in a binary search tree is generally O(h), where h is the height of the tree.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Why would you use `mixin`?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "You use a `mixin` to force a function to accept an argument at runtime even if the argument wasn't included in the function's definition.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You use a `mixin` to allow a decorator to accept keyword arguments.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You use a `mixin` to make sure that a class's attributes and methods don't interfere with global variables and functions.",
+        "isCorrect": false
+      },
+      {
+        "answer": "If you have many classes that all need to have the same functionality, you'd use a `mixin` to define that functionality.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the runtime complexity of adding an item to a stack and removing an item from a stack?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Add items to a stack in O(1) time and remove items from a stack on O(n) time.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Add items to a stack in O(n) time and remove items from a stack on O(1) time.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Add items to a stack in O(n) time and remove items from a stack in O(n) time.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Add items to a stack in O(1) time and remove items from a stack in O(1) time.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which statement accurately describes how items are added to and removed from a stack?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "a stack adds items to one side and removes items from the other side.",
+        "isCorrect": false
+      },
+      {
+        "answer": "a stack adds items to the top and removes items from anywhere in the stack.",
+        "isCorrect": false
+      },
+      {
+        "answer": "a stack adds items to either end and removes items from either end.",
+        "isCorrect": false
+      },
+      {
+        "answer": "a stack adds items to the top and removes items from the top.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is a base case in a recursive function?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "The base case is a summary of the overall problem that needs to be solved.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The base case is passed in as an argument to a function whose body makes use of recursion.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The base case is similar to a base class, in that it can be inherited by another object.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A base case is the condition that allows the algorithm to stop recursing. It is usually a problem that is small enough to solve directly.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Why is it considered good practice to open a file from within a Python script by using the `with` keyword?",
+    "codeExamples": [
+      "python\n>>> f = open('workfile', 'w', encoding=\"utf-8\")\n>>> with open('workfile', encoding=\"utf-8\") as f:\n    read_data = f.read()\n# We can check that the file has been automatically closed.\n>>> f.closed\nTrue\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The `with` keyword lets you choose which application to open the file in.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The `with` keyword acts like a `for` loop, and lets you access each line in the file one by one.",
+        "isCorrect": false
+      },
+      {
+        "answer": "There is no benefit to using the `with` keyword for opening a file in Python.",
+        "isCorrect": false
+      },
+      {
+        "answer": "When you open a file using the `with` keyword in Python, Python will make sure the file gets closed, even if an exception or error is thrown.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Why would you use a virtual environment?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Teams with remote employees use virtual environments so they can share code, do code reviews, and collaborate remotely.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Virtual environments were common in Python 2 because they augmented missing features in the language. Virtual environments are not necessary in Python 3 due to advancements in the language.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Virtual environments are tied to your GitHub or Bitbucket account, allowing you to access any of your repos virtually from any machine.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Virtual environments create a \"bubble\" around your project so that any libraries or packages you install within it don't affect your entire machine.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the correct way to run all the doctests in a given file from the command line?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`python3 <_filename_>`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`python3 <_filename_> rundoctests`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`python3 doctest`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`python3 -m doctest <_filename_>`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is a lambda function ?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "any function that makes use of scientific or mathematical constants, often represented by Greek letters in academic writing",
+        "isCorrect": false
+      },
+      {
+        "answer": "a function that gets executed when decorators are used",
+        "isCorrect": false
+      },
+      {
+        "answer": "any function whose definition is contained within five lines of code or fewer",
+        "isCorrect": false
+      },
+      {
+        "answer": "a small, anonymous function that can take any number of arguments but has only expression to evaluate",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the primary difference between lists and tuples?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "You can access a specific element in a list by indexing to its position, but you cannot access a specific element in a tuple unless you iterate through the tuple",
+        "isCorrect": false
+      },
+      {
+        "answer": "Lists are immutable, meaning you cannot change the data that is inside them once you have created the list. Tuples are mutable, meaning you can change the data that is inside them at any time.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Lists can hold several data types inside them at once, but tuples can only hold the same data type if multiple elements are present.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Lists are mutable, meaning you can change the data that is inside them at any time. Tuples are immutable, meaning you cannot change the data that is inside them once you have created the tuple.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What does a generator return?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "None",
+        "isCorrect": false
+      },
+      {
+        "answer": "A linked list data structure from a non-empty list",
+        "isCorrect": false
+      },
+      {
+        "answer": "All the keys of the given dictionary",
+        "isCorrect": false
+      },
+      {
+        "answer": "An iterable object",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the difference between class attributes and instance attributes?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Instance attributes can be changed, but class attributes cannot be changed",
+        "isCorrect": false
+      },
+      {
+        "answer": "There is no difference between class attributes and instance attributes",
+        "isCorrect": false
+      },
+      {
+        "answer": "Class attributes belong just to the class, not to the instance of that class. Instance attributes are shared among all instances of a class",
+        "isCorrect": false
+      },
+      {
+        "answer": "Class attributes are shared by all instances of the class. Instance attributes may be unique to just that instance",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the correct syntax for creating an instance method?",
+    "codeExamples": [
+      "python\ndef get_next_card():\n  # method body goes here\n",
+      "python\ndef get_next_card(self):\n  # method body goes here\n",
+      "python\ndef self.get_next_card():\n  # method body goes here\n",
+      "python\ndef self.get_next_card(self):\n  # method body goes here\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the correct way to call a function?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`call.(get_max_num)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`def get_max_num([57, 99, 31, 18])`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`call.get_max_num([57, 99, 31, 18])`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`get_max_num([57, 99, 31, 18])`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "How do you add a comment to an existing Python script?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`-- This is a comment`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`/* This is a comment */`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`// This is a comment`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`# This is a comment`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the correct syntax for replacing the string `apple` in the list with the string `orange`?",
+    "codeExamples": [
+      "python\nmy_list = ['kiwi', 'apple', 'banana']\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`orange = my_list[1]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_list['orange'] = 1`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_list[1] == orange`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_list[1] = 'orange'`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What will happen if you use a while loop and forget to include logic that eventually causes the while loop to stop?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Nothing will happen; your computer knows when to stop running the code in the while loop.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You will get a KeyError.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You will get a WhileLoopError.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Your code will get stuck in an infinite loop.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Describe the functionality of a queue.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "A queue adds items to the top and removes items from the top.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A queue adds items to the top and removes items from anywhere in, a list.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A queue adds items to the top and removes items from anywhere in the queue.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A queue adds items to either end and removes items from either end.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which choice is the most syntactically correct example of conditional branching?",
+    "codeExamples": [
+      "python\nnum_people = 5\n\nif num_people > 10:\n    print(\"There is a lot of people in the pool.\")\nelif num_people > 4:\n    print(\"There are some people in the pool.\")\nelse:\n    print(\"There is no one in the pool.\")\n",
+      "python\nnum_people = 5\n\nif num_people > 10:\n    print(\"There is a lot of people in the pool.\")\nif num_people > 4:\n    print(\"There are some people in the pool.\")\nelse:\n    print(\"There is no one in the pool.\")\n",
+      "python\nnum_people = 5\n\nif num_people > 10;\n    print(\"There is a lot of people in the pool.\")\nelif num_people > 4;\n    print(\"There are some people in the pool.\")\nelse;\n    print(\"There is no one in the pool.\")\n",
+      "python\nif num_people > 10;\n    print(\"There is a lot of people in the pool.\")\nif num_people > 4;\n    print(\"There are some people in the pool.\")\nelse;\n    print(\"There is no one in the pool.\")\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "B:",
+        "isCorrect": false
+      },
+      {
+        "answer": "C:",
+        "isCorrect": false
+      },
+      {
+        "answer": "D:",
+        "isCorrect": false
+      },
+      {
+        "answer": "A:",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "How does `defaultdict` work?",
+    "codeExamples": [
+      "python\n# Function to return a default\n# values for keys that are not\n# present\ndef def_value():\n    return \"Not Present\"\n\n# Defining the dict\nd = defaultdict(def_value)\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`defaultdict` will automatically create a dictionary for you that has keys which are the integers 0-10.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`defaultdict` forces a dictionary to only accept keys that are of the types specified when you created the `defaultdict` (such as strings or integers).",
+        "isCorrect": false
+      },
+      {
+        "answer": "`defaultdict` stores a copy of a dictionary in memory that you can default to if the original gets unintentionally modified.",
+        "isCorrect": false
+      },
+      {
+        "answer": "If you try to read from a `defaultdict` with a nonexistent key, a new default key-value pair will be created for you instead of throwing a `KeyError`.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the correct syntax for adding a key called `variety` to the `fruit_info` dictionary that has a value of `Red Delicious`?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`fruit_info['variety'] == 'Red Delicious'`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`red_delicious = fruit_info['variety']`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`red_delicious == fruit_info['variety']`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`fruit_info['variety'] = 'Red Delicious'`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "When would you use a `while` loop?",
+    "codeExamples": [
+      "python\ni = 1\nwhile i<6:\n    print(f\"Countdown: {i}\")\n    i = i + 1\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "When you want to minimize the use of strings in your code.",
+        "isCorrect": false
+      },
+      {
+        "answer": "When you want to run code in one file while code in another file is also running.",
+        "isCorrect": false
+      },
+      {
+        "answer": "When you need to run two or more chunks of code at once within the same file.",
+        "isCorrect": false
+      },
+      {
+        "answer": "When you want some code to continue running as long as some condition is true.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the correct syntax for defining an `__init__()` method that sets instance-specific attributes upon creation of a new class instance?",
+    "codeExamples": [
+      "python\ndef __init__(self, attr1, attr2):\n    attr1 = attr1\n    attr2 = attr2\n",
+      "python\ndef __init__(attr1, attr2):\n    attr1 = attr1\n    attr2 = attr2\n",
+      "python\ndef __init__(self, attr1, attr2):\n    self.attr1 = attr1\n    self.attr2 = attr2\n",
+      "python\ndef __init__(attr1, attr2):\n    self.attr1 = attr1\n    self.attr2 = attr2\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What would this recursive function print if it is called with no parameters?",
+    "codeExamples": [
+      "python\ndef count_recursive(n=1):\n    if n > 3:\n        return\n    print(n)\n\n    count_recursive(n + 1)\n",
+      "python\n1\n1\n2\n2\n3\n3\n",
+      "python\n3\n2\n1\n",
+      "python\n3\n3\n2\n2\n1\n1\n",
+      "python\n1\n2\n3\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "In Python, when using sets, you use **\\_** to calculate the intersection between two sets and **\\_** to calculate the union.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`Intersect`; `union`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`|`; `&`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`&&`; `||`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`&`; `|`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What will this code fragment return?",
+    "codeExamples": [
+      "python\nimport numpy as np\nnp.ones([1,2,3,4,5])\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "It returns a 5x5 matrix; each row will have the values 1,2,3,4,5.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It returns an array with the values 1,2,3,4,5.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It returns five different square matrices filled with ones. The first is 1x1, the second 2x2, and so on to 5x5.",
+        "isCorrect": false
+      },
+      {
+        "answer": "It returns a 5-dimensional array of size 1x2x3x4x5 filled with 1s.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "You encounter a FileNotFoundException while using just the filename in the `open` function. What might be the easiest solution?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Make sure the file is on the system `PATH`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Create a symbolic link to allow better access to the file.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Add the path to the file to the `PYTHONPATH` environment variable.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Copy the file to the same directory as where the script is running from.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "what will this command return?",
+    "codeExamples": [
+      "python\n{x for x in range(100) if x%3 == 0}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A set of all the numbers from 0 to 100 multiplied by 3.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A list of all the multiples of 3 less than 100.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A set of all the multiples of 3 less than 100 excluding 0.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A set of all the multiples of 3 less than 100.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What does the // operator in Python 3 allow you to do?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Perform operations on exponents.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Find the remainder of a division operation.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Perform floating point division.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Perform integer division.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What file is imported to use dates in Python?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`dateday`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`daytime`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`timedate`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`datetime`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the correct syntax for defining a class called Game?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`def Game(): pass`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`def Game: pass`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`class Game(): pass`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`class Game: pass`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the correct syntax for calling an instance method on a class named Game?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`my_game = Game(self) self.my_game.roll_dice()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_game = Game() self.my_game.roll_dice()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_game = Game(self) my_game.roll_dice(self)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_game = Game() my_game.roll_dice()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the output of this code? (NumPy has been imported as np.)?",
+    "codeExamples": [
+      "python\na = np.array([1,2,3,4])\nprint(a[[False, True, False, False]])\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`{0,2}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`{2}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[0,2,0,0]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[2]`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Suppose you have a string variable defined as y=\"stuff;thing;junk;\". What would be the output from this code?",
+    "codeExamples": [
+      "python\nz = y.split(';')\nlen(z)\n",
+      "python\ny=\"stuff;thing;junk\"\n\tlen(z) ==> 3\n\ny=\"stuff;thing;junk;\"\n\tlen(z) ==> 4\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "17",
+        "isCorrect": false
+      },
+      {
+        "answer": "0",
+        "isCorrect": false
+      },
+      {
+        "answer": "3",
+        "isCorrect": false
+      },
+      {
+        "answer": "4",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the output of this code?",
+    "codeExamples": [
+      "python\nnum_list = [1,2,3,4,5]\nnum_list.remove(2)\nprint(num_list)\n",
+      "python\nnum_list = [1,2,3,4,5]\n\nnum_list.pop(2)\n>>> [1,2,4,5]\n\nnum_list.remove(2)\n>>> [1,3,4,5]\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`[1,2,4,5]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[3,4,5]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[1,2,3]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[1,3,4,5]`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which command will create a list from 10 down to 1? Example:",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`reversed(list(range(1,11)))`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`list(reversed(range(1,10)))`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`list(range(10,1,-1))`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`list(reversed(range(1,11)))`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which fragment of code will print the same output as this fragment?",
+    "codeExamples": [
+      "Python\nimport math\nprint(math.pow(2,10)) # prints 2 elevated to the 10th power\n",
+      "python\nprint(2^10)\n",
+      "python\nprint(2**10)\n",
+      "python\ny = [x*2 for x in range(1,10)]\nprint(y)\n",
+      "python\ny = 1\nfor i in range(1,10):\n    y = y * 2\nprint(y)\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Elements surrounded by `[]` are **\\_**, `{}` are **\\_**, and `()` are **\\_**.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "sets only; lists or dictionaries; tuples",
+        "isCorrect": false
+      },
+      {
+        "answer": "lists; sets only; tuples",
+        "isCorrect": false
+      },
+      {
+        "answer": "tuples; sets or lists; dictionaries",
+        "isCorrect": false
+      },
+      {
+        "answer": "lists; dictionaries or sets; tuples",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the output of this code? (NumPy has been imported as np.)",
+    "codeExamples": [
+      "python\ntable = np.array([\n    [1,3],\n    [2,4]])\nprint(table.max(axis=1))\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`[2, 4]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[4]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[1,2]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[3, 4]`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What will this code print?",
+    "codeExamples": [
+      "python\nnumber = 3\nprint(f\"The number is {number}\")\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`the number is 3`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`THE NUMBER IS 3`",
+        "isCorrect": false
+      },
+      {
+        "answer": "It throws a `TypeError` because the integer must be cast to a string.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`The number is 3`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which syntax correctly creates a variable that is bound to a tuple?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`my_tuple tup(2, 'apple', 3.5) %D`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_tuple [2, 'apple', 3.5].tuple() %D`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_tuple = [2, 'apple', 3.5]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_tuple = (2, 'apple', 3.5)`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which mode is not a valid way to access a file from within a Python script?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`write('w')`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`append('a')`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`read('r')`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`scan('s')`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "NumPy allows you to multiply two arrays without a for loop. This is an example of \\_.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Attributions.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Acceleration.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Functional programming.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Vectorization.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What built-in Python data type can be used as a hash table?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`set`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`list`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`tuple`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`dictionary`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which Python function allows you to execute Linux shell commands in Python?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`sys.exc_info()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`os.getcwd()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`sys.executable`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`os.system()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Suppose you have the following code snippet and want to extract a list with only the letters. Which fragment of code will \\_not\\_ achieve that goal?",
+    "codeExamples": [
+      "python\nmy_dictionary = {\n    'A': 1,\n    'B': 2,\n    'C': 3,\n    'D': 4,\n    'E': 5\n}\n",
+      "python\nletters = []\n\nfor letter in my_dictionary.values():\n    letters.append(letter)\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`letters = my_dictionary.keys()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`letters = [letter for (letter, number) in my_dictionary.items()]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`letters4 = list(my_dictionary)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "<br>",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "When an array is large, NumPy will not print the entire array when given the built-in `print` function. What function can you use within NumPy to force it to print the entire array?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`set_printparams`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`set_fullprint`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`setp_printwhole`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`set_printoptions`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "When would you use a try/except block in code?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "You use `try/except` blocks inside of unit tests so that the unit tests will always pass.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You use `try/except` blocks so that you can demonstrate to your code reviewers that you tried a new approach, but if the new approach is not what they were looking for, they can leave comments under the `except` keyword.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You use `try/except` blocks so that none of your functions or methods return `None`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "You use `try/except` blocks when you want to run some code, but need a way to execute different code if an exception is raised.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "In Python, how can the compiler identify the inner block of a for loop?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`because of the end keyword at the end of the for loop`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`because the block is surrounded by brackets ({})`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`because of the blank space at the end of the body of the for loop`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`because of the level of indentation after the for loop`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What Python mechanism is best suited for telling a user they are using a deprecated function",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`sys.stdout`",
+        "isCorrect": false
+      },
+      {
+        "answer": "Traceback",
+        "isCorrect": false
+      },
+      {
+        "answer": "Exceptions",
+        "isCorrect": false
+      },
+      {
+        "answer": "Warnings",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What will be the value of `x` after running this code?",
+    "codeExamples": [
+      "python\nx = {1,2,3,4,5}\nx.add(5)\nx.add(6)\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`{1, 2, 3, 4, 5, 5, 6}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`{5, 6, 1, 2, 3, 4, 5, 6}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`{6, 1, 2, 3, 4, 5}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`{1, 2, 3, 4, 5, 6}`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "How would you access and store all of the keys in this dictionary at once?",
+    "codeExamples": [
+      "python\nfruit_info = {\n    'fruit': 'apple',\n    'count': 2,\n    'price': 3.5\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`my_keys = fruit_info.to_keys()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_keys = fruit_info.all_keys()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_keys = fruit_info.keys`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_keys = fruit_info.keys()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is wrong with this function definition?",
+    "codeExamples": [
+      "python\ndef be_friendly(greet = \"How are you!\", name):\n    pass\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`name` is a reserved word.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Underscores are not allowed in function names.",
+        "isCorrect": false
+      },
+      {
+        "answer": "There is nothing wrong with this function definition.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A non-default argument follows a default argument.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Given that NumPy is imported as `np`, which choice will return `True`?",
+    "codeExamples": [
+      "python\na = np.zeros([3,4])\nb = a.copy()\nnp.array_equal(a,b)\n",
+      "python\na = np.empty([3,4])\nb = np.empty([3,4])\nnp.array_equal(a,b)\n",
+      "python\na = np.zeros([3,4])\nb = np.zeros([4,3])\nnp.array_equal(a,b)\n",
+      "python\na = np.array([1, np.nan])\nnp.array_equal(a,a)\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "How do you add a comment to an existing Python script?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`// This is a comment`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`-- This is a comment`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`/* This is a comment *\\`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`# This is a comment`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "In this code fragment, what will the values of c and d be equivalent to?",
+    "codeExamples": [
+      "python\nimport numpy as np\na = np.array([1,2,3])\nb = np.array([4,5,6])\nc = a*b\nd = np.dot(a,b)\n",
+      "python\nc = [ a[1] * b[1], a[2] * b[2], a[3] * b[3] ]\nd = sum(c)\n",
+      "python\nc = a[0] * b[0], a[1] * b[1], a[2] * b[2]\n\nd = [ a[0] * b[0], a[1] * b[1], a[2] * b[2] ]\n",
+      "python\nc = [ a[0] * b[0], a[1] * b[1], a[2] * b[2] ]\n\nd = sum(a) + sum(b)\n",
+      "python\nc = [ a[0] * b[0], a[1] * b[1], a[2] * b[2] ]\n\nd = sum(c)\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What two functions within the NumPy library could you use to solve a system of linear equations?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`linalg.inv() and .dot()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`linalg.det() and .dot()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`linalg.inv() and .eye()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`linalg.eig() and .matmul()`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the correct syntax for creating a variable that is bound to a list?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`my_list = (2, 'apple', 3.5)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_list = [2, 'apple', 3.5].to_list()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_list = to_list(2, 'apple', 3.5)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_list = [2, 'apple', 3.5]`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "This code provides the **\\_** of the list of numbers.",
+    "codeExamples": [
+      "python\nnum_list = [21, 13, 19, 3, 11, 5, 18]\nnum_list.sort()\nnum_list[len(num_list) // 2]\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "mode",
+        "isCorrect": false
+      },
+      {
+        "answer": "average",
+        "isCorrect": false
+      },
+      {
+        "answer": "mean",
+        "isCorrect": false
+      },
+      {
+        "answer": "median",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What are the two main data structures in the Pandas library?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Arrays and DataFrames",
+        "isCorrect": false
+      },
+      {
+        "answer": "Series and Matrixes",
+        "isCorrect": false
+      },
+      {
+        "answer": "Matrixes and DataFrames",
+        "isCorrect": false
+      },
+      {
+        "answer": "Series and DataFrames",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Suppose you have a variable named `vector` of type np.array with 10,000 elements. How can you turn `vector` into a variable named `matrix` with dimensions 100x100?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`matrix = (vector.shape = (100,100))`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`matrix = vector.to_matrix(100,100)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`matrix = matrix(vector,100,100)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`matrix = vector.reshape(100, 100)`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which choice is an immutable data type?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Dictionary",
+        "isCorrect": false
+      },
+      {
+        "answer": "List",
+        "isCorrect": false
+      },
+      {
+        "answer": "Set",
+        "isCorrect": false
+      },
+      {
+        "answer": "String",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the output of this code?",
+    "codeExamples": [
+      "python\ndef myFunction(country = \"France\"):\n    print(f\"Hello, I am from {country}\")\n\nmyFunction(\"Spain\")\nmyFunction(\"\")\nmyFunction()\n",
+      "python\nHello, I am from Spain\nHello, I am from\nHello, I am from\n",
+      "python\nHello, I am from France\nHello, I am from France\nHello, I am from France\n",
+      "python\nHello, I am from Spain\nHello, I am from\nHello, I am from France\n",
+      "python\nHello, I am from Spain\nHello, I am from France\nHello, I am from France\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Choose the option below for which instance of the class cannot be created.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Anonymous Class",
+        "isCorrect": false
+      },
+      {
+        "answer": "Parent Class",
+        "isCorrect": false
+      },
+      {
+        "answer": "Nested Class",
+        "isCorrect": false
+      },
+      {
+        "answer": "Abstract Class",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Using Pandas, we load a data set from Kaggle, as structured in the image below. Which command will return the total number of survivors?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`[x for x in titanic['Survived'] if x == 1]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`len(titanic[\"Survived\"])`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`sum(titanic['Survived']==0)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`sum(titanic['Survived'])`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "How would you create a list of tuples matching these lists of characters and actors?",
+    "codeExamples": [
+      "python\ncharacters = [\"Iron Man\", \"Spider Man\", \"Captain America\"]\nactors = [\"Downey\", \"Holland\", \"Evans\"]\n\n# example output : [(\"IronMan\", \"Downey\"), (\"Spider Man\", \"Holland\"), (\"Captain America\", \"Evans\")]\n",
+      "python\n  d = {}\n\n  for x in range(1, len(characters)):\n      d[x] = actors[x]\n  "
+    ],
+    "answerOptions": [
+      {
+        "answer": "`[(x,y)] for x in characters for y in actors]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "&shy;",
+        "isCorrect": false
+      },
+      {
+        "answer": "`{x:y for x in characters for y in actors}`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`zip(characters, actors)`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What will this statement return?",
+    "codeExamples": [
+      "python\n{x : x*x for x in range(1,100)}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A dictionary with `x` as a key, and `x` squared as its value; from 1 to 100.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A set of tuples, consisting of (`x`, `x` squared); from 1 to 99.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A list with all numbers squared from 1 to 99.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A dictionary with `x` as a key, and `x` squared as its value; from 1 to 99.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Jaccard Similarity is a formula that tells you how similar two sets are. It is defined as the cardinality of the intersection divided by the cardinality of the union. Which choice is an accurate implementation in Python?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`def jaccard(a, b): return len (a | b) / len (a & b)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`def jaccard(a, b): return len (a && b) / len (a || b)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`def jaccard(a, b): return a.intersection(b) / a.union(b)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`def jaccard(a, b): return len (a & b) / len (a | b)`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which choice is not a native numerical type in Python?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Long",
+        "isCorrect": false
+      },
+      {
+        "answer": "Int",
+        "isCorrect": false
+      },
+      {
+        "answer": "Float",
+        "isCorrect": false
+      },
+      {
+        "answer": "Double",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What will be the output of this code?",
+    "codeExamples": [
+      "python\n[1,2,3] * 3\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`[3,2,3]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "You will get a type error.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[3,6,9]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[1, 2, 3, 1, 2, 3, 1, 2, 3]`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Given a list defined as numbers = `[1,2,3,4]`, what is the value of `numbers[-2]`?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "1",
+        "isCorrect": false
+      },
+      {
+        "answer": "2",
+        "isCorrect": false
+      },
+      {
+        "answer": "An IndexError exception is thrown.",
+        "isCorrect": false
+      },
+      {
+        "answer": "3",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which statement about strings in Python is true?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Strings can only be enclosed in single quotes (').",
+        "isCorrect": false
+      },
+      {
+        "answer": "Single character strings must be enclosed in single quotes ('), and the rest must be enclosed in double quotes (\").",
+        "isCorrect": false
+      },
+      {
+        "answer": "Strings can only be enclosed in double quotes (\").",
+        "isCorrect": false
+      },
+      {
+        "answer": "Strings can be enclosed by double quotes (\") or single quotes (').",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the correct syntax for defining an `_init_()` method that takes no parameters?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`def*init*(self): pass`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`class*init*(self): pass`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`class*init*(): pass`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`def*init*(): pass`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Suppose you need to use the `sin` function from the `math` library. What is the correct syntax for importing only that function?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`using math.sin`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`import math.sin`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`import sin from math`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`from math import sin`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What do you get if you apply numpy.sum() to a list that contains only Boolean values?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`0`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a type error`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`None`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`the count of all True values`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What will this code print?",
+    "codeExamples": [
+      "python\nprint(\"foo\" if (256).bit_length() > 8 else \"bar\")\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`True`",
+        "isCorrect": false
+      },
+      {
+        "answer": "You will get an error message because constant integer values are not classes.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`bar`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`foo`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "If you do not explicitly return a value from a function, what happens?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "If the return keyword is absent, the function will return `True`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The function will enter an infinite loop because it will not know when to stop executing its code.",
+        "isCorrect": false
+      },
+      {
+        "answer": "The function will return a `RuntimeError` if you do not return a value.",
+        "isCorrect": false
+      },
+      {
+        "answer": "If the return keyword is absent the function will return `None`.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "It is often the case that the pandas library is used for **_ data and NumPy for _** data.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "string; numerical",
+        "isCorrect": false
+      },
+      {
+        "answer": "unstructured; structured",
+        "isCorrect": false
+      },
+      {
+        "answer": "numerical; tabular",
+        "isCorrect": false
+      },
+      {
+        "answer": "tabular; numerical",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What do you need to do to install additional packages into Python?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Use a C compiler like `gcc` or `clang`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use an IDE like Notepad++ or Idle.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use a package manager like NPM or NuGet.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use a package manager like `pip` or `conda`.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "The image below was created using Matplotlib. It is a distribution plot of a list of integers filled with numbers using the function **\\_** and plotted with **\\_**.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`random.uniform(0,50);plt.hist`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`random();plt.scatter`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`random.triangular(0,50);plt.bar`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`random.gauss(50,20);plt.hist`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "In this code fragment, what will be the values of `a` and `b`?",
+    "codeExamples": [
+      "python\nimport numpy as np\n\na = np.arange(100)\nb = a[50:60:2]\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`a`: all integers from 0 to 100 (inclusive); `b`: all even integers from 50 to 60 (inclusive).",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a`: all integers from 0 to 99 (inclusive); `b`: all even integers from 50 to 60 (inclusive).",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a`: all integers from 0 to 99 (inclusive); `b`: all odd integers from 49 to 59 (inclusive).",
+        "isCorrect": false
+      },
+      {
+        "answer": "`a`: all integers from 0 to 99 (inclusive); `b`: all even integers from 50 to 58 (inclusive).",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "When using NumPy in Python, how do you check the dimensionality (number and length of dimensions) of an object called `my_object`?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`my_object.get_shape()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_object.dim()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`len(my_object)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`my_object.shape`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Assume you have a non-empty list named `mylist` and you want to search for a specific value. The minimum number of comparisons will be \\_**_ and the maximum number of comparisons will be _**?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`len(mylist); len(mylist)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`2; len(mylist)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`0; len(mylist)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`1; len(mylist)`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "If a function does not have a return statement, what does it return?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`0`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`True`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`False`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`None`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Suppose you want to double-check if two matrices can be multiplied using NumPy for debugging purposes. How would you complete this code fragment by filling in the blanks with the appropriate variables?",
+    "codeExamples": [
+      "python\nimport numpy as np\n\ndef can_matrices_be_multiplied (matrix1, matrix2):\n    rowsMat1, columnsMat1 = matrix1.shape\n    rowsMat2, columnsMat2 = matrix2.shape\n\n    if _____ == ______ :\n        print(\"The matrices can be multiplied!\")\n        return True\n    else:\n        return False\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "columnsMat1; rowsMat1;",
+        "isCorrect": false
+      },
+      {
+        "answer": "columnsMat1; columnsMat2;",
+        "isCorrect": false
+      },
+      {
+        "answer": "columnsMat2; rowsMat1;",
+        "isCorrect": false
+      },
+      {
+        "answer": "columnsMat1; rowsMat2;",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the output of this comprehension?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "[(1, 2), (2, 3), (3, 4), (4, 5), (5, 6)]",
+        "isCorrect": false
+      },
+      {
+        "answer": "[1,2,3,4,5]",
+        "isCorrect": false
+      },
+      {
+        "answer": "[(1, 2), (2, 3), (3, 4)]",
+        "isCorrect": false
+      },
+      {
+        "answer": "[(1, 2), (2, 3), (3, 4), (4, 5)]",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "In Python, a class method must have \\_**\\_ as a function decorator, and the first parameter of the method will be a reference to \\_\\_**.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "inline; the class",
+        "isCorrect": false
+      },
+      {
+        "answer": "static; self",
+        "isCorrect": false
+      },
+      {
+        "answer": "@static; self",
+        "isCorrect": false
+      },
+      {
+        "answer": "@classmethod; the class",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which snippet of code will print _My name is Joffrey, son of Robert_?",
+    "codeExamples": [
+      "python\nclass Father():\n    name = 'Robert'\n\nclass Person(Father):\n    def __init__(self, name):\n        self.fathername = super.name\n        self.name = name\n\n    def introduce(self):\n        print(f\"My name is {self.name} son of {self.fathername}\")\n\nking = Person(\"Joffrey\")\nking.introduce()\n\n",
+      "python\nclass Father():\n    name = 'Robert'\n\n\nclass Person(Father):\n    def __init__(self, name):\n        self.fathername = self.name\n        self.name = name\n\n    def introduce(self):\n        print(f\"My name is {self.name} son of {self.fathername}\")\n\n\nking = Person(\"Joffrey\")\nking.introduce()\n\n",
+      "python\nclass Father():\n    name = 'Robert'\n\n\nclass Person(Father):\n    def __init__(self, name):\n        self.name = name\n\n    def introduce(self):\n        print(f\"My name is {self.name} son of {super.name}\")\n\nking = Person(\"Joffrey\")\nking.introduce()\n",
+      "python\nclass Father():\n    name = 'Robert'\n\nclass Person(Father):\n    def __init__(self, name):\n        self.name = name\n\n    def introduce(self):\n        print(f\"My name is {self.name} son of {base.name}\")\n\nking = Person(\"Joffrey\")\nking.introduce()\n\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What does this code output in the console, assuming defaultdict has already been imported?",
+    "codeExamples": [
+      "python\nanimals = {\n    'a': ['ant', 'antelope', 'armadillo'],\n    'b': ['beetle', 'bear', 'bat'],\n    'c': ['cat', 'cougar', 'camel']\n}\n\nanimals = defaultdict(list, animals)\n\nprint(animals['b'])\nprint(animals['d'])\n",
+      "python\n      ['beetle', 'bear', 'bat']\n      []\n",
+      "python\n      ['beetle', 'bear', 'bat']\n      # an exception will be thrown\n",
+      "python\n      ['beetle', 'bear', 'bat']\n      None\n",
+      "python\n      ['bat', 'bear', 'beetle']\n      []\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "D",
+        "isCorrect": false
+      },
+      {
+        "answer": "A",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What will this line of code return? (Assume `n` is already defined as any positive integer value.)",
+    "codeExamples": [
+      "python\n[x*2 for x in range(1,n)]\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A dictionary with all the even numbers less than 2\\*n.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A list with all the odd numbers less than 2\\*n.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A list with all the even numbers less than or equal to 2\\*n.",
+        "isCorrect": false
+      },
+      {
+        "answer": "A list with all the even numbers less than 2\\*n.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What does this code print in the console?",
+    "codeExamples": [
+      "python\nx = 18\n\nif x > 10:\n\tif x > 15:\n\t\tprint('A')\n\telse:\n\t\tprint('B')\nelse:\n\tprint('C')\n\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "C",
+        "isCorrect": false
+      },
+      {
+        "answer": "A B",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "A",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the maximum length of a Python identifier?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "32",
+        "isCorrect": false
+      },
+      {
+        "answer": "16",
+        "isCorrect": false
+      },
+      {
+        "answer": "128",
+        "isCorrect": false
+      },
+      {
+        "answer": "No fixed length is specified.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What will the value of the `i` variable be when the following loop finishes its execution?",
+    "codeExamples": [
+      "python\nfor i in range(5): pass\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "5",
+        "isCorrect": false
+      },
+      {
+        "answer": "The variable becomes unavailable.",
+        "isCorrect": false
+      },
+      {
+        "answer": "6",
+        "isCorrect": false
+      },
+      {
+        "answer": "4",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "`f-strings` are also called:",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Formatted string expressions.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Functional strings.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Modulo formatted strings.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Formatted string literals.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "How many CPUs (or cores) will the Python threading library take advantage of simultaneously?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "All of the available CPUs.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Two.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Three.",
+        "isCorrect": false
+      },
+      {
+        "answer": "One.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What will be the value of `y` in this code?",
+    "codeExamples": [
+      "python\nx = 5\ny = 1 + (20 if x < 5 else 30)\n",
+      "python\nx = 5\n# This is the same statement expanded to multiple lines\ny = 1\nif (x < 5):\n    y += 20\nelse:\n    y += 30\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`False`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`21`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`2`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`31`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "The process of pickling in Python includes?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Conversion of a data table into a list.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Conversion of a byte stream into Python object hierarchy.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Conversion of a list into a data table.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Conversion of a Python object hierarchy into byte stream.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the output of the following program?",
+    "codeExamples": [
+      "python\nprint(\"codescracker\".endswith(\"er\"))\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`1`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`2`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`False`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`True`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Is the list mutable in Python?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "False",
+        "isCorrect": false
+      },
+      {
+        "answer": "True",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the output of the following program?",
+    "codeExamples": [
+      "python\nprint(\"programming\".center())\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`cr`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`programming`",
+        "isCorrect": false
+      },
+      {
+        "answer": "None of the above.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Error says `TypeError: center expected at least 1 argument, got 0`.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Who created the Python programming language?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Tim Berners-Lee",
+        "isCorrect": false
+      },
+      {
+        "answer": "Ada Lovelace",
+        "isCorrect": false
+      },
+      {
+        "answer": "Alan Turing",
+        "isCorrect": false
+      },
+      {
+        "answer": "Guido van Rossum",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which collection is ordered, changeable, and allows duplicate members?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Set",
+        "isCorrect": false
+      },
+      {
+        "answer": "Tuple",
+        "isCorrect": false
+      },
+      {
+        "answer": "Dictionary",
+        "isCorrect": false
+      },
+      {
+        "answer": "List",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What will be printed in the console if you run this code?",
+    "codeExamples": [
+      "python\nx = 1j\nprint(x**2 == -1)\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A runtime error telling you that the variable `j` has not been initialized.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`1j`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`False`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`True`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What will be printed in the console if you run this code?",
+    "codeExamples": [
+      "python\nprint(0xA + 0xB + 0xC)\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`63`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`0xA + 0xB + 0xC`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`None`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`33`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What will this code output to the screen?",
+    "codeExamples": [
+      "python\nfor i in range(5):\n    print(i)\nelse:\n    print(\"Done!\")\n",
+      "python\n1\n2\n3\n4\n5\nDone!\n",
+      "python\n0\n1\n2\n3\n4\n5\nDone!\n",
+      "python\n0\n1\n2\n3\n4\nDone!\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A",
+        "isCorrect": false
+      },
+      {
+        "answer": "B",
+        "isCorrect": false
+      },
+      {
+        "answer": "D:",
+        "isCorrect": false
+      },
+      {
+        "answer": "C",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which comparison of lists and tuples in Python is correct?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Use lists instead of tuples when you have a collection of related but dissimilar objects.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use tuples instead of lists when you have a common collection of similar objects.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use lists instead of tuples when the position of elements is important.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Use tuples instead of lists for functions that need to return multiple values.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Consider the following code snippet that uses decorators to calculate the execution time of the `execution_fn` function:",
+    "codeExamples": [
+      "python\nimport functools\nimport time\n\ndef timer(MISSING_ARG_1):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        start_time = time.perf_counter()\n        rval = func(*args, **kwargs)\n        end_time = time.perf_counter()\n        duration = end_time - start_time\n        print(f\"Executed in {duration:.4f} seconds\")\n        return MISSING_ARG_2\n    return MISSING_ARG_3\n\n@timer\ndef execution_fn():\n    for i in range(3):\n        time.sleep(1)\n\nexecution_fn()\n",
+      "\nMISSING_ARG_1 = wrapper\n\nMISSING_ARG_2 = rval\n\nMISSING_ARG_3 = func\n",
+      "\nMISSING_ARG_1 = func\n\nMISSING_ARG_2 = rval\n\nMISSING_ARG_3 = wrapper\n",
+      "\nMISSING_ARG_1 is empty\n\nMISSING_ARG_2 = rval\n\nMISSING_ARG_3 = wrapper\n",
+      "\nMISSING_ARG_1 is empty\n\nMISSING_ARG_2 = rval\n\nMISSING_ARG_3 = func\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": false
+      },
+      {
+        "answer": ":",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which of the following statements defines a new object type named `Dog` in Python?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`Dog class:`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`Dog:`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`class Dog`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`class Dog:`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "To use pipelines in `scikit-learn`, import from the `scikit-learn._` submodule.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`preprocessing`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`filters`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`pipe_filter`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`pipeline`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "You should pass in a value of **\\_** for the axis argument to the Pandas apply method to apply the function to each row.",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "row",
+        "isCorrect": false
+      },
+      {
+        "answer": "col",
+        "isCorrect": false
+      },
+      {
+        "answer": "0",
+        "isCorrect": false
+      },
+      {
+        "answer": "1",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Data points in Pyplot are called...",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "... pointers.",
+        "isCorrect": false
+      },
+      {
+        "answer": "... points.",
+        "isCorrect": false
+      },
+      {
+        "answer": "... none of these.",
+        "isCorrect": false
+      },
+      {
+        "answer": "... markers.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What does this code print?",
+    "codeExamples": [
+      "python\na = np.array([[1, 2], [3, 4], [5, 6]])\nc = a[(a > 3) & (a < 11)]\nprint(c)\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`[[3, 4], [5, 6]]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[False, False, False, True, True, True]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[[0,0], [3, 4], [5, 6]]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[4 5 6]`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Assume `m`, `n`, and `p` are positive integers. In the following comprehension, how many times will the function `randint` be called?",
+    "codeExamples": [
+      "python\n[ [ [ randint(1,100) for i in range(m) ] for j in range(n) ] for k in range(p) ]\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "The greater value of `(m,n,p)`.",
+        "isCorrect": false
+      },
+      {
+        "answer": "1 million.",
+        "isCorrect": false
+      },
+      {
+        "answer": "`m + n + p`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`m * n * p`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Suppose you have a class named `MyClass` which has multiple inheritance and methods with the same name in its ancestors. Which class method could you call to see which method will get priority when invoked?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "`MyClass.hierarchy()`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`callable(MyClass)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`dir(MyClass)`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`MyClass.__mro__`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Suppose you have a list of employees described by the code below. You want to assign Alice the same salary as Charlie. Which choice will accomplish that?",
+    "codeExamples": [
+      "python\nemployees = {\n    'alice':{\n        'position':'Lead Developer',\n        'salary':1000\n    },\n    'bob':{\n        'position': 'Lead Artist',\n        'salary':2000\n    },\n    'charlie':{\n        'position':'cfo',\n        'salary':3000\n    }\n}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`employees.alice.salary = employees.charlie.salary`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`employees['alice'][1] = employees['charlie'][1]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`employees['alice'].salary = employees['charlie'].salary`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`employess['alice']['salary'] = employees['charlie']['salary']`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "You are given this piece of code. Assume `m` and `n` are already defined as some positive integer value. When it completes, how many tuples will my list contain?",
+    "codeExamples": [
+      "python\nmylist = []\n\nfor i in range(m):\n    for j in range(n):\n        mylist.append((i,j))\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`m`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`m + n`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`n`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`m \\* n`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What will this comprehension provide you?",
+    "codeExamples": [
+      "python\n{x : [y for y in range (1, x) if x % y == 0] for x in range (2, 100)}\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "A dictionary whose keys are the numbers from 2 to 99 (inclusive), and their respective values are a list from 1 to the key value itself (inclusive).",
+        "isCorrect": false
+      },
+      {
+        "answer": "A dictionary whose keys are the numbers from 2 to 99 (inclusive), and their respective values are the even numbers from 1 to the key value itself (inclusive).",
+        "isCorrect": false
+      },
+      {
+        "answer": "A dictionary whose keys are the numbers from 2 to 99 (inclusive), and their respective values are the odd numbers from 1 to the key value itself (inclusive).",
+        "isCorrect": false
+      },
+      {
+        "answer": "A dictionary whose keys are the numbers from 2 to 99 (inclusive), and their respective values are their factors.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is a common use of Python's sys library?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "to take a snapshot of all the packages and libraries in your virtual environment",
+        "isCorrect": false
+      },
+      {
+        "answer": "to connect various systems, such as connecting a web front end, an API service, a database, and a mobile app",
+        "isCorrect": false
+      },
+      {
+        "answer": "to scan the health of your Python ecosystem while inside a virtual environment",
+        "isCorrect": false
+      },
+      {
+        "answer": "to capture command-line arguments given at a file's runtime",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What is the output of 17 % 15 ?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "17",
+        "isCorrect": false
+      },
+      {
+        "answer": "15",
+        "isCorrect": false
+      },
+      {
+        "answer": "16",
+        "isCorrect": false
+      },
+      {
+        "answer": "2",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Let the lists 'characters' and 'actors' be defined as given. Which of the following lines of code gives the desired output?",
+    "codeExamples": [
+      "python\ncharacters = [\"Iron Man\", \"Spider Man\", \"Captain America\"]\nactors = [\"Downey\", \"Holland\", \"Evans\"]\n\n#Desired output : [(\"Iron Man\", \"Downey), (\"Spider Man\", \"Holland\"), (\"Captain America\", \"Evans\")]\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "print( zip( characters, actors ) )",
+        "isCorrect": false
+      },
+      {
+        "answer": "print( { x: y for x in characters for y in actors } )",
+        "isCorrect": false
+      },
+      {
+        "answer": "print( [ ( x, y ) for x in characters for y in actors ] )",
+        "isCorrect": false
+      },
+      {
+        "answer": "print( list( zip( characters, actors ) ) )",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "When is the `if __name__ == \"__main__\":` block executed in a Python script?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "Always, as it is required in every Python script.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Only when the script contains syntax errors.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Only when the script is imported as a module in another script.",
+        "isCorrect": false
+      },
+      {
+        "answer": "Only when the script is executed directly from the command line or as the main program.",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What will be the output of the following Python code?",
+    "codeExamples": [
+      "python\ndef square(x):\n\treturn x * x\n\nnumbers = [1, 2, 3, 4, 5]\nsquared_numbers = map(square, numbers)\nresult = list(squared_numbers)\nprint(result)\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "`[1, 2, 3, 4, 5]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[1, 8, 27, 64, 125]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[2, 4, 6, 8, 10]`",
+        "isCorrect": false
+      },
+      {
+        "answer": "`[1, 4, 9, 16, 25]`",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which of the following is not a valid built-in function in Python?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "int",
+        "isCorrect": false
+      },
+      {
+        "answer": "string",
+        "isCorrect": false
+      },
+      {
+        "answer": "boolean",
+        "isCorrect": false
+      },
+      {
+        "answer": "array",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "Which of the following is not a valid Python data type?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "int",
+        "isCorrect": false
+      },
+      {
+        "answer": "float",
+        "isCorrect": false
+      },
+      {
+        "answer": "str",
+        "isCorrect": false
+      },
+      {
+        "answer": "char",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "In Python, which function is used to read a line from the console input?",
+    "codeExamples": [],
+    "answerOptions": [
+      {
+        "answer": "read_line()",
+        "isCorrect": false
+      },
+      {
+        "answer": "console_input()",
+        "isCorrect": false
+      },
+      {
+        "answer": "getline()",
+        "isCorrect": false
+      },
+      {
+        "answer": "input()",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  },
+  {
+    "categories": [
+      "python"
+    ],
+    "question": "What will be the output of the following Python code?",
+    "codeExamples": [
+      "python\ndef outer_func(x):\n    y = x + 1\n    def inner_func():\n        return y + x\n    return inner_func\n\nx = 10\ny = 20\nclosure_func = outer_func(x)\nprint(closure_func())\n"
+    ],
+    "answerOptions": [
+      {
+        "answer": "Hello {name1} and {name2}",
+        "isCorrect": false
+      },
+      {
+        "answer": "Error",
+        "isCorrect": false
+      },
+      {
+        "answer": "Hello and",
+        "isCorrect": false
+      },
+      {
+        "answer": "30",
+        "isCorrect": false
+      },
+      {
+        "answer": "11",
+        "isCorrect": false
+      },
+      {
+        "answer": "31",
+        "isCorrect": false
+      },
+      {
+        "answer": "Hello foo and bin",
+        "isCorrect": true
+      },
+      {
+        "answer": "21",
+        "isCorrect": true
+      }
+    ],
+    "urlFont": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/refs/heads/main/python/python-quiz.md"
+  }
+]
