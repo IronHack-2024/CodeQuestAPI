@@ -1,6 +1,5 @@
 const xlsx = require("xlsx");
 const fs = require("fs");
-const path = require("path");
 const {
   getRandomQuestionsDB,
   insertQuestion,
