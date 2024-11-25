@@ -1,26 +1,29 @@
-<!--Decidir si colocamos un tag nav -->
 <header class="collapsible-header">
-    <a href="/"><img class="logo" src="./images/image.svg" alt="logo" /></a>
+    <div class="logo-div">
+        <a href="/"><img class="logo" src="./images/image.svg" alt="logo" /></a>
+        <p><a href="/">Code Quest API</a></p>
+    </div>
     <div class="header-items">
-        <div><a href="/about-us">About</a></div>
         <div><a href="/docs">Docs</a></div>
-        <div><a href="/submit-new-question">Add a question</a></div>
+        <div class="daily-question"><a href="/daily-question">Daily  Question</a></div>
         <div><a href="/template-form">Kahoot!</a></div>
-        <div><a href="#">AI Question</a></div>
-        <div class="daily-question"><a href="/daily-question">Daily Question</a></div>
+        <!-- <div><a href="#">AI Question</a></div> -->
+        <div><a href="/submit-new-question">Add a Question</a></div>
+        <div><a href="/about-us">About</a></div>
     </div>
 </header>
 <header class="hamburger-menu">
     <a href="/"><img class="logo" src="./images/image.svg" alt="logo" /></a>
+    <p>Code Quest API</p>
     <div class="header-items">
         <button class="hamburger" id="hamburger">☰</button>
         <ul class="nav-menu" id="nav-menu">
-            <li><a href="/about-us">About</a></li>
             <li><a href="/docs">Docs</a></li>
             <li><a href="/submit-new-question">Add a question</a></li>
-            <li><a href="/template-form"></a>Kahoot!</li>
-            <li><a href="#"></a>AI Question</li>
+            <li><a href="/template-form">Kahoot!</a></li>
+            <!-- <li><a href="#">AI Question</a></li> -->
             <li><a href="/daily-question">Daily Question</a></li>
+            <li><a href="/about-us">About</a></li>
         </ul>
     </div>
 </header>

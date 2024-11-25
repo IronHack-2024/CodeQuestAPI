@@ -10,25 +10,50 @@
     <nav>
         <%- include('./partials/nav.ejs') %>
     </nav>
-    <section id="kahoot-section">
-        <h1>Export Your Questions for Kahoot or Blooket!</h1>
-        <p>Create a quiz ready to upload into the most popular game-learning platforms: Kahoot and Blooket</p>
-        <form  action="/export-questions" method="GET">
-            <label class="form-step" for="numberQuestions">Step 1. Select the number of questions</label>
-            <input type="number" id="numberQuestions" name="numberQuestions" max=20 min="1" required placeholder="1">
-            <label class="form-step" for="templateType">Step 2. Choose your favourite platform</label>
-            <label>
-                <input type="radio" name="templateType" value="excel" required>
-                Kahoot Template
-            </label>
-            <label>
-                <input type="radio" name="templateType" value="blooket">
-                Blooket Template
-            </label>
-            <label class="form-step">Step 3. Generate your quiz</label>
-            <input class="input-btn" type="submit" value="Download!">
-        </form>
+    <section class="flex flex-col items-center" id="kahoot-section">
+        <h1 class="text-2xl font-bold mt-24 mb-8 text-white">EXPORT YOUR QUESTIONS FOR KAHOOT OR BLOOKET!</h1>
+        <div class="mb-12 text-white font-oxygen">
+            <p>Create a quiz ready to upload into the most popular game-learning platforms: Kahoot and Blooket</p>
+        </div>
+        <div class="lg:w-6/12 sm:w-3/4 m-6 border-4 border-primaryGreen bg-backgroundGreen px-8 py-12 rounded-lg shadow-lg text-center">
+            <form action="/export-questions" method="GET">
+                <div>
+                    <div class="mb-12 flex flex-col items-center gap-4">
+                        <div class="flex flex-row">
+                            <span class="text-neutral-50">Step 1.</span>
+                            <label class="font-oxanium" for="numberQuestions">Select the number of questions</label>
+                        </div>
+                        <input type="number" id="numberQuestions" name="numberQuestions" max=20 min="1" required
+                            placeholder="1">
+                    </div>
+                    <div class="mb-12 flex flex-col items-center gap-4">
+                        <div class="flex flex-row">
+                            <span class="text-neutral-50">Step 2.</span>
+                            <label class="font-oxanium" for="templateType">Choose your favourite platform</label>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="flex flex-row items-center gap-4">
+                                <input type="radio" name="templateType" value="excel" required>
+                                <label class="flex flex-row font-oxanium ">Kahoot Template</label>
+                            </div>
+                            <div class="flex flex-row items-center gap-4">
+                                <input type="radio" name="templateType" value="blooket">
+                                <label class="flex flex-row font-oxanium">Blooket Template</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-8 flex flex-row">
+                        <span class="text-neutral-50">Step 3.</span>
+                        <label class="font-oxanium" for="templateType">Generate your quiz</label>
+                    </div>
+                    <input class="bg-primaryGreen hover:bg-lightGreen text-secondaryGreen active:bg-secondaryGreen active:text-primaryGreen p-2 px-8 rounded font-oxanium font-bold"
+                        type="submit" value="Download!">
+                    </div>
+                </div>
+            </form>
+        </div>
     </section>
+    <script src="tailwind.js"></script>
 </body>
 
 </html>

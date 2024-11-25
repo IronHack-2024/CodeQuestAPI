@@ -23,13 +23,81 @@ body {
     margin: 0 20% 0 20%;
     font-weight: 400
   }
-
+/* --------------------------nav bar */
   header {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 36px;
     justify-content: space-between;
+    font-family: Oxanium;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  
+  .hamburger {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Menu Styling */
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Hide menu by default on mobile */
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 57px;
+    right: 0;
+    width: 33%;
+    background-color: #245f2c;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+  }
+  
+  .nav-menu li {
+    padding: 0.5rem 0;
+  }
+  
+  .nav-menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Show menu when .show class is added */
+  .nav-menu.show {
+    display: flex;
+  }
+  
+  .logo-div{
+    display: flex;
+    color: #41fd5b;
+    gap: 1rem;
+    align-items: center;
+    font-family: "Press Start 2P", system-ui;
+    padding-left: 16px;
+  }
+  .logo-div p{
+    padding-top: 0.35rem;
+  }
+  .logo-div img{
+    width: 64px;
+  }
+  .header-items {
+    color: #41fd5b;
+    display: flex;
+    gap: 40px;
+    padding-right: 20px;
+    z-index: 1000;
   }
   
   .header-items {
@@ -41,12 +109,10 @@ body {
   }
   form{
     color: black;
-    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
   }
 
   form label{
@@ -70,14 +136,22 @@ body {
     text-align: center;
     font-size: 1rem;
   }
-  #kahoot-section{
-    margin-top: 10%;
-  }
+  #container
   .logo {
       height: 70px;
       padding-left: 10px;
   }
-  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 48px;
+  }
   .headshot {
       height: 200px;
       width: 200px;
@@ -88,7 +162,32 @@ body {
       max-width: none ;
       filter: grayscale(100%); /* make the image black and white */
   }
+  .headshot:hover {
+    background-color: #41fd5b;
+    filter: none
+  }
+  .hidden-element {
+    position: absolute;
+    top: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    opacity: 0%;
+  }
+  .main-user-block:hover .hidden-element {
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+    top: 32px;
+    opacity: 100%;
+    transition: opacity 1s ease;
+  }
   
+  .main-user-block:hover .headshot {
+    background-color: #41fd5b;
+    filter: none;
+    transition: background-color 1s ease;
+  }
   @media (max-width: 768px) {
     .headshot {
       /* Styles for screens 768px or narrower */
@@ -100,25 +199,6 @@ body {
   .headshot:hover{
     background-color: #41fd5b;
     filter: none
-  }
-  
-  .pixelated-header {
-      color: #41fd5b;
-      font-size: 24px;
-      }
-  
-  @media (max-width: 576px) {
-    .pixelated-header {
-      /* Styles for screens 576px or narrower */
-      font-size: 16px;
-    }
-  }
-  
-  @media (max-width: 400px) {
-    .pixelated-header {
-      /* Styles for screens 400px or narrower */
-      font-size: 12px;
-    }
   }
   
   .body-text {
@@ -153,7 +233,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 30px;
+    gap: 38px;
     justify-content: center;
     align-items: center;
     width: 500px;
@@ -188,69 +268,128 @@ body {
     }
   }
   
-  .main-user-block:hover .hidden-element {
-    display: block;
-    position: absolute;
-    top: 34px;
-    opacity: 100%;
-    transition: opacity 1s ease;
-  }
-  
-  .main-user-block:hover .headshot {
-    background-color: #41fd5b;
-    filter: none;
-    transition: background-color 1s ease;
-  }
-  
-  .hidden-element {
-    position: absolute;
-    top: 34px;
-  }
-  
   .name-element{
     color: white;
     font-family: 'Oxanium';
-  }
-  
-  .hidden-element {
-    display: block;
-    opacity: 0%;
+    font-size: 1.2rem;
   }
   
   .name-container{
     display: flex;
     gap: 20px;
+    padding: 8px;
     justify-content: center;
     position: relative;
   }
   
   /* TERMINAL EFFECT CSS */
   .typewriter h1 {
-    font-size: 80px;
+    font-size: 3rem;
     color: #41fd5b;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 0.15em solid white; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
+    white-space: nowrap;
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 0.15em; /* Adjust as needed */
+    overflow: hidden;
     animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
   }
-  
-  @media (max-width: 1024px) {
-    .typewriter h1 {
-      /* Styles for screens 1024px or narrower */
-      font-size: 60px;
-    }
+  .typewriter-container::after{
+    display: flex;
+    flex-direction: column;
   }
   
+.home-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: 25vh;
+  margin: 0 10%;
+}
+.home-text a:hover{
+  font-weight: 600;
+  text-decoration: underline;
+}
+/* .flex{
+  justify-content: center;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+} */
+
+
+  
+  @media (max-width: 1024px) {
+    .examples-container {
+      width: 700px;
+    }
+  
+    .docs-text {
+      font-size: 1.1rem;
+    }
+  
+    .body-text {
+      width: 700px;
+    }
+  
+    .image-grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+@media (max-width: 810px) {
+  .typewriter h1 {
+    text-wrap: wrap;
+    white-space: normal;
+    width: 90%;
+    animation: none;
+  }
+  
+}
+
+  
   @media (max-width: 768px) {
-    .typewriter h1 {
-      /* Styles for screens 768px or narrower */
-      font-size: 50px;
+    .examples-container {
+      width: 500px;
+    }
+  
+    .body-text {
+      width: 500px;
+    }
+  
+    .collapsible-header {
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: flex;
+    }
+  
+    .headshot {
+      height: 250px;
+      width: 250px;
+    }
+  
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      width: 100%;
     }
   }
   
   @media (max-width: 576px) {
+    .examples-container {
+      width: 380px;
+    }
+  
+    .body-text {
+      width: 380px;
+    }
     .typewriter h1 {
       /* Styles for screens 576px or narrower */
       font-size: 30px;
@@ -258,10 +397,15 @@ body {
   }
   
   @media (max-width: 400px) {
-    .typewriter h1 {
-      /* Styles for screens 400px or narrower */
-      font-size: 26px;
+
+    .examples-container {
+      width: 320px;
     }
+
+    .body-text {
+      width: 320px;
+    }
+
   }
   
   .typewriter-container {
@@ -270,7 +414,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: calc(100vh - 70px);
+  height: 75vh;
   position: relative;
   }
   
@@ -307,3 +451,34 @@ body {
       border-color: white;
     }
   }
+
+  /* docs */
+
+.examples-container {
+  width: 1000px;
+}
+
+.docs-text {
+  font-size: 1.3rem;
+  color: white;
+  font-family: oxanium;
+  border: solid white 1px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.daily-question {
+  word-spacing: -6px
+}
+
+.body-text {
+  color: white;
+  width: 1000px;
+  font-family: 'Oxanium';
+  font-size: 1.3rem;
+}
+
+
+
+
+

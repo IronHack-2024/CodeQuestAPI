@@ -10,27 +10,36 @@ const getHome = async (req, res) => {
   res.render("home");
 };
 
+
 const getAboutUs = async (req, res) => {
   res.render("about-us");
 };
+
 
 const getDocs = async (req, res) => {
   res.render("docs");
 };
 
 const validateCheckboxNewQuestion = (obj) => {
-  //Function receives information from req.body and validate checkbox status
-  //1) Validate exists at least one correct answer
-  const hasCorrectAnswer = Object.values(obj).some((element) => {
-    //If some checkbox (boolean data) is true we validate correctly the answer
-    return element == "true" && element;
-  });
-  console.log(hasCorrectAnswer);
-  return hasCorrectAnswer;
-};
+	//Function receives information from req.body and validate checkbox status 
+	//1) Validate exists at least one correct answer
+	const hasCorrectAnswer = Object.values(obj).some(element => {
+		//If some checkbox (boolean data) is true we validate correctly the answer
+		return (element == "true" && element)
+	});
+	console.log(hasCorrectAnswer)
+	return hasCorrectAnswer;
+}
+// const hasCorrectAnswer = Object.values(obj).some((element) => {
+  // return element == "true" && element;
+// });
+// console.log(hasCorrectAnswer);
+// return hasCorrectAnswer;
+
 const getFormTemplate = async (req, res) => {
   res.render("template-form", {});
 };
+
 
 const getTemplateQuestions = async (req, res) => {
   const { numberQuestions } = req.query;
@@ -137,6 +146,7 @@ const getTemplateQuestions = async (req, res) => {
   });
 };
 
+
 const getDailyQuestion = async (req, res) => {
   // Obtener la pregunta correspondiente al día
   const questions = await getRandomQuestionsDB(1, { codeExamples: [] });
@@ -150,10 +160,12 @@ const getDailyQuestion = async (req, res) => {
   res.render("daily-question", { questionsWithShuffledAnswers });
 };
 
+
 const newQuestionForm = (req, res) => {
   let message = "";
   res.render("new-question", { message });
 };
+
 
 const createNewQuestion = async (req, res) => {
   try {
@@ -195,7 +207,7 @@ const createNewQuestion = async (req, res) => {
       };
 
       await insertQuestion(newQuestion);
-      console.log(newQuestion);
+      console.log("New question: ", newQuestion);
       let message =
         "Thank you for submitting a new question. Our team will revise it and, if correct, include it in our database.";
       res.status(201).render("new-question.ejs", { message });
@@ -216,6 +228,7 @@ const createNewQuestion = async (req, res) => {
       .json({ error: "An error has ocurred while saving the question." });
   }
 };
+
 
 module.exports = {
   getHome,

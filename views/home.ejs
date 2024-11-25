@@ -9,39 +9,50 @@
 
 <body>
     <%- include('./partials/nav.ejs') %>
-        <div>
+    <div>
+        <div class="page-one">
+            <canvas id="Matrix"></canvas>
+        </div>
+
+        <div class="typewriter-container">
+            <div class="typewriter">
+                <h1 class="customGreen">CODE QUEST API</h1>
+            </div>
+        </div>
             
-            <div class="page-one">
-                <canvas id="Matrix"></canvas>
+        <div>
+            <h1 class="text-xl h-25vh mx-32 pb-32">The ultimate API for programming questions. Access random and AI-generated questions to enhance your coding skills.</h1>
+        </div>
+        
+        <div class="mx-auto text-white">
+            
+            <h1 class="text-white text-2xl font-bold mt-20 mb-10" >GETTING STARTED</h1>
+            <div class="m-6 w-6/12 mx-auto flex flex-col gap-8 border-4 border-primaryGreen bg-backgroundGreen p-4 rounded-lg shadow-lg text-center">             
+                <h1 class="text-white font-oxanium">Challenge your knowledge <a class="font-bold hover:text-primaryGreen hover:underline hover:decoration-2 underline" href="/daily-question">here!</a></h1>                
+                <h1 class="text-white font-oxanium">Find out more <a class="font-bold hover:text-primaryGreen hover:underline hover:decoration-2 underline" href="/about-us">about the team</a></h1>            
+                <!-- <h1 class="text-black"><a href="https://github.com/IronHack-2024/CodeQuestAPI"> -->
+                <!-- <img src="./icons/mdi_github.svg"/> -->
             </div>
 
-            <div class="typewriter-container">
-                <div class="typewriter">
-                    <h1>CODE QUEST API</h1>
-                </div>
-            </div>
-            <div class="home-text">
-                <h1>The ultimate API for programming questions. Access random and AI-generated questions to enhance your coding skills.</h1>
-                <h1><a href="/daily-question">Challenge your knowledge here!</a></h1>
-                <div class="flex-row">
-                    <h1><a href="/about-us">Find out more about the team</a></h1>
-                    <h1><a href="https://github.com/IronHack-2024/CodeQuestAPI"><img src="./icons/mdi_github.svg"/></a></h1>
-                </div>
+            <h1 class="text-white text-2xl font-bold mt-20 mb-10">BASIC USAGE</h1>
+            <div class="m-6 w-6/12 mx-auto flex flex-col gap-8 border-4 border-primaryGreen bg-backgroundGreen p-4 rounded-lg shadow-lg text-center">             
+                <h1 class="text-white font-oxanium">Ready to <a class="font-bold hover:text-primaryGreen hover:underline hover:decoration-2 underline" href="/daily-question">try your skills?</a></h1>
+                <h1 class="text-white font-oxanium"><a class="font-bold hover:text-primaryGreen hover:underline hover:decoration-2 underline" href="/docs">Check the API documentation</a></h1>
+                <h1 class="text-white font-oxanium">You can use the question to <a class="font-bold hover:text-primaryGreen hover:underline hover:decoration-2 underline" href="/template-form">play in Kahoot or Blooket!</a></h1>
             </div>
 
-            <!-- testing the subscription form -->
-            <div>
-                <form action="/subscribe" method="POST" id="subscribeForm">
-                    <label for="email">Subscribe to Weekly Dev Questions</label>
-                    <input type="email" id="email" name="email" required placeholder="example@domain.com">
-                    <button type="submit">Subscribe Now</button>
+            <h1 class="text-white text-2xl font-bold mt-20 mb-10">WEEKLY QUEST SUBSCRIPTION</h1>
+                <form action="/subscribe" method="POST" class="m-6 w-6/12 mx-auto flex flex-col gap-8 border-4 border-primaryGreen bg-backgroundGreen p-4 rounded-lg shadow-lg text-center">
+                    <label class="font-oxanium text-white" for="email">Register to receive a new challenge every week!</label>
+                    <input type="email" id="email" name="email" required placeholder="&nbsp;&nbsp;Enter your email" class="focus:border-customGreen text-black px-2 py-1 rounded font-oxanium">
+                    <button type="submit" class="bg-primaryGreen hover:bg-lightGreen text-secondaryGreen active:bg-secondaryGreen active:text-primaryGreen p-2 px-8 rounded font-oxanium font-bold">Subscribe</button>
                 </form>
-            </div>
-
 
         </div>
+    </div>
         <script src="/script.js"></script>
         <script src="/index.js"></script>
+        <script src="tailwind.js"></script>
 </body>
 
 </html>

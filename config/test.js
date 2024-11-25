@@ -6,15 +6,11 @@ const jsonFile = {
         "contact": {
             "email": "codequestapi@gmail.com"
         },
-        "license": {
-            "name": "Aquí va nuestra licencia",
-            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
-        },
         "version": "1.0.0"
     },
     "externalDocs": {
-        "description": "Aquí va cualquier external doc (FIGMA)",
-        "url": "http://swagger.io"
+        "description": "FIGMA Handoff",
+        "url": "https://www.figma.com/design/FLNTYv0OtpoWzufVcV9iXR/Code-Quest-API?node-id=1-2&t=8JpekF2SP8Bofe2O-1"
     },
     "servers": [
         {
