@@ -24,13 +24,16 @@
             navMenu.classList.toggle("show");
         });
         
-        window.onload = () => {
-    window.ui = SwaggerUIBundle({
-      url: 'https://codequestapi.onrender.com/api/v1/test-swagger',
-      dom_id: '#swagger-ui',
-    });
-  };
+//         window.onload = () => {
+//   console.log("esta leyendo esto")
+//   window.ui = SwaggerUIBundle({
+//       // Don't forget to change the url for production: url + api/v1/test-swagger
+//     url: 'http://localhost:3000/api/v1/swagger-docs',
+//     dom_id: '#swagger-ui',
+//   });
+// };
     </script>
+    <script src="/config/swagger-window.config.js"></script>
 </body>
 
 </html>

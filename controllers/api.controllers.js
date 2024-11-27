@@ -1,5 +1,5 @@
 const { generateQuestions, getRandomQuestionsDB } = require('../services/question.services');
-const jsonFile = require("../config/test.js")
+const swaggerJsonFile = require("../config/swagger.config.js")
 
 
 /**
@@ -76,12 +76,12 @@ const getAiQuestions = async (req, res) => {
   }
 };
 
-const getTestSwaggerOption = async(req, res) => {
-	res.json(jsonFile)
+const getSwaggerDocs = async(req, res) => {
+	res.json(swaggerJsonFile)
 };
 
 module.exports = {
 	getRandomQuestions,
 	getAiQuestions,
-	getTestSwaggerOption
+	getSwaggerDocs
 };
