@@ -6,9 +6,9 @@ const indexRouter = require("./routes/index.routes");
 const apiRouter = require("./routes/api.routes");
 const cors = require("cors");
 const swaggerUi = require("swagger-ui-express");
-const swaggerDocs = require("./config/swagger.config");
 const { startEmailCronJob } = require("./utils/cron");
 const securityMiddleware = require("./middleware/security");
+const path = require('path')
 
 const limiter = rateLimit({
   windowMs: 60 * 1000, // 60 seconds
@@ -29,10 +29,10 @@ app.use(securityMiddleware);
 app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
-
 app.use(express.static("public"));
 app.options("/api/*", cors({ methods: ["GET"], origin: "*" }));
+
+app.use('/config', express.static(path.join(__dirname, 'config')))
 
 app.use(
   "/api",
