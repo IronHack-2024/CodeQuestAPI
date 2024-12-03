@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Send HTTP request to wake up the site
         run: |
-          curl -s https://github.com/IronHack-2024/CodeQuestAPI
+          curl -s https://codequestapi.onrender.com/
