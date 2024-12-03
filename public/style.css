@@ -392,6 +392,10 @@ body {
       height: 4rem;
       margin-left: 4px;
     }
+    .headshot {
+      height: 125px;
+      width: 125px;
+    }
   }
   
   @media (max-width: 400px) {
@@ -427,7 +431,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px 100px 0 100px;
+    margin: 30px 50px 0 50px;
   }
   /* The typing effect */
   @keyframes typing {
