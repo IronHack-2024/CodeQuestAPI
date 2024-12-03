@@ -68,6 +68,15 @@
     border-radius: 4px; 
 }
 
+@media (max-width: 576px) {
+    .swagger-ui .info .title  {
+        font-size: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+  }
+
 #operations-tag-question{
     display: flex;
     justify-content: center;
