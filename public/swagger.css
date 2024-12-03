@@ -35,6 +35,10 @@
     width: 90%;
 }
 
+.swagger-ui .btn-group {
+    gap: 1rem;
+}
+
 #operations-tag-question > small > div > p{
     color: slategray;
 }
@@ -56,6 +60,14 @@
     border-radius: 4px;
 }
 
+.swagger-ui .btn-group .btn:last-child {
+    border-radius: 4px; 
+}
+
+.swagger-ui .btn-group .btn:first-child {
+    border-radius: 4px; 
+}
+
 #operations-tag-question{
     display: flex;
     justify-content: center;
@@ -72,5 +84,5 @@
     text-transform: capitalize;
 }
 #operations-tag-question > a > span:after{
-    content: " endpoints"
+    content: "endpoints"
 }
