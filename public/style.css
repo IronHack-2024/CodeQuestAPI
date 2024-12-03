@@ -312,6 +312,10 @@ body {
   font-weight: 600;
   text-decoration: underline;
 }
+
+.centre-container {
+  justify-content: center;
+}
 /* .flex{
   justify-content: center;
 }
@@ -322,8 +326,6 @@ body {
   gap: 2rem;
 } */
 
-
-  
   @media (max-width: 1024px) {
     .examples-container {
       width: 700px;
