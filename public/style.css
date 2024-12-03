@@ -316,15 +316,6 @@ body {
 .centre-container {
   justify-content: center;
 }
-/* .flex{
-  justify-content: center;
-}
-.flex-row{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2rem;
-} */
 
   @media (max-width: 1024px) {
     .examples-container {
@@ -353,7 +344,6 @@ body {
   }
   
 }
-
   
   @media (max-width: 768px) {
     .examples-container {
@@ -395,6 +385,11 @@ body {
     .typewriter h1 {
       /* Styles for screens 576px or narrower */
       font-size: 30px;
+    }
+
+    .logo {
+      height: 4rem;
+      margin-left: 4px;
     }
   }
   
