@@ -76,6 +76,7 @@ body {
   /* Show menu when .show class is added */
   .nav-menu.show {
     display: flex;
+    gap: 2px;
   }
   
   .logo-div{
