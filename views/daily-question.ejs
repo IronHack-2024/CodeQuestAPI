@@ -71,7 +71,7 @@
         const rightAnswerDef = rightAnswer(answerA, answerB, answerC, answerD, answerAIsCorrect, answerBIsCorrect, answerCIsCorrect, answerDIsCorrect)
         // const dailyContainer = getElementById('daily-container')
 
-        document.querySelectorAll('button').forEach(button => {
+        document.querySelectorAll('.answer-btn').forEach(button => {
           button.addEventListener('click', function () {
             console.log('this: ', this.dataset.istrue)
             //Check if the clicked answer is correct using data-istrue attribute
