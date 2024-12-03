@@ -1,0 +1,13 @@
+name: Wake Up Site
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"  # This cron expression means every 5 minutes
+
+jobs:
+  wake_up:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send HTTP request to wake up the site
+        run: |
+          curl -s https://github.com/IronHack-2024/CodeQuestAPI
