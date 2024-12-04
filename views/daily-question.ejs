@@ -22,7 +22,7 @@
             <% questionsWithShuffledAnswers[0].answerOptions.forEach(option=> { %>
               <!-- Each button represents an answer option with data-istrue attribute indicating correctness -->
               <button
-                class="bg-secondaryGreen text-primaryGreen border-2 border-primaryGreen p-2 rounded hover:bg-primaryGreen hover:text-secondaryGreen"
+                class="answer-btn bg-secondaryGreen text-primaryGreen border-2 border-primaryGreen p-2 rounded hover:bg-primaryGreen hover:text-secondaryGreen"
                 data-istrue="<%= option.isCorrect %>">
                 <%= option.answer %>
               </button>
@@ -71,22 +71,15 @@
         const rightAnswerDef = rightAnswer(answerA, answerB, answerC, answerD, answerAIsCorrect, answerBIsCorrect, answerCIsCorrect, answerDIsCorrect)
         // const dailyContainer = getElementById('daily-container')
 
-        document.querySelectorAll('button').forEach(button => {
+        document.querySelectorAll('.answer-btn').forEach(button => {
           button.addEventListener('click', function () {
-            // console.log('rightAnswerDef: ', rightAnswerDef)
-            // console.log('this.textContent', this.textContent)
-            // console.log('this.dataset.istrue', this.dataset.istrue)
-            console.log('this: ', this.dataset)
+            console.log('this: ', this.dataset.istrue)
             //Check if the clicked answer is correct using data-istrue attribute
             if (this.dataset.istrue === "true") {
               //Add styles to show the button as correct
               button.classList.add("bg-primaryGreen");
               button.classList.add("border-secondaryGreen");
               button.classList.add("text-secondaryGreen");
-              // const correctSign = document.createElement('p');
-              // correctSign.textContent = 'This is the new element'
-              // dailyContainer.appenChild(newElement)
-
             } else {
               //add styles to show the button as incorrect
               button.classList.add("bg-errorRed");
@@ -101,16 +94,37 @@
               explanationEl.innerHTML = explanation;
             }
 
-            // Disable all buttons after any button is clicked to prevent further answers
-            document.querySelectorAll('button').forEach(btn => btn.disabled = true);
+            document.querySelectorAll('.answer-btn').forEach(btn => {
+            btn.disabled = true; // Disable the button
+            btn.classList.remove('hover:bg-primaryGreen', 'hover:text-secondaryGreen'); // Remove hover effects
+            btn.classList.add('cursor-not-allowed'); // Optional: Add 'not-allowed' cursor for better UX
+
+            console.log('dataset:', btn.dataset.istrue); 
+
+            // Create a new div to hold the tick or cross
+            const iconDiv = document.createElement('div');
+            iconDiv.classList.add('icon-container'); // Optional: add a class for styling the div
+
+            if (btn.dataset.istrue === "true") {
+              iconDiv.textContent = '✓'; 
+              iconDiv.classList.add('text-white'); 
+            } else if (btn.dataset.istrue === "false") {
+              iconDiv.textContent = '✗'; 
+              iconDiv.classList.add('text-red-500'); 
+            }
+
+            // Append the iconDiv to the button
+            btn.appendChild(iconDiv);
+          });
+
 
             //Add a "Try Again" button
             const tryAgainButton = document.createElement('button');
             if (this.dataset.istrue === "true") {
-              tryAgainButton.textContent = "Correct! Request another question";
+              tryAgainButton.textContent = "Correct! Play again";
               tryAgainButton.className = "mt-4 bg-secondaryGreen text-primaryGreen border-2 border-primaryGreen p-2 rounded hover:bg-primaryGreen hover:text-secondaryGreen";
             } else if  (this.dataset.istrue === "false"){
-              tryAgainButton.textContent = "Wrong! You can do another request"
+              tryAgainButton.textContent = "Wrong! Try another question"
               tryAgainButton.className = "mt-4 bg-secondaryErrorRed text-white border-2 border-errorRed p-2 rounded hover:bg-errorRed hover:text-white";
             }
 
@@ -125,6 +139,7 @@
         });
 
       </script>
+      <script src="/script.js"></script>
       <script src="tailwind.js"></script>
   </body>
 

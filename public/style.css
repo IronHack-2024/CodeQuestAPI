@@ -76,6 +76,7 @@ body {
   /* Show menu when .show class is added */
   .nav-menu.show {
     display: flex;
+    gap: 2px;
   }
   
   .logo-div{
@@ -312,18 +313,11 @@ body {
   font-weight: 600;
   text-decoration: underline;
 }
-/* .flex{
+
+.centre-container {
   justify-content: center;
 }
-.flex-row{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2rem;
-} */
 
-
-  
   @media (max-width: 1024px) {
     .examples-container {
       width: 700px;
@@ -351,7 +345,6 @@ body {
   }
   
 }
-
   
   @media (max-width: 768px) {
     .examples-container {
@@ -394,6 +387,15 @@ body {
       /* Styles for screens 576px or narrower */
       font-size: 30px;
     }
+
+    .logo {
+      height: 4rem;
+      margin-left: 4px;
+    }
+    .headshot {
+      height: 125px;
+      width: 125px;
+    }
   }
   
   @media (max-width: 400px) {
@@ -429,7 +431,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px 100px 0 100px;
+    margin: 30px 50px 0 50px;
   }
   /* The typing effect */
   @keyframes typing {
@@ -465,10 +467,6 @@ body {
   border: solid white 1px;
   padding: 20px;
   margin-bottom: 20px;
-}
-
-.daily-question {
-  word-spacing: -6px
 }
 
 .body-text {

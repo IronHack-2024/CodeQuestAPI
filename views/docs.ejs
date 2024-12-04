@@ -12,7 +12,7 @@
     <div id="nav-bar">
         <%- include('./partials/nav.ejs') %>
     </div>
-    <div class="flex">
+    <div class="flex centre-container">
         <div id="swagger-ui"></div>
       </div>
     <script src="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui-bundle.js" crossorigin></script>
@@ -24,14 +24,6 @@
             navMenu.classList.toggle("show");
         });
         
-//         window.onload = () => {
-//   console.log("esta leyendo esto")
-//   window.ui = SwaggerUIBundle({
-//       // Don't forget to change the url for production: url + api/v1/test-swagger
-//     url: 'http://localhost:3000/api/v1/swagger-docs',
-//     dom_id: '#swagger-ui',
-//   });
-// };
     </script>
     <script src="/config/swagger-window.config.js"></script>
 </body>

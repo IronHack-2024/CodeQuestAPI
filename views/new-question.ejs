@@ -4,7 +4,6 @@
 <head>
   <title>Submit New Question</title>
   <%- include('./partials/head.ejs') %>
-
 </head>
 
 <body class="bg-black items-center justify-center h-auto" style="font-family: 'Oxanium', sans-serif">
@@ -13,12 +12,12 @@
     <h1 class="text-2xl font-bold mt-20 mb-10 text-white" style="font-family: 'Press Start 2P', sans-serif">SUBMIT NEW
       PROGRAMMING
       QUESTION</h1>
-    <div class="mb-12 flex flex-col text-white font-oxygen items-center">
-        <p>Fill the form and share your questions to this amazing database!</p>
+    <div class="mb-12 flex flex-col text-white font-oxygen items-center mx-[24px] sm:mx-0">
+        <p>Complete the form below, then submit your questions to this absolutely amazing database!</p>
     </div>
     <div class="flex justify-center">
       <form id="newQuestionForm"
-        class="lg:w-6/12 sm:w-3/4 m-6 border-4 border-primaryGreen bg-backgroundGreen p-4 rounded-lg shadow-lg text-center gap-4"
+        class="lg:w-6/12 sm:w-4/5 m-6 border-4 border-primaryGreen bg-backgroundGreen p-4 rounded-lg shadow-lg text-center gap-4"
         action="/submit-new-question" method="POST">
 
         <div class="flex flex-col space-y-4 w-11/12">
@@ -76,7 +75,6 @@
       <% } %>
 
         <script src="tailwind.js"></script>
-
         <script>
           const form = document.getElementById("newQuestionForm");
           const modal = document.getElementById("modal");
@@ -128,10 +126,9 @@
               event.preventDefault();
               return;
             }
-
           })
-
         </script>
+        <script src="/script.js"></script>
 </body>
 
 
