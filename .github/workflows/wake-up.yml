@@ -2,7 +2,7 @@ name: Wake Up Site
 
 on:
   schedule:
-    - cron: "*/5 * * * *"  # This cron expression means every 5 minutes
+    - cron: "*/10 * * * *"  # This cron expression means every 5 minutes
 
 jobs:
   wake_up:
