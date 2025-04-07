@@ -108,7 +108,25 @@ const jsonFile = {
                     }
                 },
             }
-        }
+        },
+        "/questions/categories": {
+            "get": {
+                "tags": [
+                    "question"
+                ],
+                "summary": "Get all categories",
+                "description": "",
+                "operationId": "categories",
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
     },
     "components": {
         "schemas": {

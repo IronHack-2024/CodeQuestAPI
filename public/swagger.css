@@ -47,6 +47,8 @@
     color: darkslategray;
     font-weight: 600;
 }
+
+/* TODO: NEXT */
 #model-Question{
     background-color:silver;
 }
@@ -84,8 +86,7 @@
     margin: 0;
 }
 
-#operations-question-random > div > button.opblock-summary-control > span,
-#operations-question-randomAi > div > button.opblock-summary-control > span{
+.swagger-ui .opblock.opblock-get .opblock-summary-method{
     background-color: #41fd5b;
     color: black;
 }
