@@ -1,5 +1,6 @@
 const { generateQuestions, getRandomQuestionsDB } = require('../services/question.services');
-const swaggerJsonFile = require("../config/swagger.config.js")
+const swaggerJsonFile = require("../config/swagger.config.js");
+const { QUESTIONS_CATEGORIES } = require("../utils/constants.js");
 
 
 /**
@@ -80,8 +81,16 @@ const getSwaggerDocs = async(req, res) => {
 	res.json(swaggerJsonFile)
 };
 
+const getAllCategories = async (req, res) => {
+  res.status(200).json({
+    message: "Categories retrieved successfully",
+    results: QUESTIONS_CATEGORIES});
+};
+
+
 module.exports = {
 	getRandomQuestions,
+  getAllCategories,
 	getAiQuestions,
 	getSwaggerDocs
 };

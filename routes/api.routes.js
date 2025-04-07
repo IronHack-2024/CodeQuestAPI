@@ -18,6 +18,8 @@ const customLimiter = rateLimit({
 
 router.get("/v1/questions/random", apiControllers.getRandomQuestions);
 
+router.get("/v1/questions/categories", apiControllers.getAllCategories);
+
 router.get("/v1/questions/ai", customLimiter, apiControllers.getAiQuestions);
 
 router.get('/v1/swagger-docs', apiControllers.getSwaggerDocs);
